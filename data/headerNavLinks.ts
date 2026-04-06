@@ -1,9 +1,8 @@
 const headerNavLinks = [
-  { href: '/', title: 'Home' },
-  { href: '/blog', title: 'Blog' },
-  { href: '/tags', title: 'Tags' },
-  { href: '/projects', title: 'Projects' },
-  { href: '/about', title: 'About' },
+  { href: '/', title: 'Početna' },
+  { href: '/vesti', title: 'Vesti' },
+  { href: '/video', title: 'Video' },
+  { href: '/o nama', title: 'O nama' },
 ]
 
 export default headerNavLinks

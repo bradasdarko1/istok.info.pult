@@ -1,13 +1,13 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 
 const Header = () => {
-  let headerClass = 'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10'
+  let headerClass =
+    'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-6 px-4 sm:px-6'
   if (siteMetadata.stickyNav) {
     headerClass += ' sticky top-0 z-50'
   }
@@ -15,19 +15,25 @@ const Header = () => {
   return (
     <header className={headerClass}>
       <Link href="/" aria-label={siteMetadata.headerTitle}>
-        <div className="flex items-center justify-between">
-          <div className="mr-3">
-            <Logo />
+        <div className="flex items-center space-x-4">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <img
+              src={siteMetadata.siteLogo}
+              alt={siteMetadata.headerTitle}
+              className="h-[100px] w-[100px] object-contain"
+            />
           </div>
+          {/* Naziv sajta */}
           {typeof siteMetadata.headerTitle === 'string' ? (
-            <div className="hidden h-6 text-2xl font-semibold sm:block">
-              {siteMetadata.headerTitle}
-            </div>
+            <div className="hidden text-3xl font-bold sm:block">{siteMetadata.headerTitle}</div>
           ) : (
             siteMetadata.headerTitle
           )}
         </div>
       </Link>
+
+      {/* Navigacija */}
       <div className="flex items-center space-x-4 leading-5 sm:-mr-6 sm:space-x-6">
         <div className="no-scrollbar hidden max-w-40 items-center gap-x-4 overflow-x-auto sm:flex md:max-w-72 lg:max-w-96">
           {headerNavLinks

@@ -1,9 +1,14 @@
-import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
-import { allBlogs } from 'contentlayer/generated'
-import Main from './Main'
+// app/page.tsx
+import VestiDanas from './vesti/page'
+import { Metadata } from 'next'
 
-export default async function Page() {
-  const sortedPosts = sortPosts(allBlogs)
-  const posts = allCoreContent(sortedPosts)
-  return <Main posts={posts} />
+// Opcionalno: SEO metadata
+export const metadata: Metadata = {
+  title: 'Istok Info Pult',
+  description: 'Najnovije vesti dana, slike i članci na jednom mestu.',
+}
+
+export default function Početna() {
+  // Renderuje landing VestiDanas
+  return <VestiDanas />
 }

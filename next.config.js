@@ -4,7 +4,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
-// You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is;
@@ -47,16 +46,10 @@ const securityHeaders = [
   },
 ]
 
-const output = process.env.EXPORT ? 'export' : undefined
-const basePath = process.env.BASE_PATH || undefined
-const unoptimized = process.env.UNOPTIMIZED ? true : undefined
-
 module.exports = () => {
   const plugins = [withContentlayer, withBundleAnalyzer]
 
   return plugins.reduce((acc, next) => next(acc), {
-    output,
-    basePath,
     reactStrictMode: true,
     trailingSlash: true,
     eslint: {
@@ -79,7 +72,6 @@ module.exports = () => {
           hostname: 'picsum.photos',
         },
       ],
-      unoptimized,
     },
     async headers() {
       return [

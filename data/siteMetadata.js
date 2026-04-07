@@ -6,7 +6,7 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://istok-info-pult.vercel.app',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
+  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.jpg`,
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
   analytics: {

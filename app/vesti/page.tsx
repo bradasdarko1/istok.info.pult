@@ -63,7 +63,7 @@ export default function VestiDanas() {
       slug: 'spomenik-27-godina',
       title: vest2Title,
       excerpt: '',
-      image: '/static/images/spomenik.png',
+      image: '/static/images/spomenik.jpg',
     },
     {
       slug: 'srbija-pamti',

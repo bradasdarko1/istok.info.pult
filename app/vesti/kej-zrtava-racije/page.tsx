@@ -87,7 +87,7 @@ function latinToCyrillic(text: string) {
 }
 
 const images = [
-  '/static/images/kej-1.jpeg',
+  '/static/images/kej-1.jpg',
   '/static/images/kej-2.jpg',
   '/static/images/kej-3.jpg',
   '/static/images/kej-4.jpg',
@@ -316,3 +316,4 @@ export default function KejZrtavaRacijePage() {
     </main>
   )
 }
+

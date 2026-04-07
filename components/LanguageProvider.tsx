@@ -1,9 +1,17 @@
 'use client'
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+} from 'react'
 
-type Language = 'sr' | 'ru'
-type Script = 'cyr' | 'lat'
+export type Language = 'sr' | 'ru'
+export type Script = 'cyr' | 'lat'
 
 type TranslationKey =
   | 'siteName'
@@ -207,15 +215,15 @@ type LanguageContextType = {
   t: (key: TranslationKey) => string
 }
 
-const LanguageContext = createContext<LanguageContextType | null>(null)
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
+export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>('sr')
   const [script, setScript] = useState<Script>('cyr')
 
   useEffect(() => {
-    const storedLanguage = localStorage.getItem('site-language') as Language | null
-    const storedScript = localStorage.getItem('site-script') as Script | null
+    const storedLanguage = localStorage.getItem('site-language')
+    const storedScript = localStorage.getItem('site-script')
 
     if (storedLanguage === 'sr' || storedLanguage === 'ru') {
       setLanguage(storedLanguage)
@@ -262,18 +270,18 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       toggleScript,
       t,
     }),
-    [language, script, toggleLanguage, toggleScript, t]
+    [language, script, t, toggleLanguage, toggleScript]
   )
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>
 }
 
-export function useLanguage() {
+export function useLanguage(): LanguageContextType {
   const context = useContext(LanguageContext)
-  if (!context) {
+
+  if (context === undefined) {
     throw new Error('useLanguage mora da bude unutar LanguageProvider')
   }
+
   return context
 }
-
-

@@ -12,7 +12,7 @@ type FriendItem = {
 }
 
 type LanguageType = 'sr' | 'ru'
-type ScriptType = 'latin' | 'cyrillic'
+type ScriptType = 'cyr' | 'lat'
 
 const friends: FriendItem[] = [
   {
@@ -72,53 +72,54 @@ const friends: FriendItem[] = [
   },
 ]
 
-export default function PrijateljiPage() {
-  const lang = useLanguage()
-  const language = lang.language as LanguageType
-  const script = lang.script as ScriptType
-
-  const content = {
-    sr: {
-      latin: {
-        title: 'PRIJATELJI',
-        subtitle: 'Organizacije, institucije i zajednice sa kojima delimo vrednosti i viziju.',
-        text1:
-          'Istok Info Pult ostvaruje saradnju sa prijateljima koji kroz svoj rad doprinose očuvanju tradicije, jačanju obrazovanja i razvijanju kulturnih i društvenih veza.',
-        text2:
-          'Ova prijateljstva predstavljaju važan oslonac za zajedničke inicijative, projekte i događaje koji povezuju ljude i promovišu znanje, identitet i međusobno poštovanje.',
-        sectionTitle: 'Naši prijatelji',
-        cardLabel: 'Prijatelj Istok Info Pulta',
-      },
-      cyrillic: {
-        title: 'ПРИЈАТЕЉИ',
-        subtitle: 'Организације, институције и заједнице са којима делимо вредности и визију.',
-        text1:
-          'Исток Инфо Пулт остварује сарадњу са пријатељима који кроз свој рад доприносе очувању традиције, јачању образовања и развијању културних и друштвених веза.',
-        text2:
-          'Ова пријатељства представљају важан ослонац за заједничке иницијативе, пројекте и догађаје који повезују људе и промовишу знање, идентитет и међусобно поштовање.',
-        sectionTitle: 'Наши пријатељи',
-        cardLabel: 'Пријатељ Исток Инфо Пулта',
-      },
-    },
-    ru: {
-      title: 'ДРУЗЬЯ',
-      subtitle:
-        'Организации, учреждения и сообщества, с которыми нас объединяют общие ценности и видение.',
+const content = {
+  sr: {
+    lat: {
+      title: 'PRIJATELJI',
+      subtitle: 'Organizacije, institucije i zajednice sa kojima delimo vrednosti i viziju.',
       text1:
-        '«Исток Инфо Пульт» сотрудничает с друзьями, которые своей деятельностью вносят вклад в сохранение традиций, развитие образования и укрепление культурных и общественных связей.',
+        'Istok Info Pult ostvaruje saradnju sa prijateljima koji kroz svoj rad doprinose očuvanju tradicije, jačanju obrazovanja i razvijanju kulturnih i društvenih veza.',
       text2:
-        'Эти дружеские связи являются важной опорой для совместных инициатив, проектов и мероприятий, которые объединяют людей и продвигают знания, идентичность и взаимное уважение.',
-      sectionTitle: 'Наши друзья',
-      cardLabel: 'Друг Исток Инфо Пульта',
+        'Ova prijateljstva predstavljaju važan oslonac za zajedničke inicijative, projekte i događaje koji povezuju ljude i promovišu znanje, identitet i međusobno poštovanje.',
+      sectionTitle: 'Naši prijatelji',
+      cardLabel: 'Prijatelj Istok Info Pulta',
     },
-  }
+    cyr: {
+      title: 'ПРИЈАТЕЉИ',
+      subtitle: 'Организације, институције и заједнице са којима делимо вредности и визију.',
+      text1:
+        'Исток Инфо Пулт остварује сарадњу са пријатељима који кроз свој рад доприносе очувању традиције, јачању образовања и развијању културних и друштвених веза.',
+      text2:
+        'Ова пријатељства представљају важан ослонац за заједничке иницијативе, пројекте и догађаје који повезују људе и промовишу знање, идентитет и међусобно поштовање.',
+      sectionTitle: 'Наши пријатељи',
+      cardLabel: 'Пријатељ Исток Инфо Пулта',
+    },
+  },
+  ru: {
+    title: 'ДРУЗЬЯ',
+    subtitle:
+      'Организации, учреждения и сообщества, с которыми нас объединяют общие ценности и общее видение.',
+    text1:
+      '«Исток Инфо Пульт» сотрудничает с друзьями, которые своей деятельностью вносят вклад в сохранение традиций, развитие образования и укрепление культурных и общественных связей.',
+    text2:
+      'Эти дружеские связи являются важной опорой для совместных инициатив, проектов и мероприятий, которые объединяют людей и продвигают знания, идентичность и взаимное уважение.',
+    sectionTitle: 'Наши друзья',
+    cardLabel: 'Друг Исток Инфо Пульта',
+  },
+}
+
+export default function PrijateljiPage() {
+  const { language, script } = useLanguage()
+
+  const typedLanguage = language as LanguageType
+  const typedScript = script as ScriptType
 
   const t =
-    language === 'ru' ? content.ru : script === 'cyrillic' ? content.sr.cyrillic : content.sr.latin
+    typedLanguage === 'ru' ? content.ru : content.sr[typedScript]
 
   const getFriendName = (friend: FriendItem) => {
-    if (language === 'ru') return friend.ru
-    if (script === 'cyrillic') return friend.srCyrillic
+    if (typedLanguage === 'ru') return friend.ru
+    if (typedScript === 'cyr') return friend.srCyrillic
     return friend.srLatin
   }
 
@@ -172,7 +173,7 @@ export default function PrijateljiPage() {
                     )}
                   </div>
 
-                  <h3 className="text-lg leading-7 font-semibold text-white transition group-hover:text-yellow-200">
+                  <h3 className="text-lg font-semibold leading-7 text-white transition group-hover:text-yellow-200">
                     {getFriendName(friend)}
                   </h3>
 

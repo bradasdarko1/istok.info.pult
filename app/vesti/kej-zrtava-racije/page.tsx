@@ -88,15 +88,15 @@ function latinToCyrillic(text: string) {
 
 const images = [
   '/static/images/kej-1.jpg',
-  '/static/images/kej-2.jpg',
-  '/static/images/kej-3.jpg',
-  '/static/images/kej-4.jpg',
-  '/static/images/kej-5.jpg',
-  '/static/images/kej-6.jpg',
-  '/static/images/kej-7.jpg',
-  '/static/images/kej-8.jpg',
-  '/static/images/kej-9.jpg',
-  '/static/images/kej-10.jpg',
+  '/static/images/kej-2.JPG',
+  '/static/images/kej-3.JPG',
+  '/static/images/kej-4.JPG',
+  '/static/images/kej-5.JPG',
+  '/static/images/kej-6.JPG',
+  '/static/images/kej-7.JPG',
+  '/static/images/kej-8.JPG',
+  '/static/images/kej-9.JPG',
+  '/static/images/kej-10.JPG',
 ]
 
 const srLatin = {

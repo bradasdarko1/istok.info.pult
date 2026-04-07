@@ -19,7 +19,7 @@ const friends: FriendItem[] = [
     srLatin: 'Ruski dom',
     srCyrillic: 'Руски дом',
     ru: 'Русский дом',
-    logo: '/static/images/ruski-dom.png',
+    logo: '/static/images/ruski-dom.jpg',
   },
   {
     srLatin: 'Ambasade Rusije',
@@ -40,7 +40,7 @@ const friends: FriendItem[] = [
     srCyrillic: 'Локалитет',
     ru: 'Локалитет',
     href: '#',
-    logo: '/static/images/lokalitet.png',
+    logo: '/static/images/lokalitet.jpg',
   },
   {
     srLatin: 'Novosađani 1989',

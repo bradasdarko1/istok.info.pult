@@ -36,7 +36,7 @@ export default function RootLayout({
           <LanguageProvider>
             <div
               className="pointer-events-none fixed inset-0 -z-30 bg-cover bg-[center_35%] bg-no-repeat scale-105"
-              style={{ backgroundImage: "url('/static/images/pozadina1.png')" }}
+              style={{ backgroundImage: "url('/static/images/pozadina1.jpg')" }}
             />
 
             <div className="pointer-events-none fixed inset-0 -z-20 bg-black/45" />

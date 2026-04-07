@@ -212,7 +212,7 @@ export default function Navbar() {
 
         <Link href="/" className="flex flex-col items-center justify-center text-center">
           <img
-            src="/static/favicons/logo.png"
+            src="/static/favicons/logo.PNG"
             alt="Istok Info Pult logo"
             className="h-24 w-24 object-contain drop-shadow-xl transition duration-300 hover:scale-105 sm:h-28 sm:w-28 lg:h-32 lg:w-32"
           />

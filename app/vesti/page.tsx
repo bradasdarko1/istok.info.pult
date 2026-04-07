@@ -57,7 +57,7 @@ export default function VestiDanas() {
       slug: 'kej-zrtava-racije',
       title: kejVestTitle,
       excerpt: kejVestExcerpt,
-      image: '/static/images/kej-6.jpg',
+      image: '/static/images/kej-6.JPG',
     },
     {
       slug: 'spomenik-27-godina',

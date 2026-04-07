@@ -31,22 +31,23 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-      <body className="bg-black text-white antialiased">
+      <body className="bg-black text-white antialiased overflow-x-hidden">
         <ThemeProviders>
           <LanguageProvider>
+            {/* BACKGROUND */}
             <div
-              className="pointer-events-none fixed inset-0 -z-30 bg-cover bg-[center_35%] bg-no-repeat scale-105"
+              className="pointer-events-none fixed inset-0 -z-30 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: "url('/static/images/pozadina1.jpg')" }}
             />
 
-            <div className="pointer-events-none fixed inset-0 -z-20 bg-black/45" />
+            <div className="pointer-events-none fixed inset-0 -z-20 bg-black/50" />
 
-            <div className="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-b from-black/30 via-transparent to-black/55" />
+            <div className="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
 
             <SectionContainer>
               <div className="flex min-h-screen flex-col">
                 <Navbar />
-                <main className="mb-auto pt-6">{children}</main>
+                <main className="mb-auto pt-16 sm:pt-20">{children}</main>
                 <Footer />
               </div>
             </SectionContainer>

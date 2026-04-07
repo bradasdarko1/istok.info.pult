@@ -28,112 +28,107 @@ export default function VestiDanas() {
       timeZone,
     }).format(now)
 
-  const srbijaPamtiTitle =
-    language === 'ru' ? 'Сербия ПОМНИТ!' : script === 'cyr' ? 'Србија ПАМТИ!' : 'Srbija PAMTI!'
-
-  const vest2Title =
-    language === 'ru'
-      ? '27 ЛЕТ ЖДАЛИ ЭТОГО ПАМЯТНИКА???'
-      : script === 'cyr'
-        ? '27 ГОДИНА СЕ ЧЕКАЛО НА ОВАЈ СПОМЕНИК???'
-        : '27 GODINA SE ČEKALO NA OVAJ SPOMENIK???'
-
-  const kejVestTitle =
-    language === 'ru'
-      ? 'На набережной Жертв рейда: инициатива по установке памятника'
-      : script === 'cyr'
-        ? 'На Кеју жртава рације: иницијатива за споменик'
-        : 'Na Keju žrtava racije: inicijativa za spomenik'
-
-  const kejVestExcerpt =
-    language === 'ru'
-      ? 'Спортсмены и представители Российской Федерации поддержали петицию в Нови-Саде.'
-      : script === 'cyr'
-        ? 'Спортисти и представници Руске Федерације подржали петицију у Новом Саду.'
-        : 'Sportisti i predstavnici Ruske Federacije podržali peticiju u Novom Sadu.'
-
   const danasnjeVesti = [
     {
       slug: 'kej-zrtava-racije',
-      title: kejVestTitle,
-      excerpt: kejVestExcerpt,
+      title:
+        language === 'ru'
+          ? 'На набережной Жертв рейда: инициатива по установке памятника'
+          : script === 'cyr'
+            ? 'На Кеју жртава рације: иницијатива за споменик'
+            : 'Na Keju žrtava racije: inicijativa za spomenik',
+      excerpt:
+        language === 'ru'
+          ? 'Спортсмены и представители Российской Федерации поддержали петицию в Нови-Саде.'
+          : script === 'cyr'
+            ? 'Спортисти и представници Руске Федерације подржали петицију у Новом Саду.'
+            : 'Sportisti i predstavnici Ruske Federacije podržali peticiju u Novom Sadu.',
       image: '/static/images/kej-6.JPG',
     },
     {
       slug: 'spomenik-27-godina',
-      title: vest2Title,
+      title:
+        language === 'ru'
+          ? '27 ЛЕТ ЖДАЛИ ЭТОГО ПАМЯТНИКА???'
+          : script === 'cyr'
+            ? '27 ГОДИНА СЕ ЧЕКАЛО НА ОВАЈ СПОМЕНИК???'
+            : '27 GODINA SE ČEKALO NA OVAJ SPOMENIK???',
       excerpt: '',
       image: '/static/images/spomenik.jpg',
     },
     {
       slug: 'srbija-pamti',
-      title: srbijaPamtiTitle,
+      title:
+        language === 'ru'
+          ? 'Сербия ПОМНИТ!'
+          : script === 'cyr'
+            ? 'Србија ПАМТИ!'
+            : 'Srbija PAMTI!',
       excerpt: '',
       image: '/static/images/srbijapamti.jpg',
     },
   ]
 
   return (
-    <div className="relative mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8">
-      <div className="xl:pr-[300px]">
-        <h1 className="mb-6 text-3xl font-bold text-white sm:text-4xl">{t('todayNews')}</h1>
+    <div className="relative mx-auto w-full max-w-7xl px-3 py-5 sm:px-6">
+      <h1 className="mb-5 text-2xl font-bold sm:text-4xl">{t('todayNews')}</h1>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {danasnjeVesti.map((vest) => (
-            <Link key={vest.slug} href={`/vesti/${vest.slug}`}>
-              <div className="group h-full cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-black/30 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-                <div className="h-[220px] w-full overflow-hidden sm:h-[250px]">
-                  <img
-                    src={vest.image}
-                    alt={vest.title}
-                    className={`h-full w-full object-cover transition duration-500 group-hover:scale-105 ${
-                      vest.slug === 'spomenik-27-godina' ? 'object-[center_30%]' : 'object-center'
-                    }`}
-                  />
-                </div>
-
-                <div className="p-4 sm:p-5">
-                  <h2 className="text-xl leading-snug font-bold text-white">
-                    <span
-                      style={{
-                        display: '-webkit-box',
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: 'vertical',
-                        overflow: 'hidden',
-                      }}
-                    >
-                      {vest.title}
-                    </span>
-                  </h2>
-
-                  {vest.excerpt && (
-                    <p className="mt-2 text-sm leading-6 text-white/65">{vest.excerpt}</p>
-                  )}
-                </div>
+      {/* GRID */}
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:pr-[300px]">
+        {danasnjeVesti.map((vest) => (
+          <Link key={vest.slug} href={`/vesti/${vest.slug}`}>
+            <div className="overflow-hidden rounded-xl border border-white/10 bg-black/30 backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-xl">
+              <div className="h-[160px] sm:h-[220px] overflow-hidden">
+                <img
+                  src={vest.image}
+                  className="h-full w-full object-cover"
+                />
               </div>
-            </Link>
-          ))}
+
+              <div className="p-3 sm:p-4">
+                <h2 className="text-base font-bold sm:text-lg">
+                  {vest.title}
+                </h2>
+
+                {vest.excerpt && (
+                  <p className="mt-2 text-sm text-white/70">
+                    {vest.excerpt}
+                  </p>
+                )}
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {/* SAT - MOBILE */}
+      <div className="mt-6 xl:hidden">
+        <div className="rounded-2xl border border-white/10 bg-black/50 p-4 backdrop-blur-md">
+          <h2 className="mb-3 text-lg font-bold">{t('time')}</h2>
+
+          <div className="space-y-2">
+            {cities.map((city) => (
+              <div key={city.key} className="flex justify-between text-sm">
+                <span>{t(city.key)}</span>
+                <span>{formatTime(city.timeZone)}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
+      {/* SAT - DESKTOP */}
       <div className="hidden xl:block">
         <div className="fixed top-52 right-6 w-[260px]">
-          <aside className="rounded-2xl border border-white/10 bg-black/50 p-4 text-white shadow-xl backdrop-blur-md">
+          <aside className="rounded-2xl border border-white/10 bg-black/50 p-4 backdrop-blur-md">
             <h2 className="mb-4 text-lg font-bold">{t('time')}</h2>
 
-            <div className="space-y-3">
-              {cities.map((city) => (
-                <div
-                  key={city.key}
-                  className="flex items-center justify-between rounded-lg border border-white/10 bg-white/[0.04] px-3 py-2"
-                >
-                  <span className="text-sm text-white/70">{t(city.key)}</span>
-                  <span className="font-mono text-sm font-semibold">
-                    {formatTime(city.timeZone)}
-                  </span>
-                </div>
-              ))}
-            </div>
+            {cities.map((city) => (
+              <div key={city.key} className="flex justify-between mb-2">
+                <span>{t(city.key)}</span>
+                <span>{formatTime(city.timeZone)}</span>
+              </div>
+            ))}
           </aside>
         </div>
       </div>

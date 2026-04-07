@@ -3,6 +3,7 @@ import '../css/tailwind.css'
 import 'remark-github-blockquote-alert/alert.css'
 
 import { Space_Grotesk } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import SectionContainer from '@/components/SectionContainer'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
@@ -31,10 +32,9 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-      <body className="bg-black text-white antialiased overflow-x-hidden">
+      <body className="overflow-x-hidden bg-black text-white antialiased">
         <ThemeProviders>
           <LanguageProvider>
-            {/* BACKGROUND */}
             <div
               className="pointer-events-none fixed inset-0 -z-30 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: "url('/static/images/pozadina1.jpg')" }}
@@ -51,6 +51,8 @@ export default function RootLayout({
                 <Footer />
               </div>
             </SectionContainer>
+
+            <Analytics />
           </LanguageProvider>
         </ThemeProviders>
       </body>

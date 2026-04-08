@@ -34,10 +34,10 @@ export default function VestiDanas() {
       slug: 'dusko-vujosevic',
       category:
         language === 'ru'
-          ? 'Спорт'
+          ? 'Спорт-08.04.2026.'
           : script === 'cyr'
-            ? 'Спорт'
-            : 'Sport',
+            ? 'Спорт-08.04.2026.'
+            : 'Sport-08.04.2026.',
       title:
         language === 'ru'
           ? 'СКОНЧАЛСЯ ТРЕНЕР ДУШКО ВУЙОШЕВИЧ'
@@ -57,10 +57,10 @@ export default function VestiDanas() {
       slug: 'stadion-peticija',
       category:
         language === 'ru'
-          ? 'Новости'
+          ? 'Новости-08.04.2026.'
           : script === 'cyr'
-            ? 'Вести'
-            : 'Vesti',
+            ? 'Вести-08.04.2026.'
+            : 'Vesti-08.04.2026.',
       title:
         language === 'ru'
           ? 'Сегодня на Карађорђе поддержите инициативу по установке памятника жертвам агрессии НАТО!'

@@ -25,7 +25,7 @@ type TranslationKey =
   | 'friends'
   | 'aboutUs'
   | 'serbia'
-  | 'world'
+  | 'sport'
   | 'politics'
   | 'beginnerLevel'
   | 'intermediateLevel'
@@ -107,9 +107,9 @@ const translations: Record<
     sr: { cyr: 'Србија', lat: 'Srbija' },
     ru: 'Сербия',
   },
-  world: {
-    sr: { cyr: 'Свет', lat: 'Svet' },
-    ru: 'Мир',
+  sport: {
+    sr: { cyr: 'Спорт', lat: 'Sport' },
+    ru: 'Спорт',
   },
   politics: {
     sr: { cyr: 'Политика', lat: 'Politika' },

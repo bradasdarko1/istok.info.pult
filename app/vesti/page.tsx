@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useLanguage } from '@/components/LanguageProvider'
-import { title } from 'node:process'
 
 const cities = [
   { key: 'newSad', timeZone: 'Europe/Belgrade' },
@@ -31,19 +30,55 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
-      slug: 'stadion-peticija',
+      href: '/vesti/sport/dusko-vujosevic',
+      slug: 'dusko-vujosevic',
+      category:
+        language === 'ru'
+          ? 'Спорт'
+          : script === 'cyr'
+            ? 'Спорт'
+            : 'Sport',
       title:
         language === 'ru'
-         ? 'Сегодня на Карађорђе поддержите инициативу по установке памятника жертвам агрессии НАТО!'
-         : script === 'cyr'
-           ? 'Данас на Карађорђу подржите иницијативу за подизање споменика жртавама НАТО агресије!'
-           : 'Danas na Karađorđu podržite inicijativu za podizanje spomenika žrtvama NATO agresije!',
-      excerpt: '',
-      image: '/static/images/stadion.jpg'     
-
+          ? 'СКОНЧАЛСЯ ТРЕНЕР ДУШКО ВУЙОШЕВИЧ'
+          : script === 'cyr'
+            ? 'ПРЕМИНУО ТРЕНЕР ДУШКО ВУЈОШЕВИЋ'
+            : 'PREMINUO TRENER DUŠKO VUJOŠEVIĆ',
+      excerpt:
+        language === 'ru'
+          ? 'Легендарный баскетбольный тренер Душко Вуйошевич скончался сегодня, 08.04.2026 года, в Белграде.'
+          : script === 'cyr'
+            ? 'Легендарни кошаркашки тренер Душко Вујошевић преминуо је данас, 08.04.2026. године у Београду.'
+            : 'Legendarni košarkaški trener Duško Vujošević preminuo je danas, 08.04.2026. godine u Beogradu.',
+      image: '/static/images/dusko.jpg',
     },
     {
+      href: '/vesti/stadion-peticija',
+      slug: 'stadion-peticija',
+      category:
+        language === 'ru'
+          ? 'Новости'
+          : script === 'cyr'
+            ? 'Вести'
+            : 'Vesti',
+      title:
+        language === 'ru'
+          ? 'Сегодня на Карађорђе поддержите инициативу по установке памятника жертвам агрессии НАТО!'
+          : script === 'cyr'
+            ? 'Данас на Карађорђу подржите иницијативу за подизање споменика жртвама НАТО агресије!'
+            : 'Danas na Karađorđu podržite inicijativu za podizanje spomenika žrtvama NATO agresije!',
+      excerpt: '',
+      image: '/static/images/stadion.jpg',
+    },
+    {
+      href: '/vesti/kej-zrtava-racije',
       slug: 'kej-zrtava-racije',
+      category:
+        language === 'ru'
+          ? 'Новости'
+          : script === 'cyr'
+            ? 'Вести'
+            : 'Vesti',
       title:
         language === 'ru'
           ? 'На набережной Жертв рейда: инициатива по установке памятника'
@@ -59,7 +94,14 @@ export default function VestiDanas() {
       image: '/static/images/kej-6.JPG',
     },
     {
+      href: '/vesti/spomenik-27-godina',
       slug: 'spomenik-27-godina',
+      category:
+        language === 'ru'
+          ? 'Новости'
+          : script === 'cyr'
+            ? 'Вести'
+            : 'Vesti',
       title:
         language === 'ru'
           ? '27 ЛЕТ ЖДАЛИ ЭТОГО ПАМЯТНИКА???'
@@ -70,7 +112,14 @@ export default function VestiDanas() {
       image: '/static/images/spomenik.jpg',
     },
     {
+      href: '/vesti/srbija-pamti',
       slug: 'srbija-pamti',
+      category:
+        language === 'ru'
+          ? 'Новости'
+          : script === 'cyr'
+            ? 'Вести'
+            : 'Vesti',
       title:
         language === 'ru'
           ? 'Сербия ПОМНИТ!'
@@ -86,19 +135,23 @@ export default function VestiDanas() {
     <div className="relative mx-auto w-full max-w-7xl px-3 py-5 sm:px-6">
       <h1 className="mb-5 text-2xl font-bold sm:text-4xl">{t('todayNews')}</h1>
 
-      {/* GRID */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:pr-[300px]">
         {danasnjeVesti.map((vest) => (
-          <Link key={vest.slug} href={`/vesti/${vest.slug}`}>
+          <Link key={vest.href} href={vest.href}>
             <div className="overflow-hidden rounded-xl border border-white/10 bg-black/30 backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <div className="h-[160px] sm:h-[220px] overflow-hidden">
+              <div className="h-[160px] overflow-hidden sm:h-[220px]">
                 <img
                   src={vest.image}
+                  alt={vest.title}
                   className="h-full w-full object-cover"
                 />
               </div>
 
               <div className="p-3 sm:p-4">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400">
+                  {vest.category}
+                </p>
+
                 <h2 className="text-base font-bold sm:text-lg">
                   {vest.title}
                 </h2>
@@ -114,7 +167,6 @@ export default function VestiDanas() {
         ))}
       </div>
 
-      {/* SAT - MOBILE */}
       <div className="mt-6 xl:hidden">
         <div className="rounded-2xl border border-white/10 bg-black/50 p-4 backdrop-blur-md">
           <h2 className="mb-3 text-lg font-bold">{t('time')}</h2>
@@ -130,14 +182,13 @@ export default function VestiDanas() {
         </div>
       </div>
 
-      {/* SAT - DESKTOP */}
       <div className="hidden xl:block">
         <div className="fixed top-52 right-6 w-[260px]">
           <aside className="rounded-2xl border border-white/10 bg-black/50 p-4 backdrop-blur-md">
             <h2 className="mb-4 text-lg font-bold">{t('time')}</h2>
 
             {cities.map((city) => (
-              <div key={city.key} className="flex justify-between mb-2">
+              <div key={city.key} className="mb-2 flex justify-between">
                 <span>{t(city.key)}</span>
                 <span>{formatTime(city.timeZone)}</span>
               </div>

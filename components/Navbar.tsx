@@ -21,7 +21,7 @@ export default function Navbar() {
       href: '/vesti',
       children: [
         { title: t('serbia'), href: '/vesti/srbija' },
-        { title: t('world'), href: '/vesti/svet' },
+        { title: t('sport'), href: '/vesti/sport' },
         { title: t('politics'), href: '/vesti/politika' },
       ],
     },

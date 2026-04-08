@@ -36,8 +36,8 @@ export default function VestiDanas() {
         language === 'ru'
          ? 'Сегодня на Карађорђе поддержите инициативу по установке памятника жертвам агрессии НАТО!'
          : script === 'cyr'
-           ? 'Данас на Карађођу подржите иницијативу за подизање споменика жртавама НАТО агресије!'
-           : 'Danas na Karađođu podržite inicijativu za podzinje spomenika žrtvama NATO agresije!',
+           ? 'Данас на Карађорђу подржите иницијативу за подизање споменика жртавама НАТО агресије!'
+           : 'Danas na Karađorđu podržite inicijativu za podzinje spomenika žrtvama NATO agresije!',
       excerpt: '',
       image: '/static/images/stadion.jpg'     
 

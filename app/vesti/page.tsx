@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useLanguage } from '@/components/LanguageProvider'
+import { title } from 'node:process'
 
 const cities = [
   { key: 'newSad', timeZone: 'Europe/Belgrade' },
@@ -29,6 +30,18 @@ export default function VestiDanas() {
     }).format(now)
 
   const danasnjeVesti = [
+    {
+      slug: 'stadion-peticija',
+      title:
+        language === 'ru'
+         ? 'Сегодня на Карађорђе поддержите инициативу по установке памятника жертвам агрессии НАТО!'
+         : script === 'cyr'
+           ? 'Данас на Карађођу подржите иницијативу за подизање споменика жртавама НАТО агресије!'
+           : 'Danas na Karađođu podržite inicijativu za podzinje spomenika žrtvama NATO agresije!',
+      excerpt: '',
+      image: '/static/images/stadion.jpg'     
+
+    },
     {
       slug: 'kej-zrtava-racije',
       title:

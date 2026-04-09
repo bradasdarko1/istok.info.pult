@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/vesti-istok/rusija-predavanje',
+  slug: 'rusija-predavanje',
+
+  category:
+    language === 'ru'
+      ? 'Новости Востока'
+      : script === 'cyr'
+        ? 'Исток Вести - 09.04.2026.'
+        : 'Istok vesti - 09.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'Русские врачи на Балканах: лекция в Туле о памяти и братстве'
+      : script === 'cyr'
+        ? 'Руски лекари на Балкану: предавање у Тули о сећању и братству'
+        : 'Ruski lekari na Balkanu: predavanje u Tuli o sećanju i bratstvu',
+
+  excerpt:
+    language === 'ru'
+      ? 'В Тульском университете прошло предавање о русских медицинских миссиях в Сербии.'
+      : script === 'cyr'
+        ? 'На универзитету у Тули одржано је предавање о руским медицинским мисијама у Србији.'
+        : 'Na univerzitetu u Tuli održano je predavanje o ruskim medicinskim misijama u Srbiji.',
+
+  image: '/static/images/rusija-2.jpeg',
+},
+    {
   href: '/vesti/sport/pobeda-vosa',
   slug: 'pobeda-vose',
   category:

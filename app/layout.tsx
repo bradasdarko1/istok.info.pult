@@ -17,8 +17,12 @@ const spaceGrotesk = Space_Grotesk({
   variable: '--font-space-grotesk',
 })
 
+
 export const metadata: Metadata = {
   title: 'Istok Info Pult',
+  icons: {
+    icon: '/static/favicons/logo.PNG',
+  },  
 }
 
 export default function RootLayout({

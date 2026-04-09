@@ -30,6 +30,29 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+      href: '/vesti/potpisi',
+      slug: 'potpisi',
+      category:
+        language === 'ru'
+          ? 'Новости-09.04.2026.'
+          : script === 'cyr'
+            ? 'Вести-09.04.2026.'
+            : 'Vesti-09.04.2026.',
+      title:
+        language === 'ru'
+          ? 'Болельщики ФК «Войводина» поддержали петицию о возведении памятника жертвам агрессии НАТО'
+          : script === 'cyr'
+            ? 'Навијачи ФК Војводина подржали петицију за подизање споменика жртвама НАТО агресије'
+            : 'Navijači FK Vojvodina podržali peticiju za podizanje spomenika žrtvama NATO agresije',
+      excerpt:
+        language === 'ru'
+          ? 'Болельщики ФК «Войводина» присоединились к инициативе и поддержали петицию.'
+          : script === 'cyr'
+            ? 'Навијачи ФК Војводина придружили су се иницијативи и подржали петицију.'
+            : 'Navijači FK Vojvodina pridružili su se inicijativi i podržali peticiju.',
+      image: '/static/images/stadion-3.jpg',
+    },
+    {
       href: '/vesti/sport/dusko-vujosevic',
       slug: 'dusko-vujosevic',
       category:

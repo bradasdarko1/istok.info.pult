@@ -43,7 +43,7 @@ const srLatin = {
   category: 'Sport',
   title: 'Vojvodina savladala Radnički i obezbedila 2.mesto u plej-ofu Super lige',
   date: 'Objavljeno: 9. april 2026.',
-  lead: 'Fudbaleri FK Vojvode slavili na Karađorđu rezultatom 3:2',
+  lead: 'Fudbaleri FK Vojvodine slavili na Karađorđu rezultatom 3:2',
   paragraphs: [
     'Fudbaleri Vojvodine ostvarili su važnu pobedu protiv Radničkog iz Niša rezultatom 3:2 u uzbudljivoj utakmici punoj preokreta.',
     'Novosađani su prvi došli do prednosti u 21. minutu, kada je precizan bio Marko Veličković i doveo svoj tim u vođstvo. Iako je Radnički uspeo da se vrati u meč, Vojvodina je ponovo preuzela inicijativu u drugom poluvremenu.',
@@ -60,7 +60,7 @@ const ruText = {
   category: 'Спорт',
   title: '«Войводина» победила «Раднички» и обеспечила себе 2-е место в плей-офф Суперлиги.',
   date: 'Опубликовано: 9 апреля 2026 г.',
-  lead: 'Футболисты ФК «Войводе» отпраздновали победу в Караджордже со счетом 3:2.',
+  lead: 'Футболисты ФК «Войводина» отпраздновали победу в Караджордже со счетом 3:2.',
   paragraphs: [
     'Игроки «Войводины» одержали важную победу над «Радницким» из Ниша со счетом 3:2 в захватывающем матче, полном неожиданных поворотов.',
     'Первыми из Нови-Сада вышли вперед на 21-й минуте, когда Марко Величкович точным ударом вывел свою команду вперед. Хотя «Раднички» и удалось вернуться в игру, «Войводина» вновь перехватила инициативу во втором тайме.',

@@ -27,6 +27,7 @@ type TranslationKey =
   | 'serbia'
   | 'sport'
   | 'politics'
+  | 'istok' // ✅ BITNO
   | 'beginnerLevel'
   | 'intermediateLevel'
   | 'materials'
@@ -58,24 +59,31 @@ const translations: Record<
   }
 > = {
   siteName: {
-    sr: {
-      cyr: 'ИСТОК ИНФО ПУЛТ',
-      lat: 'ISTOK INFO PULT',
-    },
+    sr: { cyr: 'ИСТОК ИНФО ПУЛТ', lat: 'ISTOK INFO PULT' },
     ru: 'ИСТОК ИНФО ПУЛЬТ',
   },
+
   content: {
     sr: { cyr: 'Садржај', lat: 'Sadržaj' },
     ru: 'Содержание',
   },
+
   siteSections: {
     sr: { cyr: 'Секције сајта', lat: 'Sekcije sajta' },
     ru: 'Разделы сайта',
   },
+
   news: {
     sr: { cyr: 'Вести', lat: 'Vesti' },
     ru: 'Новости',
   },
+
+  // ✅ OVO JE KLJUČNO
+  istok: {
+    sr: { cyr: 'Вести Истока', lat: 'Istok vesti' },
+    ru: 'Новости Востока',
+  },
+
   freeRussianClasses: {
     sr: {
       cyr: 'Бесплатни часови руског језика',
@@ -83,122 +91,152 @@ const translations: Record<
     },
     ru: 'Бесплатные уроки русского языка',
   },
+
   cinema: {
     sr: { cyr: 'Биоскоп', lat: 'Bioskop' },
     ru: 'Кино',
   },
+
   education: {
     sr: { cyr: 'Образовање', lat: 'Obrazovanje' },
     ru: 'Образование',
   },
+
   culture: {
     sr: { cyr: 'Култура', lat: 'Kultura' },
     ru: 'Культура',
   },
+
   friends: {
     sr: { cyr: 'Пријатељи', lat: 'Prijatelji' },
     ru: 'Друзья',
   },
+
   aboutUs: {
     sr: { cyr: 'О нама', lat: 'O nama' },
     ru: 'О нас',
   },
+
   serbia: {
     sr: { cyr: 'Србија', lat: 'Srbija' },
     ru: 'Сербия',
   },
+
   sport: {
     sr: { cyr: 'Спорт', lat: 'Sport' },
     ru: 'Спорт',
   },
+
   politics: {
     sr: { cyr: 'Политика', lat: 'Politika' },
     ru: 'Политика',
   },
+
   beginnerLevel: {
     sr: { cyr: 'Почетни ниво', lat: 'Početni nivo' },
     ru: 'Начальный уровень',
   },
+
   intermediateLevel: {
     sr: { cyr: 'Средњи ниво', lat: 'Srednji nivo' },
     ru: 'Средний уровень',
   },
+
   materials: {
     sr: { cyr: 'Материјали', lat: 'Materijali' },
     ru: 'Материалы',
   },
+
   repertoire: {
     sr: { cyr: 'Репертоар', lat: 'Repertoar' },
     ru: 'Репертуар',
   },
+
   announcements: {
     sr: { cyr: 'Најаве', lat: 'Najave' },
     ru: 'Анонсы',
   },
+
   courses: {
     sr: { cyr: 'Курсеви', lat: 'Kursevi' },
     ru: 'Курсы',
   },
+
   seminars: {
     sr: { cyr: 'Семинари', lat: 'Seminari' },
     ru: 'Семинары',
   },
+
   events: {
     sr: { cyr: 'Догађаји', lat: 'Događaji' },
     ru: 'События',
   },
+
   exhibitions: {
     sr: { cyr: 'Изложбе', lat: 'Izložbe' },
     ru: 'Выставки',
   },
+
   partners: {
     sr: { cyr: 'Партнери', lat: 'Partneri' },
     ru: 'Партнёры',
   },
+
   associates: {
     sr: { cyr: 'Сарадници', lat: 'Saradnici' },
     ru: 'Сотрудники',
   },
+
   mission: {
     sr: { cyr: 'Мисија', lat: 'Misija' },
     ru: 'Миссия',
   },
+
   contact: {
     sr: { cyr: 'Контакт', lat: 'Kontakt' },
     ru: 'Контакты',
   },
+
   todayNews: {
     sr: { cyr: 'Вести дана', lat: 'Vesti dana' },
     ru: 'Новости дня',
   },
+
   time: {
     sr: { cyr: 'Време', lat: 'Vreme' },
     ru: 'Время',
   },
+
   newSad: {
     sr: { cyr: 'Нови Сад', lat: 'Novi Sad' },
     ru: 'Нови-Сад',
   },
+
   beijing: {
     sr: { cyr: 'Пекинг', lat: 'Peking' },
     ru: 'Пекин',
   },
+
   moscow: {
     sr: { cyr: 'Москва', lat: 'Moskva' },
     ru: 'Москва',
   },
+
   minsk: {
     sr: { cyr: 'Минск', lat: 'Minsk' },
     ru: 'Минск',
   },
+
   basicStudies: {
     sr: { cyr: 'Основне студије', lat: 'Osnovne studije' },
     ru: 'Бакалавриат',
   },
+
   masterStudies: {
     sr: { cyr: 'Мастер студије', lat: 'Master studije' },
     ru: 'Магистратура',
   },
+
   doctoralStudies: {
     sr: { cyr: 'Докторске студије', lat: 'Doktorske studije' },
     ru: 'Докторантура',
@@ -254,6 +292,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const t = useCallback(
     (key: TranslationKey) => {
       const entry = translations[key]
+      if (!entry) return key // 🔥 SAFE FALLBACK
       if (language === 'ru') return entry.ru
       return entry.sr[script]
     },
@@ -273,13 +312,17 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     [language, script, t, toggleLanguage, toggleScript]
   )
 
-  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>
+  return (
+    <LanguageContext.Provider value={value}>
+      {children}
+    </LanguageContext.Provider>
+  )
 }
 
 export function useLanguage(): LanguageContextType {
   const context = useContext(LanguageContext)
 
-  if (context === undefined) {
+  if (!context) {
     throw new Error('useLanguage mora da bude unutar LanguageProvider')
   }
 

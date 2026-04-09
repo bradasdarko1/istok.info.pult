@@ -23,6 +23,7 @@ export default function Navbar() {
         { title: t('serbia'), href: '/vesti/srbija' },
         { title: t('sport'), href: '/vesti/sport' },
         { title: t('politics'), href: '/vesti/politika' },
+        { title: t('istok'), href: '/vesti/vesti-istok'},
       ],
     },
     {

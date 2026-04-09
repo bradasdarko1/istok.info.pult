@@ -30,6 +30,32 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/sport/pobeda-vosa',
+  slug: 'pobeda-vose',
+  category:
+    language === 'ru'
+      ? 'Спорт-09.04.2026.'
+      : script === 'cyr'
+        ? 'Спорт-09.04.2026.'
+        : 'Sport-09.04.2026.',
+
+  title:
+    language === 'ru'
+      ? '«Войводина» победила «Раднички» со счётом 3:2'
+      : script === 'cyr'
+        ? 'Војводина победила Раднички резултатом 3:2'
+        : 'Vojvodina pobedila Radnički rezultatom 3:2',
+
+  excerpt:
+    language === 'ru'
+      ? 'Футболисты «Войводины» одержали важную победу над «Раднички» из Ниша.'
+      : script === 'cyr'
+        ? 'Фудбалери Војводине остварили важну победу против Радничког из Ниша.'
+        : 'Fudbaleri Vojvodine ostvarili važnu pobedu protiv Radničkog iz Niša.',
+
+  image: '/static/images/vosa.jpg',
+},
+    {
       href: '/vesti/potpisi',
       slug: 'potpisi',
       category:

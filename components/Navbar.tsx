@@ -57,7 +57,6 @@ export default function Navbar() {
       href: '/kultura',
       children: [
         { title: t('events'), href: '/kultura/dogadjaji' },
-        { title: t('exhibitions'), href: '/kultura/izlozbe' },
       ],
     },
     {

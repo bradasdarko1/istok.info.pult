@@ -30,58 +30,84 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
-  href: '/vesti/vesti-istok/rusija-predavanje',
-  slug: 'rusija-predavanje',
+      href: '/kultura/dogadjaji/podmornicari',
+      slug: 'podmornicari',
+      category:
+        language === 'ru'
+          ? 'Культура - 09.04.2026.'
+          : script === 'cyr'
+            ? 'Култура - 09.04.2026.'
+            : 'Kultura - 09.04.2026.',
 
-  category:
-    language === 'ru'
-      ? 'Новости Востока'
-      : script === 'cyr'
-        ? 'Исток Вести - 09.04.2026.'
-        : 'Istok vesti - 09.04.2026.',
+      title:
+        language === 'ru'
+          ? 'В помещениях ISTOK INFO PULTA отметили День подводника'
+          : script === 'cyr'
+            ? 'Обележен Дан подморничара у просторијама ISTOK INFO PULTA'
+            : 'Obeležen Dan podmorničara u prostorijama ISTOK INFO PULTA',
 
-  title:
-    language === 'ru'
-      ? 'Русские врачи на Балканах: лекция в Туле о памяти и братстве'
-      : script === 'cyr'
-        ? 'Руски лекари на Балкану: предавање у Тули о сећању и братству'
-        : 'Ruski lekari na Balkanu: predavanje u Tuli o sećanju i bratstvu',
+      excerpt:
+        language === 'ru'
+          ? 'Мероприятие было дополнено поэтическим выступлением Сербско-русского объединения граждан «Мир без границ» из Сомбора.'
+          : script === 'cyr'
+            ? 'Догађај је употпуњен поетским наступом Српско-руског удружења грађана "Свет без граница" Сомбор.'
+            : 'Događaj je upotpunjen poetskim nastupom Srpsko-ruskog udruženja građana "Svet bez granica" Sombor.',
 
-  excerpt:
-    language === 'ru'
-      ? 'В Тульском университете прошло предавање о русских медицинских миссиях в Сербии.'
-      : script === 'cyr'
-        ? 'На универзитету у Тули одржано је предавање о руским медицинским мисијама у Србији.'
-        : 'Na univerzitetu u Tuli održano je predavanje o ruskim medicinskim misijama u Srbiji.',
-
-  image: '/static/images/rusija-2.jpeg',
-},
+      image: '/static/images/pod-1.JPG',
+    },
     {
-  href: '/vesti/sport/pobeda-vosa',
-  slug: 'pobeda-vose',
-  category:
-    language === 'ru'
-      ? 'Спорт-09.04.2026.'
-      : script === 'cyr'
-        ? 'Спорт-09.04.2026.'
-        : 'Sport-09.04.2026.',
+      href: '/vesti/vesti-istok/rusija-predavanje',
+      slug: 'rusija-predavanje',
 
-  title:
-    language === 'ru'
-      ? '«Войводина» победила «Раднички» со счётом 3:2'
-      : script === 'cyr'
-        ? 'Војводина победила Раднички резултатом 3:2'
-        : 'Vojvodina pobedila Radnički rezultatom 3:2',
+      category:
+        language === 'ru'
+          ? 'Новости Востока'
+          : script === 'cyr'
+            ? 'Исток Вести - 09.04.2026.'
+            : 'Istok vesti - 09.04.2026.',
 
-  excerpt:
-    language === 'ru'
-      ? 'Футболисты «Войводины» одержали важную победу над «Раднички» из Ниша.'
-      : script === 'cyr'
-        ? 'Фудбалери Војводине остварили важну победу против Радничког из Ниша.'
-        : 'Fudbaleri Vojvodine ostvarili važnu pobedu protiv Radničkog iz Niša.',
+      title:
+        language === 'ru'
+          ? 'Русские врачи на Балканах: лекция в Туле о памяти и братстве'
+          : script === 'cyr'
+            ? 'Руски лекари на Балкану: предавање у Тули о сећању и братству'
+            : 'Ruski lekari na Balkanu: predavanje u Tuli o sećanju i bratstvu',
 
-  image: '/static/images/vosa.jpg',
-},
+      excerpt:
+        language === 'ru'
+          ? 'В Тульском университете прошло предавање о русских медицинских миссиях в Сербии.'
+          : script === 'cyr'
+            ? 'На универзитету у Тули одржано је предавање о руским медицинским мисијама у Србији.'
+            : 'Na univerzitetu u Tuli održano je predavanje o ruskim medicinskim misijama u Srbiji.',
+
+      image: '/static/images/rusija-2.jpeg',
+    },
+    {
+      href: '/vesti/sport/pobeda-vosa',
+      slug: 'pobeda-vose',
+      category:
+        language === 'ru'
+          ? 'Спорт-09.04.2026.'
+          : script === 'cyr'
+            ? 'Спорт-09.04.2026.'
+            : 'Sport-09.04.2026.',
+
+      title:
+        language === 'ru'
+          ? '«Войводина» победила «Раднички» со счётом 3:2'
+          : script === 'cyr'
+            ? 'Војводина победила Раднички резултатом 3:2'
+            : 'Vojvodina pobedila Radnički rezultatom 3:2',
+
+      excerpt:
+        language === 'ru'
+          ? 'Футболисты «Войводины» одержали важную победу над «Раднички» из Ниша.'
+          : script === 'cyr'
+            ? 'Фудбалери Војводине остварили важну победу против Радничког из Ниша.'
+            : 'Fudbaleri Vojvodine ostvarili važnu pobedu protiv Radničkog iz Niša.',
+
+      image: '/static/images/vosa.jpg',
+    },
     {
       href: '/vesti/potpisi',
       slug: 'potpisi',

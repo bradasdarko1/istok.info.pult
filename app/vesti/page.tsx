@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/kosare',
+  slug: 'kosare',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 09.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 09.04.2026.'
+        : 'Vesti - 09.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'Героизм, который не забывается'
+      : script === 'cyr'
+        ? 'Херојство за незаборав'
+        : 'Herojstvo za nezaborav',
+
+  excerpt:
+    language === 'ru'
+      ? '9 апреля 1999 года началась Битва за Кошаре — символ защиты Родины и жертвы сербских солдат.'
+      : script === 'cyr'
+        ? '9. априла 1999. године почела је Битка за Кошаре — симбол одбране отаџбине.'
+        : '9. aprila 1999. godine počela je Bitka za Košare — simbol odbrane otadžbine.',
+
+  image: '/static/images/kosare.jpeg',
+},
+    {
       href: '/kultura/dogadjaji/podmornicari',
       slug: 'podmornicari',
       category:

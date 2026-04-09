@@ -99,7 +99,7 @@ const srLatin = {
   category: 'Istok vesti',
   title:
     'Ruski lekari na Balkanu: Predavanje o sećanju i bratstvu održano na Državnom univerzitetu u Tuli',
-  date: 'Objavljeno: 4. april 2026.',
+  date: 'Objavljeno: 9. april 2026.',
   lead:
     'Dana 4. aprila, na Državnom univerzitetu u Tuli održano je onlajn predavanje posvećeno ruskim medicinskim misijama u Srbiji tokom Balkanskih ratova i Prvog svetskog rata.',
   paragraphs: [

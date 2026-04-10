@@ -30,6 +30,35 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+      href: 'vesti/ambasador',
+      slug: 'ambasador',
+
+      category:
+      language === 'ru'
+      ? 'Новости - 10.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 10.04.2026.'
+        : 'Vesti - 10.04.2026.',
+
+      title:
+      language === 'ru'
+      ? 'У Ирана нет ядерной бомбы, и он не хочет её иметь'
+      : script === 'cyr'
+        ? 'Иран нема нуклеарну бомбу нити је жели'
+        : 'Iran nema nuklearnu bombu niti je želi',
+      
+      excerpt:
+    language === 'ru'
+      ? 'Приглашенный посол Ирана в офисе информационного центра ISTOK также поддерживает памятник жертвам агрессии НАТО.'
+      : script === 'cyr'
+        ? 'Гост амбасадор Ирана у просторијама ИСТОК ИНФО ПУЛТА, подржава и споменик жртвама НАТО агресије'
+        : 'Gost ambasador Irana u prostorijama ISTOK INFO PULTA, podržava i spomenik žrtvama NATO agresije',
+
+       image: '/static/images/iran-11.JPG', 
+
+
+    },
+    {
   href: '/vesti/kosare',
   slug: 'kosare',
 

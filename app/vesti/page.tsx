@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+      href: 'vesti/veliki-petak',
+      slug: 'veliki-petak',
+
+      category:
+      language === 'ru'
+      ? 'Новости - 10.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 10.04.2026.'
+        : 'Vesti - 10.04.2026.',
+
+      title:
+      language === 'ru'
+      ? 'Великая пятница – день страдания, тишины и молитвы'
+      : script === 'cyr'
+        ? 'Велики петак - дан страдања, тишине и молитве'
+        : 'Veliki petak – dan stradanja, tišine i molitve',
+
+      excerpt:
+    language === 'ru'
+      ? 'Сегодня православные верующие отмечают Великую пятницу — самый скорбный день в христианском календаре, посвящённый воспоминанию страданий и распятия Иисуса Христа.'
+      : script === 'cyr'
+        ? 'Данас православни верници обележавају Велики петак, најтужнији дан у хришћанском календару, посвећен сећању на страдање и распеће Исуса Христа.'
+        : 'Danas pravoslavni vernici obeležavaju Veliki petak, najtužniji dan u hrišćanskom kalendaru, posvećen sećanju na stradanje i raspeće Isusa Hrista.',
+
+        image: '/static/images/petak.jpg',
+    },
+    {
       href: 'vesti/ambasador',
       slug: 'ambasador',
 

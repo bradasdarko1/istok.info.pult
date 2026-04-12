@@ -30,6 +30,35 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+      href: 'vesti/hristos-voskrese',
+      slug: 'hristos-voskrese',
+
+      category:
+      language === 'ru'
+      ? 'Новости - 12.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 12.04.2026.'
+        : 'Vesti - 12.04.2026.',
+
+      
+
+      title:
+      language === 'ru'
+      ? 'СВЕТ ВОСКРЕСЕНИЯ ПРИНОСИТ НАДЕЖДУ И НОВОЕ НАЧАЛО'
+      : script === 'cyr'
+        ? 'СВЕТЛО ВАСКРСЕЊА ДОНОСИ НАДУ И НОВИ ПОЧЕТАК'
+        : 'SVETLO VASKRSENJA DONOSI NADU I NOVI POČETAK',
+
+      excerpt:
+    language === 'ru'
+      ? 'Православные верующие по всему миру сегодня отмечают величайший христианский праздник — Пасху, день победы жизни над смертью, света над тьмой и веры над отчаянием.'
+      : script === 'cyr'
+        ? 'Православни верници широм света данас обележавају највећи хришћански праник - Васкрс, дан победе живота над смрћу, светлости над тамом и вере над безнађем.'
+        : 'Pravoslavni vernici širom sveta danas obeležavaju najveći hrišćanski praznik – Vaskrs, dan pobede života nad smrću, svetlosti nad tamom i vere nad beznađem.',
+
+        image: '/static/images/vaskrs.jpeg',
+    },
+    {
       href: 'vesti/veliki-petak',
       slug: 'veliki-petak',
 

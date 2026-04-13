@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/components/LanguageProvider'
+import ShareButtons from '@/components/ShareButtons'
 
 function latinToCyrillic(text: string) {
   const multiMap: Record<string, string> = {
@@ -107,6 +108,10 @@ export default function VelikiPetakPage() {
           <p className="text-sm text-white/60 md:text-base">
             {content.date}
           </p>
+          <ShareButtons
+                    title={content.title}
+                    text="Pogledaj ovu vest na sajtu Istok Info Pult"
+                   />
         </motion.div>
 
         <motion.div

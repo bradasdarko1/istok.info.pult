@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/components/LanguageProvider'
 import ShareButtons from '@/components/ShareButtons'
-import { Metadata } from 'next'
+
 
 function latinToCyrillic(text: string) {
   const multiMap: Record<string, string> = {
@@ -39,26 +39,6 @@ function latinToCyrillic(text: string) {
     .split('')
     .map((char) => singleMap[char] ?? char)
     .join('')
-}
-export const metadata: Metadata = {
-  title: 'SVETLO VASKRSENJA DONOSI NADU I NOVI POČETAK',
-  description:
-    'Pravoslavni vernici širom sveta obeležavaju Vaskrs, praznik nade, vere i novog početka.',
-  openGraph: {
-    title: 'SVETLO VASKRSENJA DONOSI NADU I NOVI POČETAK',
-    description:
-      'Pravoslavni vernici širom sveta obeležavaju Vaskrs, praznik nade, vere i novog početka.',
-    url: 'https://istok-info-pult.vercel.app/vesti/hristos-voskrese',
-    images: [
-      {
-        url: 'https://istok-info-pult.vercel.app/static/images/vaskrs.jpeg',
-        width: 1200,
-        height: 630,
-        alt: 'Vaskrs vest',
-      },
-    ],
-    type: 'article',
-  },
 }
 
 const srLatin = {

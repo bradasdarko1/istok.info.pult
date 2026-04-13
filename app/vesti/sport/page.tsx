@@ -92,6 +92,15 @@ const srLatin = {
     'Najvažnije sportske vesti, aktuelnosti i priče iz sveta sporta.',
   news: [
     {
+      title: 'Vojvodina savladala Radnički i obezbedila 2.mesto u plej-ofu Super lige',
+      date: 'Objavljeno: 9. april 2026.',
+      excerpt: 'Fudbaleri FK Vojvodine slavili na Karađorđu rezultatom 3:2',
+      
+      href: '/vesti/sport/pobeda-vosa',
+      image: '/static/images/vosa.jpg',
+
+    },
+    {
       title: 'PREMINUO TRENER DUŠKO VUJOŠEVIĆ',
       date: '8. april 2026.',
       excerpt:
@@ -107,6 +116,15 @@ const ruText = {
   pageDescription:
     'Самые важные спортивные новости, актуальные события и истории из мира спорта.',
   news: [
+    {
+      title: '«Войводина» победила «Раднички» и обеспечила себе 2-е место в плей-офф Суперлиги.',
+      date: '9 апреля 2026 г.',
+      excerpt:
+        'Футболисты ФК «Войводина» отпраздновали победу в Караджордже со счетом 3:2.',
+      href: '/vesti/sport/pobeda-vosa',
+      image: '/static/images/vosa.jpg',
+
+    },
     {
       title: 'СКОНЧАЛСЯ ТРЕНЕР ДУШКО ВУЙОШЕВИЧ',
       date: '8 апреля 2026 г.',

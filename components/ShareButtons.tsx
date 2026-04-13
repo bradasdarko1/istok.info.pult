@@ -1,6 +1,7 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 type ShareButtonProps = {
   title?: string
@@ -11,18 +12,23 @@ export default function ShareButton({
   title = 'Istok Info Pult',
   text = 'Pogledaj ovu vest',
 }: ShareButtonProps) {
+  const pathname = usePathname()
   const [copied, setCopied] = useState(false)
+  const [fullUrl, setFullUrl] = useState('')
 
-  const currentUrl = useMemo(() => {
-    if (typeof window === 'undefined') return ''
-    return window.location.href
-  }, [])
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setFullUrl(`${window.location.origin}${pathname}`)
+    }
+  }, [pathname])
 
   const handleShare = async () => {
+    if (!fullUrl) return
+
     const shareData = {
       title,
       text,
-      url: currentUrl,
+      url: fullUrl,
     }
 
     try {
@@ -32,8 +38,8 @@ export default function ShareButton({
         (!navigator.canShare || navigator.canShare(shareData))
       ) {
         await navigator.share(shareData)
-      } else if (navigator.clipboard && currentUrl) {
-        await navigator.clipboard.writeText(currentUrl)
+      } else if (navigator.clipboard) {
+        await navigator.clipboard.writeText(fullUrl)
         setCopied(true)
         setTimeout(() => setCopied(false), 2000)
       }
@@ -76,11 +82,7 @@ export default function ShareButton({
         </svg>
       </button>
 
-      {copied && (
-        <span className="text-sm text-yellow-300">
-          Link je kopiran
-        </span>
-      )}
+      {copied && <span className="text-sm text-yellow-300">Link je kopiran</span>}
     </div>
   )
 }

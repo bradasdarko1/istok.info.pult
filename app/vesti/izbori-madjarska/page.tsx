@@ -5,6 +5,7 @@ import { useLanguage } from '@/components/LanguageProvider'
 import ShareButtons from '@/components/ShareButtons'
 import CommentsSection from '@/components/CommentsSection'
 
+
 function latinToCyrillic(text: string) {
   const multiMap: Record<string, string> = {
     Dž: 'Џ',
@@ -43,34 +44,41 @@ function latinToCyrillic(text: string) {
 
 const srLatin = {
   category: 'Vesti',
-  title: 'Veliki petak – dan stradanja, tišine i molitve',
-  date: 'Objavljeno: 10. april 2026.',
-  lead: 'Danas pravoslavni vernici obeležavaju Veliki petak, najtužniji dan u hrišćanskom kalendaru, posvećen sećanju na stradanje i raspeće Isusa Hrista.',
+  title: 'MAĐAR OSVOJIO MAĐARSKU',
+  date: 'Objavljeno: 13. april 2026.',
+  lead: 'SMENA ORBANA NAKON 16 GODINA NA VLASTI',
   paragraphs: [
-    'Veliki petak predstavlja dan duboke tišine, posta i molitve. Prema hrišćanskom predanju, na ovaj dan Isus Hrist je osuđen, razapet na krstu i položen u grob, podnevši žrtvu za spasenje čovečanstva. Zbog toga se ovaj dan obeležava bez radosti i slavlja, u duhu smirenosti i poštovanja.',
-    'U pravoslavnim hramovima širom zemlje služe se posebna bogosluženja, tokom kojih vernici celivaju plaštanicu – simbol Hristovog polaganja u grob. U mnogim domovima danas se strogo posti, a tradicionalno se ne obavljaju teški poslovi, već se dan provodi u miru i razmišljanju.',
-    'Veliki petak je i podsetnik na značaj vere, žrtve i nade, kao i uvod u najveći hrišćanski praznik – Vaskrs, koji donosi poruku pobede života nad smrću.'
+    'Mađarska politička scena doživela je istorijski preokret nakon što je opoziciona opcija odnela pobedu na parlamentarnim izborima, čime je okončana višegodišnja vladavina premijera Viktora Orbana.',
+    'Prema prvim preliminarnim rezultatima, opozicione snage uspele su da osvoje većinu glasova, što otvara put za formiranje nove vlade i značajne političke promene u zemlji.',
+    'Ovaj ishod izbora dolazi nakon više od decenije dominacije Fidesa i predstavlja jedan od najznačajnijih političkih trenutaka u savremenoj istoriji Mađarske.',
+    'Aktuelni premijer Viktor Orban priznao je poraz i čestitao pobednicima, naglasivši da će njegova politička opcija nastaviti da deluje u interesu države, ovog puta iz opozicionih redova.',
+    'Analitičari ističu da bi ova promena vlasti mogla imati šire posledice, ne samo na unutrašnju politiku Mađarske, već i na odnose unutar Evropske unije.',
+    'Građani su, prema ocenama posmatrača, svojim glasovima poslali jasnu poruku o potrebi za promenama, čime je otvoreno novo poglavlje u političkom životu zemlje.',
+
   ],
-  highlight1: 'DAN KADA JE ŽRTVA PROMENILA SVET',
-  highlight2: 'TIŠINA KOJA VODI KA VASKRSU',
+  highlight1: 'KRAJ JEDNE POLITIČKE ERE',
+  highlight2: 'GRAĐANI IZABRALI PROMENE',
 }
 
 const ruText = {
   category: 'Новости',
-  title: 'Великая пятница – день страдания, тишины и молитвы',
-  date: 'Опубликовано: 10. апреля 2026 г.',
-  lead: 'Сегодня православные верующие отмечают Великую пятницу — самый скорбный день в христианском календаре, посвящённый воспоминанию страданий и распятия Иисуса Христа.',
+  title: 'ВЕНГР ЗАВОЕВАЛ ВЕНГРИЮ',
+  date: 'Опубликовано: 13. апреля 2026 г.',
+  lead: 'СМЕНА ОРБАНА ПОСЛЕ 16 ЛЕТ У ВЛАСТИ',
   paragraphs: [
-    'Великая пятница является днём глубокой тишины, поста и молитвы. Согласно христианскому преданию, в этот день Иисус Христос был осуждён, распят на кресте и положен во гроб, приняв жертву ради спасения человечества. Именно поэтому этот день проходит без радости и празднования, в духе смирения и уважения.',
-    'В православных храмах проходят особые богослужения, во время которых верующие прикладываются к Плащанице — символу положения Христа во гроб. Во многих семьях соблюдается строгий пост, а также существует традиция воздерживаться от тяжёлой работы, проводя день в покое и размышлении.',
-    'Великая пятница также напоминает о значении веры, жертвы и надежды, являясь преддверием главного христианского праздника — Пасхи, которая несёт весть о победе жизни над смертью.'
+    'Политическая сцена Венгрии пережила исторический поворот после того, как оппозиционные силы одержали победу на парламентских выборах, положив конец многолетнему правлению премьер-министра Виктора Орбана.',
+    'Согласно предварительным результатам, оппозиция получила большинство голосов, что открывает путь к формированию нового правительства и значительным политическим изменениям в стране.',
+    'Этот исход выборов стал одним из самых важных событий в современной истории Венгрии после более чем десятилетнего доминирования партии Фидес.',
+    'Действующий премьер-министр Виктор Орбан признал поражение и поздравил победителей, подчеркнув, что его политическая сила продолжит служить стране, но уже в роли оппозиции.',
+    'Аналитики отмечают, что смена власти может повлиять не только на внутреннюю политику Венгрии, но и на её отношения с Европейским союзом.',
+    'По мнению наблюдателей, граждане своим голосованием ясно выразили стремление к переменам, открыв новую страницу в политической жизни страны.'
 
   ],
-  highlight1: 'ДЕНЬ, КОГДА ЖЕРТВА ИЗМЕНИЛА МИР',
-  highlight2: 'ТИШИНА, ВЕДУЩАЯ К ВОСКРЕСЕНИЮ',
+  highlight1: 'КОНЕЦ ПОЛИТИЧЕСКОЙ ЭПОХИ',
+  highlight2: 'ГРАЖДАНЕ ВЫБРАЛИ ПЕРЕМЕНЫ',
 }
 
-export default function VelikiPetakPage() {
+export default function IzboriMadjarskaPage() {
   const { language, script } = useLanguage()
 
   const content =
@@ -109,10 +117,12 @@ export default function VelikiPetakPage() {
           <p className="text-sm text-white/60 md:text-base">
             {content.date}
           </p>
-          <ShareButtons
-                    title={content.title}
-                    text="Pogledaj ovu vest na sajtu Istok Info Pult"
-                   />
+
+         <ShareButtons
+          title={content.title}
+          text="Pogledaj ovu vest na sajtu Istok Info Pult"
+         />
+
         </motion.div>
 
         <motion.div
@@ -122,7 +132,7 @@ export default function VelikiPetakPage() {
           className="mb-8 overflow-hidden rounded-3xl border border-white/10"
         >
           <img
-            src="/static/images/petak.jpg"
+            src="/static/images/madjarska.jpg"
             alt={content.title}
             className="h-auto w-full object-cover"
           />
@@ -154,7 +164,7 @@ export default function VelikiPetakPage() {
             <p className="text-lg font-bold tracking-wide text-yellow-300 uppercase md:text-xl">
               {content.highlight2}
             </p>
-            <CommentsSection postSlug="veliki-petak" />
+            <CommentsSection postSlug="izbori-madjarska" />
           </div>
         </motion.div>
 

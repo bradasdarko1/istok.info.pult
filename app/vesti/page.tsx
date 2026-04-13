@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/izbori-madjarska',
+  slug: 'izbori-madjarska',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 13.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 13.04.2026.'
+        : 'Vesti - 13.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ВЕНГР ЗАВОЕВАЛ ВЕНГРИЮ'
+      : script === 'cyr'
+        ? 'МАЂАР ОСВОЈИО МАЂАРСКУ'
+        : 'MAĐAR OSVOJIO MAĐARSKU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Смена Орбана после 16 лет у власти и почетак новой политической эпохи в Венгрии.'
+      : script === 'cyr'
+        ? 'Смена Орбана након 16 година на власти и почетак нове политичке етапе у Мађарској.'
+        : 'Smena Orbana nakon 16 godina na vlasti i početak nove političke etape u Mađarskoj.',
+
+  image: '/static/images/madjarska.jpg',
+},
+    {
       href: 'vesti/hristos-voskrese',
       slug: 'hristos-voskrese',
 

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/components/LanguageProvider'
 import ShareButtons from '@/components/ShareButtons'
+import CommentsSection from '@/components/CommentsSection'
 
 function latinToCyrillic(text: string) {
   const multiMap: Record<string, string> = {
@@ -195,6 +196,7 @@ export default function SpomenikVestPage() {
             <p className="text-lg font-bold tracking-wide text-yellow-300 uppercase md:text-xl">
               {content.highlight2}
             </p>
+            <CommentsSection postSlug="spomenik-27-godina" />
           </div>
         </motion.div>
       </article>

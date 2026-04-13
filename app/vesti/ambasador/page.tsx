@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { useLanguage } from '@/components/LanguageProvider'
 import ShareButtons from '@/components/ShareButtons'
+import CommentsSection from '@/components/CommentsSection'
 
 function latinToCyrillic(text: string) {
   const multiMap: Record<string, string> = {
@@ -286,6 +287,7 @@ export default function AmbasadorPage() {
                 alt={`${content.title} ${selected + 1}`}
                 className="max-h-[85vh] w-full object-contain"
               />
+              <CommentsSection postSlug="ambasador" />
             </div>
 
             {images.length > 1 && (

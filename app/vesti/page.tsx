@@ -33,169 +33,164 @@ export default function VestiDanas() {
       href: '/vesti/peticija-spomenik',
       slug: 'peticija-spomenik',
 
-    category:
-      language === 'ru'
-      ? 'Новости - 14.04.2026.'
-      : script === 'cyr'
-        ? 'Вести - 14.04.2026.'
-        : 'Vesti - 14.04.2026.',
+      category:
+        language === 'ru'
+          ? 'Новости - 14.04.2026.'
+          : script === 'cyr'
+            ? 'Вести - 14.04.2026.'
+            : 'Vesti - 14.04.2026.',
 
-    title:
-    language === 'ru'
-      ? 'СБОР ПОДПИСЕЙ НА РЫНКАХ НОВИ-САДА'
-      : script === 'cyr'
-        ? 'ПОТПИСИВАЊЕ ПЕТИЦИЈЕ НА ПИЈАЦАМА У НОВОМ САДУ'
-        : 'POTPISIVANJE PETICIJE NA PIJACAMA U NOVOM SADU',
+      title:
+        language === 'ru'
+          ? 'СБОР ПОДПИСЕЙ НА РЫНКАХ НОВИ-САДА'
+          : script === 'cyr'
+            ? 'ПОТПИСИВАЊЕ ПЕТИЦИЈЕ НА ПИЈАЦАМА У НОВОМ САДУ'
+            : 'POTPISIVANJE PETICIJE NA PIJACAMA U NOVOM SADU',
 
-    excerpt:
-    language === 'ru'
-      ? 'Организация Istok Info Pult продолжает свою гражданскую инициативу и приглашает всех жителей Нови-Сада и людей доброй воли поддержать сбор подписей за установку памятника жертвам агрессии НАТО.'
-      : script === 'cyr'
-        ? 'Организација Исток Инфо Пулт наставља своју грађанску иницијативу и позива све Новосађане и људе добре воље да дају свој потпис подршке за подизање споменика жртвама НАТО агресије.'
-        : 'Organizacija Istok Info Pult nastavlja svoju građansku inicijativu i poziva sve Novosađane i ljude dobre volje da daju svoj potpis podrške za podizanje spomenika žrtvama NATO agresije.',
+      excerpt:
+        language === 'ru'
+          ? 'Организация Istok Info Pult продолжает свою гражданскую инициативу и приглашает всех жителей Нови-Сада и людей доброй воли поддержать сбор подписей за установку памятника жертвам агрессии НАТО.'
+          : script === 'cyr'
+            ? 'Организација Исток Инфо Пулт наставља своју грађанску иницијативу и позива све Новосађане и људе добре воље да дају свој потпис подршке за подизање споменика жртвама НАТО агресије.'
+            : 'Organizacija Istok Info Pult nastavlja svoju građansku inicijativu i poziva sve Novosađane i ljude dobre volje da daju svoj potpis podrške za podizanje spomenika žrtvama NATO agresije.',
 
-    image: '/static/images/pijaca.jpg',
-
-},
+      image: '/static/images/pijaca.jpg',
+    },
     {
-  href: '/vesti/izbori-madjarska',
-  slug: 'izbori-madjarska',
+      href: '/vesti/izbori-madjarska',
+      slug: 'izbori-madjarska',
 
-  category:
-    language === 'ru'
-      ? 'Новости - 13.04.2026.'
-      : script === 'cyr'
-        ? 'Вести - 13.04.2026.'
-        : 'Vesti - 13.04.2026.',
+      category:
+        language === 'ru'
+          ? 'Новости - 13.04.2026.'
+          : script === 'cyr'
+            ? 'Вести - 13.04.2026.'
+            : 'Vesti - 13.04.2026.',
 
-  title:
-    language === 'ru'
-      ? 'ВЕНГР ЗАВОЕВАЛ ВЕНГРИЮ'
-      : script === 'cyr'
-        ? 'МАЂАР ОСВОЈИО МАЂАРСКУ'
-        : 'MAĐAR OSVOJIO MAĐARSKU',
+      title:
+        language === 'ru'
+          ? 'ВЕНГР ЗАВОЕВАЛ ВЕНГРИЮ'
+          : script === 'cyr'
+            ? 'МАЂАР ОСВОЈИО МАЂАРСКУ'
+            : 'MAĐAR OSVOJIO MAĐARSKU',
 
-  excerpt:
-    language === 'ru'
-      ? 'Смена Орбана после 16 лет у власти и почетак новой политической эпохи в Венгрии.'
-      : script === 'cyr'
-        ? 'Смена Орбана након 16 година на власти и почетак нове политичке етапе у Мађарској.'
-        : 'Smena Orbana nakon 16 godina na vlasti i početak nove političke etape u Mađarskoj.',
+      excerpt:
+        language === 'ru'
+          ? 'Смена Орбана после 16 лет у власти и почетак новой политической эпохи в Венгрии.'
+          : script === 'cyr'
+            ? 'Смена Орбана након 16 година на власти и почетак нове политичке етапе у Мађарској.'
+            : 'Smena Orbana nakon 16 godina na vlasti i početak nove političke etape u Mađarskoj.',
 
-  image: '/static/images/madjarska.jpg',
-},
+      image: '/static/images/madjarska.jpg',
+    },
     {
       href: 'vesti/hristos-voskrese',
       slug: 'hristos-voskrese',
 
       category:
-      language === 'ru'
-      ? 'Новости - 12.04.2026.'
-      : script === 'cyr'
-        ? 'Вести - 12.04.2026.'
-        : 'Vesti - 12.04.2026.',
-
-      
+        language === 'ru'
+          ? 'Новости - 12.04.2026.'
+          : script === 'cyr'
+            ? 'Вести - 12.04.2026.'
+            : 'Vesti - 12.04.2026.',
 
       title:
-      language === 'ru'
-      ? 'СВЕТ ВОСКРЕСЕНИЯ ПРИНОСИТ НАДЕЖДУ И НОВОЕ НАЧАЛО'
-      : script === 'cyr'
-        ? 'СВЕТЛО ВАСКРСЕЊА ДОНОСИ НАДУ И НОВИ ПОЧЕТАК'
-        : 'SVETLO VASKRSENJA DONOSI NADU I NOVI POČETAK',
+        language === 'ru'
+          ? 'СВЕТ ВОСКРЕСЕНИЯ ПРИНОСИТ НАДЕЖДУ И НОВОЕ НАЧАЛО'
+          : script === 'cyr'
+            ? 'СВЕТЛО ВАСКРСЕЊА ДОНОСИ НАДУ И НОВИ ПОЧЕТАК'
+            : 'SVETLO VASKRSENJA DONOSI NADU I NOVI POČETAK',
 
       excerpt:
-    language === 'ru'
-      ? 'Православные верующие по всему миру сегодня отмечают величайший христианский праздник — Пасху, день победы жизни над смертью, света над тьмой и веры над отчаянием.'
-      : script === 'cyr'
-        ? 'Православни верници широм света данас обележавају највећи хришћански праник - Васкрс, дан победе живота над смрћу, светлости над тамом и вере над безнађем.'
-        : 'Pravoslavni vernici širom sveta danas obeležavaju najveći hrišćanski praznik – Vaskrs, dan pobede života nad smrću, svetlosti nad tamom i vere nad beznađem.',
+        language === 'ru'
+          ? 'Православные верующие по всему миру сегодня отмечают величайший христианский праздник — Пасху, день победы жизни над смертью, света над тьмой и веры над отчаянием.'
+          : script === 'cyr'
+            ? 'Православни верници широм света данас обележавају највећи хришћански праник - Васкрс, дан победе живота над смрћу, светлости над тамом и вере над безнађем.'
+            : 'Pravoslavni vernici širom sveta danas obeležavaju najveći hrišćanski praznik – Vaskrs, dan pobede života nad smrću, svetlosti nad tamom i vere nad beznađem.',
 
-        image: '/static/images/vaskrs.jpeg',
+      image: '/static/images/vaskrs.jpeg',
     },
     {
       href: 'vesti/veliki-petak',
       slug: 'veliki-petak',
 
       category:
-      language === 'ru'
-      ? 'Новости - 10.04.2026.'
-      : script === 'cyr'
-        ? 'Вести - 10.04.2026.'
-        : 'Vesti - 10.04.2026.',
+        language === 'ru'
+          ? 'Новости - 10.04.2026.'
+          : script === 'cyr'
+            ? 'Вести - 10.04.2026.'
+            : 'Vesti - 10.04.2026.',
 
       title:
-      language === 'ru'
-      ? 'Великая пятница – день страдания, тишины и молитвы'
-      : script === 'cyr'
-        ? 'Велики петак - дан страдања, тишине и молитве'
-        : 'Veliki petak – dan stradanja, tišine i molitve',
+        language === 'ru'
+          ? 'Великая пятница – день страдания, тишины и молитвы'
+          : script === 'cyr'
+            ? 'Велики петак - дан страдања, тишине и молитве'
+            : 'Veliki petak – dan stradanja, tišine i molitve',
 
       excerpt:
-    language === 'ru'
-      ? 'Сегодня православные верующие отмечают Великую пятницу — самый скорбный день в христианском календаре, посвящённый воспоминанию страданий и распятия Иисуса Христа.'
-      : script === 'cyr'
-        ? 'Данас православни верници обележавају Велики петак, најтужнији дан у хришћанском календару, посвећен сећању на страдање и распеће Исуса Христа.'
-        : 'Danas pravoslavni vernici obeležavaju Veliki petak, najtužniji dan u hrišćanskom kalendaru, posvećen sećanju na stradanje i raspeće Isusa Hrista.',
+        language === 'ru'
+          ? 'Сегодня православные верующие отмечают Великую пятницу — самый скорбный день в христианском календаре, посвящённый воспоминанию страданий и распятия Иисуса Христа.'
+          : script === 'cyr'
+            ? 'Данас православни верници обележавају Велики петак, најтужнији дан у хришћанском календару, посвећен сећању на страдање и распеће Исуса Христа.'
+            : 'Danas pravoslavni vernici obeležavaju Veliki petak, najtužniji dan u hrišćanskom kalendaru, posvećen sećanju na stradanje i raspeće Isusa Hrista.',
 
-        image: '/static/images/petak.jpg',
+      image: '/static/images/petak.jpg',
     },
     {
       href: 'vesti/ambasador',
       slug: 'ambasador',
 
       category:
-      language === 'ru'
-      ? 'Новости - 10.04.2026.'
-      : script === 'cyr'
-        ? 'Вести - 10.04.2026.'
-        : 'Vesti - 10.04.2026.',
+        language === 'ru'
+          ? 'Новости - 10.04.2026.'
+          : script === 'cyr'
+            ? 'Вести - 10.04.2026.'
+            : 'Vesti - 10.04.2026.',
 
       title:
-      language === 'ru'
-      ? 'У Ирана нет ядерной бомбы, и он не хочет её иметь'
-      : script === 'cyr'
-        ? 'Иран нема нуклеарну бомбу нити је жели'
-        : 'Iran nema nuklearnu bombu niti je želi',
-      
+        language === 'ru'
+          ? 'У Ирана нет ядерной бомбы, и он не хочет её иметь'
+          : script === 'cyr'
+            ? 'Иран нема нуклеарну бомбу нити је жели'
+            : 'Iran nema nuklearnu bombu niti je želi',
+
       excerpt:
-    language === 'ru'
-      ? 'Приглашенный посол Ирана в офисе информационного центра ISTOK также поддерживает памятник жертвам агрессии НАТО.'
-      : script === 'cyr'
-        ? 'Гост амбасадор Ирана у просторијама ИСТОК ИНФО ПУЛТА, подржава и споменик жртвама НАТО агресије'
-        : 'Gost ambasador Irana u prostorijama ISTOK INFO PULTA, podržava i spomenik žrtvama NATO agresije',
+        language === 'ru'
+          ? 'Приглашенный посол Ирана в офисе информационного центра ISTOK также поддерживает памятник жертвам агрессии НАТО.'
+          : script === 'cyr'
+            ? 'Гост амбасадор Ирана у просторијама ИСТОК ИНФО ПУЛТА, подржава и споменик жртвама НАТО агресије'
+            : 'Gost ambasador Irana u prostorijama ISTOK INFO PULTA, podržava i spomenik žrtvama NATO agresije',
 
-       image: '/static/images/iran-11.JPG', 
-
-
+      image: '/static/images/iran-11.JPG',
     },
     {
-  href: '/vesti/kosare',
-  slug: 'kosare',
+      href: '/vesti/kosare',
+      slug: 'kosare',
 
-  category:
-    language === 'ru'
-      ? 'Новости - 09.04.2026.'
-      : script === 'cyr'
-        ? 'Вести - 09.04.2026.'
-        : 'Vesti - 09.04.2026.',
+      category:
+        language === 'ru'
+          ? 'Новости - 09.04.2026.'
+          : script === 'cyr'
+            ? 'Вести - 09.04.2026.'
+            : 'Vesti - 09.04.2026.',
 
-  title:
-    language === 'ru'
-      ? 'Героизм, который не забывается'
-      : script === 'cyr'
-        ? 'Херојство за незаборав'
-        : 'Herojstvo za nezaborav',
+      title:
+        language === 'ru'
+          ? 'Героизм, который не забывается'
+          : script === 'cyr'
+            ? 'Херојство за незаборав'
+            : 'Herojstvo za nezaborav',
 
-  excerpt:
-    language === 'ru'
-      ? '9 апреля 1999 года началась Битва за Кошаре — символ защиты Родины и жертвы сербских солдат.'
-      : script === 'cyr'
-        ? '9. априла 1999. године почела је Битка за Кошаре — симбол одбране отаџбине.'
-        : '9. aprila 1999. godine počela je Bitka za Košare — simbol odbrane otadžbine.',
+      excerpt:
+        language === 'ru'
+          ? '9 апреля 1999 года началась Битва за Кошаре — символ защиты Родины и жертвы сербских солдат.'
+          : script === 'cyr'
+            ? '9. априла 1999. године почела је Битка за Кошаре — симбол одбране отаџбине.'
+            : '9. aprila 1999. godine počela je Bitka za Košare — simbol odbrane otadžbine.',
 
-  image: '/static/images/kosare.jpeg',
-},
+      image: '/static/images/kosare.jpeg',
+    },
     {
       href: '/kultura/dogadjaji/podmornicari',
       slug: 'podmornicari',
@@ -434,6 +429,72 @@ export default function VestiDanas() {
             </div>
           </Link>
         ))}
+      </div>
+
+      <div className="mt-12 xl:pr-[300px]">
+        <h2 className="mb-5 text-2xl font-bold uppercase tracking-wide text-yellow-400 sm:text-3xl">
+          {language === 'ru'
+            ? 'БИБЛИОТЕКА'
+            : script === 'cyr'
+              ? 'БИБЛИОТЕКА'
+              : 'BIBLIOTEKA'}
+        </h2>
+
+        <Link href="/biblioteka">
+          <div className="overflow-hidden rounded-2xl border border-yellow-500/30 bg-black/40 backdrop-blur-md transition hover:-translate-y-1 hover:shadow-2xl">
+            <div className="grid grid-cols-1 md:grid-cols-[260px_minmax(0,1fr)]">
+              <div className="h-[280px] md:h-full">
+                <img
+                  src="/static/images/istorija-srpsko-ruskih-odnosa.jpg"
+                  alt={
+                    language === 'ru'
+                      ? 'История сербско-русских политических отношений'
+                      : script === 'cyr'
+                        ? 'Историја српско-руских политичких односа'
+                        : 'Istorija srpsko-ruskih političkih odnosa'
+                  }
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <div className="flex flex-col justify-center p-5 sm:p-7">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-yellow-300">
+                  {language === 'ru'
+                    ? 'НОВО У БИБЛИОТЕЦИ'
+                    : script === 'cyr'
+                      ? 'НОВО У БИБЛИОТЕЦИ'
+                      : 'NOVO U BIBLIOTECI'}
+                </p>
+
+                <h3 className="mb-3 text-xl font-bold uppercase text-white sm:text-3xl">
+                  {language === 'ru'
+                    ? 'ИСТОРИЯ СЕРБСКО-РУССКИХ ПОЛИТИЧЕСКИХ ОТНОШЕНИЙ'
+                    : script === 'cyr'
+                      ? 'ИСТОРИЈА СРПСКО-РУСКИХ ПОЛИТИЧКИХ ОДНОСА'
+                      : 'ISTORIJA SRPSKO-RUSKIH POLITIČKIH ODNOSA'}
+                </h3>
+
+                <p className="mb-5 text-sm leading-7 text-white/75 sm:text-base">
+                  {language === 'ru'
+                    ? 'Книга о развитии политических и исторических связей между сербским и русским народами, от XVIII века до современности.'
+                    : script === 'cyr'
+                      ? 'Књига о развоју политичких и историјских веза између српског и руског народа, од XVIII века до савременог доба.'
+                      : 'Knjiga o razvoju političkih i istorijskih veza između srpskog i ruskog naroda, od XVIII veka do savremenog doba.'}
+                </p>
+
+                <div>
+                  <span className="inline-block rounded-xl bg-yellow-400 px-5 py-3 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-yellow-300">
+                    {language === 'ru'
+                      ? 'ОТВОРИ БИБЛИОТЕКУ'
+                      : script === 'cyr'
+                        ? 'ОТВОРИ БИБЛИОТЕКУ'
+                        : 'OTVORI BIBLIOTEKU'}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
       </div>
 
       <div className="mt-6 xl:hidden">

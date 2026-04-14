@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/components/LanguageProvider'
+import { track } from '@vercel/analytics'
 
 type LanguageType = 'sr' | 'ru'
 type ScriptType = 'lat' | 'cyr'
@@ -86,13 +87,14 @@ export default function BibliotekaPage() {
 
               <div>
                 <a
-                  href="/static/files/Istorija-srpsko-ruskih-odnosa.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block rounded-xl bg-yellow-400 px-6 py-3 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-yellow-300"
-                >
-                  {t.button}
-                </a>
+  href="/static/files/Istorija-srpsko-ruskih-odnosa.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => track('download_knjiga')}
+  className="inline-block rounded-xl bg-yellow-400 px-6 py-3 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-yellow-300"
+>
+  {t.button}
+</a>
               </div>
             </div>
           </div>

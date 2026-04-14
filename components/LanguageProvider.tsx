@@ -50,6 +50,7 @@ type TranslationKey =
   | 'basicStudies'
   | 'masterStudies'
   | 'doctoralStudies'
+  | 'biblioteka'
 
 const translations: Record<
   TranslationKey,
@@ -91,6 +92,13 @@ const translations: Record<
     },
     ru: 'Бесплатные уроки русского языка',
   },
+  biblioteka: {
+  sr: {
+    lat: 'Biblioteka',
+    cyr: 'Библиотека',
+  },
+  ru: 'Библиотека',
+},
 
   cinema: {
     sr: { cyr: 'Биоскоп', lat: 'Bioskop' },

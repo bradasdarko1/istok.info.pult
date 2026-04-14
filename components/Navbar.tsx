@@ -36,6 +36,10 @@ export default function Navbar() {
       ],
     },
     {
+  title: t('biblioteka'),
+  href: '/biblioteka',
+},
+    {
       title: t('cinema'),
       href: '/bioskop',
       children: [

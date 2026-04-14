@@ -24,7 +24,9 @@ export default function BibliotekaPage() {
       bookTitle: isCyr
         ? 'ИСТОРИЈА СРПСКО-РУСКИХ ПОЛИТИЧКИХ ОДНОСА'
         : 'ISTORIJA SRPSKO-RUSKIH POLITIČKIH ODNOSA',
-      bookAuthor: isCyr ? 'АУТОР: МИЛАН СТОЈАНОВИЋ' : 'AUTOR: MILAN STOJANOVIĆ',
+      bookAuthor: isCyr
+        ? 'АУТОР: МИЛАН СТОЈАНОВИЋ'
+        : 'AUTOR: MILAN STOJANOVIĆ',
       bookDescription: isCyr
         ? 'Књига приказује историјски развој политичких односа између српског и руског народа од XVIII века до савременог доба, са посебним освртом на утицај великих сила и кључне историјске догађаје.'
         : 'Knjiga prikazuje istorijski razvoj političkih odnosa između srpskog i ruskog naroda od XVIII veka do savremenog doba, sa posebnim osvrtom na uticaj velikih sila i ključne istorijske događaje.',
@@ -43,6 +45,16 @@ export default function BibliotekaPage() {
   }
 
   const t = content[language]
+
+  const handleDownloadClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+
+    track('download_knjiga')
+
+    setTimeout(() => {
+      window.open('/static/files/Istorija-srpsko-ruskih-odnosa.pdf', '_blank', 'noopener,noreferrer')
+    }, 200)
+  }
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
@@ -87,14 +99,14 @@ export default function BibliotekaPage() {
 
               <div>
                 <a
-  href="/static/files/Istorija-srpsko-ruskih-odnosa.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  onClick={() => track('download_knjiga')}
-  className="inline-block rounded-xl bg-yellow-400 px-6 py-3 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-yellow-300"
->
-  {t.button}
-</a>
+                  href="/static/files/Istorija-srpsko-ruskih-odnosa.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleDownloadClick}
+                  className="inline-block rounded-xl bg-yellow-400 px-6 py-3 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-yellow-300"
+                >
+                  {t.button}
+                </a>
               </div>
             </div>
           </div>

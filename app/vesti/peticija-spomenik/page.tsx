@@ -50,8 +50,8 @@ const srLatin = {
     'Tokom narednih dana, naši volonteri biće prisutni na više lokacija širom Novog Sada:',
 
     'Četvrtak – Riblja pijaca',
-    'Petak – Futoška pijaca',
-    'Subota – Limanska pijaca',
+    'Petak – Limanska pijaca',
+    'Subota – Futoška pijaca',
     'Nedelja – Najlon pijaca',
 
     'Pozivamo sve građane da izdvoje nekoliko minuta i svojim potpisom daju doprinos očuvanju sećanja na nevine žrtve.',
@@ -71,8 +71,8 @@ const ruText = {
     'В ближайшие дни наши волонтеры будут находиться на следующих локациях:',
 
     'Четверг — Рыбный рынок',
-    'Пятница — Футошский рынок',
-    'Суббота — Лиманский рынок',
+    'Пятница — Лиманский рынок',
+    'Суббота — Футошский рынок',
     'Воскресенье — Найлон рынок',
 
     'Приглашаем всех граждан уделить несколько минут и своим подписем внести вклад в сохранение памяти о невинных жертвах.',

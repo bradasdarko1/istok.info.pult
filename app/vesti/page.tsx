@@ -54,7 +54,7 @@ export default function VestiDanas() {
         ? 'Организација Исток Инфо Пулт наставља своју грађанску иницијативу и позива све Новосађане и људе добре воље да дају свој потпис подршке за подизање споменика жртвама НАТО агресије.'
         : 'Organizacija Istok Info Pult nastavlja svoju građansku inicijativu i poziva sve Novosađane i ljude dobre volje da daju svoj potpis podrške za podizanje spomenika žrtvama NATO agresije.',
 
-    image: '/static/images/kej-8.jpg',
+    image: '/static/images/pijaca.jpg',
 
 },
     {

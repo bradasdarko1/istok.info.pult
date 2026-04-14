@@ -134,7 +134,7 @@ export default function PeticijaSpomenikPage() {
           className="mb-8 overflow-hidden rounded-3xl border border-white/10"
         >
           <img
-            src="/static/images/kej-8.jpg"
+            src="/static/images/pijaca.jpg"
             alt={content.title}
             className="h-auto w-full object-cover"
           />

@@ -30,6 +30,34 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+      href: '/vesti/peticija-spomenik',
+      slug: 'peticija-spomenik',
+
+    category:
+      language === 'ru'
+      ? 'Новости - 14.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 14.04.2026.'
+        : 'Vesti - 14.04.2026.',
+
+    title:
+    language === 'ru'
+      ? 'СБОР ПОДПИСЕЙ НА РЫНКАХ НОВИ-САДА'
+      : script === 'cyr'
+        ? 'ПОТПИСИВАЊЕ ПЕТИЦИЈЕ НА ПИЈАЦАМА У НОВОМ САДУ'
+        : 'POTPISIVANJE PETICIJE NA PIJACAMA U NOVOM SADU',
+
+    excerpt:
+    language === 'ru'
+      ? 'Организация Istok Info Pult продолжает свою гражданскую инициативу и приглашает всех жителей Нови-Сада и людей доброй воли поддержать сбор подписей за установку памятника жертвам агрессии НАТО.'
+      : script === 'cyr'
+        ? 'Организација Исток Инфо Пулт наставља своју грађанску иницијативу и позива све Новосађане и људе добре воље да дају свој потпис подршке за подизање споменика жртвама НАТО агресије.'
+        : 'Organizacija Istok Info Pult nastavlja svoju građansku inicijativu i poziva sve Novosađane i ljude dobre volje da daju svoj potpis podrške za podizanje spomenika žrtvama NATO agresije.',
+
+    image: '/static/images/kej-8.jpg',
+
+},
+    {
   href: '/vesti/izbori-madjarska',
   slug: 'izbori-madjarska',
 

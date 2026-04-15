@@ -18,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://istokinfopult.rs'),
+  metadataBase: new URL('https://www.istokinfopult.rs'),
   title: {
     default: 'Istok Info Pult',
     template: '%s | Istok Info Pult',
@@ -32,25 +32,16 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Istok Info Pult',
     locale: 'sr_RS',
+    url: 'https://www.istokinfopult.rs',
     title: 'Istok Info Pult',
     description:
       'Istok Info Pult - vesti, kultura, obrazovanje i informacije od značaja za javnost.',
-    url: 'https://istokinfopult.rs',
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/favicons/logo.PNG',
-        width: 1200,
-        height: 630,
-        alt: 'Istok Info Pult',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Istok Info Pult',
     description:
       'Istok Info Pult - vesti, kultura, obrazovanje i informacije od značaja za javnost.',
-    images: ['https://istokinfopult.rs/static/favicons/logo.PNG'],
   },
 }
 

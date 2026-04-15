@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+      href: '/vesti/peticija-riblja',
+      slug: 'peticija-riblja',
+
+      category:
+        language === 'ru'
+          ? 'Новости - 15.04.2026.'
+          : script === 'cyr'
+            ? 'Вести - 15.04.2026.'
+            : 'Vesti - 15.04.2026.',
+
+      title:
+        language === 'ru'
+          ? 'СБОР ПОДПИСЕЙ НА РЫБНОМ РЫНКЕ В НОВИ-САДЕ – 16 АПРЕЛЯ С 9:00'
+          : script === 'cyr'
+            ? 'ПОТПИСИВАЊЕ ПЕТИЦИЈЕ НА РИБЉОЈ ПИЈАЦИ У НОВОМ САДУ'
+            : 'POTPISIVANJE PETICIJE NA RIBLJOJ PIJACI U NOVOM SADU',
+
+      excerpt:
+        language === 'ru'
+          ? 'Организация Istok Info Pult приглашает жителей Нови-Сада 16 апреля с 9:00 на Рыбный рынок, чтобы поддержать инициативу по установке памятника жертвам агрессии НАТО.'
+          : script === 'cyr'
+            ? 'Организација Исток Инфо Пулт позива грађане Новог Сада да 16. априла од 9 часова на Рибљој пијаци подрже иницијативу за подизање споменика жртвама НАТО агресије.'
+            : 'Organizacija Istok Info Pult poziva građane Novog Sada da 16. aprila od 9 časova na Ribljoj pijaci podrže inicijativu za podizanje spomenika žrtvama NATO agresije.',
+
+      image: '/static/images/riblja-share.jpg',
+    },
+    {
       href: '/vesti/peticija-spomenik',
       slug: 'peticija-spomenik',
 

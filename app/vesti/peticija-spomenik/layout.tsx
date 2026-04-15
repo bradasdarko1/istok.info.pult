@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     locale: 'sr_RS',
     images: [
       {
-        url: 'https://www.istokinfopult.rs/vesti/peticija-spomenik/opengraph-image.jpg',
+        url: 'https://www.istokinfopult.rs/static/og/peticija-spomenik.jpg',
         width: 1200,
         height: 630,
         alt: 'Potpisivanje peticije na pijacama u Novom Sadu',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'POTPISIVANJE PETICIJE NA PIJACAMA U NOVOM SADU',
     description:
       'Istok Info Pult nastavlja građansku inicijativu i poziva građane da podrže podizanje spomenika žrtvama NATO agresije.',
-    images: ['https://www.istokinfopult.rs/vesti/peticija-spomenik/opengraph-image.jpg'],
+    images: ['https://www.istokinfopult.rs/static/og/peticija-spomenik.jpg'],
   },
 }
 

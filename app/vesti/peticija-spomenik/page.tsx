@@ -25,14 +25,60 @@ function latinToCyrillic(text: string) {
   })
 
   const singleMap: Record<string, string> = {
-    A: 'А', B: 'Б', C: 'Ц', Č: 'Ч', Ć: 'Ћ', D: 'Д', Đ: 'Ђ',
-    E: 'Е', F: 'Ф', G: 'Г', H: 'Х', I: 'И', J: 'Ј', K: 'К',
-    L: 'Л', M: 'М', N: 'Н', O: 'О', P: 'П', R: 'Р', S: 'С',
-    Š: 'Ш', T: 'Т', U: 'У', V: 'В', Z: 'З', Ž: 'Ж',
-    a: 'а', b: 'б', c: 'ц', č: 'ч', ć: 'ћ', d: 'д', đ: 'ђ',
-    e: 'е', f: 'ф', g: 'г', h: 'х', i: 'и', j: 'ј', k: 'к',
-    l: 'л', m: 'м', n: 'н', o: 'о', p: 'п', r: 'р', s: 'с',
-    š: 'ш', t: 'т', u: 'у', v: 'в', z: 'з', ž: 'ж',
+    A: 'А',
+    B: 'Б',
+    C: 'Ц',
+    Č: 'Ч',
+    Ć: 'Ћ',
+    D: 'Д',
+    Đ: 'Ђ',
+    E: 'Е',
+    F: 'Ф',
+    G: 'Г',
+    H: 'Х',
+    I: 'И',
+    J: 'Ј',
+    K: 'К',
+    L: 'Л',
+    M: 'М',
+    N: 'Н',
+    O: 'О',
+    P: 'П',
+    R: 'Р',
+    S: 'С',
+    Š: 'Ш',
+    T: 'Т',
+    U: 'У',
+    V: 'В',
+    Z: 'З',
+    Ž: 'Ж',
+    a: 'а',
+    b: 'б',
+    c: 'ц',
+    č: 'ч',
+    ć: 'ћ',
+    d: 'д',
+    đ: 'ђ',
+    e: 'е',
+    f: 'ф',
+    g: 'г',
+    h: 'х',
+    i: 'и',
+    j: 'ј',
+    k: 'к',
+    l: 'л',
+    m: 'м',
+    n: 'н',
+    o: 'о',
+    p: 'п',
+    r: 'р',
+    s: 'с',
+    š: 'ш',
+    t: 'т',
+    u: 'у',
+    v: 'в',
+    z: 'з',
+    ž: 'ж',
   }
 
   return result
@@ -48,15 +94,13 @@ const srLatin = {
   lead: 'Organizacija Istok Info Pult nastavlja svoju građansku inicijativu i poziva sve Novosađane i ljude dobre volje da daju svoj potpis podrške za podizanje spomenika žrtvama NATO agresije.',
   paragraphs: [
     'Tokom narednih dana, naši volonteri biće prisutni na više lokacija širom Novog Sada:',
-
     'Četvrtak – Riblja pijaca',
     'Petak – Limanska pijaca',
     'Subota – Futoška pijaca',
     'Nedelja – Najlon pijaca',
-
     'Pozivamo sve građane da izdvoje nekoliko minuta i svojim potpisom daju doprinos očuvanju sećanja na nevine žrtve.',
     'Vaš glas je važan.',
-    'Novosađani pamte.'
+    'Novosađani pamte.',
   ],
   highlight1: 'GLAS NARODA ZA SEĆANJE KOJE TRAJE',
   highlight2: 'ZAJEDNO ZA ISTINU I PRAVDU',
@@ -69,22 +113,23 @@ const ruText = {
   lead: 'Организация Istok Info Pult продолжает свою гражданскую инициативу и приглашает всех жителей Нови-Сада и людей доброй воли поддержать сбор подписей за установку памятника жертвам агрессии НАТО.',
   paragraphs: [
     'В ближайшие дни наши волонтеры будут находиться на следующих локациях:',
-
     'Четверг — Рыбный рынок',
     'Пятница — Лиманский рынок',
     'Суббота — Футошский рынок',
     'Воскресенье — Найлон рынок',
-
-    'Приглашаем всех граждан уделить несколько минут и своим подписем внести вклад в сохранение памяти о невинных жертвах.',
+    'Приглашаем всех граждан уделить несколько минут и своей подписью внести вклад в сохранение памяти о невинных жертвах.',
     'Ваш голос важен.',
-    'Жители Нови-Сада помнят.' 
+    'Жители Нови-Сада помнят.',
   ],
   highlight1: 'ГОЛОС НАРОДА ВО ИМЯ ПАМЯТИ',
   highlight2: 'ВМЕСТЕ ЗА ПРАВДУ И СПРАВЕДЛИВОСТЬ',
 }
 
 export default function PeticijaSpomenikPage() {
-  const { language, script } = useLanguage()
+  const { language, script } = useLanguage() as {
+    language: 'sr' | 'ru'
+    script: 'lat' | 'cyr'
+  }
 
   const content =
     language === 'ru'
@@ -118,13 +163,12 @@ export default function PeticijaSpomenikPage() {
             {content.title}
           </h1>
 
-          <p className="text-sm text-white/60 md:text-base">
-            {content.date}
-          </p>
+          <p className="text-sm text-white/60 md:text-base">{content.date}</p>
+
           <ShareButtons
-                    title={content.title}
-                    text="Pogledaj ovu vest na sajtu Istok Info Pult"
-                   />
+            title={content.title}
+            text="Pogledaj ovu vest na sajtu Istok Info Pult"
+          />
         </motion.div>
 
         <motion.div
@@ -166,6 +210,9 @@ export default function PeticijaSpomenikPage() {
             <p className="text-lg font-bold uppercase tracking-wide text-yellow-300 md:text-xl">
               {content.highlight2}
             </p>
+          </div>
+
+          <div className="mt-8">
             <CommentsSection postSlug="peticija-spomenik" />
           </div>
         </motion.div>

@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import { LanguageProvider } from '@/components/LanguageProvider'
 import { ThemeProviders } from './theme-providers'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -17,12 +17,41 @@ const spaceGrotesk = Space_Grotesk({
   variable: '--font-space-grotesk',
 })
 
-
 export const metadata: Metadata = {
-  title: 'Istok Info Pult',
+  metadataBase: new URL('https://istokinfopult.rs'),
+  title: {
+    default: 'Istok Info Pult',
+    template: '%s | Istok Info Pult',
+  },
+  description:
+    'Istok Info Pult - vesti, kultura, obrazovanje i informacije od značaja za javnost.',
   icons: {
     icon: '/static/favicons/logo.PNG',
-  },  
+  },
+  openGraph: {
+    type: 'website',
+    siteName: 'Istok Info Pult',
+    locale: 'sr_RS',
+    title: 'Istok Info Pult',
+    description:
+      'Istok Info Pult - vesti, kultura, obrazovanje i informacije od značaja za javnost.',
+    url: 'https://istokinfopult.rs',
+    images: [
+      {
+        url: 'https://istokinfopult.rs/static/favicons/logo.PNG',
+        width: 1200,
+        height: 630,
+        alt: 'Istok Info Pult',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Istok Info Pult',
+    description:
+      'Istok Info Pult - vesti, kultura, obrazovanje i informacije od značaja za javnost.',
+    images: ['https://istokinfopult.rs/static/favicons/logo.PNG'],
+  },
 }
 
 export default function RootLayout({

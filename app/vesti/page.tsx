@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/zbog-ljubavi-otisao-u-rusiju',
+  slug: 'zbog-ljubavi-otisao-u-rusiju',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 16.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 16.04.2026.'
+        : 'Vesti - 16.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ИЗ-ЗА ЛЮБВИ ОН УЕХАЛ В РОССИЮ'
+      : script === 'cyr'
+        ? 'ЗБОГ ЉУБАВИ ОТИШАО У РУСИЈУ'
+        : 'ZBOG LJUBAVI OTIŠAO U RUSIJU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Интервью с Миланом Стояновичем о жизни в России, Сербии, молодёжи, вере, призвании и прочных связях двух братских народов.'
+      : script === 'cyr'
+        ? 'Интервју са Миланом Стојановићем о животу у Русији, Србији, младима, вери, позиву и снажним везама два братска народа.'
+        : 'Intervju sa Milanom Stojanovićem o životu u Rusiji, Srbiji, mladima, veri, pozivu i snažnim vezama dva bratska naroda.',
+
+  image: '/static/images/zbog-ljubavi-rusija-1.jpeg',
+},
+    {
       href: '/vesti/peticija-riblja',
       slug: 'peticija-riblja',
 

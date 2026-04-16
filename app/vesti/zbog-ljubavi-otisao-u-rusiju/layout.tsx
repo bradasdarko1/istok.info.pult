@@ -10,11 +10,11 @@ export const metadata: Metadata = {
       'Zbog ljubavi u Rusiji: Milan Stojanović o životu, radu i srpsko-ruskim vezama',
     description:
       'Ekskluzivni razgovor sa Milanom Stojanovićem o životu u Rusiji, odnosu Rusa prema Srbima, mogućnostima za mlade i značaju srpsko-ruskih veza.',
-    url: 'https://istokinfopult.com/vesti/zbog-ljubavi-u-rusiji',
+    url: 'https://istokinfopult.com/vesti/zbog-ljubavi-otisao-u-rusiju',
     siteName: 'Istok Info Pult',
     images: [
       {
-        url: 'https://istokinfopult.com/static/images/zbog-ljubavi-u-rusiji.jpg',
+        url: 'https://istokinfopult.com/static/images/zbog-ljubavi-rusija-1.jpeg',
         width: 1200,
         height: 630,
         alt: 'Zbog ljubavi u Rusiji - Milan Stojanović',
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
       'Zbog ljubavi u Rusiji: Milan Stojanović o životu, radu i srpsko-ruskim vezama',
     description:
       'Ekskluzivni razgovor sa Milanom Stojanovićem o životu u Rusiji, odnosu Rusa prema Srbima, mogućnostima za mlade i značaju srpsko-ruskih veza.',
-    images: ['https://istokinfopult.com/static/images/zbog-ljubavi-u-rusiji.jpg'],
+    images: ['https://istokinfopult.com/static/images/zbog-ljubavi-rusija-1.jpeg'],
   },
   alternates: {
-    canonical: 'https://istokinfopult.com/vesti/zbog-ljubavi-u-rusiji',
+    canonical: 'https://istokinfopult.com/vesti/zbog-ljubavi-otisao-u-rusiju',
   },
 }
 

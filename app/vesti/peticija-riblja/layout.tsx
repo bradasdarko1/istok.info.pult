@@ -1,45 +1,39 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title:
-    'Zbog ljubavi u Rusiji: Milan Stojanović o životu, radu i srpsko-ruskim vezama | Istok Info Pult',
+  title: 'POTPISIVANJE PETICIJE NA RIBLJOJ PIJACI U NOVOM SADU',
   description:
-    'Ekskluzivni razgovor sa Milanom Stojanovićem o životu u Rusiji, odnosu Rusa prema Srbima, mogućnostima za mlade i značaju srpsko-ruskih veza.',
+    'Istok Info Pult poziva građane da 16. aprila od 9 časova na Ribljoj pijaci u Novom Sadu podrže inicijativu za podizanje spomenika žrtvama NATO agresije.',
   openGraph: {
-    title:
-      'Zbog ljubavi u Rusiji: Milan Stojanović o životu, radu i srpsko-ruskim vezama',
+    title: 'POTPISIVANJE PETICIJE NA RIBLJOJ PIJACI U NOVOM SADU',
     description:
-      'Ekskluzivni razgovor sa Milanom Stojanovićem o životu u Rusiji, odnosu Rusa prema Srbima, mogućnostima za mlade i značaju srpsko-ruskih veza.',
-    url: 'https://istokinfopult.com/vesti/zbog-ljubavi-u-rusiji',
+      'Istok Info Pult poziva građane da 16. aprila od 9 časova na Ribljoj pijaci u Novom Sadu podrže inicijativu za podizanje spomenika žrtvama NATO agresije.',
+    type: 'article',
+    url: 'https://www.istokinfopult.rs/vesti/peticija-riblja',
     siteName: 'Istok Info Pult',
+    locale: 'sr_RS',
     images: [
       {
-        url: 'https://istokinfopult.com/static/images/zbog-ljubavi-u-rusiji.jpg',
+        url: 'https://www.istokinfopult.rs/static/images/riblja-share.jpg',
         width: 1200,
         height: 630,
-        alt: 'Zbog ljubavi u Rusiji - Milan Stojanović',
+        alt: 'Potpisivanje peticije na Ribljoj pijaci u Novom Sadu',
       },
     ],
-    locale: 'sr_RS',
-    type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title:
-      'Zbog ljubavi u Rusiji: Milan Stojanović o životu, radu i srpsko-ruskim vezama',
+    title: 'POTPISIVANJE PETICIJE NA RIBLJOJ PIJACI U NOVOM SADU',
     description:
-      'Ekskluzivni razgovor sa Milanom Stojanovićem o životu u Rusiji, odnosu Rusa prema Srbima, mogućnostima za mlade i značaju srpsko-ruskih veza.',
-    images: ['https://istokinfopult.com/static/images/zbog-ljubavi-u-rusiji.jpg'],
-  },
-  alternates: {
-    canonical: 'https://istokinfopult.com/vesti/zbog-ljubavi-u-rusiji',
+      'Istok Info Pult poziva građane da 16. aprila od 9 časova na Ribljoj pijaci u Novom Sadu podrže inicijativu za podizanje spomenika žrtvama NATO agresije.',
+    images: ['https://www.istokinfopult.rs/static/images/riblja-share.jpg'],
   },
 }
 
-export default function ZbogLjubaviURusijiLayout({
+export default function PeticijaRibljaLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <>{children}</>
+  return children
 }

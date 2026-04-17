@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/balkanski-most',
+  slug: 'balkanski-most',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 16.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 16.04.2026.'
+        : 'Vesti - 16.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'БАЛКАНСКИЙ МОСТ ПАМЯТИ'
+      : script === 'cyr'
+        ? 'БАЛКАНСКИ МОСТ СЕЋАЊА'
+        : 'BALKANSKI MOST SEĆANJA',
+
+  excerpt:
+    language === 'ru'
+      ? 'В Тульском государственном университете впервые в России был показан фильм «Усташский Алказар», а также обсуждены общие корни геноцида над славянскими народами.'
+      : script === 'cyr'
+        ? 'На Тулском државном универзитету премијерно је у Русији приказан филм „Усташки Алказар“, уз разговор о заједничким коренима геноцида над словенским народима.'
+        : 'Na Tulskom državnom univerzitetu premijerno je u Rusiji prikazan film „Ustaški Alkazar“, uz razgovor o zajedničkim korenima genocida nad slovenskim narodima.',
+
+  image: '/static/images/balkanski-most-1.jpeg',
+},
+    {
   href: '/vesti/zbog-ljubavi-otisao-u-rusiju',
   slug: 'zbog-ljubavi-otisao-u-rusiju',
 

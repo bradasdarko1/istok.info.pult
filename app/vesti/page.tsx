@@ -30,6 +30,87 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/fondacija-gorcakov',
+  slug: 'fondacija-gorcakov',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 20.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 20.04.2026.'
+        : 'Vesti - 20.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'БЕЛГРАД СТАНЕТ ПЛОЩАДКОЙ БУДУЩЕГО'
+      : script === 'cyr'
+        ? 'БЕОГРАД ДОМАЋИН БУДУЋНОСТИ'
+        : 'BEOGRAD DOMAĆIN BUDUĆNOSTI',
+
+  excerpt:
+    language === 'ru'
+      ? 'Открыт приём заявок на образовательную программу «Балканский Диалог 2026».'
+      : script === 'cyr'
+        ? 'Отворене пријаве за образовни програм „Балкански Дијалог 2026“.'
+        : 'Otvorene prijave za obrazovni program „Balkanski Dijalog 2026“.',
+
+  image: '/static/images/dijalog.jpeg',
+},
+    {
+  href: '/bioskop/repertoar',
+  slug: 'noc-na-zaporoskom-frontu',
+
+  category:
+    language === 'ru'
+      ? 'Кино - 20.04.2026.'
+      : script === 'cyr'
+        ? 'Биоскоп - 20.04.2026.'
+        : 'Bioskop - 20.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НОЧЬ НА ЗАПОРОЖСКОМ ФРОНТЕ'
+      : script === 'cyr'
+        ? 'НОЋ НА ЗАПОРОШКОМ ФРОНТУ'
+        : 'NOĆ NA ZAPOROŠKOM FRONTU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Премьерный показ фильма состоится завтра в 20:00 в кинотеатре ISTOK INFO PULT. Приглашаем всех любителей кино на торжественную проекцию.'
+      : script === 'cyr'
+        ? 'Премијерна пројекција филма биће одржана сутра од 20:00 часова у биоскопу ISTOK INFO PULT. Позивамо све љубитеље филма на свечану пројекцију.'
+        : 'Premijerna projekcija filma biće održana sutra od 20:00 časova u bioskopu ISTOK INFO PULT. Pozivamo sve ljubitelje filma na svečanu projekciju.',
+
+  image: '/static/images/bioskop.jpg',
+},
+    {
+  href: '/vesti/novi-sad-ustao',
+  slug: 'novi-sad-ustao',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 20.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 20.04.2026.'
+        : 'Vesti - 20.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НОВИ-САД ПОДНЯЛСЯ РАДИ ПАМЯТИ'
+      : script === 'cyr'
+        ? 'НОВИ САД УСТАО ЗА ПАМЋЕЊЕ'
+        : 'NOVI SAD USTAO ZA PAMĆENJE',
+
+  excerpt:
+    language === 'ru'
+      ? 'За последние четыре дня гражданские объединения провели масштабную акцию на рынках Нови-Сада. Уже в среду новая акция состоится на стадионе Караджордже.'
+      : script === 'cyr'
+        ? 'Током претходна четири дана грађанска удружења спровела су велику акцију на пијацама Новог Сада. Већ у среду следи нова акција на стадиону Карађорђе.'
+        : 'Tokom prethodna četiri dana građanska udruženja sprovela su veliku akciju na pijacama Novog Sada. Već u sredu sledi nova akcija na stadionu Karađorđe.',
+
+  image: '/static/images/pijaca-2.jpeg',
+},
+    {
   href: '/vesti/balkanski-most',
   slug: 'balkanski-most',
 

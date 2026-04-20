@@ -29,35 +29,9 @@ export default function VestiDanas() {
     }).format(now)
 
   const danasnjeVesti = [
+    
     {
-  href: '/vesti/fondacija-gorcakov',
-  slug: 'fondacija-gorcakov',
-
-  category:
-    language === 'ru'
-      ? 'Новости - 20.04.2026.'
-      : script === 'cyr'
-        ? 'Вести - 20.04.2026.'
-        : 'Vesti - 20.04.2026.',
-
-  title:
-    language === 'ru'
-      ? 'БЕЛГРАД СТАНЕТ ПЛОЩАДКОЙ БУДУЩЕГО'
-      : script === 'cyr'
-        ? 'БЕОГРАД ДОМАЋИН БУДУЋНОСТИ'
-        : 'BEOGRAD DOMAĆIN BUDUĆNOSTI',
-
-  excerpt:
-    language === 'ru'
-      ? 'Открыт приём заявок на образовательную программу «Балканский Диалог 2026».'
-      : script === 'cyr'
-        ? 'Отворене пријаве за образовни програм „Балкански Дијалог 2026“.'
-        : 'Otvorene prijave za obrazovni program „Balkanski Dijalog 2026“.',
-
-  image: '/static/images/dijalog.jpeg',
-},
-    {
-  href: '/bioskop/repertoar',
+  href: '/bioskop/najave',
   slug: 'noc-na-zaporoskom-frontu',
 
   category:

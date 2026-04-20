@@ -66,7 +66,7 @@ const ruText = {
   highlight2: 'ПАМЯТЬ, КОТОРАЯ ЖИВЁТ',
 }
 
-export default function BalkanMostPage() {
+export default function BalkanskiMostPage() {
   const { language, script } = useLanguage()
 
   const content =

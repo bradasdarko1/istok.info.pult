@@ -29,6 +29,34 @@ export default function VestiDanas() {
     }).format(now)
 
   const danasnjeVesti = [
+    {
+      href: '/vesti/fondacija-gorcakov',
+  slug: 'fondacija-gorcakov',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 20.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 20.04.2026.'
+        : 'Vesti - 20.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'БЕЛГРАД СТАНЕТ ПЛОЩАДКОЙ БУДУЩЕГО: ОТКРЫТ ПРИЁМ ЗАЯВОК НА «БАЛКАНСКИЙ ДИАЛОГ 2026»'
+      : script === 'cyr'
+        ? 'БЕОГРАД ДОМАЋИН БУДУЋНОСТИ: ОТВОРЕНЕ ПРИЈАВЕ ЗА БАЛКАНСКИ ДИЈАЛОГ 2026'
+        : 'BEOGRAD DOMAĆIN BUDUĆNOSTI: OTVORENE PRIJAVE ZA BALKANSKI DIJALOG 2026',
+
+  excerpt:
+    language === 'ru'
+      ? 'Фонд Горчакова открывает приём заявок на ежегодную образовательную программу «Балканский Диалог – 2026», которая пройдёт со 2 по 6 июня в Белграде.'
+      : script === 'cyr'
+        ? 'Фондација Горчаков отвара пријаве за годишњи образовни програм „Балкански Дијалог – 2026“, који ће се одржати од 2. до 6. јуна у Београду.'
+        : 'Fondacija Gorčakov otvara prijave za godišnji obrazovni program „Balkanski Dijalog – 2026“, koji će se održati od 2. do 6. juna u Beogradu.',
+
+  image: '/static/images/dijalog.jpeg',
+
+    },
     
     {
   href: '/bioskop/najave',

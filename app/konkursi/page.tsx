@@ -7,88 +7,6 @@ import { useLanguage } from '@/components/LanguageProvider'
 type LanguageType = 'sr' | 'ru'
 type ScriptType = 'lat' | 'cyr'
 
-function latinToCyrillic(text: string) {
-  const multiMap: Record<string, string> = {
-    Dž: 'Џ',
-    DŽ: 'Џ',
-    dž: 'џ',
-    Lj: 'Љ',
-    LJ: 'Љ',
-    lj: 'љ',
-    Nj: 'Њ',
-    NJ: 'Њ',
-    nj: 'њ',
-  }
-
-  let result = text
-
-  Object.entries(multiMap).forEach(([latin, cyr]) => {
-    result = result.split(latin).join(cyr)
-  })
-
-  const singleMap: Record<string, string> = {
-    A: 'А',
-    B: 'Б',
-    C: 'Ц',
-    Č: 'Ч',
-    Ć: 'Ћ',
-    D: 'Д',
-    Đ: 'Ђ',
-    E: 'Е',
-    F: 'Ф',
-    G: 'Г',
-    H: 'Х',
-    I: 'И',
-    J: 'Ј',
-    K: 'К',
-    L: 'Л',
-    M: 'М',
-    N: 'Н',
-    O: 'О',
-    P: 'П',
-    R: 'Р',
-    S: 'С',
-    Š: 'Ш',
-    T: 'Т',
-    U: 'У',
-    V: 'В',
-    Z: 'З',
-    Ž: 'Ж',
-    a: 'а',
-    b: 'б',
-    c: 'ц',
-    č: 'ч',
-    ć: 'ћ',
-    d: 'д',
-    đ: 'ђ',
-    e: 'е',
-    f: 'ф',
-    g: 'г',
-    h: 'х',
-    i: 'и',
-    j: 'ј',
-    k: 'к',
-    l: 'л',
-    m: 'м',
-    n: 'н',
-    o: 'о',
-    p: 'п',
-    r: 'р',
-    s: 'с',
-    š: 'ш',
-    t: 'т',
-    u: 'у',
-    v: 'в',
-    z: 'з',
-    ž: 'ж',
-  }
-
-  return result
-    .split('')
-    .map((char) => singleMap[char] ?? char)
-    .join('')
-}
-
 export default function KonkursiPage() {
   const { language, script } = useLanguage() as {
     language: LanguageType
@@ -105,29 +23,52 @@ export default function KonkursiPage() {
         : 'Aktuelni konkursi, programi i mogućnosti za obrazovanje, rad i stručno usavršavanje.',
       items: [
         {
+          href: '/konkursi/letnji-institut',
+          category: isCyr ? 'Конкурси' : 'Konkursi',
+          title: isCyr
+            ? 'ЛЕТЊИ ИНСТИТУТ ОТВАРА ВРАТА МЛАДИМ НАУЧНИЦИМА'
+            : 'LETNJI INSTITUT OTVARA VRATA MLADIM NAUČNICIMA',
+          excerpt: isCyr
+            ? 'Програм у Русији за наставнике и истраживаче до 35 година. Сви трошкови су покривени.'
+            : 'Program u Rusiji za nastavnike i istraživače do 35 godina. Svi troškovi su pokriveni.',
+          image: '/static/images/letnji-institut.jpeg',
+          date: isCyr ? '21. април 2026.' : '21. april 2026.',
+        },
+        {
           href: '/vesti/rusija-otvara-vrata',
           category: isCyr ? 'Конкурси' : 'Konkursi',
           title: isCyr
             ? 'РУСИЈА ОТВАРА ВРАТА СТРАНИМ СТРУЧЊАЦИМА'
             : 'RUSIJA OTVARA VRATA STRANIM STRUČNJACIMA',
           excerpt: isCyr
-            ? 'Нова дигитална услуга за живот и рад у Русији намењена је страним стручњацима који испуњавају прописане услове.'
-            : 'Nova digitalna usluga za život i rad u Rusiji namenjena je stranim stručnjacima koji ispunjavaju propisane uslove.',
+            ? 'Нова дигитална услуга за живот и рад у Русији намењена је страним стручњацима.'
+            : 'Nova digitalna usluga za život i rad u Rusiji namenjena je stranim stručnjacima.',
           image: '/static/images/rusija-otvara-vrata.jpeg',
           date: isCyr ? '21. април 2026.' : '21. april 2026.',
         },
       ],
     },
+
     ru: {
       title: 'КОНКУРСЫ',
-      intro: 'Актуальные конкурсы, программы и возможности для обучения, работы и профессионального развития.',
+      intro:
+        'Актуальные конкурсы, программы и возможности для обучения, работы и профессионального развития.',
       items: [
+        {
+          href: '/konkursi/letnji-institut',
+          category: 'Конкурсы',
+          title: 'ЛЕТНИЙ ИНСТИТУТ ОТКРЫВАЕТ ДВЕРИ ДЛЯ МОЛОДЫХ УЧЕНЫХ',
+          excerpt:
+            'Программа в России для преподавателей и исследователей до 35 лет. Все расходы оплачиваются.',
+          image: '/static/images/letnji-institut.jpeg',
+          date: '21 апреля 2026 г.',
+        },
         {
           href: '/vesti/rusija-otvara-vrata',
           category: 'Конкурсы',
           title: 'РОССИЯ ОТКРЫВАЕТ ДВЕРИ ДЛЯ ИНОСТРАННЫХ ЭКСПЕРТОВ',
           excerpt:
-            'Новый цифровой сервис для жизни и работы в России предназначен для иностранных специалистов, соответствующих установленным критериям.',
+            'Новый цифровой сервис для жизни и работы в России для иностранных специалистов.',
           image: '/static/images/rusija-otvara-vrata.jpeg',
           date: '21 апреля 2026 г.',
         },
@@ -149,6 +90,7 @@ export default function KonkursiPage() {
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight md:text-5xl">
             {data.title}
           </h1>
+
           <p className="max-w-3xl text-base leading-8 text-zinc-300 md:text-lg">
             {data.intro}
           </p>

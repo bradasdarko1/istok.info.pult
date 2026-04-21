@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/konkursi/letnji-institut',
+  slug: 'letnji-institut',
+
+  category:
+    language === 'ru'
+      ? 'Конкурсы - 21.04.2026.'
+      : script === 'cyr'
+        ? 'Конкурси - 21.04.2026.'
+        : 'Konkursi - 21.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ЛЕТНИЙ ИНСТИТУТ ОТКРЫВАЕТ ДВЕРИ ДЛЯ МОЛОДЫХ УЧЕНЫХ'
+      : script === 'cyr'
+        ? 'ЛЕТЊИ ИНСТИТУТ ОТВАРА ВРАТА МЛАДИМ НАУЧНИЦИМА'
+        : 'LETNJI INSTITUT OTVARA VRATA MLADIM NAUČNICIMA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Программа в России для преподавателей и исследователей до 35 лет. Все расходы покрываются организаторами.'
+      : script === 'cyr'
+        ? 'Програм у Русији за наставнике и истраживаче до 35 година. Све трошкове покривају организатори.'
+        : 'Program u Rusiji za nastavnike i istraživače do 35 godina. Sve troškove pokrivaju organizatori.',
+
+  image: '/static/images/letnji-institut.jpeg',
+},
+    {
        href: '/vesti/rusija-otvara-vrata',
   slug: 'rusija-otvara-vrata',
 

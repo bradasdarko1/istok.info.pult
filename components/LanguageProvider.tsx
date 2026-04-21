@@ -27,7 +27,7 @@ type TranslationKey =
   | 'serbia'
   | 'sport'
   | 'politics'
-  | 'istok' // ✅ BITNO
+  | 'istok'
   | 'beginnerLevel'
   | 'intermediateLevel'
   | 'materials'
@@ -51,6 +51,9 @@ type TranslationKey =
   | 'masterStudies'
   | 'doctoralStudies'
   | 'biblioteka'
+  | 'competitions'
+  | 'openCalls'
+  | 'russiaExperts'
 
 const translations: Record<
   TranslationKey,
@@ -79,7 +82,6 @@ const translations: Record<
     ru: 'Новости',
   },
 
-  // ✅ OVO JE KLJUČNO
   istok: {
     sr: { cyr: 'Вести Истока', lat: 'Istok vesti' },
     ru: 'Новости Востока',
@@ -92,13 +94,38 @@ const translations: Record<
     },
     ru: 'Бесплатные уроки русского языка',
   },
+
   biblioteka: {
-  sr: {
-    lat: 'Biblioteka',
-    cyr: 'Библиотека',
+    sr: {
+      lat: 'Biblioteka',
+      cyr: 'Библиотека',
+    },
+    ru: 'Библиотека',
   },
-  ru: 'Библиотека',
-},
+
+  competitions: {
+    sr: {
+      cyr: 'Конкурси',
+      lat: 'Konkursi',
+    },
+    ru: 'Конкурсы',
+  },
+
+  openCalls: {
+    sr: {
+      cyr: 'Актуелни конкурси',
+      lat: 'Aktuelni konkursi',
+    },
+    ru: 'Актуальные конкурсы',
+  },
+
+  russiaExperts: {
+    sr: {
+      cyr: 'Русија отвара врата страним стручњацима',
+      lat: 'Rusija otvara vrata stranim stručnjacima',
+    },
+    ru: 'Россия открывает двери для иностранных экспертов',
+  },
 
   cinema: {
     sr: { cyr: 'Биоскоп', lat: 'Bioskop' },
@@ -300,7 +327,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const t = useCallback(
     (key: TranslationKey) => {
       const entry = translations[key]
-      if (!entry) return key // 🔥 SAFE FALLBACK
+      if (!entry) return key
       if (language === 'ru') return entry.ru
       return entry.sr[script]
     },

@@ -23,7 +23,7 @@ export default function Navbar() {
         { title: t('serbia'), href: '/vesti/srbija' },
         { title: t('sport'), href: '/vesti/sport' },
         { title: t('politics'), href: '/vesti/politika' },
-        { title: t('istok'), href: '/vesti/vesti-istok'},
+        { title: t('istok'), href: '/vesti/vesti-istok' },
       ],
     },
     {
@@ -36,9 +36,20 @@ export default function Navbar() {
       ],
     },
     {
-  title: t('biblioteka'),
-  href: '/biblioteka',
-},
+      title: t('competitions'),
+      href: '/konkursi',
+      children: [
+        { title: t('openCalls'), href: '/konkursi' },
+        {
+          title: t('russiaExperts'),
+          href: '/vesti/rusija-otvara-vrata',
+        },
+      ],
+    },
+    {
+      title: t('biblioteka'),
+      href: '/biblioteka',
+    },
     {
       title: t('cinema'),
       href: '/bioskop',

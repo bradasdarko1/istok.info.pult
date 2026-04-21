@@ -107,10 +107,10 @@ export default function VestiDanas() {
 
   excerpt:
     language === 'ru'
-      ? 'Премьерный показ фильма состоится завтра в 20:00 в кинотеатре ISTOK INFO PULT. Приглашаем всех любителей кино на торжественную проекцию.'
+      ? 'Премьерный показ фильма состоится во вторник, 21.04, в 20:00 в кинотеатре ISTOK INFO PULT. Приглашаем всех любителей кино на торжественный показ.'
       : script === 'cyr'
-        ? 'Премијерна пројекција филма биће одржана сутра од 20:00 часова у биоскопу ISTOK INFO PULT. Позивамо све љубитеље филма на свечану пројекцију.'
-        : 'Premijerna projekcija filma biće održana sutra od 20:00 časova u bioskopu ISTOK INFO PULT. Pozivamo sve ljubitelje filma na svečanu projekciju.',
+        ? 'Премијерна пројекција филма биће одржана у уторак 21.04. од 20:00 часова у биоскопу ISTOK INFO PULT. Позивамо све љубитеље филма на свечану пројекцију.'
+        : 'Premijerna projekcija filma biće održana u utorak 21.04. od 20:00 časova u bioskopu ISTOK INFO PULT. Pozivamo sve ljubitelje filma na svečanu projekciju.',
 
   image: '/static/images/bioskop.jpg',
 },

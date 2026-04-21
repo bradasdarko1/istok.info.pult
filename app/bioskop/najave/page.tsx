@@ -19,14 +19,14 @@ export default function RepertoarPage() {
     sr: {
       title: isCyr ? 'НОЋ НА ЗАПОРОШКОМ ФРОНТУ' : 'NOĆ NA ZAPOROŠKOM FRONTU',
       subtitle: isCyr
-        ? 'Премијерно сутра у биоскопу ISTOK INFO PULT'
-        : 'Premijerno sutra u bioskopu ISTOK INFO PULT',
+        ? 'Премијерно у уторак 21.04. у биоскопу ISTOK INFO PULT'
+        : 'Premijerno u utorak 21.04. u bioskopu ISTOK INFO PULT',
 
       movieTitle: isCyr
         ? 'ПРВА СВЕЧАНА ПРОЈЕКЦИЈА'
         : 'PRVA SVEČANA PROJEKCIJA',
 
-      time: isCyr ? 'Сутра од 20:00 часова' : 'Sutra od 20:00 časova',
+      time: isCyr ? 'Уторак 21.04. од 20:00 часова' : 'Utorak 21.04. od 20:00 časova',
 
       desc: isCyr
         ? 'Позивамо све љубитеље филма да присуствују првој свечаној пројекцији у оквиру новоотвореног биоскопског програма.'
@@ -45,9 +45,9 @@ export default function RepertoarPage() {
 
     ru: {
       title: 'НОЧЬ НА ЗАПОРОЖСКОМ ФРОНТЕ',
-      subtitle: 'Премьерный показ завтра в кинотеатре ISTOK INFO PULT',
+      subtitle: 'Премьера во вторник, 21.04, в кинотеатре ISTOK INFO PULT.',
       movieTitle: 'ПЕРВАЯ ТОРЖЕСТВЕННАЯ ПРЕМЬЕРА',
-      time: 'Завтра в 20:00',
+      time: 'Вторник, 21.04. с 20:00 часов',
       desc: 'Приглашаем всех любителей кино на первый торжественный показ в рамках нового кинопрограммы.',
       highlight1: 'НАЧАЛО НОВОЙ ЭПОХИ КИНО',
       highlight2: 'КИНОВЕЧЕР, КОТОРЫЙ ЗАПОМНИТСЯ',

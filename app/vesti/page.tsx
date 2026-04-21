@@ -30,6 +30,35 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+       href: '/vesti/rusija-otvara-vrata',
+  slug: 'rusija-otvara-vrata',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 21.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 21.04.2026.'
+        : 'Vesti - 21.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РОССИЯ ОТКРЫВАЕТ ДВЕРИ ДЛЯ ИНОСТРАННЫХ ЭКСПЕРТОВ'
+      : script === 'cyr'
+        ? 'РУСИЈА ОТВАРА ВРАТА СТРАНИМ СТРУЧЊАЦИМА'
+        : 'RUSIJA OTVARA VRATA STRANIM STRUČNJACIMA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Запущен новый цифровой сервис для привлечения иностранных специалистов.'
+      : script === 'cyr'
+        ? 'Отворена је нова дигитална услуга за привлачење страних стручњака.'
+        : 'Otvorena je nova digitalna usluga za privlačenje stranih stručnjaka.',
+
+  image: '/static/images/rusija-otvara-vrata.jpeg',
+
+
+    },
+    {
       href: '/vesti/fondacija-gorcakov',
   slug: 'fondacija-gorcakov',
 

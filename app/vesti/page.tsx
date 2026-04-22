@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/ruski-konzulat',
+  slug: 'ruski-konzulat',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 22.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 22.04.2026.'
+        : 'Vesti - 22.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В НОВОМ САДУ ОТКРЫВАЕТСЯ ПОЧЁТНОЕ КОНСУЛЬСТВО РОССИИ'
+      : script === 'cyr'
+        ? 'У НОВОМ САДУ СЕ ОТВАРА ПОЧАСНИ КОНЗУЛАТ РУСИЈЕ'
+        : 'U NOVOM SADU SE OTVARA POČASNI KONZULAT RUSIJE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Открытие Почётного консульства России укрепляет дипломатические и экономические связи между Сербией и Россией.'
+      : script === 'cyr'
+        ? 'Отварање Почасног конзулата Русије јача дипломатске и економске везе између Србије и Русије.'
+        : 'Otvaranje Počasnog konzulata Rusije jača diplomatske i ekonomske veze između Srbije i Rusije.',
+
+  image: '/static/images/ruski-konzulat.jpeg',
+},
+    {
   href: '/konkursi/letnji-institut',
   slug: 'letnji-institut',
 

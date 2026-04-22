@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/aleksandar-bijelic',
+  slug: 'aleksandar-bijelic',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 22.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 22.04.2026.'
+        : 'Vesti - 22.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СЕРБСКИЙ ОФИЦЕР, ПОГИБШИЙ КАК ГЕРОЙ'
+      : script === 'cyr'
+        ? 'СРПСКИ ОФИЦИР КОЈИ ЈЕ ПОГИНУО КАО ХЕРОЈ'
+        : 'SRPSKI OFICIR KOJI JE POGINUO KAO HEROJ',
+
+  excerpt:
+    language === 'ru'
+      ? 'Имя Александра Биелича остаётся символом чести, жертвы и верности долгу.'
+      : script === 'cyr'
+        ? 'Име Александра Бијелића остаје симбол части, жртве и верности дужности.'
+        : 'Ime Aleksandra Bijelića ostaje simbol časti, žrtve i vernosti dužnosti.',
+
+  image: '/static/images/aleksandar-bijelic.jpeg',
+},
+    {
   href: '/vesti/ruski-konzulat',
   slug: 'ruski-konzulat',
 

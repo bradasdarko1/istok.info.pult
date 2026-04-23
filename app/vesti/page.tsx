@@ -30,6 +30,32 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/otvaranje-ruskog-konzulata-u-novom-sadu',
+  slug: 'otvaranje-ruskog-konzulata-u-novom-sadu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 23.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 23.04.2026.'
+        : 'Vesti - 23.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НОВИ-САД ПОЛУЧИЛ ПОЧЁТНОЕ КОНСУЛЬСТВО РОССИИ'
+      : script === 'cyr'
+        ? 'НОВИ САД ДОБИО ПОЧАСНИ КОНЗУЛАТ РУСИЈЕ'
+        : 'NOVI SAD DOBIO POČASNI KONZULAT RUSIJE',
+
+  excerpt:
+  language === 'ru'
+    ? 'Торжественное открытие Почётного консульства Российской Федерации прошло на улице Бранка Баича, дом 2, при участии церковных иерархов, дипломатических представителей и многочисленных гостей.'
+    : script === 'cyr'
+      ? 'Свечано отварање Почасног конзулата Руске Федерације одржано је у улици Бранка Бајића број 2, уз присуство црквених великодостојника, дипломатских званичника и бројних гостију.'
+      : 'Svečano otvaranje Počasnog konzulata Ruske Federacije održano je u ulici Branka Bajića broj 2, uz prisustvo crkvenih velikodostojnika, diplomatskih zvaničnika i brojnih gostiju.',
+  image: '/static/images/otvaranje-ruskog-konzulata.jpeg',
+},
+    {
   href: '/konkursi/letnji-univerzitet',
   slug: 'letnji-univerzitet',
 

@@ -22,6 +22,18 @@ export default function KonkursiPage() {
         ? 'Актуелни конкурси, програми и могућности за образовање, рад и стручно усавршавање.'
         : 'Aktuelni konkursi, programi i mogućnosti za obrazovanje, rad i stručno usavršavanje.',
       items: [
+                {
+          href: '/konkursi/letnji-univerzitet',
+          category: isCyr ? 'Конкурси' : 'Konkursi',
+          title: isCyr
+            ? 'ЛЕТЊИ УНИВЕРЗИТЕТ У РУСИЈИ ОТВАРА ВРАТА СТРАНИМ СТУДЕНТИМА'
+            : 'LETNJI UNIVERZITET U RUSIJI OTVARA VRATA STRANIM STUDENTIMA',
+          excerpt: isCyr
+            ? 'Међународни програм за студенте завршних година. Пут, смештај, исхрана и екскурзије су покривени.'
+            : 'Međunarodni program za studente završnih godina. Put, smeštaj, ishrana i ekskurzije su pokriveni.',
+          image: '/static/images/letnji-univerzitet.jpeg',
+          date: isCyr ? '23. април 2026.' : '23. april 2026.',
+        },
         {
           href: '/konkursi/letnji-institut',
           category: isCyr ? 'Конкурси' : 'Konkursi',

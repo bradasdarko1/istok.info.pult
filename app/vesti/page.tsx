@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/konkursi/letnji-univerzitet',
+  slug: 'letnji-univerzitet',
+
+  category:
+    language === 'ru'
+      ? 'Конкурсы - 23.04.2026.'
+      : script === 'cyr'
+        ? 'Конкурси - 23.04.2026.'
+        : 'Konkursi - 23.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ЛЕТНИЙ УНИВЕРСИТЕТ В РОССИИ ОТКРЫВАЕТ ДВЕРИ ИНОСТРАННЫМ СТУДЕНТАМ'
+      : script === 'cyr'
+        ? 'ЛЕТЊИ УНИВЕРЗИТЕТ У РУСИЈИ ОТВАРА ВРАТА СТРАНИМ СТУДЕНТИМА'
+        : 'LETNJI UNIVERZITET U RUSIJI OTVARA VRATA STRANIM STUDENTIMA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Международная программа для студентов выпускных курсов. Проезд, проживание, питание и экскурсии оплачиваются.'
+      : script === 'cyr'
+        ? 'Међународни програм за студенте завршних година. Пут, смештај, исхрана и екскурзије су покривени.'
+        : 'Međunarodni program za studente završnih godina. Put, smeštaj, ishrana i ekskurzije su pokriveni.',
+
+  image: '/static/images/letnji-univerzitet.jpeg',
+},
+    {
   href: '/vesti/aleksandar-bijelic',
   slug: 'aleksandar-bijelic',
 

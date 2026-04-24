@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/spomenik-nikolaju-u-srbiji',
+  slug: 'spomenik-nikolaju-u-srbiji',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 24.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 24.04.2026.'
+        : 'Vesti - 24.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В МОСКВЕ ПРЕДСТАВЛЕН ПАМЯТНИК РУССКОМУ ГЕРОЮ, КОТОРЫЙ БУДЕТ УСТАНОВЛЕН В СЕРБИИ'
+      : script === 'cyr'
+        ? 'У МОСКВИ ПРЕДСТАВЉЕН СПОМЕНИК РУСКОМ ХЕРОЈУ КОЈИ ЋЕ БИТИ ПОДИГНУТ У СРБИЈИ'
+        : 'U MOSKVI PREDSTAVLJEN SPOMENIK RUSKOM HEROJU KOJI ĆE BITI PODIGNUT U SRBIJI',
+
+  excerpt:
+    language === 'ru'
+      ? 'Память о полковнике Николае Раевском, русском герое, отдавшем жизнь за Сербию, получает новое воплощение в памятнике, представленном в Москве.'
+      : script === 'cyr'
+        ? 'Сећање на пуковника Николаја Рајевског, руског хероја који је положио живот за Србију, добија ново обележје кроз споменик представљен у Москви.'
+        : 'Sećanje na pukovnika Nikolaja Rajevskog, ruskog heroja koji je položio život za Srbiju, dobija novo obeležje kroz spomenik predstavljen u Moskvi.',
+
+  image: '/static/images/spomenik-nikolaju.jpeg',
+},
+    {
   href: '/vesti/tula-forum',
   slug: 'tula-forum',
 

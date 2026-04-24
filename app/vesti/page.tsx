@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/madjarski-izbori-i-buducnost-desnice',
+  slug: 'madjarski-izbori-i-buducnost-desnice',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 24.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 24.04.2026.'
+        : 'Vesti - 24.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В НОВОМ САДУ СОСТОИТСЯ ТРИБУНА О ВЫБОРАХ В ВЕНГРИИ И БУДУЩЕМ ПРАВЫХ СИЛ'
+      : script === 'cyr'
+        ? 'У НОВОМ САДУ ТРИБИНА О МАЂАРСКИМ ИЗБОРИМА И БУДУЋНОСТИ ДЕСНИЦЕ'
+        : 'U NOVOM SADU TRIBINA O MAĐARSKIM IZBORIMA I BUDUĆNOSTI DESNICE',
+
+  excerpt:
+    language === 'ru'
+      ? '25 апреля в Исток Инфо Пулт пройдет открытая трибуна с участием др Душана Достанића.'
+      : script === 'cyr'
+        ? '25. априла у Исток Инфо Пулту биће одржана отворена трибина уз учешће др Душана Достанића.'
+        : '25. aprila u Istok Info Pultu biće održana otvorena tribina uz učešće dr Dušana Dostanića.',
+
+  image: '/static/images/dusan-dostanic.jpeg',
+},
+    {
   href: '/vesti/spomenik-nikolaju-u-srbiji',
   slug: 'spomenik-nikolaju-u-srbiji',
 

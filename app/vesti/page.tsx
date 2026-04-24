@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/tula-forum',
+  slug: 'tula-forum',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 24.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 24.04.2026.'
+        : 'Vesti - 24.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПЛЕЧОМ К ПЛЕЧУ СКВОЗЬ ВЕКА: В ТУЛЕ ПРОШЁЛ ФОРУМ О МНОГОНАЦИОНАЛЬНОЙ ПОБЕДЕ'
+      : script === 'cyr'
+        ? 'РАМЕ УЗ РАМЕ КРОЗ ВЕКОВЕ: У ТУЛИ ОДРЖАН ФОРУМ О МНОГОНАЦИОНАЛНОЈ ПОБЕДИ'
+        : 'RAME UZ RAME KROZ VEKOVE: U TULI ODRŽAN FORUM O MNOGONACIONALNOJ POBEDI',
+
+  excerpt:
+    language === 'ru'
+      ? 'В Тульском государственном университете прошёл международный форум о совместной победе над нацизмом, где прозвучали сильные выступления представителей Сербии.'
+      : script === 'cyr'
+        ? 'У Тулском државном универзитету одржан је међународни форум о заједничкој победи над нацизмом, где су снажне говоре одржали представници Србије.'
+        : 'U Tulskom državnom univerzitetu održan je međunarodni forum o zajedničkoj pobedi nad nacizmom, gde su snažne govore održali predstavnici Srbije.',
+
+  image: '/static/images/tula-forum-3.jpeg',
+},
+    {
   href: '/vesti/otvaranje-ruskog-konzulata-u-novom-sadu',
   slug: 'otvaranje-ruskog-konzulata-u-novom-sadu',
 

@@ -1,8 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Pool } from 'pg'
 
+export const dynamic = 'force-dynamic'
+
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
+  ssl:
+    process.env.NODE_ENV === 'production'
+      ? { rejectUnauthorized: false }
+      : false,
 })
 
 export async function POST(req: NextRequest) {
@@ -11,24 +17,11 @@ export async function POST(req: NextRequest) {
     const { postSlug, authorName, message } = body
 
     if (!postSlug || !authorName || !message) {
-      return NextResponse.json(
-        { error: 'Nedostaju obavezna polja.' },
-        { status: 400 }
-      )
+      return NextResponse.json({ success: false }, { status: 400 })
     }
 
-    if (authorName.trim().length < 2) {
-      return NextResponse.json(
-        { error: 'Ime mora imati bar 2 karaktera.' },
-        { status: 400 }
-      )
-    }
-
-    if (message.trim().length < 3) {
-      return NextResponse.json(
-        { error: 'Komentar mora imati bar 3 karaktera.' },
-        { status: 400 }
-      )
+    if (authorName.trim().length < 2 || message.trim().length < 3) {
+      return NextResponse.json({ success: false }, { status: 400 })
     }
 
     await pool.query(
@@ -42,10 +35,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: true })
   } catch (error) {
     console.error('POST /api/comments error:', error)
-    return NextResponse.json(
-      { error: 'Greška prilikom upisa komentara.' },
-      { status: 500 }
-    )
+    return NextResponse.json({ success: false }, { status: 500 })
   }
 }
 
@@ -55,10 +45,7 @@ export async function GET(req: NextRequest) {
     const postSlug = searchParams.get('postSlug')
 
     if (!postSlug) {
-      return NextResponse.json(
-        { error: 'Nedostaje postSlug.' },
-        { status: 400 }
-      )
+      return NextResponse.json({ comments: [] })
     }
 
     const result = await pool.query(
@@ -74,9 +61,6 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ comments: result.rows })
   } catch (error) {
     console.error('GET /api/comments error:', error)
-    return NextResponse.json(
-      { error: 'Greška prilikom učitavanja komentara.' },
-      { status: 500 }
-    )
+    return NextResponse.json({ comments: [] })
   }
 }

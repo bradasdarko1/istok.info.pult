@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/slucaj-banjska',
+  slug: 'slucaj-banjska',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 25.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 25.04.2026.'
+        : 'Vesti - 25.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПОЖИЗНЕННЫЕ ПРИГОВОРЫ ПОТРЯСЛИ СЕРБСКИЙ НАРОД: ВРЕМЯ ЕДИНСТВА И ПОДДЕРЖКИ'
+      : script === 'cyr'
+        ? 'ДОЖИВОТНЕ КАЗНЕ ПОТРЕСЛЕ СРПСКИ НАРОД: ВРЕМЕ ЈЕ ЗА ЈЕДИНСТВО И ПОДРШКУ'
+        : 'DOŽIVOTNE KAZNE POTRESLE SRPSKI NAROD: VREME JE ZA JEDINSTVO I PODRŠKU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Вынесенные приговоры Благою Спасоевичу, Владимиру Толичу и Душану Максимовичу вызвали сильный отклик среди сербов.'
+      : script === 'cyr'
+        ? 'Изречене пресуде Благоју Спасојевићу, Владимиру Толићу и Душану Максимовићу снажно су одјекнуле међу Србима.'
+        : 'Izrečene presude Blagoju Spasojeviću, Vladimiru Toliću i Dušanu Maksimoviću snažno su odjeknule među Srbima.',
+
+  image: '/static/images/banjska.jpg',
+},
+    {
   href: '/vesti/madjarski-izbori-i-buducnost-desnice',
   slug: 'madjarski-izbori-i-buducnost-desnice',
 

@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/balkanski-most-u-ivanovu',
+  slug: 'balkanski-most-u-ivanovu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 27.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 27.04.2026.'
+        : 'Vesti - 27.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СЕРБСКИЙ ИСТОРИК ПОКОРИЛ РОССИЮ: МИЛАН СТОЯНОВИЧ В ИВАНОВО ПРЕДСТАВИЛ КНИГУ'
+      : script === 'cyr'
+        ? 'СРПСКИ ИСТОРИЧАР ОДУШЕВИО РУСИЈУ: МИЛАН СТОЈАНОВИЋ У ИВАНОВУ ПРЕДСТАВИО КЊИГУ'
+        : 'SRPSKI ISTORIČAR ODUŠEVIO RUSIJU: MILAN STOJANOVIĆ U IVANOVU PREDSTAVIO KNJIGU',
+
+  excerpt:
+    language === 'ru'
+      ? 'На форуме «Балканский мост» в Иваново Милан Стоянович представил книгу «Балкан: история и перспективы» и вызвал большой интерес публики.'
+      : script === 'cyr'
+        ? 'На форуму „Балкански мост“ у Иванову Милан Стојановић представио је књигу „Балкан: историја и перспективе“ и изазвао велико интересовање публике.'
+        : 'Na forumu „Balkanski most“ u Ivanovu Milan Stojanović predstavio je knjigu „Balkan: istorija i perspektive“ i izazvao veliko interesovanje publike.',
+
+  image: '/static/images/ivanovo-3.jpeg',
+},
+    {
   href: '/vesti/slucaj-banjska',
   slug: 'slucaj-banjska',
 

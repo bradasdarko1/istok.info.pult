@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/pjer-anri-binel',
+  slug: 'pjer-anri-binel',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 27.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 27.04.2026.'
+        : 'Vesti - 27.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ФРАНЦУЗ, КОТОРЫЙ РИСКНУЛ ВСЕМ РАДИ СЕРБИИ: ПЬЕР АНРИ БИНЕЛ — НАСТОЯЩИЙ ГЕРОЙ'
+      : script === 'cyr'
+        ? 'ФРАНЦУЗ КОЈИ ЈЕ РИЗИКОВАО СВЕ ЗБОГ СРБИЈЕ: ПЈЕР АНРИ БИНЕЛ ИСТИНСКИ ХЕРОЈ'
+        : 'FRANCUZ KOJI JE RIZIKOVAO SVE ZBOG SRBIJE: PJER ANRI BINEL ISTINSKI HEROJ',
+
+  excerpt:
+    language === 'ru'
+      ? 'Бывший майор французской военной разведки пожертвовал карьерой, чтобы помочь Сербии в тяжёлые дни. Завтра публикуем и его письмо.'
+      : script === 'cyr'
+        ? 'Бивши мајор француске војне обавештајне службе жртвовао је каријеру како би помогао Србији у тешким данима. Сутра објављујемо и његово писмо.'
+        : 'Bivši major francuske vojne obaveštajne službe žrtvovao je karijeru kako bi pomogao Srbiji u teškim danima. Sutra objavljujemo i njegovo pismo.',
+
+  image: '/static/images/pjer.jpeg',
+},
+    {
   href: '/vesti/balkanski-most-u-ivanovu',
   slug: 'balkanski-most-u-ivanovu',
 

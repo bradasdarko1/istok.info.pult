@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/osnovan-klub-mladih-ruskog-istorijskog-drustva',
+  slug: 'osnovan-klub-mladih-ruskog-istorijskog-drustva',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 28.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 28.04.2026.'
+        : 'Vesti - 28.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В СЕРБИИ СОЗДАН КЛУБ МОЛОДЁЖИ РОССИЙСКОГО ИСТОРИЧЕСКОГО ОБЩЕСТВА: НОВЫЙ ШАГ В СОХРАНЕНИИ ПАМЯТИ'
+      : script === 'cyr'
+        ? 'У СРБИЈИ ОСНОВАН КЛУБ МЛАДИХ РУСКОГ ИСТОРИЈСКОГ ДРУШТВА: НОВА СНАГА ЗА ОЧУВАЊЕ ПАМЋЕЊА'
+        : 'U SRBIJI OSNOVAN KLUB MLADIH RUSKOG ISTORIJSKOG DRUŠTVA: NOVA SNAGA ZA OČUVANJE PAMĆENJA',
+
+  excerpt:
+    language === 'ru'
+      ? 'В Белграде прошла учредительная конференция Клуба молодёжи РИО. Молодёжь берёт на себя важную роль в сохранении исторической памяти и укреплении российско-сербских связей.'
+      : script === 'cyr'
+        ? 'У Београду одржана оснивачка конвенција Клуба младих РИД. Млади преузимају кључну улогу у очувању историјског памћења и јачању српско-руских веза.'
+        : 'U Beogradu održana osnivačka konvencija Kluba mladih RID. Mladi preuzimaju ključnu ulogu u očuvanju istorijskog pamćenja i jačanju srpsko-ruskih veza.',
+
+  image: '/static/images/klub-mladih-2.jpeg',
+},
+    {
   href: '/vesti/pjer-anri-binel',
   slug: 'pjer-anri-binel',
 

@@ -54,7 +54,7 @@ export default function VestiDanas() {
         ? 'У Београду одржана оснивачка конвенција Клуба младих РИД. Млади преузимају кључну улогу у очувању историјског памћења и јачању српско-руских веза.'
         : 'U Beogradu održana osnivačka konvencija Kluba mladih RID. Mladi preuzimaju ključnu ulogu u očuvanju istorijskog pamćenja i jačanju srpsko-ruskih veza.',
 
-  image: '/static/images/klub-mladih-2.jpeg',
+  image: '/static/images/izlozba-7.jpeg',
 },
     {
   href: '/vesti/pjer-anri-binel',

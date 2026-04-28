@@ -43,10 +43,13 @@ function latinToCyrillic(text: string) {
 }
 
 const images = [
-  '/static/images/klub-mladih-2.jpeg',
-  '/static/images/klub-mladih-1.jpeg',
-  '/static/images/klub-mladih-3.jpeg',
-  '/static/images/klub-mladih-4.jpeg',
+  '/static/images/izlozba-7.jpeg',
+  '/static/images/izlozba-1.jpeg',
+  '/static/images/izlozba-2.jpeg',
+  '/static/images/izlozba-3.jpeg',
+  '/static/images/izlozba-4.jpeg',
+  '/static/images/izlozba-5.jpeg',
+  '/static/images/izlozba-6.jpeg',
 ]
 
 const srLatin = {

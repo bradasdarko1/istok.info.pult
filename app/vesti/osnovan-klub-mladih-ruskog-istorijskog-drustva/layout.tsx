@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'Istok Info Pult',
     images: [
       {
-        url: 'https://istokinfopult.rs/static/images/klub-mladih-2.jpeg',
+        url: 'https://istokinfopult.rs/static/images/izlozba-7.jpeg',
         width: 1200,
         height: 630,
         alt: 'Osnovan Klub mladih Ruskog istorijskog društva u Srbiji',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       'OSNOVAN KLUB MLADIH RUSKOG ISTORIJSKOG DRUŠTVA U SRBIJI',
     description:
       'Nova snaga za čuvanje istorijske istine i zajedničkog rusko-srpskog nasleđa.',
-    images: ['https://istokinfopult.rs/static/images/klub-mladih-2.jpeg'],
+    images: ['https://istokinfopult.rs/static/images/izlozba-7.jpeg'],
   },
 }
 

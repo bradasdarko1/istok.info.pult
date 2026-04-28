@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/pismo-pjer-anri-binel',
+  slug: 'pismo-pjer-anri-binel',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 28.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 28.04.2026.'
+        : 'Vesti - 28.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПИСЬМО И ПОСЛАНИЕ ПЬЕРА АНРИ БИНЕЛЯ СЕРБСКОМУ НАРОДУ: СЛОВА ДРУГА, КОТОРЫЙ ВСТАЛ НА СТОРОНУ СЕРБИИ'
+      : script === 'cyr'
+        ? 'ПИСМО И ПОРУКА ПЈЕРА АНРИЈА БИНЕЛА СРПСКОМ НАРОДУ: РЕЧИ ПРИЈАТЕЉА КОЈИ ЈЕ СТАО УЗ СРБИЈУ'
+        : 'PISMO I PORUKA PJERA ANRIJA BINELA SRPSKOM NARODU: REČI PRIJATELJA KOJI JE STAO UZ SRBIJU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Пьер Анри Бинель оставил сербскому народу сильное послание о чести, правде и дружбе. Слова человека, который не согласился молчать перед несправедливостью.'
+      : script === 'cyr'
+        ? 'Пјер Анри Бинел оставио је српском народу снажну поруку о части, истини и пријатељству. Речи човека који није пристао да ћути пред неправдом.'
+        : 'Pjer Anri Binel ostavio je srpskom narodu snažnu poruku o časti, istini i prijateljstvu. Reči čoveka koji nije pristao da ćuti pred nepravdom.',
+
+  image: '/static/images/pismo-srbiji.jpeg',
+},
+    {
   href: '/vesti/osnovan-klub-mladih-ruskog-istorijskog-drustva',
   slug: 'osnovan-klub-mladih-ruskog-istorijskog-drustva',
 

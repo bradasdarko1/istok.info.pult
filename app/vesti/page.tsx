@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/intervju-sa-ocem-aleksandra-bijelica',
+  slug: 'intervju-sa-ocem-aleksandra-bijelica',
+
+  category:
+    language === 'ru'
+      ? 'Интервью - 29.04.2026.'
+      : script === 'cyr'
+        ? 'Интервју - 29.04.2026.'
+        : 'Intervju - 29.04.2026.',
+
+  title:
+    language === 'ru'
+      ? '«СПАСИБО ТЕБЕ, СЫН»: ОТЕЦ ГЕРОЯ АЛЕКСАНДРА БИЕЛИЧА — СЛОВА, КОТОРЫЕ РАЗБИВАЮТ СЕРДЦЕ'
+      : script === 'cyr'
+        ? '„ХВАЛА ТИ, СИНЕ“ — ОТАЦ ХЕРОЈА АЛЕКСАНДРА БИЈЕЛИЋА: РЕЧИ КОЈЕ ЛЕДЕ КРВ У ЖИЛАМА'
+        : '„HVALA TI, SINE“ — OTAC HEROJA ALEKSANDRA BIJELIĆA: REČI KOJE LEDE KRV U ŽILAMA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Эмоциональное свидетельство отца о сыне-офицере, о чести, боли и гордости. Интервью, которое невозможно прочитать без эмоций.'
+      : script === 'cyr'
+        ? 'Потресно сведочанство оца о сину официра, о части, болу и поносу. Интервју који никога не оставља равнодушним.'
+        : 'Potresno svedočanstvo oca o sinu oficiru, o časti, bolu i ponosu. Intervju koji nikoga ne ostavlja ravnodušnim.',
+
+  image: '/static/images/otac-aleksandra-bijelica.jpeg',
+},
+    {
   href: '/vesti/pismo-pjer-anri-binel',
   slug: 'pismo-pjer-anri-binel',
 

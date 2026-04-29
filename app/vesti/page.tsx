@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/dina-blagojevic',
+  slug: 'dina-blagojevic',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 29.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 29.04.2026.'
+        : 'Vesti - 29.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ДИНА БЛАГОЕВИЧ: СЕРБСКАЯ ФУТБОЛИСТКА В СОСТАВЕ МОСКОВСКОГО «СПАРТАКА»'
+      : script === 'cyr'
+        ? 'ДИНА БЛАГОЈЕВИЋ: СРПСКА ФУДБАЛЕРКА У ТИМУ РУСКОГ СПАРТАКА'
+        : 'DINA BLAGOJEVIĆ: SRPSKA FUDBALERKA U TIMU RUSKOG SPARTAKA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Сербская футболистка Дина Благоевич покоряет Москву вместе со «Спартаком» — история успеха, силы и нового начала.'
+      : script === 'cyr'
+        ? 'Српска фудбалерка Дина Благојевић осваја Москву са Спартаком — прича о успеху, снази и новом почетку.'
+        : 'Srpska fudbalerka Dina Blagojević osvaja Moskvu sa Spartakom — priča o uspehu, snazi i novom početku.',
+
+  image: '/static/images/dina-blagojevic.jpg',
+},
+    {
   href: '/vesti/intervju-sa-ocem-aleksandra-bijelica',
   slug: 'intervju-sa-ocem-aleksandra-bijelica',
 

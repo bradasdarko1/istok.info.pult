@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/murino',
+  slug: 'murino',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 30.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 30.04.2026.'
+        : 'Vesti - 30.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'МУРИНО – 27 ЛЕТ СО ДНЯ ТРАГЕДИИ, КОТОРУЮ НЕЛЬЗЯ ЗАБЫТЬ'
+      : script === 'cyr'
+        ? 'МУРИНО – 27 ГОДИНА ОД ТРАГЕДИЈЕ КОЈА НЕ СМЕ ДА СЕ ЗАБОРАВИ'
+        : 'MURINO – 27 GODINA OD TRAGEDIJE KOJA NE SME DA SE ZABORAVI',
+
+  excerpt:
+    language === 'ru'
+      ? '27 лет со дня бомбардировки моста в Мурино, где погибли шесть мирных жителей, среди них трое детей — память, которую невозможно стереть.'
+      : script === 'cyr'
+        ? '27 година од бомбардовања моста у Мурину, где је погинуло шест цивила, међу њима троје деце — сећање које не сме бити заборављено.'
+        : '27 godina od bombardovanja mosta u Murinu, gde je poginulo šest civila, među njima troje dece — sećanje koje ne sme biti zaboravljeno.',
+
+  image: '/static/images/murino-1.jpeg',
+},
+    {
   href: '/vesti/dina-blagojevic',
   slug: 'dina-blagojevic',
 

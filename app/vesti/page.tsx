@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/razvoj-saradnje-srbije-i-stavropolja',
+  slug: 'razvoj-saradnje-srbije-i-stavropolja',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 30.04.2026.'
+      : script === 'cyr'
+        ? 'Вести - 30.04.2026.'
+        : 'Vesti - 30.04.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СТАВРОПОЛЬ И СЕРБИЯ УКРЕПЛЯЮТ СОТРУДНИЧЕСТВО'
+      : script === 'cyr'
+        ? 'СТАВРОПОЉ И СРБИЈА ЈАЧАЈУ САРАДЊУ'
+        : 'STAVROPOLJ I SRBIJA JAČAJU SARADNJU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Сотрудничество между Сербией и Ставропольским краем выходит на новый уровень — акцент на сельском хозяйстве, совместных проектах и обмене специалистами.'
+      : script === 'cyr'
+        ? 'Сарадња између Србије и Ставропољског краја добија конкретне обрисе — фокус је на пољопривреди, заједничким пројектима и размени стручњака.'
+        : 'Saradnja između Srbije i Stavropoljskog kraja dobija konkretne obrise — fokus je na poljoprivredi, zajedničkim projektima i razmeni stručnjaka.',
+
+  image: '/static/images/saradnja.jpg',
+},
+    {
   href: '/vesti/murino',
   slug: 'murino',
 

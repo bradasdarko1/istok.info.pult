@@ -3,9 +3,11 @@ import { vesti } from '@/data/vesti'
 
 export async function GET(
   request: Request,
-  { params }: { params: { slug: string } }
+  context: { params: Promise<{ slug: string }> }
 ) {
-  const vest = vesti.find((item) => item.slug === params.slug)
+  const { slug } = await context.params
+
+  const vest = vesti.find((item) => item.slug === slug)
 
   if (!vest) {
     return NextResponse.json(

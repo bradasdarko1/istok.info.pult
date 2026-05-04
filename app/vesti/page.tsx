@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/sport/srbija-okuplja-tim-za-ligu-nacija',
+  slug: 'srbija-okuplja-tim-za-ligu-nacija',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 04.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 04.05.2026.'
+        : 'Vesti - 04.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СЕРБИЯ СОБИРАЕТ СОСТАВ НА ЛИГУ НАЦИЙ: ТРИ ИГРОКА ИЗ РОССИЙСКОГО ЧЕМПИОНАТА'
+      : script === 'cyr'
+        ? 'СРБИЈА ОКУПЉА ТИМ ЗА ЛИГУ НАЦИЈА: ТРИ ИГРАЧА ИЗ РУСКОГ ПРВЕНСТВА'
+        : 'SRBIJA OKUPLJA TIM ZA LIGU NACIJA: TRI IGRAČA IZ RUSKOG PRVENSTVA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Три сербских волейболиста из российского чемпионата получили вызов в сборную Сербии на Лигу наций.'
+      : script === 'cyr'
+        ? 'Тројица српских одбојкаша из руског првенства добили су позив у репрезентацију Србије за Лигу нација.'
+        : 'Trojica srpskih odbojkaša iz ruskog prvenstva dobili su poziv u reprezentaciju Srbije za Ligu nacija.',
+
+  image: '/static/images/liga-nacije.jpg',
+},
+    {
   href: '/vesti/razvoj-saradnje-srbije-i-stavropolja',
   slug: 'razvoj-saradnje-srbije-i-stavropolja',
 

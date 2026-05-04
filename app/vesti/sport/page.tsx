@@ -92,6 +92,13 @@ const srLatin = {
     'Najvažnije sportske vesti, aktuelnosti i priče iz sveta sporta.',
   news: [
     {
+  title: 'SRBIJA OKUPLJA TIM ZA LIGU NACIJA: TRI IGRAČA IZ RUSKOG PRVENSTVA',
+  date: 'Objavljeno: 4. maj 2026.',
+  excerpt: 'Trojica srpskih odbojkaša iz Rusije u sastavu za Ligu nacija.',
+  href: '/vesti/sport/srbija-okuplja-tim-za-ligu-nacija',
+  image: '/static/images/liga-nacije.jpg',
+},
+    {
       title: 'Vojvodina savladala Radnički i obezbedila 2.mesto u plej-ofu Super lige',
       date: 'Objavljeno: 9. april 2026.',
       excerpt: 'Fudbaleri FK Vojvodine slavili na Karađorđu rezultatom 3:2',
@@ -116,6 +123,13 @@ const ruText = {
   pageDescription:
     'Самые важные спортивные новости, актуальные события и истории из мира спорта.',
   news: [
+    {
+  title: 'СЕРБИЯ СОБИРАЕТ СОСТАВ НА ЛИГУ НАЦИЙ: ТРИ ИГРОКА ИЗ РОССИЙСКОГО ЧЕМПИОНАТА',
+  date: 'Опубликовано: 4 мая 2026 г.',
+  excerpt: 'Три сербских волейболиста из российского чемпионата в составе на Лигу наций.',
+  href: '/vesti/sport/srbija-okuplja-tim-za-ligu-nacija',
+  image: '/static/images/liga-nacije.jpg',
+},
     {
       title: '«Войводина» победила «Раднички» и обеспечила себе 2-е место в плей-офф Суперлиги.',
       date: '9 апреля 2026 г.',

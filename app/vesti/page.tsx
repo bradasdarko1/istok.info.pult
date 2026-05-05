@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/nagrada-evroazije-2026',
+  slug: 'nagrada-evroazije-2026',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 05.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 05.05.2026.'
+        : 'Vesti - 05.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПРЕМИЯ «ЕВРАЗИЯ 2026»: ОТКРЫТ ПРИЁМ ЗАЯВОК НА ЛУЧШИЕ ПРОЕКТЫ СО ВСЕГО МИРА'
+      : script === 'cyr'
+        ? 'НАГРАДА ЕВРОАЗИЈЕ 2026: ОТВОРЕНЕ ПРИЈАВЕ ЗА НАЈБОЉЕ ПРОЈЕКТЕ ИЗ ЦЕЛОГ СВЕТА'
+        : 'NAGRADA EVROAZIJE 2026: OTVORENE PRIJAVE ZA NAJBOLJE PROJEKTE IZ CELOG SVETA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Открыт приём заявок на международную премию «Евразия». Призовой фонд составляет 17 миллионов рублей, а финалисты представят проекты в Москве.'
+      : script === 'cyr'
+        ? 'Отворене су пријаве за међународну награду Евроазије. Наградни фонд износи 17 милиона рубаља, а финалисти ће представити пројекте у Москви.'
+        : 'Otvorene su prijave za međunarodnu nagradu Evroazije. Nagradni fond iznosi 17 miliona rubalja, a finalisti će predstaviti projekte u Moskvi.',
+
+  image: '/static/images/nagrada-evroazije.png',
+},
+    {
   href: '/vesti/sport/srbija-okuplja-tim-za-ligu-nacija',
   slug: 'srbija-okuplja-tim-za-ligu-nacija',
 

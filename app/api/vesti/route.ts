@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 
 export async function GET() {
   const vesti = [
+    
     {
       href: '/vesti/sport/srbija-okuplja-tim-za-ligu-nacija',
       slug: 'srbija-okuplja-tim-za-ligu-nacija',

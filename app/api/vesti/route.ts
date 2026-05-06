@@ -2,7 +2,16 @@ import { NextResponse } from 'next/server'
 
 export async function GET() {
   const vesti = [
-    
+    {
+      href: '/vesti/nagrada-evroazije-2026',
+      slug: 'nagrada-evroazije-2026',
+      category: 'Vesti - 05.05.2026.',
+      title: 'NAGRADA EVROAZIJE 2026: OTVORENE PRIJAVE ZA NAJBOLJE PROJEKTE IZ CELOG SVETA',
+      excerpt:
+        'Otvorene su prijave za međunarodnu nagradu Evroazije. Nagradni fond iznosi 17 miliona rubalja, a finalisti će predstaviti projekte u Moskvi.',
+      image: 'https://istokinfopult.rs/static/images/nagrada-evroazije.png',
+    },
+
     {
       href: '/vesti/sport/srbija-okuplja-tim-za-ligu-nacija',
       slug: 'srbija-okuplja-tim-za-ligu-nacija',

@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/premijera-filma-avgust',
+  slug: 'premijera-filma-avgust',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 06.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 06.05.2026.'
+        : 'Vesti - 06.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПРЕМЬЕРА ВОЕННОЙ ДРАМЫ «АВГУСТ» В РУССКОМ ДОМЕ В БЕЛГРАДЕ'
+      : script === 'cyr'
+        ? 'ПРЕМИЈЕРА РУСКЕ ВОЈНЕ ДРАМЕ „АВГУСТ“ У РУСКОМ ДОМУ У БЕОГРАДУ'
+        : 'PREMIJERA RUSKE VOJNE DRAME „AVGUST“ U RUSKOM DOMU U BEOGRADU',
+
+  excerpt:
+    language === 'ru'
+      ? '9 мая в Русском доме в Белграде состоится премьерный показ новой российской военной драмы «Август» с сербскими субтитрами.'
+      : script === 'cyr'
+        ? '9. маја у Руском дому у Београду биће одржана премијерна пројекција нове руске војне драме „Август“ са српским титловима.'
+        : '9. maja u Ruskom domu u Beogradu biće održana premijerna projekcija nove ruske vojne drame „Avgust“ sa srpskim titlovima.',
+
+  image: '/static/images/avgust.jpg',
+},
+    {
   href: '/vesti/nagrada-evroazije-2026',
   slug: 'nagrada-evroazije-2026',
 

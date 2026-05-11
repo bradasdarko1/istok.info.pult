@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/novac-za-vojni-rok-preusmeren-na-sport-i-kulturu',
+  slug: 'novac-za-vojni-rok-preusmeren-na-sport-i-kulturu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 11.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 11.05.2026.'
+        : 'Vesti - 11.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СРЕДСТВА ДЛЯ ВОЕННОЙ СЛУЖБЫ ПЕРЕНАПРАВЛЕНЫ НА СПОРТ И КУЛЬТУРУ'
+      : script === 'cyr'
+        ? 'НОВАЦ ЗА ВОЈНИ РОК ПРЕУСМЕРЕН НА СПОРТ И КУЛТУРУ'
+        : 'NOVAC ZA VOJNI ROK PREUSMEREN NA SPORT I KULTURU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Правительство Сербии перенаправило около 2,5 миллиона евро, ранее предназначенных для реализации обязательной военной службы, Министерствам спорта и культуры.'
+      : script === 'cyr'
+        ? 'Влада Србије преусмерила је око 2,5 милиона евра, првобитно намењених за реализацију обавезног војног рока, министарствима спорта и културе.'
+        : 'Vlada Srbije preusmerila je oko 2,5 miliona evra, prvobitno namenjenih za realizaciju obaveznog vojnog roka, ministarstvima sporta i kulture.',
+
+  image: '/static/images/novac-za-vojni-rok.jpg',
+},
+    {
   href: '/vesti/premijera-filma-avgust',
   slug: 'premijera-filma-avgust',
 

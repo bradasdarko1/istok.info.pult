@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/rusija-vraca-zemljiste-crkvi',
+  slug: 'rusija-vraca-zemljiste-crkvi',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 11.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 11.05.2026.'
+        : 'Vesti - 11.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РОССИЯ ВОЗВРАЩАЕТ ЗЕМЛЮ МОНАСТЫРЯ ВОЙЛОВИЦА СЕРБСКОЙ ПРАВОСЛАВНОЙ ЦЕРКВИ'
+      : script === 'cyr'
+        ? 'РУСИЈА ВРАЋА ЗЕМЉИШТЕ МАНАСТИРА ВОЈЛОВИЦА СРПСКОЈ ПРАВОСЛАВНОЈ ЦРКВИ'
+        : 'RUSIJA VRAĆA ZEMLJIŠTE MANASTIRA VOJLOVICA SRPSKOJ PRAVOSLAVNOJ CRKVI',
+
+  excerpt:
+    language === 'ru'
+      ? 'Земля монастыря Войловица, расположенная на территории нефтеперерабатывающего завода в Панчево, будет возвращена Сербской православной церкви после подписания соглашения между митрополитом Банатским Никанором и генеральным директором NIS Кириллом Тюрденевым.'
+      : script === 'cyr'
+        ? 'Земљиште манастира Војловица, које се налази у кругу рафинерије Панчево, биће враћено Српској православној цркви након споразума који су потписали митрополит банатски Никанор и генерални директор НИС-а Кирил Тјурдењев.'
+        : 'Zemljište manastira Vojlovica, koje se nalazi u krugu rafinerije Pančevo, biće vraćeno Srpskoj pravoslavnoj crkvi nakon sporazuma koji su potpisali mitropolit banatski Nikanor i generalni direktor NIS-a Kiril Tjurdenjev.',
+
+  image: '/static/images/rusija-daje-zemljiste.jpg',
+},
+    {
   href: '/vesti/parada-pobede-u-moskvi',
   slug: 'parada-pobede-u-moskvi',
 

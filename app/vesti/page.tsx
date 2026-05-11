@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/parada-pobede-u-moskvi',
+  slug: 'parada-pobede-u-moskvi',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 11.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 11.05.2026.'
+        : 'Vesti - 11.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПАРАДА ПОБЕДЫ В МОСКВЕ ЗАВЕРШЕНА ВОЗДУШНЫМ СПЕКТАКЛЕМ'
+      : script === 'cyr'
+        ? 'ПАРАДА ПОБЕДЕ У МОСКВИ ЗАВРШЕНА ВАЗДУШНИМ СПЕКТАКЛОМ'
+        : 'PARADA POBEDE U MOSKVI ZAVRŠENA VAZDUŠNIM SPEKTAKLOM',
+
+  excerpt:
+    language === 'ru'
+      ? 'Парад Победы в Москве завершился впечатляющим воздушным спектаклем: авиационные группы «Русские витязи» и «Стрижи» выполнили манёвр «Кубанский бриллиант», а штурмовики Су-25 окрасили небо в цвета российского флага.'
+      : script === 'cyr'
+        ? 'Парада победе у Москви завршена је импресивним ваздушним спектаклом: акробатски тимови „Руски витезови“ и „Стрижи“ извели су маневар „Кубански дијамант“, а авиони Су-25 обојили су небо у боје руске заставе.'
+        : 'Parada pobede u Moskvi završena je impresivnim vazdušnim spektaklom: akrobatski timovi „Ruski vitezovi“ i „Striži“ izveli su manevar „Kubanski dijamant“, a avioni Su-25 obojili su nebo u boje ruske zastave.',
+
+  image: '/static/images/parada-pobede-u-moskvi.jpg',
+},
+    {
   href: '/vesti/novac-za-vojni-rok-preusmeren-na-sport-i-kulturu',
   slug: 'novac-za-vojni-rok-preusmeren-na-sport-i-kulturu',
 

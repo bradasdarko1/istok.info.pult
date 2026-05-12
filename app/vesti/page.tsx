@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/srpska-sela-kod-srebrenice-u-plamenu',
+  slug: 'srpska-sela-kod-srebrenice-u-plamenu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 12.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 12.05.2026.'
+        : 'Vesti - 12.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СЕРБСКИЕ СЁЛА У СРЕБРЕНИЦЫ В ОГНЕ: 34 ГОДА СО ДНЯ «МАЙСКИХ КОСТРОВ»'
+      : script === 'cyr'
+        ? 'СРПСКА СЕЛА КОД СРЕБРЕНИЦЕ У ПЛАМЕНУ: 34 ГОДИНЕ ОД „МАЈСКИХ ЛОМАЧА“'
+        : 'SRPSKA SELA KOD SREBRENICE U PLAMENU: 34 GODINE OD „MAJSKIH LOMAČA“',
+
+  excerpt:
+    language === 'ru'
+      ? '12 мая 1992 года сербские сёла Медже, Осредак, Виогор и Ораховица возле Сребреницы подверглись тяжёлому нападению, в ходе которого были сожжены дома и убиты мирные жители.'
+      : script === 'cyr'
+        ? 'На дан Светог Василија Острошког 1992. године српска села код Сребренице претрпела су тежак напад у којем су спаљене куће и страдали бројни цивили.'
+        : 'Na dan Svetog Vasilija Ostroškog 1992. godine srpska sela kod Srebrenice pretrpela su težak napad u kojem su spaljene kuće i stradali brojni civili.',
+
+  image: '/static/images/srpska-sela-kod-srebrenice.jpg',
+},
+    {
   href: '/vesti/dan-vojske-republike-srpske',
   slug: 'dan-vojske-republike-srpske',
 

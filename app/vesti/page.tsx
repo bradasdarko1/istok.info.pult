@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/dan-vojske-republike-srpske',
+  slug: 'dan-vojske-republike-srpske',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 12.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 12.05.2026.'
+        : 'Vesti - 12.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РЕСПУБЛИКА СЕРБСКАЯ ОТМЕЧАЕТ ДЕНЬ АРМИИ — ПАМЯТЬ О 23 659 ПОГИБШИХ БОЙЦАХ'
+      : script === 'cyr'
+        ? 'РЕПУБЛИКА СРПСКА ОБЕЛЕЖАВА ДАН ВОЈСКЕ — СЕЋАЊЕ НА 23.659 ПОГИНУЛИХ БОРАЦА'
+        : 'REPUBLIKA SRPSKA OBELEŽAVA DAN VOJSKE — SEĆANJE NA 23.659 POGINULIH BORACA',
+
+  excerpt:
+    language === 'ru'
+      ? 'В Баня-Луке и Биелине проходят мероприятия по случаю Дня Армии Республики Сербской — панихиды, возложение венков и торжественное шествие в память о погибших бойцах.'
+      : script === 'cyr'
+        ? 'У Бањалуци и Бијељини обележава се Дан Војске Републике Српске уз парастосе, полагање венаца и свечани дефиле у част погинулих бораца.'
+        : 'U Banjaluci i Bijeljini obeležava se Dan Vojske Republike Srpske uz parastose, polaganje venaca i svečani defile u čast poginulih boraca.',
+
+  image: '/static/images/dan-vojske-rs.jpg',
+},
+    {
   href: '/vesti/rusija-vraca-zemljiste-crkvi',
   slug: 'rusija-vraca-zemljiste-crkvi',
 

@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/petrus-zaboravljena-tvrdjava',
+  slug: 'petrus-zaboravljena-tvrdjava',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 13.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 13.05.2026.'
+        : 'Vesti - 13.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПЕТРУС — ЗАБЫТАЯ КРЕПОСТЬ, КОТОРАЯ ВСЁ ЕЩЁ ХРАНИТ ДУХ СЕРБСКОЙ ИСТОРИИ'
+      : script === 'cyr'
+        ? 'ПЕТРУС – ЗАБОРАВЉЕНА ТВРЂАВА КОЈА И ДАЉЕ ЧУВА ДУХ СРПСКЕ ИСТОРИЈЕ'
+        : 'PETRUS – ZABORAVLJENA TVRĐAVA KOJA I DALJE ČUVA DUH SRPSKE ISTORIJE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Недалеко от Парачина находятся остатки крепости Петрус — тихого, но мощного свидетеля сербской истории и духовного наследия Петрушской области.'
+      : script === 'cyr'
+        ? 'Недалеко од Параћина налазе се остаци тврђаве Петрус — тихог, али снажног сведока српске историје и духовног наслеђа Петрушке области.'
+        : 'Nedaleko od Paraćina nalaze se ostaci tvrđave Petrus — tihog, ali snažnog svedoka srpske istorije i duhovnog nasleđa Petruške oblasti.',
+
+  image: '/static/images/petrus-tvrdjava.jpg',
+},
+    {
   href: '/vesti/srpska-sela-kod-srebrenice-u-plamenu',
   slug: 'srpska-sela-kod-srebrenice-u-plamenu',
 

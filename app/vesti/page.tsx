@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/sport/finale-kupa-crvena-zvezda-vojvodina',
+  slug: 'finale-kupa-crvena-zvezda-vojvodina',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 13.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 13.05.2026.'
+        : 'Vesti - 13.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ФИНАЛ, КОТОРЫЙ ЗАЖИГАЕТ СЕРБИЮ: «ЦРВЕНА ЗВЕЗДА» ПРОТИВ «ВОЙВОДИНЫ»'
+      : script === 'cyr'
+        ? 'ФИНАЛЕ КОЈЕ ПАЛИ СРБИЈУ: ЗВЕЗДА И ВОЈВОДИНА У БОРБИ ЗА ТРОФЕЈ'
+        : 'FINALE KOJE PALI SRBIJU: ZVEZDA I VOJVODINA U BORBI ZA TROFEJ',
+
+  excerpt:
+    language === 'ru'
+      ? 'Сегодня вечером «Црвена звезда» и «Войводина» играют финал — один матч, один трофей, одна история.'
+      : script === 'cyr'
+        ? 'Вечерас Црвена звезда и Војводина играју финале — један меч, један трофеј, једна историја.'
+        : 'Večeras Crvena zvezda i Vojvodina igraju finale — jedan meč, jedan trofej, jedna istorija.',
+
+  image: '/static/images/finale-kupa.jpg',
+},
+    {
   href: '/vesti/petrus-zaboravljena-tvrdjava',
   slug: 'petrus-zaboravljena-tvrdjava',
 

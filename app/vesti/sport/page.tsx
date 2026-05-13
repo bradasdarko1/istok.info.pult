@@ -92,6 +92,13 @@ const srLatin = {
     'Najvažnije sportske vesti, aktuelnosti i priče iz sveta sporta.',
   news: [
     {
+  title: 'FINALE KOJE PALI SRBIJU: ZVEZDA I VOJVODINA U BORBI ZA TROFEJ!',
+  date: 'Objavljeno: 13. maj 2026.',
+  excerpt: 'Crvena zvezda i Vojvodina večeras igraju veliko finale — jedan meč, jedan trofej, jedna istorija.',
+  href: '/vesti/finale-kupa-crvena-zvezda-vojvodina',
+  image: '/static/images/finale-kupa.jpg',
+},
+    {
   title: 'SRBIJA OKUPLJA TIM ZA LIGU NACIJA: TRI IGRAČA IZ RUSKOG PRVENSTVA',
   date: 'Objavljeno: 4. maj 2026.',
   excerpt: 'Trojica srpskih odbojkaša iz Rusije u sastavu za Ligu nacija.',
@@ -123,6 +130,13 @@ const ruText = {
   pageDescription:
     'Самые важные спортивные новости, актуальные события и истории из мира спорта.',
   news: [
+    {
+  title: 'ФИНАЛ, КОТОРЫЙ ЗАЖИГАЕТ СЕРБИЮ: «ЦРВЕНА ЗВЕЗДА» ПРОТИВ «ВОЙВОДИНЫ»',
+  date: 'Опубликовано: 13 мая 2026 г.',
+  excerpt: 'Сегодня «Црвена звезда» и «Войводина» сыграют в финале — один матч, один трофей, одна история.',
+  href: '/vesti/finale-kupa-crvena-zvezda-vojvodina',
+  image: '/static/images/finale-kupa.jpg',
+},
     {
   title: 'СЕРБИЯ СОБИРАЕТ СОСТАВ НА ЛИГУ НАЦИЙ: ТРИ ИГРОКА ИЗ РОССИЙСКОГО ЧЕМПИОНАТА',
   date: 'Опубликовано: 4 мая 2026 г.',

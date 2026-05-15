@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/hilandarske-svetinje-u-beogradu',
+  slug: 'hilandarske-svetinje-u-beogradu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 15.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 15.05.2026.'
+        : 'Vesti - 15.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СВЯТЫНИ ХИЛАНДАРА ПРИБЫВАЮТ В БЕЛГРАД: ИСТОРИЧЕСКОЕ СОБЫТИЕ К 850-ЛЕТИЮ СВЯТОГО САВВЫ'
+      : script === 'cyr'
+        ? 'СВЕТИЊЕ ХИЛАНДАРА СТИЖУ У БЕОГРАД: ИСТОРИЈСКИ ДОГАЂАЈ ПОВОДОМ 850 ГОДИНА СВЕТОГ САВЕ'
+        : 'HILANDARSKE SVETINJE STIŽU U BEOGRAD: ISTORIJSKI DOGAĐAJ POVODOM 850 GODINA SVETOG SAVE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Белград примет уникальные святыни из Хиландара поводом 850-летия со дня рождения Святого Саввы — событие, имеющее огромное значение для сербского народа и православной веры.'
+      : script === 'cyr'
+        ? 'Београд ће угостити драгоцене светиње из Хиландара поводом 850 година од рођења Светог Саве — догађај од изузетног значаја за српски народ и православну веру.'
+        : 'Beograd će ugostiti dragocene svetinje iz Hilandara povodom 850 godina od rođenja Svetog Save — događaj od izuzetnog značaja za srpski narod i pravoslavnu veru.',
+
+  image: '/static/images/hilandarske-svetinje.jpg',
+},
+    {
   href: '/vesti/sport/finale-kupa-crvena-zvezda-vojvodina',
   slug: 'finale-kupa-crvena-zvezda-vojvodina',
 

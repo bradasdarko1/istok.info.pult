@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/novak-ujedinitelj',
+  slug: 'novak-ujedinitelj',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 17.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 17.05.2026.'
+        : 'Vesti - 17.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НОВАК — ОБЪЕДИНИТЕЛЬ: ПОСЛЕДНЯЯ НАДЕЖДА НА ЕДИНСТВО СЕРБИИ?'
+      : script === 'cyr'
+        ? 'НОВАК — УЈЕДИНИТЕЉ: ПОСЛЕДЊА НАДА ЗА ЈЕДИНСТВО СРБИЈЕ?'
+        : 'NOVAK UJEDINITELJ: POSLEDNJA NADA ZA JEDINSTVO SRBIJE?',
+
+  excerpt:
+    language === 'ru'
+      ? 'В условиях глубокого общественного раскола всё чаще звучит призыв к Новаку Джоковичу — символу доверия и единства — включиться в судьбоносный процесс сохранения Сербии.'
+      : script === 'cyr'
+        ? 'У условима дубоке друштвене подељености све чешће се упућује позив Новаку Ђоковићу — симболу поверења и јединства — да се укључи у судбински процес очувања Србије.'
+        : 'U uslovima duboke društvene podeljenosti sve češće se upućuje poziv Novaku Đokoviću — simbolu poverenja i jedinstva — da se uključi u sudbinski proces očuvanja Srbije.',
+
+  image: '/static/images/novak.jpeg',
+},
+    {
   href: '/vesti/hilandarske-svetinje-u-beogradu',
   slug: 'hilandarske-svetinje-u-beogradu',
 

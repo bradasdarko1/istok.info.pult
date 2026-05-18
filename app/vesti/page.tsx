@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/osnovci-koji-pamte',
+  slug: 'osnovci-koji-pamte',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 18.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 18.05.2026.'
+        : 'Vesti - 18.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ДЕТИ, КОТОРЫЕ ПОМНЯТ: ШКОЛЬНИКИ ИЗ НОВИ-САДА В СЕРДЦЕ КОСОВО И МЕТОХИИ'
+      : script === 'cyr'
+        ? 'ДЕЦА КОЈА ПАМТЕ: ОСНОВЦИ ИЗ НОВОГ САДА У СРЦУ КОСОВА И МЕТОХИЈЕ'
+        : 'DECA KOJA PAMTE: OSNOVCI IZ NOVOG SADA U SRCU KOSOVA I METOHIJE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Школьники из Нови-Сада провели незабываемые дни в Косово и Метохии, где через общение со сверстниками и посещение святынь познакомились с историей, верой и идентичностью своего народа.'
+      : script === 'cyr'
+        ? 'Основци из Новог Сада провели су незаборавне дане на Косову и Метохији, где су кроз дружење са вршњацима и обилазак светиња упознали историју, веру и идентитет свог народа.'
+        : 'Osnovci iz Novog Sada proveli su nezaboravne dane na Kosovu i Metohiji, gde su kroz druženje sa vršnjacima i obilazak svetinja upoznali istoriju, veru i identitet svog naroda.',
+
+  image: '/static/images/deca-koja-pamte.jpg',
+},
+    {
   href: '/vesti/pakla-38-dana-za-srpske-vojnike',
   slug: 'pakla-38-dana-za-srpske-vojnike',
 

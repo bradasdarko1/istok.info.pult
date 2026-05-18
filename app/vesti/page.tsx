@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/pakla-38-dana-za-srpske-vojnike',
+  slug: 'pakla-38-dana-za-srpske-vojnike',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 18.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 18.05.2026.'
+        : 'Vesti - 18.05.2026.',
+
+  title:
+    language === 'ru'
+      ? '38 ДНЕЙ АДА: СЕРБСКИЕ СОЛДАТЫ ПРОШЛИ ЧЕРЕЗ ПЫТКИ ОТ КОШАР ДО ТАЙНЫХ ТЮРЕМ В ГЕРМАНИИ'
+      : script === 'cyr'
+        ? '38 ДАНА ПАКЛА: СРПСКИ ВОЈНИЦИ ПРОШЛИ КРОЗ ТОРТУРУ ОД КОШАРА ДО ТАЈНИХ ЗАТВОРА У НЕМАЧКОЈ'
+        : '38 DANA PAKLA: SRPSKI VOJNICI PROŠLI KROZ TORTURU OD KOŠARA DO TAJNIH ZATVORA U NEMAČKOJ',
+
+  excerpt:
+    language === 'ru'
+      ? 'Сербские солдаты Шефко Таирович и Бобан Миленкович пережили 38 дней жестоких пыток после захвата у Юника в 1999 году, но отказались подписать ложные признания.'
+      : script === 'cyr'
+        ? 'Српски војници Шефко Таировић и Бобан Миленковић преживели су 38 дана тешке тортуре након заробљавања код Јуника 1999. године, али су одбили да потпишу лажна признања.'
+        : 'Srpski vojnici Šefko Tairović i Boban Milenković preživeli su 38 dana teške torture nakon zarobljavanja kod Junika 1999. godine, ali su odbili da potpišu lažna priznanja.',
+
+  image: '/static/images/dvojica-srpskih-vojnika.jpg',
+},
+    {
   href: '/vesti/novak-ujedinitelj',
   slug: 'novak-ujedinitelj',
 

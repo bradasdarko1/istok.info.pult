@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/okrugli-sto-u-tuli',
+  slug: 'okrugli-sto-u-tuli',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 19.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 19.05.2026.'
+        : 'Vesti - 19.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'КРУГЛЫЙ СТОЛ В ТУЛЕ: ИСТОРИЧЕСКАЯ ПАМЯТЬ ПОД УДАРОМ ФАЛЬСИФИКАЦИЙ'
+      : script === 'cyr'
+        ? 'Округли сто у Тули: Историјско памћење на удару фалсификата'
+        : 'Okrugli sto u Tuli: Istorijsko pamćenje na udaru falsifikata',
+
+  excerpt:
+    language === 'ru'
+      ? 'Тула, 15 мая 2026 г. – В Тульском государственном университете состоялся международный круглый стол на тему «Сохранение исторической памяти и противодействие фальсификации истории».'
+      : script === 'cyr'
+        ? 'Тула, 15. мај 2026. године – На Тулском државном универзитету одржан је међународни округли сто под називом „Очување историјског памћења и супротстављање фалсификовању историје”.'
+        : 'Tula, 15. maj 2026. godine – Na Tulskom državnom univerzitetu održan je međunarodni okrugli sto pod nazivom „Očuvanje istorijskog pamćenja i suprotstavljanje falsifikovanju istorije”.',
+
+  image: '/static/images/okrugli-sto-3.jpeg',
+},
+    {
   href: '/vesti/osnovci-koji-pamte',
   slug: 'osnovci-koji-pamte',
 

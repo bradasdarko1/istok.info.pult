@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/nikolaj-II-romanov',
+  slug: 'nikolaj-II-romanov',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 19.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 19.05.2026.'
+        : 'Vesti - 19.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ЦАРЬ, КОТОРЫЙ ВСТАЛ ЗА СЕРБИЮ — ПАМЯТЬ О НИКОЛАЕ II РОМАНОВЕ'
+      : script === 'cyr'
+        ? 'ЦАР КОЈИ ЈЕ СТАО УЗ СРБИЈУ — СЕЋАЊЕ НА НИКОЛАЈА II РОМАНОВА'
+        : 'CAR KOJI JE STAO UZ SRBIJU — SEĆANJE NA NIKOLAJA II ROMANOVA',
+
+  excerpt:
+    language === 'ru'
+      ? '«Вы не будете на меня сердиться, господа, что я прежде всего русский…» Эти слова отражают личность императора Николая II Романова — правителя, который в судьбоносный момент встал на сторону Сербии. Его решение в 1914 году стало одним из ключевых событий начала Первой мировой войны и навсегда закрепило его имя в памяти сербского народа.'
+      : script === 'cyr'
+        ? '„Нећете ми замерити, господо, што сам пре свега Рус…“ Ове речи најбоље описују личност цара Николаја II Романова — владара који је у судбинском тренутку стао уз Србију. Његова одлука 1914. године постала је један од кључних момената почетка Првог светског рата и заувек га уписала у памћење српског народа.'
+        : '„Nećete mi zameriti, gospodo, što sam pre svega Rus…“ Ove reči najbolje opisuju ličnost cara Nikolaja II Romanova — vladara koji je u sudbinskom trenutku stao uz Srbiju. Njegova odluka 1914. godine postala je jedan od ključnih momenata početka Prvog svetskog rata i zauvek ga upisala u pamćenje srpskog naroda.',
+
+  image: '/static/images/nikolaj-II-romanov.jpg',
+},
+    {
   href: '/vesti/secanje-na-vojvodu-putnika',
   slug: 'secanje-na-vojvodu-putnika',
 

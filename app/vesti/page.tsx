@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/secanje-na-vojvodu-putnika',
+  slug: 'secanje-na-vojvodu-putnika',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 19.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 19.05.2026.'
+        : 'Vesti - 19.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПАМЯТЬ О ВОЕВОДЕ РАДОМИРЕ ПУТНИКЕ — СТРАТЕГЕ, ОСТАВИВШЕМ СЛЕД В ИСТОРИИ СЕРБИИ'
+      : script === 'cyr'
+        ? 'СЕЋАЊЕ НА ВОЈВОДУ РАДОМИРА ПУТНИКА — СТРАТЕГА КОЈИ ЈЕ ОБЕЛЕЖИО ИСТОРИЈУ СРБИЈЕ'
+        : 'SEĆANJE NA VOJVODU RADOMIRA PUTNIKA — STRATEGA KOJI JE OBELEŽIO ISTORIJU SRBIJE',
+
+  excerpt:
+    language === 'ru'
+      ? '«Родину защищают знанием, честью и единством». Эти слова точно отражают наследие воеводы Radomir Putnik — одного из величайших военачальников в истории Сербии. В должности начальника Верховного командования он вел сербскую армию через самые тяжелые испытания Балканских войн и Первой мировой войны.'
+      : script === 'cyr'
+        ? '„Отаџбина се брани знањем, чашћу и слогом.“ Овим речима најпрецизније се описује наслеђе војводе Радомир Путник, једног од највећих војних умова које је Србија имала. Као начелник Врховне команде, предводио је српску војску кроз најтеже тренутке Балканских ратова и Првог светског рата, остављајући дубок траг у борби за слободу.'
+        : '„Otadžbina se brani znanjem, čašću i slogom.“ Ovim rečima najpreciznije se opisuje nasleđe vojvode Radomir Putnik, jednog od najvećih vojnih umova koje je Srbija imala. Kao načelnik Vrhovne komande, predvodio je srpsku vojsku kroz najteže trenutke Balkanskih ratova i Prvog svetskog rata, ostavljajući dubok trag u borbi za slobodu.',
+
+  image: '/static/images/radomir-putnik.jpg',
+},
+    {
   href: '/vesti/okrugli-sto-u-tuli',
   slug: 'okrugli-sto-u-tuli',
 

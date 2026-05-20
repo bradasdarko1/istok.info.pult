@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/u-nisu-mural-nikolaju-rajevskom',
+  slug: 'u-nisu-mural-nikolaju-rajevskom',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 20.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 20.05.2026.'
+        : 'Vesti - 20.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В НИШЕ ОТКРЫТ МУРАЛ В ЧЕСТЬ РУССКОГО ГЕРОЯ НИКОЛАЯ РАЕВСКОГО'
+      : script === 'cyr'
+        ? 'У НИШУ ОТКРИВЕН МУРАЛ РУСКОМ ХЕРОЈУ НИКОЛАЈУ РАЈЕВСКОМ'
+        : 'U NIŠU OTKRIVEN MURAL RUSKOM HEROJU NIKOLAJU RAJEVSKOM',
+
+  excerpt:
+    language === 'ru'
+      ? 'В Нише состоялось торжественное открытие мурала, посвящённого герою Сербско-турецкой войны — полковнику Николаю Раевскому. Это событие стало частью подготовки к 150-летию начала войны и символом сербско-русского братства.'
+      : script === 'cyr'
+        ? 'У Нишу је свечано откривен мурал посвећен хероју Српско-турског рата, пуковнику Николају Рајевском. Овај догађај део је припрема за обележавање 150 година од почетка рата и представља симбол српско-руског братства.'
+        : 'U Nišu je svečano otkriven mural posvećen heroju Srpsko-turskog rata, pukovniku Nikolaju Rajevskom. Ovaj događaj deo je priprema za obeležavanje 150 godina od početka rata i predstavlja simbol srpsko-ruskog bratstva.',
+
+  image: '/static/images/nikolaj-rajevski-mural.jpeg',
+},
+    {
   href: '/vesti/nikolaj-II-romanov',
   slug: 'nikolaj-II-romanov',
 

@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/bogorodicin-pojas-krenuo-ka-srbiji',
+  slug: 'bogorodicin-pojas-krenuo-ka-srbiji',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 20.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 20.05.2026.'
+        : 'Vesti - 20.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПОЯС ПРЕСВЯТОЙ БОГОРОДИЦЫ НАПРАВИЛСЯ В СЕРБИЮ — ВЕРУЮЩИЕ С НЕТЕРПЕНИЕМ ОЖИДАЮТ СВЯТЫНЮ'
+      : script === 'cyr'
+        ? 'БОГОРОДИЧИН ПОЈАС КРЕНУО КА СРБИЈИ — ВЕРНИЦИ СА НЕСТРПЉЕЊЕМ ОЧЕКУЈУ СВЕТИЊУ'
+        : 'BOGORODIČIN POJAS KRENUO KA SRBIJI — VERNICI SA NESTRPLJENJEM OČEKUJU SVETINJU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Пояс Пресвятой Богородицы отправился в Сербию, где ожидается событие, которое соберёт тысячи верующих. Это один из важнейших духовных моментов года.'
+      : script === 'cyr'
+        ? 'Богородичин појас кренуо је ка Србији, где се очекује долазак који ће окупити хиљаде верника. Ово је један од најзначајнијих духовних догађаја године.'
+        : 'Bogorodičin pojas krenuo je ka Srbiji, gde se očekuje dolazak koji će okupiti hiljade vernika. Ovo je jedan od najznačajnijih duhovnih događaja godine.',
+
+  image: '/static/images/bogorodicin-pojas.jpeg',
+},
+    {
   href: '/vesti/u-nisu-mural-nikolaju-rajevskom',
   slug: 'u-nisu-mural-nikolaju-rajevskom',
 

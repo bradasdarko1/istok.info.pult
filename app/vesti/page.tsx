@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/spasovdan',
+  slug: 'spasovdan',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 21.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 21.05.2026.'
+        : 'Vesti - 21.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СПАСОВДАН — ПРАЗДНИК ВОЗНЕСЕНИЯ ХРИСТОВА, ОБЪЕДИНЯЮЩИЙ ВЕРУ, ИСТОРИЮ И ТРАДИЦИИ'
+      : script === 'cyr'
+        ? 'СПАСОВДАН — ПРАЗНИК ХРИСТОВОГ ВАЗНЕСЕЊА КОЈИ СПАЈА ВЕРУ, ИСТОРИЈУ И ТРАДИЦИЈУ'
+        : 'SPASOVDAN – PRAZNIK HRISTOVOG VAZNESENJA KOJI SPAJA VERU, ISTORIJU I TRADICIJU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Сербская православная церковь отмечает Спасовдан — праздник Вознесения Христова, который символизирует завершение его земной миссии и начало распространения христианской веры.'
+      : script === 'cyr'
+        ? 'Српска православна црква обележава Спасовдан — празник Христовог вазнесења, који симболизује завршетак његовог земаљског послања и почетак ширења хришћанске вере.'
+        : 'Srpska pravoslavna crkva obeležava Spasovdan — praznik Hristovog vaznesenja, koji simbolizuje završetak njegovog zemaljskog poslanja i početak širenja hrišćanske vere.',
+
+  image: '/static/images/spasovdan.jpg',
+},
+    {
   href: '/vesti/bogorodicin-pojas-krenuo-ka-srbiji',
   slug: 'bogorodicin-pojas-krenuo-ka-srbiji',
 

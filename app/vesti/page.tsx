@@ -30,6 +30,33 @@ export default function VestiDanas() {
 
   const danasnjeVesti = [
     {
+  href: '/vesti/italijanski-general-koji-je-stao-uz-srpske-svetinje',
+  slug: 'italijanski-general-koji-je-stao-uz-srpske-svetinje',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 21.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 21.05.2026.'
+        : 'Vesti - 21.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ИТАЛЬЯНСКИЙ ГЕНЕРАЛ, КОТОРЫЙ ВСТАЛ НА ЗАЩИТУ СЕРБСКИХ СВЯТЫНЬ — ЧЕСТЬ ВО ВРЕМЯ ПОГРОМА'
+      : script === 'cyr'
+        ? 'ИТАЛИЈАНСКИ ГЕНЕРАЛ КОЈИ ЈЕ СТАО УЗ СРПСКЕ СВЕТИЊЕ — ЧАСТ У ВРЕМЕНУ ПОГРОМА'
+        : 'ITALIJANSKI GENERAL KOJI JE STAO UZ SRPSKE SVETINJE — ČAST U VREMENU POGROMA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Во время мартовского погрома 2004 года итальянские десантники KFOR во главе с генералом Иубини встали на защиту сербских святынь и мирного населения, предотвратив разрушение важного духовного наследия.'
+      : script === 'cyr'
+        ? 'Током мартовског погрома 2004. године, италијански падобранци КФОР-а предвођени генералом Иубинијем стали су у одбрану српских светиња и народа, спречивши уништење значајног духовног наслеђа.'
+        : 'Tokom martovskog pogroma 2004. godine, italijanski padobranci KFOR-a predvođeni generalom Iubinijem stali su u odbranu srpskih svetinja i naroda, sprečivši uništenje značajnog duhovnog nasleđa.',
+
+  image: '/static/images/italijanski-general.jpg',
+},
+    {
   href: '/vesti/spasovdan',
   slug: 'spasovdan',
 

@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/saradnja-izmedju-srbije-i-ukrajine',
+  slug: 'saradnja-izmedju-srbije-i-ukrajine',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 25.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 25.05.2026.'
+        : 'Vesti - 25.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В БЕЛГРАДЕ ПОДПИСАНЫ «АНТИРОССИЙСКИЕ» МЕМОРАНДУМЫ?'
+      : script === 'cyr'
+        ? 'ПОТПИСАНИ „АНТИРУСКИ“ МЕМОРАНДУМИ У БЕОГРАДУ?'
+        : 'POTPISANI „ANTIRUSKI“ MEMORANDUMI U BEOGRADU?',
+
+  excerpt:
+    language === 'ru'
+      ? 'Подписанные соглашения между Сербией и Украиной вызвали различные реакции и открыли вопрос о внешнеполитическом курсе страны.'
+      : script === 'cyr'
+        ? 'Потписани споразуми између Србије и Украјине изазвали су различите реакције и отворили питање спољнополитичког курса земље.'
+        : 'Potpisani sporazumi između Srbije i Ukrajine izazvali su različite reakcije i otvorili pitanje spoljnopolitičkog kursa zemlje.',
+
+  image: '/static/images/srbija-ukrajina.jpeg',
+},
+{
   href: '/vesti/napad-na-studentski-dom-u-starobeljsku',
   slug: 'napad-na-studentski-dom-u-starobeljsku',
 

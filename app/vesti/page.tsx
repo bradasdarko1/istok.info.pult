@@ -56,6 +56,33 @@ export default function VestiDanas() {
 
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
+{
+  href: '/vesti/napad-na-studentski-dom-u-starobeljsku',
+  slug: 'napad-na-studentski-dom-u-starobeljsku',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 25.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 25.05.2026.'
+        : 'Vesti - 25.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'УДАР ПО СТУДЕНЧЕСКОМУ ОБЩЕЖИТИЮ В СТАРОБЕЛЬСКЕ: РАСТЁТ ЧИСЛО ЖЕРТВ'
+      : script === 'cyr'
+        ? 'НАПАД НА СТУДЕНТСКИ ДОМ У СТАРОБЕЉСКУ: РАСТЕ БРОЈ ЖРТАВА'
+        : 'NAPAD NA STUDENTSKI DOM U STAROBELJSKU: RASTE BROJ ŽRTAVA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Число погибших в результате удара по студенческому общежитию достигло 18 человек, спасатели продолжают разбор завалов в сложных условиях.'
+      : script === 'cyr'
+        ? 'Број погинулих у нападу на студентски дом порастао је на 18, док спасиоци настављају потрагу за преживелима у тешким условима.'
+        : 'Broj poginulih u napadu na studentski dom porastao je na 18, dok spasioci nastavljaju potragu za preživelima u teškim uslovima.',
+
+  image: '/static/images/studentski-dom-starobeljski.jpg',
+},
     {
   href: '/vesti/italijanski-general-koji-je-stao-uz-srpske-svetinje',
   slug: 'italijanski-general-koji-je-stao-uz-srpske-svetinje',

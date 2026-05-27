@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/bitka-na-pastriku',
+  slug: 'bitka-na-pastriku',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 27.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 27.05.2026.'
+        : 'Vesti - 27.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПАШТРИК — ДЕНЬ, КОГДА СЕРБИЯ ВЫСТОЯЛА ПОД ДОЖДЁМ ОГНЯ И СТАЛИ'
+      : script === 'cyr'
+        ? 'ПАШТРИК — ДАН КАДА ЈЕ СРБИЈА ОДБРАЊЕНА ПОД КИШОМ ВАТРЕ И ЧЕЛИКА'
+        : 'PAŠTRIK — DAN KADA JE SRBIJA ODBRANJENA POD KIŠOM VATRE I ČELIKA',
+
+  excerpt:
+    language === 'ru'
+      ? '27 мая 1999 года началась одна из самых тяжёлых и героических битв новейшей истории Сербии — битва на Паштрике.'
+      : script === 'cyr'
+        ? '27. маја 1999. године започела је једна од најтежих и најславнијих битака новије историје Србије — Битка на Паштрику.'
+        : '27. maja 1999. godine započela je jedna od najtežih i najslavnijih bitaka novije istorije Srbije — Bitka na Paštriku.',
+
+  image: '/static/images/bitka-pastrik.jpg',
+},
+{
   href: '/vesti/saradnja-izmedju-srbije-i-ukrajine',
   slug: 'saradnja-izmedju-srbije-i-ukrajine',
 

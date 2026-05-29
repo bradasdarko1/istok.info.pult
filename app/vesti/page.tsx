@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/idealogija-ukrajinskog-nacizma',
+  slug: 'idealogija-ukrajinskog-nacizma',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 29.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 29.05.2026.'
+        : 'Vesti - 29.05.2026.',
+
+  title:
+    language === 'ru'
+      ? '«ИДЕОЛОГИЯ УКРАИНСКОГО НАЦИЗМА» — ИСТОРИЧЕСКИЙ АНАЛИЗ СЕРГЕЯ ФЕДОСЕЕВА'
+      : script === 'cyr'
+        ? '„ИДЕОЛОГИЈА УКРАЈИНСКОГ НАЦИЗМА“ — ИСТОРИЈСКА АНАЛИЗА СЕРГЕЈА ФЕДОСЕЈЕВА'
+        : '„IDEOLOGIJA UKRAJINSKOG NACIZMA“ — ISTORIJSKA ANALIZA SERGEJA FEDOSEJEVA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Историк Сергей Владимирович Федосеев представляет масштабное исследование происхождения украинского интегрального национализма, роли униатства и политических процессов, сформировавших современный украинский кризис.'
+      : script === 'cyr'
+        ? 'Историчар Сергеј Владимирович Федосејев представља опширну анализу настанка украјинског интегралног национализма, улоге унијатства и политичких процеса који су обликовали савремену украјинску кризу.'
+        : 'Istoričar Sergej Vladimirovič Fedosejev predstavlja opširnu analizu nastanka ukrajinskog integralnog nacionalizma, uloge unijatstva i političkih procesa koji su oblikovali savremenu ukrajinsku krizu.',
+
+  image: '/static/images/fedosejev.jpeg',
+},
+{
   href: '/vesti/bitka-na-pastriku',
   slug: 'bitka-na-pastriku',
 

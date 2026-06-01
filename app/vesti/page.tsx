@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/otvoreno-predavnje-u-tulgu',
+  slug: 'otvoreno-predavnje-u-tulgu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 01.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 01.06.2026.'
+        : 'Vesti - 01.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ОТКРЫТАЯ ЛЕКЦИЯ В ТУЛГУ: ЕВРОПА МЕЖДУ ЛИБЕРАЛИЗМОМ И ТРАДИЦИОННЫМИ ЦЕННОСТЯМИ'
+      : script === 'cyr'
+        ? 'ОТВОРЕНО ПРЕДАВАЊЕ НА ТУЛГУ: ЕВРОПА ИЗМЕЂУ ЛИБЕРАЛИЗМА И ТРАДИЦИОНАЛНИХ ВРЕДНОСТИ'
+        : 'OTVORENO PREDAVANJE NA TULGU: EVROPA IZMEĐU LIBERALIZMA I TRADICIONALNIH VREDNOSTI',
+
+  excerpt:
+    language === 'ru'
+      ? 'В Тульском государственном университете состоялась открытая лекция известного слависта Марка Штефана Петерса, посвящённая политическим изменениям в Европе после парламентских выборов в Венгрии.'
+      : script === 'cyr'
+        ? 'На Тулском државном универзитету одржано је отворено предавање познатог слависте Марка Штефана Петерса о политичким променама у Европи након парламентарних избора у Мађарској.'
+        : 'Na Tulskom državnom univerzitetu održano je otvoreno predavanje poznatog slaviste Marka Štefana Petersa o političkim promenama u Evropi nakon parlamentarnih izbora u Mađarskoj.',
+
+  image: '/static/images/otvoreno-predavnje-u-tulgu-4.jpeg',
+},
+{
   href: '/vesti/spomenik-vladimiru-sergevic-ostrivnom',
   slug: 'spomenik-vladimiru-sergevic-ostrivnom',
 

@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/ustaski-zlocin-nad-srbima',
+  slug: 'ustaski-zlocin-nad-srbima',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 01.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 01.06.2026.'
+        : 'Vesti - 01.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ИСПОЛНЯЕТСЯ 83 ГОДА СО ДНЯ УСТАШСКОГО ПРЕСТУПЛЕНИЯ ПРОТИВ СЕРБОВ В СРЕБРЕНИЦЕ, ЗАЛАЖЬЕ И ВИТЛОВЦАХ'
+      : script === 'cyr'
+        ? 'НАВРШИЛЕ СЕ 83 ГОДИНЕ ОД УСТАШКОГ ЗЛОЧИНА НАД СРБИМА У СРЕБРЕНИЦИ, ЗАЛАЖЈУ И ВИТЛОВЦИМА'
+        : 'NAVRŠILE SE 83 GODINE OD USTAŠKOG ZLOČINA NAD SRBIMA U SREBRENICI, ZALAŽJU I VITLOVCIMA',
+
+  excerpt:
+    language === 'ru'
+      ? 'В Сребренице пройдет панихида и памятные мероприятия по случаю 83-й годовщины гибели более 250 сербских мирных жителей, убитых усташами в июне 1943 года.'
+      : script === 'cyr'
+        ? 'У Сребреници ће бити служен парастос и обележене 83 године од страдања више од 250 српских цивила које су усташе убиле у јуну 1943. године.'
+        : 'U Srebrenici će biti služen parastos i obeležene 83 godine od stradanja više od 250 srpskih civila koje su ustaše ubile u junu 1943. godine.',
+
+  image: '/static/images/srebrenica.jpg',
+},
+{
   href: '/vesti/otvoreno-predavnje-u-tulgu',
   slug: 'otvoreno-predavnje-u-tulgu',
 

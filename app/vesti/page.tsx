@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/spomenik-vladimiru-sergevic-ostrivnom',
+  slug: 'spomenik-vladimiru-sergevic-ostrivnom',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 01.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 01.06.2026.'
+        : 'Vesti - 01.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НАЧАТ СБОР СРЕДСТВ НА УСТАНОВКУ ПАМЯТНИКА ВЛАДИМИРУ ОСТРИВНОМУ'
+      : script === 'cyr'
+        ? 'ПОКРЕНУТА АКЦИЈА ЗА ПОДИЗАЊЕ СПОМЕНИКА ВЛАДИМИРУ ОСТРИВНОМ'
+        : 'POKRENUTA AKCIJA ZA PODIZANJE SPOMENIKA VLADIMIRU OSTRIVNOM',
+
+  excerpt:
+    language === 'ru'
+      ? 'Получено разрешение на установку памятника Владимиру Сергеевичу Остривному, погибшему в Белграде в 2018 году. Все желающие могут поддержать реализацию проекта добровольным пожертвованием.'
+      : script === 'cyr'
+        ? 'Добијена је дозвола за постављање споменика Владимиру Сергејевичу Остривном, који је убијен у Београду 2018. године. Сви који желе могу подржати реализацију пројекта добровољним прилогом.'
+        : 'Dobijena je dozvola za postavljanje spomenika Vladimiru Sergejeviču Ostrivnom, koji je ubijen u Beogradu 2018. godine. Svi koji žele mogu podržati realizaciju projekta dobrovoljnim prilogom.',
+
+  image: '/static/images/spomenik-vladimiru-1.jpg',
+},
+{
   href: '/vesti/idealogija-ukrajinskog-nacizma',
   slug: 'idealogija-ukrajinskog-nacizma',
 

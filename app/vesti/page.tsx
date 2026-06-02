@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/nikola-tesla-dobio-orden-svetog-save',
+  slug: 'nikola-tesla-dobio-orden-svetog-save',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 02.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 02.06.2026.'
+        : 'Vesti - 02.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В ЭТОТ ДЕНЬ: НИКОЛА ТЕСЛА ПРИБЫЛ В БЕЛГРАД И БЫЛ НАГРАЖДЁН ОРДЕНОМ СВЯТОГО САВВЫ'
+      : script === 'cyr'
+        ? 'НА ДАНАШЊИ ДАН: НИКОЛА ТЕСЛА СТИГАО У БЕОГРАД И ДОБИО ОРДЕН СВЕТОГ САВЕ'
+        : 'NA DANAŠNJI DAN: NIKOLA TESLA STIGAO U BEOGRAD I DOBIO ORDEN SVETOG SAVE',
+
+  excerpt:
+    language === 'ru'
+      ? '2 июня 1892 года великий сербский учёный Никола Тесла прибыл в Белград, где был награждён Орденом Святого Саввы II степени за выдающийся вклад в науку и технический прогресс.'
+      : script === 'cyr'
+        ? 'Велики српски научник Никола Тесла допутовао је у Београд 2. јуна 1892. године, где је одликован Орденом Светог Саве другог степена за изузетан допринос науци и техничком напретку.'
+        : 'Veliki srpski naučnik Nikola Tesla doputovao je u Beograd 2. juna 1892. godine, gde je odlikovan Ordenom Svetog Save drugog stepena za izuzetan doprinos nauci i tehničkom napretku.',
+
+  image: '/static/images/nikola-tesla.jpeg',
+},
+{
   href: '/vesti/aleksa-filipovic-predavanje-u-tuli',
   slug: 'aleksa-filipovic-predavanje-u-tuli',
 

@@ -49,7 +49,7 @@ const srLatin = {
   date: 'Objavljeno: 1. jun 2026.',
   lead: 'Ruski državljanin Vladimir Sergejevič Ostrivnoj ubijen je u maju 2018. godine u Beogradu i sahranjen na groblju Orlovača.',
   paragraphs: [
-    'Njegov brat, Aleksandar Ostrivnoj, tada nije bio u mogućnosti da snosi troškove ekshumacije, transporta i bolničkog lečenja. U međuvremenu, Aleksandar je poginuo 2023. godine tokom sukoba u Ukrajini.',
+    'Roditelji su mu se upokojili par godina pre toga, njegov brat, Aleksandar Ostrivnoj, tada nije bio u mogućnosti da snosi troškove ekshumacije i transporta. U međuvremenu, Aleksandar je poginuo 2023. godine tokom sukoba u Ukrajini.',
     'Tokom 2024. godine na Vladimirinom grobu služeno je opelo, a pokrenuta je inicijativa za podizanje skromnog spomenika. Nakon rešavanja svih administrativnih pitanja i pribavljanja potrebnih dozvola, stvoreni su uslovi da spomenik bude postavljen u skorijem periodu.',
     'Svi koji su u mogućnosti i žele da podrže realizaciju ovog projekta mogu to učiniti uplatom dobrovoljnog priloga na račun:',
     '115-0381638233383-22, Daniijela Ristić',
@@ -66,7 +66,7 @@ const ruText = {
   date: 'Опубликовано: 1 июня 2026 г.',
   lead: 'Гражданин России Владимир Сергеевич Остривной был убит в мае 2018 года в Белграде и похоронен на кладбище Орловача.',
   paragraphs: [
-    'Его брат Александр Остривной в то время не имел возможности оплатить расходы, связанные с эксгумацией, транспортировкой и лечением Владимира. Впоследствии Александр погиб в 2023 году во время конфликта на Украине.',
+    'Его родители скончались за несколько лет до этого, и его брат, Александр Островной, не смог тогда оплатить расходы на эксгумацию и транспортировку. Между тем, Александр погиб в 2023 году во время конфликта на Украине.',
     'В 2024 году на могиле Владимира была совершена панихида, после чего была инициирована установка скромного памятника. В настоящее время все административные вопросы урегулированы, необходимые разрешения получены, и памятник будет установлен в ближайшее время.',
     'Все, кто имеет возможность и желание поддержать это доброе дело, могут перечислить пожертвование на счет:',
     '115-0381638233383-22, Данијела Ристић',

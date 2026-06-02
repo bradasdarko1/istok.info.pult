@@ -57,6 +57,60 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/aleksa-filipovic-predavanje-u-tuli',
+  slug: 'aleksa-filipovic-predavanje-u-tuli',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 02.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 02.06.2026.'
+        : 'Vesti - 02.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ДОКТОР АЛЕКСА ФИЛИПОВИЧ ВЫСТУПИЛ С ЛЕКЦИЕЙ В ТУЛЕ: ВНЕШНЯЯ ПОЛИТИКА СЕРБИИ МЕЖДУ ЧЕТЫРЬМЯ ОПОРАМИ'
+      : script === 'cyr'
+        ? 'ДР АЛЕКСА ФИЛИПОВИЋ ОДРЖАО ПРЕДАВАЊЕ У ТУЛИ: СПОЉНА ПОЛИТИКА СРБИЈЕ ИЗМЕЂУ ЧЕТИРИ СТУБА'
+        : 'DR ALEKSA FILIPOVIĆ ODRŽAO PREDAVANJE U TULI: SPOLJNA POLITIKA SRBIJE IZMEĐU ČETIRI STUBA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Доктор политических наук Алекса Филипович рассказал студентам ТулГУ о внешнеполитическом курсе Сербии, её отношениях с ЕС, США, Россией и Китаем, а также о вопросах военного нейтралитета.'
+      : script === 'cyr'
+        ? 'Др Алекса Филиповић говорио је студентима ТулГУ о спољнополитичком курсу Србије, односима са ЕУ, САД, Русијом и Кином, као и о питањима војне неутралности.'
+        : 'Dr Aleksa Filipović govorio je studentima TulGU o spoljnopolitičkom kursu Srbije, odnosima sa EU, SAD, Rusijom i Kinom, kao i o pitanjima vojne neutralnosti.',
+
+  image: '/static/images/aleksa-1.jpeg',
+},
+{
+  href: '/vesti/cegar-sloboda-placena-zivotima',
+  slug: 'cegar-sloboda-placena-zivotima',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 01.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 01.06.2026.'
+        : 'Vesti - 01.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ЧЕГАР — МЕСТО, ГДЕ СВОБОДА БЫЛА ОПЛАЧЕНА ЖИЗНЬЮ: 217 ЛЕТ ПОДВИГУ СТЕВАНА СИНДЖЕЛИЧА'
+      : script === 'cyr'
+        ? 'ЧЕГАР – МЕСТО ГДЕ ЈЕ СЛОБОДА ПЛАЋЕНА ЖИВОТОМ: 217 ГОДИНА ОД ПОДВИГА СТЕВАНА СИНЂЕЛИЋА'
+        : 'ČEGAR – MESTO GDE JE SLOBODA PLAĆENA ŽIVOTOM: 217 GODINA OD PODVIGA STEVANA SINĐELIĆA',
+
+  excerpt:
+    language === 'ru'
+      ? 'На Чегаре возле Ниша отмечена 217-я годовщина знаменитого Чегарского сражения — одного из важнейших событий Первого сербского восстания и символа сербского героизма.'
+      : script === 'cyr'
+        ? 'На Чегру код Ниша обележена је 217. годишњица славне Чегарске битке, једног од најзначајнијих догађаја Првог српског устанка и симбола српског јунаштва.'
+        : 'Na Čegaru kod Niša obeležena je 217. godišnjica slavne Čegarske bitke, jednog od najznačajnijih događaja Prvog srpskog ustanka i simbola srpskog junaštva.',
+
+  image: '/static/images/cegar.jpg',
+},
+{
   href: '/vesti/ustaski-zlocin-nad-srbima',
   slug: 'ustaski-zlocin-nad-srbima',
 

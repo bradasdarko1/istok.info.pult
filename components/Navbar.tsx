@@ -134,7 +134,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/40 backdrop-blur-md">
-      <div className="relative mx-auto flex w-full max-w-7xl items-start justify-between px-3 py-3 sm:px-6 sm:py-4">
+      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between px-3 py-3 sm:px-6 sm:py-4">
         <div className="relative z-20 shrink-0" ref={menuRef}>
           <button
             onClick={() => setOpen((prev) => !prev)}
@@ -246,22 +246,22 @@ export default function Navbar() {
         </div>
 
         <Link
-          href="/"
-          className="pointer-events-auto absolute left-1/2 top-2 z-10 flex -translate-x-1/2 flex-col items-center justify-center px-2 text-center sm:top-0"
-        >
-          <img
-            src="/static/favicons/logo.PNG"
-            alt="Istok Info Pult logo"
-            className="h-10 w-10 object-contain drop-shadow-xl transition duration-300 hover:scale-105 sm:h-24 sm:w-24 lg:h-32 lg:w-32"
-          />
-          <span
-            className={`mt-1 text-center text-[10px] font-black text-white drop-shadow-lg sm:mt-2 sm:text-2xl ${
-              language === 'ru' ? 'tracking-wide' : 'tracking-[0.14em]'
-            }`}
-          >
-            {t('siteName')}
-          </span>
-        </Link>
+  href="/"
+  className="pointer-events-auto absolute left-1/2 -translate-x-1/2 flex flex-col items-center justify-center text-center"
+>
+  <img
+    src="/static/favicons/logo.PNG"
+    alt="Istok Info Pult logo"
+    className="h-8 w-8 object-contain drop-shadow-xl transition duration-300 hover:scale-105 sm:h-12 sm:w-12"
+  />
+  <span
+    className={`mt-0.5 text-center text-[8px] font-black leading-tight text-white drop-shadow-lg sm:text-[11px] ${
+      language === 'ru' ? 'tracking-wide' : 'tracking-[0.10em]'
+    }`}
+  >
+    {t('siteName')}
+  </span>
+</Link>
 
         <div className="relative z-20 ml-auto shrink-0">
           <div className="flex items-center gap-2 sm:gap-3">
@@ -383,7 +383,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               aria-label="YouTube"
               title="YouTube"
-              className="flex h-8 w-8 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-white transition duration-300 hover:scale-105 hover:bg-white/20 sm:h-10 sm:w-10"
+              className="hidden sm:flex h-8 w-8 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-white transition duration-300 hover:scale-105 hover:bg-white/20 sm:h-10 sm:w-10"
             >
               <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current sm:h-5 sm:w-5">
                 <path d="M21.6 7.2s-.2-1.5-.8-2.2c-.7-.9-1.5-.9-1.9-1C16.1 3.7 12 3.7 12 3.7s-4.1 0-6.9.3c-.4.1-1.2.1-1.9 1-.6.7-.8 2.2-.8 2.2S2 9 2 10.8v1.4C2 14 2.4 16 2.4 16s.2 1.5.8 2.2c.7.9 1.6.9 2 .9 1.5.1 6.8.3 6.8.3s4.1 0 6.9-.3c.4-.1 1.2-.1 1.9-.9.6-.7.8-2.2.8-2.2s.4-2 .4-3.8v-1.4c0-1.8-.4-3.6-.4-3.6zM10 14.5v-5l5 2.5-5 2.5z" />

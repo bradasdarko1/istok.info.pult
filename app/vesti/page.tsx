@@ -1941,11 +1941,11 @@ export default function VestiDanas() {
     <div className="relative mx-auto w-full max-w-7xl px-3 py-5 sm:px-6">
       <h1 className="mb-5 text-2xl font-bold sm:text-4xl">{t('todayNews')}</h1>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:pr-[300px]">
+      <div className="grid grid-cols-2 gap-3 lg:grid-cols-2 lg:max-w-4xl mx-auto">
         {danasnjeVesti.map((vest) => (
           <Link key={vest.href} href={vest.href}>
             <div className="overflow-hidden rounded-xl border border-white/10 bg-black/30 backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <div className="h-[160px] overflow-hidden sm:h-[220px]">
+              <div className="h-[120px] overflow-hidden sm:h-[280px]">
                 <img
                   src={vest.image}
                   alt={vest.title}
@@ -1953,17 +1953,17 @@ export default function VestiDanas() {
                 />
               </div>
 
-              <div className="p-3 sm:p-4">
+              <div className="p-2 sm:p-4">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400">
                   {vest.category}
                 </p>
 
-                <h2 className="text-base font-bold sm:text-lg">
+                <h2 className="text-xs font-bold leading-tight sm:text-lg">
                   {vest.title}
                 </h2>
 
                 {vest.excerpt && (
-                  <p className="mt-2 text-sm text-white/70">
+                  <p className="mt-1 hidden text-xs text-white/70 sm:block">
                     {vest.excerpt}
                   </p>
                 )}
@@ -1973,7 +1973,7 @@ export default function VestiDanas() {
         ))}
       </div>
 
-      <div className="mt-12 xl:pr-[300px]">
+      <div className="mt-12">
         <h2 className="mb-5 text-2xl font-bold uppercase tracking-wide text-yellow-400 sm:text-3xl">
           {language === 'ru'
             ? 'БИБЛИОТЕКА'
@@ -2039,35 +2039,8 @@ export default function VestiDanas() {
         </Link>
       </div>
 
-      <div className="mt-6 xl:hidden">
-        <div className="rounded-2xl border border-white/10 bg-black/50 p-4 backdrop-blur-md">
-          <h2 className="mb-3 text-lg font-bold">{t('time')}</h2>
 
-          <div className="space-y-2">
-            {cities.map((city) => (
-              <div key={city.key} className="flex justify-between text-sm">
-                <span>{t(city.key)}</span>
-                <span>{formatTime(city.timeZone)}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="hidden xl:block">
-        <div className="fixed top-52 right-6 w-[260px]">
-          <aside className="rounded-2xl border border-white/10 bg-black/50 p-4 backdrop-blur-md">
-            <h2 className="mb-4 text-lg font-bold">{t('time')}</h2>
-
-            {cities.map((city) => (
-              <div key={city.key} className="mb-2 flex justify-between">
-                <span>{t(city.key)}</span>
-                <span>{formatTime(city.timeZone)}</span>
-              </div>
-            ))}
-          </aside>
-        </div>
-      </div>
+      
     </div>
   )
 }

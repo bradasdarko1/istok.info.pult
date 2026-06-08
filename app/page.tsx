@@ -46,7 +46,7 @@ export default function Početna() {
   return (
     <main>
       <section className="mt-6 px-4 sm:px-6">
-        <div className="w-full max-w-[760px] lg:max-w-[800px]">
+        <div className="mx-auto w-full max-w-[760px] lg:max-w-[800px]">
           <div className="overflow-hidden rounded-3xl border border-yellow-500/40 bg-black/65 shadow-[0_0_30px_rgba(234,179,8,0.12)] backdrop-blur-md">
             <div className="px-6 py-8 sm:px-8 sm:py-10 md:px-10">
               <div className="text-center">

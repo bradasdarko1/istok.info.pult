@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/pocinje-petrovski-post',
+  slug: 'pocinje-petrovski-post',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 08.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 08.06.2026.'
+        : 'Vesti - 08.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НАЧИНАЕТСЯ ПЕТРОВ ПОСТ (АПОСТОЛЬСКИЙ ПОСТ)'
+      : script === 'cyr'
+        ? 'ПОЧИЊЕ ПЕТРОВСКИ (АПОСТОЛСКИ) ПОСТ'
+        : 'POČINJE PETROVSKI (APOSTOLSKI) POST',
+
+  excerpt:
+    language === 'ru'
+      ? 'С 8 июня начинается Апостольский пост, который продлится до 12 июля — дня памяти святых апостолов Петра и Павла. Время молитвы, поста и духовного укрепления.'
+      : script === 'cyr'
+        ? 'Од 8. јуна почиње Апостолски пост који траје до 12. јула, празника светих апостола Петра и Павла. Период молитве, поста и духовне припреме верника.'
+        : 'Od 8. juna počinje Apostolski post koji traje do 12. jula, praznika svetih apostola Petra i Pavla. Period molitve, posta i duhovne pripreme vernika.',
+
+  image: '/static/images/petrovski-post-1.jpeg',
+},
+{
   href: '/vesti/nikola-tesla-dobio-orden-svetog-save',
   slug: 'nikola-tesla-dobio-orden-svetog-save',
 

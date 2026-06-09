@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/otvoren-sesti-ciklus-medjunarodne-nagrade',
+  slug: 'otvoren-sesti-ciklus-medjunarodne-nagrade',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 09.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 09.06.2026.'
+        : 'Vesti - 09.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ОТКРЫТ ПРИЁМ ЗАЯВОК НА ШЕСТОЙ СЕЗОН МЕЖДУНАРОДНОЙ ПРЕМИИ #МЫВМЕСТЕ'
+      : script === 'cyr'
+        ? 'ОТВОРЕН ПРИЈЕМ ПРИЈАВА ЗА ШЕСТИ ЦИКЛУС МЕЂУНАРОДНЕ НАГРАДЕ #МЫВМЕСТЕ'
+        : 'OTVOREN ŠESTI CIKLUS MEĐUNARODNE NAGRADE #WEARETOGETHER',
+
+  excerpt:
+    language === 'ru'
+      ? 'До 14 июня продолжается приём заявок на Международную премию #МЫВМЕСТЕ для волонтёров, общественных организаций и авторов социально значимых инициатив со всего мира.'
+      : script === 'cyr'
+        ? 'До 14. јуна отворене су пријаве за Међународну награду #МЫВМЕСТЕ намењену волонтерима, организацијама и ауторима друштвено корисних пројеката.'
+        : 'Do 14. juna otvorene su prijave za Međunarodnu nagradu #WEARETOGETHER namenjenu volonterima, organizacijama i autorima društveno korisnih projekata.',
+
+  image: '/static/images/medjunarodne-nagrade.jpeg',
+},
+{
   href: '/vesti/auto-kolona-u-nisu',
   slug: 'auto-kolona-u-nisu',
 

@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/auto-kolona-u-nisu',
+  slug: 'auto-kolona-u-nisu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 09.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 09.06.2026.'
+        : 'Vesti - 09.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'АВТОКОЛОННА В НИШЕ В ЧЕСТЬ ДНЯ РОССИИ ПРОЙДЕТ 11 ИЮНЯ'
+      : script === 'cyr'
+        ? 'АУТО-КОЛОНА У НИШУ ПОВОДОМ ДАНА РУСИЈЕ 11. ЈУНА'
+        : 'AUTO-KOLONA U NIŠU POVODOM DANA RUSIJE 11. JUNA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Общество русско-сербской дружбы «Братство» организует праздничную автоколонну в Нише 11 июня. Акция посвящена Дню России и открыта для всех желающих.'
+      : script === 'cyr'
+        ? 'Друштво руско-српског пријатељства „Братство“ организује свечану ауто-колону у Нишу 11. јуна поводом Дана Русије и позива грађане да се придруже.'
+        : 'Društvo rusko-srpskog prijateljstva „Bratstvo“ organizuje svečanu auto-kolonu u Nišu 11. juna povodom Dana Rusije i poziva građane da se pridruže.',
+
+  image: '/static/images/auto-kolona-u-nisu.jpeg',
+},
+{
   href: '/vesti/pocinje-petrovski-post',
   slug: 'pocinje-petrovski-post',
 

@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/na-danasnji-dan-ubijen-knez-mihailo-obrenovic',
+  slug: 'na-danasnji-dan-ubijen-knez-mihailo-obrenovic',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 10.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 10.06.2026.'
+        : 'Vesti - 10.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В ЭТОТ ДЕНЬ БЫЛ УБИТ КНЯЗЬ МИХАИЛ ОБРЕНОВИЧ — ПРАВИТЕЛЬ, ДОБИВШИЙСЯ ВЫВОДА ТУРЕЦКИХ ГАРНИЗОНОВ'
+      : script === 'cyr'
+        ? 'НА ДАНАШЊИ ДАН УБИЈЕН КНЕЗ МИХАИЛО ОБРЕНОВИЋ — ВЛАДАР КОЈИ ЈЕ ОСЛОБОДИО СРПСКЕ ГРАДОВЕ ОД ТУРСКИХ ГАРНИЗОНА'
+        : 'NA DANAŠNJI DAN UBIJEN KNEZ MIHAILO OBRENOVIĆ – VLADAR KOJI JE OSLOBODIO SRPSKE GRADOVE OD TURSKIH GARNIZONA',
+
+  excerpt:
+    language === 'ru'
+      ? '10 июня 1868 года в Кошутняке был убит князь Михаил Обренович, один из самых выдающихся сербских государственных деятелей XIX века.'
+      : script === 'cyr'
+        ? 'На данашњи дан 1868. године у Кошутњаку је убијен кнез Михаило Обреновић, један од најзначајнијих српских владара XIX века.'
+        : 'Na današnji dan 1868. godine u Košutnjaku je ubijen knez Mihailo Obrenović, jedan od najznačajnijih srpskih vladara XIX veka.',
+
+  image: '/static/images/knez-mihailo-obrenovic.jpeg',
+},
+{
   href: '/vesti/otvoren-sesti-ciklus-medjunarodne-nagrade',
   slug: 'otvoren-sesti-ciklus-medjunarodne-nagrade',
 

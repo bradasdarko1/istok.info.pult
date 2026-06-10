@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/nepobedjeni-27-godina-od-bitke-na-kosarama',
+  slug: 'nepobedjeni-27-godina-od-bitke-na-kosarama',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 10.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 10.06.2026.'
+        : 'Vesti - 10.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НЕПОБЕЖДЕННЫЕ: 27 ЛЕТ СО ДНЯ ЗАВЕРШЕНИЯ БИТВЫ НА КОШАРАХ'
+      : script === 'cyr'
+        ? 'НЕПОБЕЂЕНИ: 27 ГОДИНА ОД ЗАВРШЕТКА БИТКЕ НА КОШАРАМА'
+        : 'NEPOBEĐENI: 27 GODINA OD ZAVRŠETKA BITKE NA KOŠARAMA',
+
+  excerpt:
+    language === 'ru'
+      ? '10 июня 1999 года завершилась битва на Кошарах после 67 дней непрерывных боёв. Она осталась символом мужества, стойкости и самоотверженности военнослужащих Армии Югославии.'
+      : script === 'cyr'
+        ? 'Битка на Кошарама окончана је 10. јуна 1999. године после 67 дана непрекидних борби и остала је симбол храбрости, истрајности и пожртвованости припадника Војске Југославије.'
+        : 'Bitka na Košarama okončana je 10. juna 1999. godine posle 67 dana neprekidnih borbi i ostala je simbol hrabrosti, istrajnosti i požrtvovanosti pripadnika Vojske Jugoslavije.',
+
+  image: '/static/images/kosaree.jpeg',
+},
+{
   href: '/vesti/na-danasnji-dan-ubijen-knez-mihailo-obrenovic',
   slug: 'na-danasnji-dan-ubijen-knez-mihailo-obrenovic',
 

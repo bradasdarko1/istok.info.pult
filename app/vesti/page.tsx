@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/secanje-na-vasu-cubrilovica',
+  slug: 'secanje-na-vasu-cubrilovica',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 11.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 11.06.2026.'
+        : 'Vesti - 11.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПАМЯТЬ О ВАСО ЧУБРИЛОВИЧЕ: САМЫЙ МОЛОДОЙ УЧАСТНИК САРАЕВСКОГО ПОКУШЕНИЯ'
+      : script === 'cyr'
+        ? 'СЕЋАЊЕ НА ВАСУ ЧУБРИЛОВИЋА: НАЈМЛАЂИ УЧЕСНИК САРАЈЕВСКОГ АТЕНТАТА'
+        : 'SEĆANJE NA VASU ČUBRILOVIĆA: NAJMLAĐI UČESNIK SARAJEVSKOG ATENTATA',
+
+  excerpt:
+    language === 'ru'
+      ? '11 июня 1990 года ушёл из жизни Васо Чубрилович — самый молодой участник Сараевского покушения, выдающийся сербский историк, академик и автор более 70 научных трудов.'
+      : script === 'cyr'
+        ? 'На данашњи дан 1990. године преминуо је Васо Чубриловић, најмлађи учесник Сарајевског атентата, истакнути српски историчар, академик и аутор више од 70 научних дела.'
+        : 'Na današnji dan 1990. godine preminuo je Vaso Čubrilović, najmlađi učesnik Sarajevskog atentata, istaknuti srpski istoričar, akademik i autor više od 70 naučnih dela.',
+
+  image: '/static/images/vaso-cubrilovic.jpeg',
+},
+{
   href: '/vesti/nepobedjeni-27-godina-od-bitke-na-kosarama',
   slug: 'nepobedjeni-27-godina-od-bitke-na-kosarama',
 

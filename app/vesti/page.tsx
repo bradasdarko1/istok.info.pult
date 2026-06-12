@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/trka-slobode-voznja-ratnim-stazama',
+  slug: 'trka-slobode-voznja-ratnim-stazama',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 12.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 12.06.2026.'
+        : 'Vesti - 12.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ГОНКА СВОБОДЫ – ВЕЛОПРОБЕГ ПО БОЕВЫМ МАРШРУТАМ 3-ГО РАКЕТНОГО ДИВИЗИОНА ПВО'
+      : script === 'cyr'
+        ? 'ТРКА СЛОБОДЕ – ВОЖЊА РАТНИМ СТАЗАМА 3. РАКЕТНОГ ДИВИЗИОНА ПВО'
+        : 'TRKA SLOBODE – VOŽNJA RATNIM STAZAMA 3. RAKETNOG DIVIZIONA PVO',
+
+  excerpt:
+    language === 'ru'
+      ? '13 июня состоится велосипедный пробег по маршруту Яково – Бечмен – Петровчич в память о 3-м ракетном дивизионе ПВО и его защитниках.'
+      : script === 'cyr'
+        ? 'У суботу, 13. јуна, биће одржана бициклистичка манифестација трасом Јаково – Бечмен – Петровчић у знак сећања на припаднике 3. ракетног дивизиона ПВО.'
+        : 'U subotu, 13. juna, biće održana biciklistička manifestacija trasom Jakovo – Bečmen – Petrovčić u znak sećanja na pripadnike 3. raketnog diviziona PVO.',
+
+  image: '/static/images/trka-slobode.jpeg',
+},
+{
   href: '/vesti/secanje-na-vasu-cubrilovica',
   slug: 'secanje-na-vasu-cubrilovica',
 

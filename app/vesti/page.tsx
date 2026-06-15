@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/premijera-filma-rat-za-nezavisnost-srbije',
+  slug: 'premijera-filma-rat-za-nezavisnost-srbije',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 15.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 15.06.2026.'
+        : 'Vesti - 15.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПРЕМЬЕРА ДОКУМЕНТАЛЬНОГО ФИЛЬМА «ВОЙНА ЗА НЕЗАВИСИМОСТЬ СЕРБИИ. 1876» В РУССКОМ ДОМЕ'
+      : script === 'cyr'
+        ? 'ПРЕМИЈЕРА ДОКУМЕНТАРНОГ ФИЛМА „РАТ ЗА НЕЗАВИСНОСТ СРБИЈЕ 1876“ У РУСКОМ ДОМУ'
+        : 'PREMIJERA DOKUMENTARNOG FILMA „RAT ZA NEZAVISNOST SRBIJE 1876“ U RUSKOM DOMU',
+
+  excerpt:
+    language === 'ru'
+      ? 'В Русском доме состоится премьера документального фильма «Война за независимость Сербии. 1876», посвящённого 150-летию начала Первой сербско-турецкой войны.'
+      : script === 'cyr'
+        ? 'У Руском дому биће одржана премијера документарног филма „Рат за независност Србије 1876“, поводом 150 година од избијања Првог српско-турског рата.'
+        : 'U Ruskom domu biće održana premijera dokumentarnog filma „Rat za nezavisnost Srbije 1876“, povodom 150 godina od izbijanja Prvog srpsko-turskog rata.',
+
+  image: '/static/images/rat-za-nezavisnost-srbije.jpeg',
+},
+{
   href: '/vesti/trka-slobode-voznja-ratnim-stazama',
   slug: 'trka-slobode-voznja-ratnim-stazama',
 

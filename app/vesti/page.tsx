@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/incident-na-cukur-cesmi',
+  slug: 'incident-na-cukur-cesmi',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 15.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 15.06.2026.'
+        : 'Vesti - 15.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В ЭТОТ ДЕНЬ: ИНЦИДЕНТ У ЧУКУР-ЧЕШМЫ, УСКОРИВШИЙ ОСВОБОЖДЕНИЕ СЕРБИИ'
+      : script === 'cyr'
+        ? 'НА ДАНАШЊИ ДАН: ИНЦИДЕНТ НА ЧУКУР ЧЕСМИ КОЈИ ЈЕ УБРЗАО ОСЛОБОЂЕЊЕ СРБИЈЕ'
+        : 'NA DANAŠNJI DAN: INCIDENT NA ČUKUR ČESMI KOJI JE UBRZAO OSLOBOĐENJE SRBIJE',
+
+  excerpt:
+    language === 'ru'
+      ? '15 июня 1862 года инцидент у Чукур-чешмы в Белграде стал одним из ключевых событий на пути Сербии к окончательному освобождению от османского владычества.'
+      : script === 'cyr'
+        ? 'Инцидент на Чукур чесми 15. јуна 1862. године постао је један од кључних догађаја на путу Србије ка коначном ослобођењу од османске власти.'
+        : 'Incident na Čukur česmi 15. juna 1862. godine postao je jedan od ključnih događaja na putu Srbije ka konačnom oslobođenju od osmanske vlasti.',
+
+  image: '/static/images/incident-na-cukur-cesmi.jpeg',
+},
+{
   href: '/vesti/premijera-filma-rat-za-nezavisnost-srbije',
   slug: 'premijera-filma-rat-za-nezavisnost-srbije',
 

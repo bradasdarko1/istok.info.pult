@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/besplatna-prilika-za-ucenje-ruskog-jezika',
+  slug: 'besplatna-prilika-za-ucenje-ruskog-jezika',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 17.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 17.06.2026.'
+        : 'Vesti - 17.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НИУ ВШЭ ПРИГЛАШАЕТ НА БЕСПЛАТНЫЙ РАЗГОВОРНЫЙ КЛУБ ДЛЯ ИЗУЧАЮЩИХ РУССКИЙ ЯЗЫК'
+      : script === 'cyr'
+        ? 'БЕСПЛАТНА ПРИЛИКА ЗА УЧЕЊЕ РУСКОГ ЈЕЗИКА: ХСЕ САНКТ ПЕТЕРБУРГ ПОЗИВА НА ОНЛАЈН РАЗГОВОРНИ КЛУБ'
+        : 'BESPLATNA PRILIKA ZA UČENJE RUSKOG JEZIKA: HSE SANKT PETERBURG POZIVA NA ONLAJN RAZGOVORNI KLUB',
+
+  excerpt:
+    language === 'ru'
+      ? '19 июня Национальный исследовательский университет «Высшая школа экономики» приглашает начинающих изучать русский язык на бесплатную онлайн-встречу разговорного клуба.'
+      : script === 'cyr'
+        ? 'Национални истраживачки универзитет „Висока школа економије“ из Санкт Петербурга 19. јуна организује бесплатан онлајн Разговорни клуб за све који желе да уче руски језик.'
+        : 'Nacionalni istraživački univerzitet „Visoka škola ekonomije“ iz Sankt Peterburga 19. juna organizuje besplatan onlajn Razgovorni klub za sve koji žele da uče ruski jezik.',
+
+  image: '/static/images/besplatna-prilika-za-ucenje-ruskog-jezika.png',
+},
+{
   href: '/vesti/incident-na-cukur-cesmi',
   slug: 'incident-na-cukur-cesmi',
 

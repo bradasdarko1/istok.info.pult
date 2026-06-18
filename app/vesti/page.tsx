@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/obustavljena-nastava-ruskog-jezika',
+  slug: 'obustavljena-nastava-ruskog-jezika',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 18.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 18.06.2026.'
+        : 'Vesti - 18.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'БЫЛ ЛИ РУССКИЙ ЯЗЫК В 1990-Е ГОДЫ СИСТЕМАТИЧЕСКИ ВЫТЕСНЕН И ПОЧЕМУ?'
+      : script === 'cyr'
+        ? 'ДА ЛИ ЈЕ РУСКИ ЈЕЗИК ДЕВЕДЕСЕТИХ БИО СИСТЕМСКИ ПОТИСНУТ И ЗАШТО?'
+        : 'DA LI JE RUSKI JEZIK DEVEDESETIH BIO SISTEMSKI POTISNUT I ZAŠTO?',
+
+  excerpt:
+    language === 'ru'
+      ? 'В 1993–1996 годах во многих школах значительно сократилось преподавание русского языка. Бывшие ученики, преподаватели и исследователи приглашаются поделиться своими свидетельствами и документами.'
+      : script === 'cyr'
+        ? 'Током периода 1993–1996. године у бројним школама дошло је до наглог смањења наставе руског језика. Позивају се бивши ученици, професори и истраживачи да поделе своја сведочанства и документа.'
+        : 'Tokom perioda 1993–1996. godine u brojnim školama došlo je do naglog smanjenja nastave ruskog jezika. Pozivaju se bivši učenici, profesori i istraživači da podele svoja svedočenja i dokumenta.',
+
+  image: '/static/images/obustavljena-nastava-ruskog-jezika.jpeg',
+},
+{
   href: '/vesti/besplatna-prilika-za-ucenje-ruskog-jezika',
   slug: 'besplatna-prilika-za-ucenje-ruskog-jezika',
 

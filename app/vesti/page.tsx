@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/nevesinjska-puska-1875',
+  slug: 'nevesinjska-puska-1875',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 09.07.2026.'
+      : script === 'cyr'
+        ? 'Вести - 09.07.2026.'
+        : 'Vesti - 09.07.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НЕВЕСИНСКОЕ ВОССТАНИЕ 1875 ГОДА: ИСКРА СВОБОДЫ, ПОЛОЖИВШАЯ НАЧАЛО ОСВОБОЖДЕНИЮ СЕРБСКОГО НАРОДА'
+      : script === 'cyr'
+        ? 'НЕВЕСИЊСКА ПУШКА 1875: ИСКРА СЛОБОДЕ КОЈА ЈЕ ПОКРЕНУЛА ОСЛОБОЂЕЊЕ СРПСКОГ НАРОДА'
+        : 'NEVESINJSKA PUŠKA 1875: ISKRA SLOBODE KOJA JE POKRENULA OSLOBOĐENJE SRPSKOG NARODA',
+
+  excerpt:
+    language === 'ru'
+      ? '9 июля 1875 года в Герцеговине вспыхнуло Невесинское восстание. Событие открыло Восточный вопрос и стало важным шагом на пути освобождения сербского народа от османского господства.'
+      : script === 'cyr'
+        ? 'На данашњи дан 1875. године избио је Невесињски устанак, познат као Невесињска пушка. Догађај је отворио Источно питање и најавио ослобођење српског народа од османске власти.'
+        : 'Na današnji dan 1875. godine izbio je Nevesinjski ustanak, poznat kao Nevesinjska puška. Događaj je otvorio Istočno pitanje i najavio oslobođenje srpskog naroda od osmanske vlasti.',
+
+  image: '/static/images/nevesinjska-bitka.jpeg',
+},
+{
   href: '/vesti/obustavljena-nastava-ruskog-jezika',
   slug: 'obustavljena-nastava-ruskog-jezika',
 

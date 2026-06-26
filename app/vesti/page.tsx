@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/masakr-u-dojinci',
+  slug: 'masakr-u-dojinci',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 26.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 26.06.2026.'
+        : 'Vesti - 26.06.2026.',
+
+  title:
+    language === 'ru'
+      ? '26 ИЮНЯ 1999 ГОДА: МАССОВОЕ УБИЙСТВО В ДОЙИНЦЕ — ПРЕСТУПЛЕНИЕ, КОТОРОЕ НЕЛЬЗЯ ЗАБЫТЬ'
+      : script === 'cyr'
+        ? '26. ЈУН 1999: МАСАКР У ДОЈИНЦУ – ЗЛОЧИН НАД СРПСКИМ ЦИВИЛИМА КОЈИ НЕ СМЕ БИТИ ЗАБОРАВЉЕН'
+        : '26. JUN 1999: MASAKR U DOJINCU – ZLOČIN NAD SRPSKIM CIVILIMA KOJI NE SME BITI ZABORAVLJEN',
+
+  excerpt:
+    language === 'ru'
+      ? '26 июня 1999 года в селе Дойинце близ Призрена были убиты 16 сербских мирных жителей, после чего село было полностью сожжено, а выжившие жители были вынуждены покинуть свои дома.'
+      : script === 'cyr'
+        ? 'На данашњи дан 1999. године у селу Дојинце код Призрена убијено је 16 српских цивила, након чега је село спаљено, а преживели мештани приморани да напусте своје домове.'
+        : 'Na današnji dan 1999. godine u selu Dojince kod Prizrena ubijeno je 16 srpskih civila, nakon čega je selo spaljeno, a preživeli meštani primorani da napuste svoje domove.',
+
+  image: '/static/images/dojince.jpeg',
+},
+{
   href: '/vesti/nevesinjska-puska-1875',
   slug: 'nevesinjska-puska-1875',
 

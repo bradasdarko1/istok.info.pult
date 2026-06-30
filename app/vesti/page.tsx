@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/crkva-samodreza',
+  slug: 'crkva-samodreza',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 30.06.2026.'
+      : script === 'cyr'
+        ? 'Вести - 30.06.2026.'
+        : 'Vesti - 30.06.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ЦЕРКОВЬ САМОДРЕЖА — СВЯТЫНЯ, ГДЕ, СОГЛАСНО ПРЕДАНИЮ, КНЯЗЬ ЛАЗАРЬ ПРИЧАСТИЛСЯ ПЕРЕД КОСОВСКОЙ БИТВОЙ'
+      : script === 'cyr'
+        ? 'ЦРКВА САМОДРЕЖА – СВЕТИЊА У КОЈОЈ СЕ, ПРЕМА ПРЕДАЊУ, КНЕЗ ЛАЗАР ПРИЧЕСТИО ПРЕД КОСОВСКИ БОЈ'
+        : 'CRKVA SAMODREŽA – SVETINJA U KOJOJ SE, PREMA PREDANJU, KNEZ LAZAR PRIČESTIO PRED KOSOVSKI BOJ',
+
+  excerpt:
+    language === 'ru'
+      ? 'Церковь Самодрежа возле Вучитрна считается одной из важнейших сербских святынь, связанных с Косовской битвой 1389 года. Согласно преданию, здесь князь Лазарь вместе со своим войском причастился перед битвой.'
+      : script === 'cyr'
+        ? 'Црква Самодрежа код Вучитрна сматра се једном од најзначајнијих српских светиња повезаних са Косовским бојем 1389. године. Према предању, управо овде кнез Лазар се причестио са својом војском пред полазак у бој.'
+        : 'Crkva Samodreža kod Vučitrna smatra se jednom od najznačajnijih srpskih svetinja povezanih sa Kosovskim bojem 1389. godine. Prema predanju, upravo ovde knez Lazar se pričestio sa svojom vojskom pred polazak u boj.',
+
+  image: '/static/images/crkva-samodrez.jpeg',
+},
+{
   href: '/vesti/masakr-u-dojinci',
   slug: 'masakr-u-dojinci',
 

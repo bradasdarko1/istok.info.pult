@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/srpska-pravoslavna-crkva-danas-proslavlja-ivanjdan',
+  slug: 'srpska-pravoslavna-crkva-danas-proslavlja-ivanjdan',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 07.07.2026.'
+      : script === 'cyr'
+        ? 'Вести - 07.07.2026.'
+        : 'Vesti - 07.07.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СЕРБСКАЯ ПРАВОСЛАВНАЯ ЦЕРКОВЬ ОТМЕЧАЕТ ИВАНОВ ДЕНЬ — РОЖДЕСТВО СВЯТОГО ИОАННА ПРЕДТЕЧИ'
+      : script === 'cyr'
+        ? 'СРПСКА ПРАВОСЛАВНА ЦРКВА ДАНАС ПРОСЛАВЉА ИВАЊДАН – РОЂЕЊЕ СВЕТОГ ЈОВАНА ПРЕТЕЧЕ'
+        : 'SRPSKA PRAVOSLAVNA CRKVA DANAS PROSLAVLJA IVANJDAN – ROĐENJE SVETOG JOVANA PRETEČE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Сегодня Сербская Православная Церковь празднует Иванов день — Рождество святого Иоанна Предтечи, великого пророка, крестившего Иисуса Христа в реке Иордан и возвестившего Его пришествие.'
+      : script === 'cyr'
+        ? 'Српска православна црква и верници данас прослављају Ивањдан, празник посвећен Рођењу Светог Јована Претече, великог пророка који је крстио Исуса Христа у реци Јордан.'
+        : 'Srpska pravoslavna crkva i vernici danas proslavljaju Ivanjdan, praznik posvećen Rođenju Svetog Jovana Preteče, velikog proroka koji je krstio Isusa Hrista u reci Jordan.',
+
+  image: '/static/images/sveti-jovan.jpeg',
+},
+{
   href: '/vesti/crkva-samodreza',
   slug: 'crkva-samodreza',
 

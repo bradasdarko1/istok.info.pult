@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/junaci-koje-je-grad-gotovo-zaboravio',
+  slug: 'junaci-koje-je-grad-gotovo-zaboravio',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 24.07.2026.'
+      : script === 'cyr'
+        ? 'Вести - 24.07.2026.'
+        : 'Vesti - 24.07.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РУССКИЙ СЛЕД В НОВИ-САДЕ — ГЕРОИ, КОТОРЫХ ГОРОД ПОЧТИ ЗАБЫЛ'
+      : script === 'cyr'
+        ? 'РУСКИ ТРАГ У НОВОМ САДУ — ЈУНАЦИ КОЈЕ ЈЕ ГРАД ГОТОВО ЗАБОРАВИО'
+        : 'RUSKI TRAG U NOVOM SADU — JUNACI KOJE JE GRAD GOTOVO ZABORAVIO',
+
+  excerpt:
+    language === 'ru'
+      ? '«Исток Инфо» начинает цикл публикаций о русских офицерах, инженерах, врачах, преподавателях, эмигрантах и моряках, которые своим трудом, знаниями и подвигом оставили глубокий след в истории Нови-Сада.'
+      : script === 'cyr'
+        ? '„Исток Инфо“ покреће серијал текстова о руским официрима, инжењерима, лекарима, професорима, емигрантима и морнарима који су својим радом, знањем и жртвом оставили дубок траг у историји Новог Сада.'
+        : 'Istok Info pokreće serijal tekstova o ruskim oficirima, inženjerima, lekarima, profesorima, emigrantima i mornarima koji su svojim radom, znanjem i žrtvom ostavili dubok trag u istoriji Novog Sada.',
+
+  image: '/static/images/ruski-trag-u-novom-sadu.jpg',
+},
+{
   href: '/vesti/srpska-pravoslavna-crkva-danas-proslavlja-ivanjdan',
   slug: 'srpska-pravoslavna-crkva-danas-proslavlja-ivanjdan',
 

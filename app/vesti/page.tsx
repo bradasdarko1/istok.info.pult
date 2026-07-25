@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/sestorica-mornara-koji-su-zauvek-ostali-u-novom-sadu',
+  slug: 'sestorica-mornara-koji-su-zauvek-ostali-u-novom-sadu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 25.07.2026.'
+      : script === 'cyr'
+        ? 'Вести - 25.07.2026.'
+        : 'Vesti - 25.07.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ШЕСТЬ МОРЯКОВ, НАВСЕГДА ОСТАВШИХСЯ В НОВИ-САДЕ'
+      : script === 'cyr'
+        ? 'ШЕСТОРИЦА МОРНАРА КОЈИ СУ ЗАУВЕК ОСТАЛИ У НОВОМ САДУ'
+        : 'ŠESTORICA MORNARA KOJI SU ZAUVEK OSTALI U NOVOM SADU',
+
+  excerpt:
+    language === 'ru'
+      ? 'За стенами бывшей казармы «Александар Берич» находится небольшое военное кладбище, где уже более восьмидесяти лет покоятся шестеро советских моряков — четверо с известными именами и двое неизвестных.'
+      : script === 'cyr'
+        ? 'Иза зидина некадашње касарне „Александар Берић“ налази се мало војно гробље на коме већ више од осам деценија почива шесторица совјетских морнара – четворица са сачуваним именима и двојица непознатих.'
+        : 'Iza zidina nekadašnje kasarne „Aleksandar Berić“ nalazi se malo vojno groblje na kome već više od osam decenija počiva šestorica sovjetskih mornara – četvorica sa sačuvanim imenima i dvojica nepoznatih.',
+
+  image: '/static/images/sestorica-mornara.jpg',
+},
+{
   href: '/vesti/gavrilo-princip',
   slug: 'gavrilo-princip',
 

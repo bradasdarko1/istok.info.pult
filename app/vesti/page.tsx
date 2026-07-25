@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/gavrilo-princip',
+  slug: 'gavrilo-princip',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 25.07.2026.'
+      : script === 'cyr'
+        ? 'Вести - 25.07.2026.'
+        : 'Vesti - 25.07.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ГАВРИЛО ПРИНЦИП — ВЫСТРЕЛ, ИЗМЕНИВШИЙ ХОД ИСТОРИИ'
+      : script === 'cyr'
+        ? 'ГАВРИЛО ПРИНЦИП — МЕТАК КОЈИ ЈЕ ПРОМЕНИО ТОК ИСТОРИЈЕ'
+        : 'GAVRILO PRINCIP — METAK KOJI JE PROMENIO TOK ISTORIJE',
+
+  excerpt:
+    language === 'ru'
+      ? '25 июля 1894 года родился Гаврило Принцип — человек, чьё имя навсегда осталось связано с борьбой за свободу и событием, изменившим судьбу Европы.'
+      : script === 'cyr'
+        ? 'На данашњи дан, 25. јула 1894. године, рођен је Гаврило Принцип — човек чије је име заувек остало повезано са борбом за слободу и догађајем који је променио судбину Европе.'
+        : 'Na današnji dan, 25. jula 1894. godine, rođen je Gavrilo Princip — čovek čije je ime zauvek ostalo povezano sa borbom za slobodu i događajem koji je promenio sudbinu Evrope.',
+
+  image: '/static/images/gavrilo-princip.jpg',
+},
+{
   href: '/vesti/junaci-koje-je-grad-gotovo-zaboravio',
   slug: 'junaci-koje-je-grad-gotovo-zaboravio',
 

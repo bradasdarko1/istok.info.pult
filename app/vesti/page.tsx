@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/rusi-koji-su-gradili-novi-sad',
+  slug: 'rusi-koji-su-gradili-novi-sad',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 30.07.2026.'
+      : script === 'cyr'
+        ? 'Вести - 30.07.2026.'
+        : 'Vesti - 30.07.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ВЫ КАЖДЫЙ ДЕНЬ ПРОХОДИТЕ МИМО ЭТИХ ЗДАНИЙ, НО ПОЧТИ НИКТО НЕ ЗНАЕТ, ЧТО ИХ СПРОЕКТИРОВАЛИ РУССКИЕ, ПОТЕРЯВШИЕ СВОЮ РОДИНУ'
+      : script === 'cyr'
+        ? 'ШЕТАТЕ ПОРЕД ЊИХОВИХ ЗГРАДА СВАКИ ДАН, А ГОТОВО НИКО НЕ ЗНА ДА СУ ИХ ПРОЈЕКТОВАЛИ РУСИ КОЈИ СУ ИЗГУБИЛИ СВОЈУ ДОМОВИНУ'
+        : 'ŠETATE PORED NJIHOVIH ZGRADA SVAKI DAN, A GOTOVO NIKO NE ZNA DA SU IH PROJEKTOVALI RUSI KOJI SU IZGUBILI SVOJU DOMOVINU',
+
+  excerpt:
+    language === 'ru'
+      ? 'После Октябрьской революции тысячи русских эмигрантов нашли новый дом в Сербии. Их знания, культура и архитектура навсегда изменили облик Нового Сада.'
+      : script === 'cyr'
+        ? 'После Октобарске револуције хиљаде руских емиграната пронашле су нови дом у Србији. Њихово знање, култура и архитектура заувек су променили изглед Новог Сада.'
+        : 'Posle Oktobarske revolucije hiljade ruskih emigranata pronašle su novi dom u Srbiji. Njihovo znanje, kultura i arhitektura zauvek su promenili izgled Novog Sada.',
+
+  image: '/static/images/rusi-koji-su-gradili-novi-sad.jpg',
+},
+{
   href: '/vesti/dan-kada-se-srpska-zastava-zavijorila-iznad-bele-kuce',
   slug: 'dan-kada-se-srpska-zastava-zavijorila-iznad-bele-kuce',
 

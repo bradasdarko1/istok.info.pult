@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/dan-kada-se-srpska-zastava-zavijorila-iznad-bele-kuce',
+  slug: 'dan-kada-se-srpska-zastava-zavijorila-iznad-bele-kuce',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 30.07.2026.'
+      : script === 'cyr'
+        ? 'Вести - 30.07.2026.'
+        : 'Vesti - 30.07.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ДЕНЬ, КОГДА СЕРБСКИЙ ФЛАГ ПОДНЯЛСЯ НАД БЕЛЫМ ДОМОМ'
+      : script === 'cyr'
+        ? 'ДАН КАДА СЕ СРПСКА ЗАСТАВА ЗАВИЈОРИЛА ИЗНАД БЕЛЕ КУЋЕ'
+        : 'DAN KADA SE SRPSKA ZASTAVA ZAVIJORILA IZNAD BELE KUĆE',
+
+  excerpt:
+    language === 'ru'
+      ? '28 июля 1918 года в Соединённых Штатах был отмечен «Сербский день», а флаг Королевства Сербия был поднят над Белым домом в знак уважения к мужеству и жертвам сербского народа.'
+      : script === 'cyr'
+        ? 'Дана 28. јула 1918. године у Сједињеним Америчким Државама обележен је „Српски дан“, а застава Краљевине Србије подигнута је изнад Беле куће у знак поштовања према храбрости и жртвама српског народа.'
+        : 'Dana 28. jula 1918. godine u Sjedinjenim Američkim Državama obeležen je „Srpski dan“, a zastava Kraljevine Srbije podignuta je iznad Bele kuće u znak poštovanja prema hrabrosti i žrtvama srpskog naroda.',
+
+  image: '/static/images/srpska-zastava.jpg',
+},
+{
   href: '/vesti/sestorica-mornara-koji-su-zauvek-ostali-u-novom-sadu',
   slug: 'sestorica-mornara-koji-su-zauvek-ostali-u-novom-sadu',
 

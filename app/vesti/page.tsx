@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/vece-za-kosovo-i-metohiju-u-kuli',
+  slug: 'vece-za-kosovo-i-metohiju-u-kuli',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 31.07.2026.'
+      : script === 'cyr'
+        ? 'Вести - 31.07.2026.'
+        : 'Vesti - 31.07.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ВЕЧЕР, ПОСВЯЩЁННЫЙ КОСОВО И МЕТОХИИ В КУЛЕ — МУЗЫКА, ИСТОРИЯ И МИЛОСЕРДИЕ В ОДНОМ МЕСТЕ'
+      : script === 'cyr'
+        ? 'ВЕЧЕ ЗА КОСОВО И МЕТОХИЈУ У КУЛИ — ПЕСМА, ИСТОРИЈА И ХУМАНОСТ НА ЈЕДНОМ МЕСТУ'
+        : 'VEČE ZA KOSOVO I METOHIJU U KULI — PESMA, ISTORIJA I HUMANOST NA JEDNOM MESTU',
+
+  excerpt:
+    language === 'ru'
+      ? '29 августа 2026 года на открытых бассейнах города Кула состоится особый вечер, посвящённый Косово и Метохии, сербской истории, культуре и милосердию. Начало программы — в 15:00.'
+      : script === 'cyr'
+        ? 'На отвореним базенима у Кули 29. августа 2026. године биће одржано посебно вече посвећено Косову и Метохији, српској историји, култури и хуманости. Почетак програма је у 15 часова.'
+        : 'Na otvorenim bazenima u Kuli 29. avgusta 2026. godine biće održano posebno veče posvećeno Kosovu i Metohiji, srpskoj istoriji, kulturi i humanosti. Početak programa je u 15 časova.',
+
+  image: '/static/images/vece-za-kosovo.jpg',
+},
+{
   href: '/vesti/rusi-koji-su-gradili-novi-sad',
   slug: 'rusi-koji-su-gradili-novi-sad',
 

@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/sest-godina-zajednicke-borbe',
+  slug: 'sest-godina-zajednicke-borbe',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 04.08.2026.'
+      : script === 'cyr'
+        ? 'Вести - 04.08.2026.'
+        : 'Vesti - 04.08.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СМОГЛО БЫ ПЕРВОЕ СЕРБСКОЕ ВОССТАНИЕ ВЫСТОЯТЬ БЕЗ РОССИИ? ШЕСТЬ ЛЕТ СОВМЕСТНОЙ БОРЬБЫ'
+      : script === 'cyr'
+        ? 'ДА ЛИ БИ ПРВИ СРПСКИ УСТАНАК ОПСТАО БЕЗ РУСИЈЕ? ШЕСТ ГОДИНА ЗАЈЕДНИЧКЕ БОРБЕ'
+        : 'DA LI BI PRVI SRPSKI USTANAK OPSTAO BEZ RUSIJE? ŠEST GODINA ZAJEDNIČKE BORBE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Российская военная, дипломатическая и финансовая поддержка помогла сербским повстанцам продолжить борьбу против Османской империи. Совместные победы при Варварине, Лознице, Штубике и Малайнице навсегда связали историю двух народов.'
+      : script === 'cyr'
+        ? 'Руска војна, дипломатска и финансијска подршка помогла је српским устаницима да наставе борбу против Османског царства. Заједничке победе код Варварина, Лознице, Штубика и Малајнице заувек су повезале историју два народа.'
+        : 'Ruska vojna, diplomatska i finansijska podrška pomogla je srpskim ustanicima da nastave borbu protiv Osmanskog carstva. Zajedničke pobede kod Varvarina, Loznice, Štubika i Malajnice zauvek su povezale istoriju dva naroda.',
+
+  image: '/static/images/bratski-narod.jpg',
+},
+{
   href: '/vesti/vece-za-kosovo-i-metohiju-u-kuli',
   slug: 'vece-za-kosovo-i-metohiju-u-kuli',
 

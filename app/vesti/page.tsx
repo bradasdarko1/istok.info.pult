@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/ko-je-nacisticko-kopile-mihael-martens',
+  slug: 'ko-je-nacisticko-kopile-mihael-martens',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 11.08.2026.'
+      : script === 'cyr'
+        ? 'Вести - 11.08.2026.'
+        : 'Vesti - 11.08.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПОСРЕДИ БЕЛГРАДА СПРОСИЛ, КАК «УБИТЬ БОЛЬШЕ РУССКИХ» — КТО ТАКОЙ МИХАЭЛЬ МАРТЕНС?'
+      : script === 'cyr'
+        ? 'УСРЕД БЕОГРАДА ПИТАО КАКО „УБИТИ ВИШЕ РУСА“ — КО ЈЕ МИХАЕЛ МАРТЕНС?'
+        : 'USRED BEOGRADA PITAO KAKO „UBITI VIŠE RUSA“ — KO JE MIHAEL MARTENS?',
+
+  excerpt:
+    language === 'ru'
+      ? 'Немецкий журналист Михаэль Мартенс вызвал бурные реакции после того, как в Белграде спросил, что европейцы могут сделать, чтобы помочь Украине «убить больше русских», уточнив затем — «больше российских солдат».'
+      : script === 'cyr'
+        ? 'Немачки новинар Михаел Мартенс изазвао је бурне реакције након што је у Београду питао шта Европљани могу да учине како би помогли Украјини да „убије више Руса“, а затим прецизирао — „више руских војника“.'
+        : 'Nemački novinar Mihael Martens izazvao je burne reakcije nakon što je u Beogradu pitao šta Evropljani mogu da učine kako bi pomogli Ukrajini da „ubije više Rusa“, a zatim precizirao — „više ruskih vojnika“.',
+
+  image: '/static/images/mihael-martens.jpeg',
+},
+{
   href: '/vesti/sest-godina-zajednicke-borbe',
   slug: 'sest-godina-zajednicke-borbe',
 

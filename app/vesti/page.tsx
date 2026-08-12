@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/odlazi-zelenski',
+  slug: 'odlazi-zelenski',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 12.08.2026.'
+      : script === 'cyr'
+        ? 'Вести - 12.08.2026.'
+        : 'Vesti - 12.08.2026.',
+
+  title:
+    language === 'ru'
+      ? 'УХОДИ, ЗЕЛЕНСКИЙ: КАК В БЕЛГРАДЕ ВСТРЕТИЛИ КОРТЕЖ УКРАИНСКОГО ПРЕЗИДЕНТА'
+      : script === 'cyr'
+        ? 'ОДЛАЗИ, ЗЕЛЕНСКИ: КАКО ЈЕ У БЕОГРАДУ ДОЧЕКАНА КОЛОНА УКРАЈИНСКОГ ПРЕДСЕДНИКА'
+        : 'ODLAZI, ZELENSKI: KAKO JE U BEOGRADU DOČEKANA KOLONA UKRAJINSKOG PREDSEDNIKA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Активисты движения «Выбор Наш!» встретили кортеж Владимира Зеленского в Белграде баннерами с призывом покинуть Сербию, а Дане Чанкович прокомментировал его визит и отношения Сербии и России.'
+      : script === 'cyr'
+        ? 'Активисти покрета „Избор Наш!“ дочекали су колону Владимира Зеленског у Београду транспарентима са поруком да напусти Србију, док је Дане Чанковић говорио о његовој посети и односима Србије и Русије.'
+        : 'Aktivisti pokreta „Izbor Naš!“ dočekali su kolonu Vladimira Zelenskog u Beogradu transparentima sa porukom da napusti Srbiju, dok je Dane Čanković govorio o njegovoj poseti i odnosima Srbije i Rusije.',
+
+  image: '/static/images/odlazi-zelenski.jpeg',
+},
+{
   href: '/vesti/ko-je-nacisticko-kopile-mihael-martens',
   slug: 'ko-je-nacisticko-kopile-mihael-martens',
 

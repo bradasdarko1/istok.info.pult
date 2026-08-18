@@ -45,7 +45,7 @@ function latinToCyrillic(text: string) {
 const srLatin = {
   category: 'Vesti',
   title: 'VEČE ZA KOSOVO I METOHIJU U KULI — PESMA, ISTORIJA I HUMANOST NA JEDNOM MESTU',
-  date: 'Objavljeno: 31. jul 2026.',
+  date: 'Objavljeno: 18. avgust 2026.',
   lead: 'Pozivamo vas da nam se pridružite na otvorenim bazenima u Kuli 29.08.2026. godine, sa početkom programa u 15 časova, na posebnoj večeri posvećenoj Kosovu i Metohiji, srpskoj istoriji, kulturi i humanosti.',
   paragraphs: [
     'Ovo neće biti samo koncert.',
@@ -76,7 +76,7 @@ const srLatin = {
 const ruText = {
   category: 'Новости',
   title: 'ВЕЧЕР, ПОСВЯЩЁННЫЙ КОСОВО И МЕТОХИИ В КУЛЕ — МУЗЫКА, ИСТОРИЯ И МИЛОСЕРДИЕ В ОДНОМ МЕСТЕ',
-  date: 'Опубликовано: 31 июль 2026 г.',
+  date: 'Опубликовано: 18 августа 2026 г.',
   lead: 'Приглашаем вас присоединиться к нам 29 августа 2026 года на открытых бассейнах города Кула. Начало программы — в 15:00. Вас ждёт особый вечер, посвящённый Косово и Метохии, сербской истории, культуре и милосердию.',
   paragraphs: [
     'Это будет не просто концерт.',

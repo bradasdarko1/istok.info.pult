@@ -62,10 +62,10 @@ export default function VestiDanas() {
 
   category:
     language === 'ru'
-      ? 'Новости - 31.07.2026.'
+      ? 'Новости - 18.08.2026.'
       : script === 'cyr'
-        ? 'Вести - 31.07.2026.'
-        : 'Vesti - 31.07.2026.',
+        ? 'Вести - 18.08.2026.'
+        : 'Vesti - 18.08.2026.',
 
   title:
     language === 'ru'

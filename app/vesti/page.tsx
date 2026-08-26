@@ -57,6 +57,33 @@ export default function VestiDanas() {
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
 {
+  href: '/vesti/otkazan-humanitarni-dogadjaj-u-kuli',
+  slug: 'otkazan-humanitarni-dogadjaj-u-kuli',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 26.08.2026.'
+      : script === 'cyr'
+        ? 'Вести - 26.08.2026.'
+        : 'Vesti - 26.08.2026.',
+
+  title:
+    language === 'ru'
+      ? 'В КУЛЕ ОТМЕНЕНО ГУМАНИТАРНОЕ МЕРОПРИЯТИЕ В ПОДДЕРЖКУ КОСОВО И МЕТОХИИ'
+      : script === 'cyr'
+        ? 'ОТКАЗАН ХУМАНИТАРНИ ДОГАЂАЈ У КУЛИ ЗА КОСОВО И МЕТОХИЈУ'
+        : 'OTKAZAN HUMANITARNI DOGAĐAJ U KULI ZA KOSOVO I METOHIJU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Полиция разрешила — муниципальные власти запретили! Гуманитарное мероприятие по сбору помощи для сербских детей в Косово и Метохии отменено всего за четыре дня до его проведения.'
+      : script === 'cyr'
+        ? 'Полиција одобрила — Општина забранила! Хуманитарни догађај за прикупљање помоћи за српску децу на Косову и Метохији отказан је свега четири дана пред одржавање.'
+        : 'Policija odobrila — Opština zabranila! Humanitarni događaj za prikupljanje pomoći za srpsku decu na Kosovu i Metohiji otkazan je svega četiri dana pred održavanje.',
+
+  image: '/static/images/saopstenje.jpg',
+},
+{
   href: '/vesti/vece-za-kosovo-i-metohiju',
   slug: 'vece-za-kosovo-i-metohiju',
 

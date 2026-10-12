@@ -56,6 +56,35 @@ export default function VestiDanas() {
 
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
+
+{
+  href: '/vesti/istok-klub-stize-u-novi-sad',
+  slug: 'istok-klub-stize-u-novi-sad',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 12.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 12.10.2026.'
+        : 'Vesti - 12.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ИСТОК КЛУБ ОТКРЫВАЕТСЯ В НОВИ-САДЕ – БОЛЬШЕ, ЧЕМ КОФЕ, БОЛЬШЕ, ЧЕМ ОБЩЕНИЕ!'
+      : script === 'cyr'
+        ? 'ИСТОК КЛУБ СТИЖЕ У НОВИ САД – ВИШЕ ОД КАФЕ, ВИШЕ ОД ДРУЖЕЊА!'
+        : 'ISTOK KLUB STIŽE U NOVI SAD – VIŠE OD KAFE, VIŠE OD DRUŽENJA!',
+
+  excerpt:
+    language === 'ru'
+      ? 'Скоро в Нови-Саде по адресу Максима Горького, 2А откроется ИСТОК КЛУБ – место встреч, культуры и общения. Превосходный кофе, подкасты, викторины, караоке и незабываемая атмосфера!'
+      : script === 'cyr'
+        ? 'Нови Сад ускоро добија ново место сусрета, културе и дружења! ИСТОК КЛУБ на адреси Максима Горког 2А доноси врхунску кафу, подкасте, квизове, караоке и незаборавну атмосферу!'
+        : 'Novi Sad uskoro dobija novo mesto susreta, kulture i druženja! ISTOK KLUB na adresi Maksima Gorkog 2A donosi vrhunsku kafu, podkaste, kvizove, karaoke i nezaboravnu atmosferu!',
+
+  image: '/static/images/istok-klub.jpg',
+},
+
 {
   href: '/vesti/otkazan-humanitarni-dogadjaj-u-kuli',
   slug: 'otkazan-humanitarni-dogadjaj-u-kuli',

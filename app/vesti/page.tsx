@@ -56,7 +56,33 @@ export default function VestiDanas() {
 
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
+{
+  href: '/vesti/madjarski-premijer-izvrsio-samoubistvo-i-time-usao-u-legendu',
+  slug: 'madjarski-premijer-izvrsio-samoubistvo-i-time-usao-u-legendu',
 
+  category:
+    language === 'ru'
+      ? 'Новости - 20.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 20.10.2026.'
+        : 'Vesti - 20.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ВЕНГЕРСКИЙ ПРЕМЬЕР-МИНИСТР ПОКОНЧИЛ С СОБОЙ И ТЕМ САМЫМ ВОШЁЛ В ЛЕГЕНДУ'
+      : script === 'cyr'
+        ? 'МАЂАРСКИ ПРЕМИЈЕР ИЗВРШИО САМОУБИСТВО И ТИМЕ УШАО У ЛЕГЕНДУ'
+        : 'MAĐARSKI PREMIJER IZVRŠIO SAMOUBISTVO I TIME UŠAO U LEGENDU',
+
+  excerpt:
+    language === 'ru'
+      ? '3 апреля 1941 года премьер-министр Венгрии Пал Телеки покончил с собой, столкнувшись с требованием Гитлера участвовать в нападении на Югославию и нарушить договор о вечной дружбе.'
+      : script === 'cyr'
+        ? 'Мађарски премијер Пал Телеки одузео је себи живот 3. априла 1941. године, суочен са Хитлеровим захтевом да Мађарска учествује у нападу на Југославију и погази уговор о вечном пријатељству.'
+        : 'Mađarski premijer Pal Teleki oduzeo je sebi život 3. aprila 1941. godine, suočen sa Hitlerovim zahtevom da Mađarska učestvuje u napadu na Jugoslaviju i pogazi ugovor o večnom prijateljstvu.',
+
+  image: '/static/images/pal-teleki.jpg',
+},
 {
   href: '/vesti/istok-klub-stize-u-novi-sad',
   slug: 'istok-klub-stize-u-novi-sad',

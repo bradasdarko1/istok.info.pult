@@ -1,3 +1,4 @@
+
 const { withContentlayer } = require('next-contentlayer2')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -6,19 +7,19 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is https://va.vercel-scripts.com;
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src *.s3.amazonaws.com;
   connect-src *;
   font-src 'self';
-  frame-src giscus.app
+  frame-src 'self' https://giscus.app https://www.youtube.com https://www.youtube-nocookie.com;
 `
 
 const securityHeaders = [
   {
     key: 'Content-Security-Policy',
-    value: ContentSecurityPolicy.replace(/\n/g, ''),
+    value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
   },
   {
     key: 'Referrer-Policy',
@@ -52,9 +53,11 @@ module.exports = () => {
   return plugins.reduce((acc, next) => next(acc), {
     reactStrictMode: true,
     trailingSlash: true,
+
     eslint: {
       ignoreDuringBuilds: true,
     },
+
     turbopack: {
       root: process.cwd(),
       rules: {
@@ -64,7 +67,9 @@ module.exports = () => {
         },
       },
     },
+
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+
     images: {
       remotePatterns: [
         {
@@ -73,6 +78,7 @@ module.exports = () => {
         },
       ],
     },
+
     async headers() {
       return [
         {
@@ -81,6 +87,7 @@ module.exports = () => {
         },
       ]
     },
+
     webpack: (config) => {
       config.module.rules.push({
         test: /\.svg$/,

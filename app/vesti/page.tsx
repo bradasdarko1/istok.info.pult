@@ -56,6 +56,35 @@ export default function VestiDanas() {
 
   image: '/static/images/saradnja-sa-rusijom.jpeg',
 },
+
+{
+  href: '/vesti/razgovori-u-istoku',
+  slug: 'razgovori-u-istoku',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 21.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 21.10.2026.'
+        : 'Vesti - 21.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ДРАГАНА ТРИФКОВИЧ — ПЕРВАЯ ГОСТЬЯ ПОДКАСТА «РАЗГОВОРЫ НА ВОСТОКЕ»'
+      : script === 'cyr'
+        ? 'ДРАГАНА ТРИФКОВИЋ ПРВА ГОШЋА ПОДКАСТА „РАЗГОВОРИ У ИСТОКУ“'
+        : 'DRAGANA TRIFKOVIĆ PRVA GOŠĆA PODKASTA „RAZGOVORI U ISTOKU“',
+
+  excerpt:
+    language === 'ru'
+      ? 'Клуб «Исток» в Нови-Саде открыл новую главу своей деятельности первым выпуском подкаста «Разговоры на Востоке». Первой гостьей стала Драгана Трифкович, с которой мы обсудили геополитику, международные отношения и вызовы современного мира.'
+      : script === 'cyr'
+        ? 'Исток клуб у Новом Саду започео је ново поглавље свог рада првом епизодом подкаста „Разговори у Истоку“. Прва гошћа била је Драгана Трифковић, са којом смо разговарали о геополитици, међународним односима и изазовима савременог света.'
+        : 'Istok klub u Novom Sadu započeo je novo poglavlje svog rada prvom epizodom podkasta „Razgovori u Istoku“. Prva gošća bila je Dragana Trifković, sa kojom smo razgovarali o geopolitici, međunarodnim odnosima i izazovima savremenog sveta.',
+
+  image: '/static/images/dragana-trifkovic.jpeg',
+},
+
 {
   href: '/vesti/madjarski-premijer-izvrsio-samoubistvo-i-time-usao-u-legendu',
   slug: 'madjarski-premijer-izvrsio-samoubistvo-i-time-usao-u-legendu',

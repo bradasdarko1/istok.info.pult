@@ -1,11 +1,11 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Istok Info Pult',
-  author: 'Istok Info Pult',
-  headerTitle: 'Istok Info Pult',
-  language: 'en-us',
+  title: 'Исток Инфо Пулт',
+  author: 'Исток Инфо Пулт',
+  headerTitle: 'Исток Инфо Пулт',
+  language: 'sr-RS',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://istok-info-pult.vercel.app',
+  siteUrl: 'https://istokinfopult.rs',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.jpg`,
   // set to true if you want a navbar fixed to the top
   stickyNav: false,

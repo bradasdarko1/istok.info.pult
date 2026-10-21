@@ -115,7 +115,14 @@ export default function GavriloPrincipPage() {
             {content.title}
           </h1>
 
-          <p className="text-sm text-white/60 md:text-base">{content.date}</p>
+          
+<time
+  dateTime="2026-07-25"
+  className="text-sm text-white/60 md:text-base"
+>
+  {content.date}
+</time>
+
 
           <ShareButtons
             title={content.title}

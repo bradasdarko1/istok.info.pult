@@ -29,33 +29,6 @@ export default function VestiDanas() {
     }).format(now)
 
   const danasnjeVesti = [
-    {
-  href: '/vesti/vas-proizvod-na-putu-ka-rusiji',
-  slug: 'vas-proizvod-na-putu-ka-rusiji',
-
-  category:
-    language === 'ru'
-      ? 'Новости - 22.05.2026.'
-      : script === 'cyr'
-        ? 'Вести - 22.05.2026.'
-        : 'Vesti - 22.05.2026.',
-
-  title:
-    language === 'ru'
-      ? 'ВАШ ПРОДУКТ НА ПУТИ В РОССИЮ — ОТКРЫТ КОНКУРС ДЛЯ БИЗНЕСА И ИНОВАТОРОВ'
-      : script === 'cyr'
-        ? 'ВАШ ПРОИЗВОД НА ПУТУ КА РУСИЈИ — ОТВОРЕН КОНКУРС ЗА БИЗНИС И ИНОВАТОРЕ'
-        : 'VAŠ PROIZVOD NA PUTU KA RUSIJI — OTVOREN KONKURS ZA BIZNIS I INOVATORE',
-
-  excerpt:
-    language === 'ru'
-      ? 'Открыт конкурс для компаний, стартапов и частных лиц, желающих представить свои продукты и идеи партнёрам из России и выйти на новое рынок.'
-      : script === 'cyr'
-        ? 'Отворен је конкурс за компаније, стартапове и појединце који желе да представе своје производе и идеје партнерима из Русије и изађу на ново тржиште.'
-        : 'Otvoren je konkurs za kompanije, startapove i pojedince koji žele da predstave svoje proizvode i ideje partnerima iz Rusije i izađu na novo tržište.',
-
-  image: '/static/images/saradnja-sa-rusijom.jpeg',
-},
 
 {
   href: '/vesti/razgovori-u-istoku',
@@ -139,7 +112,33 @@ export default function VestiDanas() {
 
   image: '/static/images/istok-klub.jpg',
 },
+{
+  href: '/vesti/vas-proizvod-na-putu-ka-rusiji',
+  slug: 'vas-proizvod-na-putu-ka-rusiji',
 
+  category:
+    language === 'ru'
+      ? 'Новости - 22.05.2026.'
+      : script === 'cyr'
+        ? 'Вести - 22.05.2026.'
+        : 'Vesti - 22.05.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ВАШ ПРОДУКТ НА ПУТИ В РОССИЮ — ОТКРЫТ КОНКУРС ДЛЯ БИЗНЕСА И ИНОВАТОРОВ'
+      : script === 'cyr'
+        ? 'ВАШ ПРОИЗВОД НА ПУТУ КА РУСИЈИ — ОТВОРЕН КОНКУРС ЗА БИЗНИС И ИНОВАТОРЕ'
+        : 'VAŠ PROIZVOD NA PUTU KA RUSIJI — OTVOREN KONKURS ZA BIZNIS I INOVATORE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Открыт конкурс для компаний, стартапов и частных лиц, желающих представить свои продукты и идеи партнёрам из России и выйти на новое рынок.'
+      : script === 'cyr'
+        ? 'Отворен је конкурс за компаније, стартапове и појединце који желе да представе своје производе и идеје партнерима из Русије и изађу на ново тржиште.'
+        : 'Otvoren je konkurs za kompanije, startapove i pojedince koji žele da predstave svoje proizvode i ideje partnerima iz Rusije i izađu na novo tržište.',
+
+  image: '/static/images/saradnja-sa-rusijom.jpeg',
+},
 {
   href: '/vesti/otkazan-humanitarni-dogadjaj-u-kuli',
   slug: 'otkazan-humanitarni-dogadjaj-u-kuli',

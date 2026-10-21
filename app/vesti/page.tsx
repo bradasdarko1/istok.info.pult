@@ -31,6 +31,34 @@ export default function VestiDanas() {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/razgovori-u-istoku-002',
+  slug: 'razgovori-u-istoku-002',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 21.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 21.10.2026.'
+        : 'Vesti - 21.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РАЗГОВОРЫ В «ИСТОКЕ» | ЭПИЗОД 002 — КАРЛО ДУЛОВИЧ И МИЛАН ГЛАМОЧАНИН'
+      : script === 'cyr'
+        ? 'РАЗГОВОРИ У ИСТОКУ | ЕПИЗОДА 002 — КАРЛО ДУЛОВИЋ И МИЛАН ГЛАМОЧАНИН'
+        : 'RAZGOVORI U ISTOKU | EPIZODA 002 — KARLO DULOVIĆ I MILAN GLAMOČANIN',
+
+  excerpt:
+    language === 'ru'
+      ? 'Во втором выпуске подкаста «Разговоры в Истоке» Карло Дулович и Милан Гламочанин рассказывают о секретной разведывательной операции 1987 года в Швейцарии, документах, связанных с планами по развалу Югославии, и последствиях, с которыми столкнулись участники операции.'
+      : script === 'cyr'
+        ? 'У другој епизоди подкаста „Разговори у Истоку“ Карло Дуловић и Милан Гламочанин откривају детаље тајне обавештајне операције из 1987. године у Швајцарској, говоре о документима који су, према њиховим сведочењима, указивали на планове за разбијање Југославије, као и о последицама које су учесници операције трпели.'
+        : 'U drugoj epizodi podkasta „Razgovori u Istoku“ Karlo Dulović i Milan Glamočanin otkrivaju detalje tajne obaveštajne operacije iz 1987. godine u Švajcarskoj, govore o dokumentima koji su, prema njihovim svedočenjima, ukazivali na planove za razbijanje Jugoslavije, kao i o posledicama koje su učesnici operacije trpeli.',
+
+  image: '/static/images/razgovori-u-istoku-002.jpeg',
+},
+
+{
   href: '/vesti/razgovori-u-istoku',
   slug: 'razgovori-u-istoku',
 

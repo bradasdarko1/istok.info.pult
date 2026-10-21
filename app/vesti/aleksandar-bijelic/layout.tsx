@@ -1,45 +1,41 @@
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+
+const seo = createArticleSeo({
+  slug: 'aleksandar-bijelic',
+
   title:
-    'Srpski oficir koji je poginuo kao heroj – ime Aleksandra Bijelića ne sme biti zaboravljeno | Istok Info Pult',
+    'Српски официр Александар Бијелић – херој који не сме бити заборављен',
+
   description:
-    'Priča o Aleksandru Bijeliću, srpskom oficiru srpsko-ruskog porekla, čije ime ostaje zapisano u časti, žrtvi i vojničkom zavetu.',
-  alternates: {
-    canonical: 'https://istokinfopult.rs/vesti/aleksandar-bijelic',
-  },
-  openGraph: {
-    title:
-      'Srpski oficir koji je poginuo kao heroj – ime Aleksandra Bijelića ne sme biti zaboravljeno',
-    description:
-      'Priča o Aleksandru Bijeliću, srpskom oficiru srpsko-ruskog porekla, čije ime ostaje zapisano u časti, žrtvi i vojničkom zavetu.',
-    url: 'https://istokinfopult.rs/vesti/aleksandar-bijelic',
-    siteName: 'Istok Info Pult',
-    locale: 'sr_RS',
-    type: 'article',
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/aleksandar-bijelic.jpeg',
-        width: 1200,
-        height: 630,
-        alt: 'Aleksandar Bijelić - Istok Info Pult',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Srpski oficir koji je poginuo kao heroj – ime Aleksandra Bijelića ne sme biti zaboravljeno',
-    description:
-      'Priča o Aleksandru Bijeliću, srpskom oficiru srpsko-ruskog porekla, čije ime ostaje zapisano u časti, žrtvi i vojničkom zavetu.',
-    images: ['https://istokinfopult.rs/static/images/aleksandar-bijelic.jpeg'],
-  },
-}
+    'Прича о Александру Бијелићу, српском официру српско-руског порекла, његовом животу, војничкој части и жртви која не сме бити заборављена.',
+
+  image: '/static/images/aleksandar-bijelic.jpeg',
+
+  publishedAt: '2026-04-22',
+
+  author: 'Исток Инфо Пулт',
+})
+
+export const metadata = seo.metadata
 
 export default function AleksandarBijelicLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
-  return <>{children}</>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            seo.structuredData
+          ).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

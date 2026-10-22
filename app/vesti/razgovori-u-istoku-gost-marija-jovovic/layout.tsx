@@ -1,36 +1,18 @@
-
 import type { ReactNode } from 'react'
 import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-const { metadata, structuredData } = createArticleSeo({
-  slug: 'razgovori-u-istoku-gost-marija-jovovic',
+const seo = createArticleSeo(getArticleSeo("razgovori-u-istoku-gost-marija-jovovic"))
 
-  title:
-    'Marija Jovović gošća treće epizode podkasta „Razgovori u Istoku“',
+export const metadata = seo.metadata
 
-  description:
-    'Marija Jovović, ćerka Blagoja Jovovića, gošća je treće epizode podkasta „Razgovori u Istoku“. Razgovor o knjizi, porodičnom nasleđu, istoriji i odgovornosti koju nosi prezime Jovović.',
-
-  image: '/static/images/marija-jovovic.jpeg',
-
-  publishedAt: '2026-10-22T08:00:00+02:00',
-
-  author: 'Istok Info Pult',
-})
-
-export { metadata }
-
-export default function Layout({
-  children,
-}: {
-  children: ReactNode
-}) {
+export default function ArticleLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData).replace(/</g, '\\u003c'),
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
         }}
       />
       {children}

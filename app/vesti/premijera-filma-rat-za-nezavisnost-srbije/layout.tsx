@@ -1,53 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title:
-    'Premijera novog dokumentarnog filma „Rat za nezavisnost Srbije 1876“ u Ruskom domu',
+const seo = createArticleSeo(getArticleSeo("premijera-filma-rat-za-nezavisnost-srbije"))
 
-  description:
-    'U Ruskom domu biće održana premijera dokumentarnog filma „Rat za nezavisnost Srbije 1876“, povodom 150 godina od izbijanja Prvog srpsko-turskog rata.',
+export const metadata = seo.metadata
 
-  openGraph: {
-    title:
-      'Premijera novog dokumentarnog filma „Rat za nezavisnost Srbije 1876“ u Ruskom domu',
-
-    description:
-      'Dokumentarni film o Prvom srpsko-turskom ratu donosi svedočenja srpskih i ruskih istoričara, autentične lokacije i AI animacije zasnovane na originalnim fotografijama iz 1876. godine.',
-
-    type: 'article',
-
-    url:
-      'https://istokinfopult.rs/vesti/premijera-filma-rat-za-nezavisnost-srbije',
-
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/rat-za-nezavisnost-srbije.jpeg',
-        width: 1200,
-        height: 630,
-        alt: 'Premijera dokumentarnog filma Rat za nezavisnost Srbije 1876',
-      },
-    ],
-  },
-
-  twitter: {
-    card: 'summary_large_image',
-
-    title:
-      'Premijera novog dokumentarnog filma „Rat za nezavisnost Srbije 1876“ u Ruskom domu',
-
-    description:
-      'Povodom 150 godina od izbijanja Prvog srpsko-turskog rata, u Ruskom domu biće održana premijera dokumentarnog filma „Rat za nezavisnost Srbije 1876“.',
-
-    images: [
-      'https://istokinfopult.rs/static/images/rat-za-nezavisnost-srbije.jpeg',
-    ],
-  },
-}
-
-export default function PremijeraFilmaRatZaNezavisnostSrbijeLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return children
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

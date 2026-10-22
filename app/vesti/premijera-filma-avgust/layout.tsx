@@ -1,39 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title: 'Premijera ruske vojne drame „Avgust“ u Ruskom domu u Beogradu',
-  description:
-    'Nova ruska vojna drama „Avgust“ biće premijerno prikazana srpskoj publici 9. maja u Ruskom domu u Beogradu, uz srpske titlove.',
+const seo = createArticleSeo(getArticleSeo("premijera-filma-avgust"))
 
-  openGraph: {
-    title: 'Premijera ruske vojne drame „Avgust“ u Ruskom domu u Beogradu',
-    description:
-      'Nova ruska vojna drama „Avgust“ biće premijerno prikazana srpskoj publici 9. maja u Ruskom domu u Beogradu, uz srpske titlove.',
-    type: 'article',
-    url: 'https://istokinfopult.rs/vesti/premijera-filma-avgust',
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/avgust.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Premijera filma Avgust u Ruskom domu u Beogradu',
-      },
-    ],
-  },
+export const metadata = seo.metadata
 
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Premijera ruske vojne drame „Avgust“ u Ruskom domu u Beogradu',
-    description:
-      'Nova ruska vojna drama „Avgust“ biće premijerno prikazana srpskoj publici 9. maja u Ruskom domu u Beogradu, uz srpske titlove.',
-    images: ['https://istokinfopult.rs/static/images/avgust.jpg'],
-  },
-}
-
-export default function PremijeraFilmaAvgustLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return children
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

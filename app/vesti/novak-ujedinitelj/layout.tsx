@@ -1,39 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title: 'Novak ujedinitelj',
-  description:
-    'Poziv Novaku Đokoviću da svojim ugledom, autoritetom i međunarodnim prijateljstvima pomogne u ujedinjenju naroda i očuvanju Srbije.',
+const seo = createArticleSeo(getArticleSeo("novak-ujedinitelj"))
 
-  openGraph: {
-    title: 'Novak ujedinitelj',
-    description:
-      'Poziv Novaku Đokoviću da svojim ugledom, autoritetom i međunarodnim prijateljstvima pomogne u ujedinjenju naroda i očuvanju Srbije.',
-    type: 'article',
-    url: 'https://istokinfopult.rs/vesti/novak-ujedinitelj',
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/novak.jpeg',
-        width: 1200,
-        height: 630,
-        alt: 'Novak ujedinitelj',
-      },
-    ],
-  },
+export const metadata = seo.metadata
 
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Novak ujedinitelj',
-    description:
-      'Poziv Novaku Đokoviću da svojim ugledom, autoritetom i međunarodnim prijateljstvima pomogne u ujedinjenju naroda i očuvanju Srbije.',
-    images: ['https://istokinfopult.rs/static/images/novak.jpeg'],
-  },
-}
-
-export default function NovakUjediniteljLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return children
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

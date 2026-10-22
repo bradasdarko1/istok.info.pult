@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next'
 
 const SITE_URL = 'https://www.istokinfopult.rs'
@@ -8,104 +7,57 @@ export type ArticleSeoData = {
   slug: string
   title: string
   description: string
-  image: string
-  publishedAt: string
+  image?: string
+  publishedAt?: string
   modifiedAt?: string
   author?: string
   authorUrl?: string
 }
 
 export function createArticleSeo(article: ArticleSeoData) {
-  const url = `${SITE_URL}/vesti/${article.slug}`
-  const imageUrl = new URL(article.image, SITE_URL).toString()
+  const url = `${SITE_URL}/vesti/${encodeURIComponent(article.slug)}`
+  const imageUrl = article.image ? new URL(article.image, SITE_URL).toString() : undefined
+  const authorName = article.author || SITE_NAME
+  const authorUrl = article.authorUrl || (article.author ? undefined : SITE_URL)
 
   const metadata: Metadata = {
     title: article.title,
     description: article.description,
-
-    alternates: {
-      canonical: url,
-    },
-
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-image-preview': 'large',
-      },
-    },
-
+    alternates: { canonical: url },
+    robots: { index: true, follow: true },
     openGraph: {
-      type: 'article',
-      locale: 'sr_RS',
-      siteName: SITE_NAME,
-      url,
-      title: article.title,
-      description: article.description,
-      publishedTime: article.publishedAt,
-      ...(article.modifiedAt
-        ? { modifiedTime: article.modifiedAt }
-        : {}),
-      images: [
-        {
-          url: imageUrl,
-          alt: article.title,
-        },
-      ],
+      type: 'article', locale: 'sr_RS', siteName: SITE_NAME,
+      url, title: article.title, description: article.description,
+      ...(article.publishedAt ? { publishedTime: article.publishedAt } : {}),
+      ...(article.modifiedAt ? { modifiedTime: article.modifiedAt } : {}),
+      ...(imageUrl ? { images: [{ url: imageUrl, alt: article.title }] } : {}),
     },
-
     twitter: {
-      card: 'summary_large_image',
-      title: article.title,
-      description: article.description,
-      images: [imageUrl],
+      card: imageUrl ? 'summary_large_image' : 'summary',
+      title: article.title, description: article.description,
+      ...(imageUrl ? { images: [imageUrl] } : {}),
     },
   }
 
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
-
     headline: article.title,
     description: article.description,
-    image: [imageUrl],
-
-    datePublished: article.publishedAt,
-
-    ...(article.modifiedAt
-      ? { dateModified: article.modifiedAt }
-      : {}),
-
+    ...(imageUrl ? { image: [imageUrl] } : {}),
+    ...(article.publishedAt ? { datePublished: article.publishedAt } : {}),
+    ...(article.modifiedAt ? { dateModified: article.modifiedAt } : {}),
     inLanguage: 'sr-RS',
-
     author: {
-      '@type': 'Organization',
-      name: article.author || SITE_NAME,
-      url: article.authorUrl || SITE_URL,
+      '@type': 'Organization', name: authorName,
+      ...(authorUrl ? { url: authorUrl } : {}),
     },
-
     publisher: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: SITE_URL,
-      logo: {
-        '@type': 'ImageObject',
-        url: `${SITE_URL}/static/images/logo.jpg`,
-      },
+      '@type': 'Organization', name: SITE_NAME, url: SITE_URL,
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/static/images/logo.jpg` },
     },
-
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': url,
-    },
-
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     url,
   }
-
-  return {
-    metadata,
-    structuredData,
-  }
+  return { metadata, structuredData }
 }

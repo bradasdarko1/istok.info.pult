@@ -1,39 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title: 'Novac za vojni rok preusmeren na sport i kulturu',
-  description:
-    'Vlada Srbije preusmerila je skoro 300 miliona dinara, prvobitno namenjenih za realizaciju obaveznog vojnog roka, ministarstvima sporta i kulture.',
+const seo = createArticleSeo(getArticleSeo("novac-za-vojni-rok-preusmeren-na-sport-i-kulturu"))
 
-  openGraph: {
-    title: 'Novac za vojni rok preusmeren na sport i kulturu',
-    description:
-      'Vlada Srbije preusmerila je skoro 300 miliona dinara, prvobitno namenjenih za realizaciju obaveznog vojnog roka, ministarstvima sporta i kulture.',
-    type: 'article',
-    url: 'https://istokinfopult.rs/vesti/novac-za-vojni-rok-preusmeren-na-sport-i-kulturu',
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/novac-za-vojni-rok.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Novac za vojni rok preusmeren na sport i kulturu',
-      },
-    ],
-  },
+export const metadata = seo.metadata
 
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Novac za vojni rok preusmeren na sport i kulturu',
-    description:
-      'Vlada Srbije preusmerila je skoro 300 miliona dinara, prvobitno namenjenih za realizaciju obaveznog vojnog roka, ministarstvima sporta i kulture.',
-    images: ['https://istokinfopult.rs/static/images/novac-za-vojni-rok.jpg'],
-  },
-}
-
-export default function NovacZaVojniRokPreusmerenNaSportIKulturuLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return children
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

@@ -1,42 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title:
-    'Pokrenuta akcija za podizanje spomenika Vladimiru Ostrivnom na groblju Orlovača',
-  description:
-    'Posle višegodišnjih administrativnih prepreka obezbeđena je dozvola za postavljanje spomenika ruskom državljaninu Vladimiru Sergejeviču Ostrivnom, ubijenom u Beogradu 2018. godine.',
+const seo = createArticleSeo(getArticleSeo("spomenik-vladimiru-sergevic-ostrivnom"))
 
-  openGraph: {
-    title:
-      'Pokrenuta akcija za podizanje spomenika Vladimiru Ostrivnom na groblju Orlovača',
-    description:
-      'Posle višegodišnjih administrativnih prepreka obezbeđena je dozvola za postavljanje spomenika Vladimiru Ostrivnom. Svi koji žele mogu podržati realizaciju projekta dobrovoljnom donacijom.',
-    type: 'article',
-    url: 'https://istokinfopult.rs/vesti/spomenik-vladimiru-sergevic-ostrivnom',
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/spomenik-vladimiru-1.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Spomenik Vladimiru Ostrivnom',
-      },
-    ],
-  },
+export const metadata = seo.metadata
 
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Pokrenuta akcija za podizanje spomenika Vladimiru Ostrivnom na groblju Orlovača',
-    description:
-      'Pokrenuta je akcija za postavljanje spomenika Vladimiru Sergejeviču Ostrivnom na groblju Orlovača.',
-    images: ['https://istokinfopult.rs/static/images/spomenik-vladimiru-1.jpg'],
-  },
-}
-
-export default function SpomenikVladimiruSergevicOstrivnomLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return children
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

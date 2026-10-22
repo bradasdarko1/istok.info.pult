@@ -1,53 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title:
-    'Srpska pravoslavna crkva danas proslavlja Ivanjdan – Rođenje Svetog Jovana Preteče',
+const seo = createArticleSeo(getArticleSeo("srpska-pravoslavna-crkva-danas-proslavlja-ivanjdan"))
 
-  description:
-    'Srpska pravoslavna crkva i vernici danas proslavljaju Ivanjdan, praznik posvećen Rođenju Svetog Jovana Preteče i Krstitelja, jednog od najpoštovanijih svetitelja u hrišćanstvu.',
+export const metadata = seo.metadata
 
-  openGraph: {
-    title:
-      'Srpska pravoslavna crkva danas proslavlja Ivanjdan – Rođenje Svetog Jovana Preteče',
-
-    description:
-      'Ivanjdan je praznik posvećen Rođenju Svetog Jovana Preteče, proroka koji je krstio Isusa Hrista u reci Jordan i najavio dolazak Mesije.',
-
-    type: 'article',
-
-    url:
-      'https://istokinfopult.rs/vesti/srpska-pravoslavna-crkva-danas-proslavlja-ivanjdan',
-
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/sveti-jovan.jpeg',
-        width: 1200,
-        height: 630,
-        alt: 'Ikona Svetog Jovana Preteče',
-      },
-    ],
-  },
-
-  twitter: {
-    card: 'summary_large_image',
-
-    title:
-      'Srpska pravoslavna crkva danas proslavlja Ivanjdan – Rođenje Svetog Jovana Preteče',
-
-    description:
-      'Sveti Jovan Preteča, poslednji veliki prorok Starog zaveta, svojim životom, propoveđu i krštenjem Isusa Hrista zauzima posebno mesto u hrišćanskoj tradiciji.',
-
-    images: [
-      'https://istokinfopult.rs/static/images/sveti-jovan.jpeg',
-    ],
-  },
-}
-
-export default function SrpskaPravoslavnaCrkvaDanasProslavljaIvanjdanLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return children
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

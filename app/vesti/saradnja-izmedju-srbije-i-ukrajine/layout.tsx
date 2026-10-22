@@ -1,39 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title:
-    'POTPISANI „ANTIRUSKI“ MEMORANDUMI U BEOGRADU? | Istok Info Pult',
+const seo = createArticleSeo(getArticleSeo("saradnja-izmedju-srbije-i-ukrajine"))
 
-  description:
-    'Potpisivanje sporazuma između Srbije i Ukrajine izazvalo je različite reakcije u javnosti i otvorilo pitanje spoljnopolitičkog kursa Srbije.',
+export const metadata = seo.metadata
 
-  openGraph: {
-    title:
-      'POTPISANI „ANTIRUSKI“ MEMORANDUMI U BEOGRADU?',
-
-    description:
-      'Potpisani sporazumi između Srbije i Ukrajine otvaraju pitanje odnosa prema Rusiji i budućeg spoljnopolitičkog pravca.',
-
-    type: 'article',
-
-    url:
-      'https://www.istokinfopult.rs/vesti/potpisani-antiruski-memorandumi',
-
-    images: [
-      {
-        url: '/static/images/srbija-ukrajina.jpeg',
-        width: 1200,
-        height: 630,
-        alt: 'Potpisani memorandumi Srbija Ukrajina',
-      },
-    ],
-  },
-}
-
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return <>{children}</>
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

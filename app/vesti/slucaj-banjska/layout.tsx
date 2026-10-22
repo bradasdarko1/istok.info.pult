@@ -1,42 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title:
-    'Doživotne kazne koje su potresle srpski narod | Istok Info Pult',
-  description:
-    'Vest o izricanju doživotnih kazni Blagoju Spasojeviću i Vladimiru Toliću, dok je Dušan Maksimović osuđen na 30 godina zatvora, duboko je potresla javnost.',
-  openGraph: {
-    title:
-      'Doživotne kazne koje su potresle srpski narod',
-    description:
-      'Danas više nego ikada moramo biti uz svoju braću i njihove porodice.',
-    url: 'https://istokinfopult.rs/vesti/slucaj-banjska',
-    siteName: 'Istok Info Pult',
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/banjska.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Doživotne kazne koje su potresle srpski narod',
-      },
-    ],
-    locale: 'sr_RS',
-    type: 'article',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Doživotne kazne koje su potresle srpski narod',
-    description:
-      'Danas više nego ikada moramo biti uz svoju braću i njihove porodice.',
-    images: ['https://istokinfopult.rs/static/images/banjska.jpg'],
-  },
-}
+const seo = createArticleSeo(getArticleSeo("slucaj-banjska"))
 
-export default function SlucajBanjskaLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return <>{children}</>
+export const metadata = seo.metadata
+
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

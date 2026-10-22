@@ -1,42 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title:
-    '38 dana pakla: dvojica srpskih vojnika preživela torturu od Košara do tajnih zatvora u Nemačkoj',
-  description:
-    'Priča o Šefku Tairoviću iz Niša i Bobanu Milenkoviću iz Vranja, srpskim vojnicima zarobljenim 1999. godine kod Junika, koji su prošli kroz 38 dana torture u logorima na Kosmetu, Albaniji i zatvorima u Nemačkoj.',
+const seo = createArticleSeo(getArticleSeo("pakla-38-dana-za-srpske-vojnike"))
 
-  openGraph: {
-    title:
-      '38 dana pakla: dvojica srpskih vojnika preživela torturu od Košara do tajnih zatvora u Nemačkoj',
-    description:
-      'Šefko Tairović i Boban Milenković zarobljeni su 13. aprila 1999. kod Junika tokom redovne patrole, a oslobođeni 21. maja posredstvom Crvenog krsta.',
-    type: 'article',
-    url: 'https://istokinfopult.rs/vesti/pakla-38-dana-za-srpske-vojnike',
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/dvojica-srpskih-vojnika.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Dvojica srpskih vojnika zarobljenih tokom NATO agresije 1999. godine',
-      },
-    ],
-  },
+export const metadata = seo.metadata
 
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      '38 dana pakla: dvojica srpskih vojnika preživela torturu od Košara do tajnih zatvora u Nemačkoj',
-    description:
-      'Priča o Šefku Tairoviću i Bobanu Milenkoviću, srpskim vojnicima zarobljenim 1999. godine kod Junika.',
-    images: ['https://istokinfopult.rs/static/images/dvojica-srpskih-vojnika.jpg'],
-  },
-}
-
-export default function Pakla38DanaZaSrpskeVojnikeLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return children
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

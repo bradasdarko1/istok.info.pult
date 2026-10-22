@@ -1,42 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title:
-    'Car koji je voleo Srbiju više nego politiku: Na današnji dan rođen Nikolaj II Romanov',
-  description:
-    'Na današnji dan 1868. godine rođen je ruski car Nikolaj II Romanov, poslednji car Rusije i istorijski simbol bratstva Srbije i Rusije.',
+const seo = createArticleSeo(getArticleSeo("nikolaj-II-romanov"))
 
-  openGraph: {
-    title:
-      'Car koji je voleo Srbiju više nego politiku: Na današnji dan rođen Nikolaj II Romanov',
-    description:
-      'Nikolaj II Romanov ostao je upamćen kao ruski car koji je u najtežim trenucima stao uz Srbiju i srpski narod.',
-    type: 'article',
-    url: 'https://istokinfopult.rs/vesti/nikolaj-II-romanov',
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/nikolaj-II-romanov.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Nikolaj II Romanov - car koji je voleo Srbiju',
-      },
-    ],
-  },
+export const metadata = seo.metadata
 
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Car koji je voleo Srbiju više nego politiku: Na današnji dan rođen Nikolaj II Romanov',
-    description:
-      'Na današnji dan 1868. godine rođen je ruski car Nikolaj II Romanov, poslednji car Rusije i veliki prijatelj srpskog naroda.',
-    images: ['https://istokinfopult.rs/static/images/nikolaj-II-romanov.jpg'],
-  },
-}
-
-export default function NikolajIIRomanovLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return children
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

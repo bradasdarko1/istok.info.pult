@@ -1,53 +1,21 @@
-import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
+import { createArticleSeo } from '@/lib/articleSeo'
+import { getArticleSeo } from '@/data/articlesSeo'
 
-export const metadata: Metadata = {
-  title:
-    'Na današnji dan ubijen knez Mihailo Obrenović – vladar koji je oslobodio srpske gradove od turskih garnizona',
+const seo = createArticleSeo(getArticleSeo("na-danasnji-dan-ubijen-knez-mihailo-obrenovic"))
 
-  description:
-    'Na današnji dan 1868. godine u Košutnjaku je ubijen knez Mihailo Obrenović, jedan od najznačajnijih srpskih vladara XIX veka i državnik koji je iz srpskih gradova povukao turske garnizone.',
+export const metadata = seo.metadata
 
-  openGraph: {
-    title:
-      'Na današnji dan ubijen knez Mihailo Obrenović',
-
-    description:
-      'Knez Mihailo Obrenović ostao je upamćen kao vladar koji je Srbiju vodio putem modernizacije i jačanja njene samostalnosti.',
-
-    type: 'article',
-
-    url:
-      'https://istokinfopult.rs/vesti/na-danasnji-dan-ubijen-knez-mihailo-obrenovic',
-
-    images: [
-      {
-        url: 'https://istokinfopult.rs/static/images/knez-mihailo-obrenovic.jpeg',
-        width: 1200,
-        height: 630,
-        alt: 'Knez Mihailo Obrenović',
-      },
-    ],
-  },
-
-  twitter: {
-    card: 'summary_large_image',
-
-    title:
-      'Na današnji dan ubijen knez Mihailo Obrenović',
-
-    description:
-      'Na današnji dan 1868. godine u Košutnjaku je ubijen knez Mihailo Obrenović, jedan od najznačajnijih srpskih državnika XIX veka.',
-
-    images: [
-      'https://istokinfopult.rs/static/images/knez-mihailo-obrenovic.jpeg',
-    ],
-  },
-}
-
-export default function NaDanasnjiDanUbijenKnezMihailoObrenovicLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return children
+export default function ArticleLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seo.structuredData).replace(/</g, '\\u003c'),
+        }}
+      />
+      {children}
+    </>
+  )
 }

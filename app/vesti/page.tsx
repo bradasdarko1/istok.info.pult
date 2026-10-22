@@ -31,6 +31,33 @@ export default function VestiDanas() {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/razgovori-u-istoku-gost-marija-jovovic',
+  slug: 'razgovori-u-istoku-gost-marija-jovovic',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 22.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 22.10.2026.'
+        : 'Vesti - 22.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РАЗГОВОРЫ В «ИСТОКЕ» | ЭПИЗОД 003 — МАРИЯ ЙОВОВИЧ'
+      : script === 'cyr'
+        ? 'РАЗГОВОРИ У ИСТОКУ | ЕПИЗОДА 003 — МАРИЈА ЈОВОВИЋ'
+        : 'RAZGOVORI U ISTOKU | EPIZODA 003 — MARIJA JOVOVIĆ',
+
+  excerpt:
+    language === 'ru'
+      ? 'В третьем выпуске подкаста «Разговоры в Истоке» нашей гостьей станет Мария Йовович, дочь Благое Йововича. Мы поговорим о её книге, жизни и историческом наследии отца, сохранении семейной памяти, а также о чести, ответственности и значении фамилии Йовович.'
+      : script === 'cyr'
+        ? 'У трећој епизоди подкаста „Разговори у Истоку“ угостићемо Марију Јововић, ћерку Благоја Јововића. Разговараћемо о њеној књизи, животу и историјском наслеђу њеног оца, очувању породичног сећања, као и о части, одговорности и тежини коју носи презиме Јововић.'
+        : 'U trećoj epizodi podkasta „Razgovori u Istoku“ ugostićemo Mariju Jovović, ćerku Blagoja Jovovića. Razgovaraćemo o njenoj knjizi, životu i istorijskom nasleđu njenog oca, očuvanju porodičnog sećanja, kao i o časti, odgovornosti i težini koju nosi prezime Jovović.',
+
+  image: '/static/images/marija-jovovic.jpeg',
+},
+{
   href: '/vesti/razgovori-u-istoku-002',
   slug: 'razgovori-u-istoku-002',
 

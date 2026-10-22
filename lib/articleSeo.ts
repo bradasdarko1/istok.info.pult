@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 
 const SITE_URL = 'https://www.istokinfopult.rs'
 const SITE_NAME = 'Исток Инфо Пулт'
-const DEFAULT_AUTHOR = SITE_NAME
 
 export type ArticleSeoData = {
   slug: string
@@ -13,14 +12,12 @@ export type ArticleSeoData = {
   publishedAt: string
   modifiedAt?: string
   author?: string
+  authorUrl?: string
 }
 
 export function createArticleSeo(article: ArticleSeoData) {
   const url = `${SITE_URL}/vesti/${article.slug}`
-
   const imageUrl = new URL(article.image, SITE_URL).toString()
-
-  const author = article.author || DEFAULT_AUTHOR
 
   const metadata: Metadata = {
     title: article.title,
@@ -48,7 +45,9 @@ export function createArticleSeo(article: ArticleSeoData) {
       title: article.title,
       description: article.description,
       publishedTime: article.publishedAt,
-      modifiedTime: article.modifiedAt,
+      ...(article.modifiedAt
+        ? { modifiedTime: article.modifiedAt }
+        : {}),
       images: [
         {
           url: imageUrl,
@@ -68,18 +67,25 @@ export function createArticleSeo(article: ArticleSeoData) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
+
     headline: article.title,
     description: article.description,
     image: [imageUrl],
+
     datePublished: article.publishedAt,
+
     ...(article.modifiedAt
       ? { dateModified: article.modifiedAt }
       : {}),
+
     inLanguage: 'sr-RS',
+
     author: {
       '@type': 'Organization',
-      name: author,
+      name: article.author || SITE_NAME,
+      url: article.authorUrl || SITE_URL,
     },
+
     publisher: {
       '@type': 'Organization',
       name: SITE_NAME,
@@ -89,11 +95,17 @@ export function createArticleSeo(article: ArticleSeoData) {
         url: `${SITE_URL}/static/images/logo.jpg`,
       },
     },
+
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': url,
     },
+
+    url,
   }
 
-  return { metadata, structuredData }
+  return {
+    metadata,
+    structuredData,
+  }
 }

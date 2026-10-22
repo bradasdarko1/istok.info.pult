@@ -3,7 +3,6 @@
 
 import { usePathname } from 'next/navigation'
 import RelatedArticles from '@/components/RelatedArticles'
-import { articlesSeo } from '@/data/articlesSeo'
 
 const excludedSlugs = new Set([
   'srbija',
@@ -15,14 +14,17 @@ const excludedSlugs = new Set([
 export default function AutoRelatedArticles() {
   const pathname = usePathname()
 
-  const match = pathname.match(/^\/vesti\/([^/]+)\/?$/)
+  const segments = pathname
+    .split('/')
+    .filter(Boolean)
 
-  if (!match) return null
+  if (segments.length !== 2 || segments[0] !== 'vesti') {
+    return null
+  }
 
-  const slug = decodeURIComponent(match[1])
+  const slug = decodeURIComponent(segments[1])
 
-  if (excludedSlugs.has(slug)) return null
-  if (!Object.prototype.hasOwnProperty.call(articlesSeo, slug)) {
+  if (excludedSlugs.has(slug)) {
     return null
   }
 

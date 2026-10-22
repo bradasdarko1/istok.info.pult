@@ -147,14 +147,32 @@ export default function RelatedArticles({
   const isRussian = language === 'ru'
   const isLatin = language === 'sr' && script === 'lat'
 
-  const relatedSlugs = relatedArticles[slug] || []
+  
+  // Ručno izabrane povezane vesti imaju prednost.
+  const manualSlugs = relatedArticles[slug] || []
+
+  // Automatski biramo najnovije druge vesti.
+  const latestSlugs = Object.values(articlesSeo)
+    .filter((article) => article.slug !== slug)
+    .sort(
+      (a, b) =>
+        new Date(b.publishedAt || 0).getTime() -
+        new Date(a.publishedAt || 0).getTime()
+    )
+    .map((article) => article.slug)
+
+  // Prvo ručno povezane, zatim automatski izabrane.
+  const relatedSlugs = [
+    ...new Set([...manualSlugs, ...latestSlugs]),
+  ].filter((item) => item !== slug)
 
   const articles = relatedSlugs
-    .filter((item) => item !== slug)
     .map((item) => articlesSeo[item])
     .filter((item) => Boolean(item))
+    .slice(0, 2)
 
   if (articles.length === 0) return null
+
 
   const labels = isRussian
     ? {

@@ -1,6 +1,7 @@
 
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/components/LanguageProvider'
 import ShareButtons from '@/components/ShareButtons'
@@ -50,7 +51,7 @@ const srLatin = {
   category: 'Vesti',
 
   title:
-    'RAZGOVORI U ISTOKU | EPIZODA 002',
+    'RAZGOVORI U ISTOKU | EPIZODA 002 — KARLO DULOVIĆ I MILAN GLAMOČANIN',
 
   date: 'Objavljeno: 21. oktobar 2026.',
 
@@ -87,7 +88,7 @@ const ruText = {
   category: 'Новости',
 
   title:
-    'РАЗГОВОРЫ В «ИСТОКЕ» | ЭПИЗОД 002',
+    'РАЗГОВОРЫ В «ИСТОКЕ» | ЭПИЗОД 002 — КАРЛО ДУЛОВИЧ И МИЛАН ГЛАМОЧАНИН',
 
   date: 'Опубликовано: 21 октября 2026 г.',
 
@@ -164,6 +165,48 @@ export default function RazgovoriUIstoku002Page() {
               latinToCyrillic(srLatin.watchVideo),
           }
         : srLatin
+
+  const relatedEpisodes = language === 'ru'
+    ? {
+        heading: 'Другие выпуски подкаста «Разговоры в Истоке»',
+        episodes: [
+          {
+            href: '/vesti/razgovori-u-istoku',
+            label: 'Выпуск 001 — Драгана Трифкович',
+          },
+          {
+            href: '/vesti/razgovori-u-istoku-gost-marija-jovovic',
+            label: 'Выпуск 003 — Мария Йовович',
+          },
+        ],
+      }
+    : script === 'cyr'
+      ? {
+          heading: 'Остале епизоде подкаста „Разговори у Истоку“',
+          episodes: [
+            {
+              href: '/vesti/razgovori-u-istoku',
+              label: 'Епизода 001 — Драгана Трифковић',
+            },
+            {
+              href: '/vesti/razgovori-u-istoku-gost-marija-jovovic',
+              label: 'Епизода 003 — Марија Јововић',
+            },
+          ],
+        }
+      : {
+          heading: 'Ostale epizode podkasta „Razgovori u Istoku“',
+          episodes: [
+            {
+              href: '/vesti/razgovori-u-istoku',
+              label: 'Epizoda 001 — Dragana Trifković',
+            },
+            {
+              href: '/vesti/razgovori-u-istoku-gost-marija-jovovic',
+              label: 'Epizoda 003 — Marija Jovović',
+            },
+          ],
+        }
 
   return (
     <main className="min-h-screen bg-black px-4 py-8 text-white sm:px-6 md:px-8 md:py-12">
@@ -341,6 +384,27 @@ export default function RazgovoriUIstoku002Page() {
             </p>
 
           </div>
+
+          {/* ==================================
+              POVEZANE EPIZODE PODKASTA
+          ================================== */}
+
+          <nav aria-label={relatedEpisodes.heading} className="mt-12">
+            <h2 className="mb-5 text-xl font-bold text-white md:text-2xl">
+              {relatedEpisodes.heading}
+            </h2>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {relatedEpisodes.episodes.map((episode) => (
+                <Link
+                  key={episode.href}
+                  href={episode.href}
+                  className="rounded-2xl border border-yellow-400/30 bg-white/5 p-5 font-semibold text-yellow-300 transition hover:border-yellow-400/60 hover:bg-white/10"
+                >
+                  {episode.label} →
+                </Link>
+              ))}
+            </div>
+          </nav>
 
           {/* ==================================
               KOMENTARI

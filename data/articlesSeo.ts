@@ -460,8 +460,10 @@ export const articlesSeo: Record<string, ArticleSeoData> = {
   },
   "razgovori-u-istoku-002": {
     slug: "razgovori-u-istoku-002",
-    title: "RAZGOVORI U ISTOKU | EPIZODA 002",
-    description: "Imamo tu čast i zadovoljstvo da u drugoj epizodi naše emisije „Razgovori u Istoku“ ugostimo gospodina Karla Dulovića, bivšeg operativca Savezne državne bezbednosti, i gospodina Milana Glamočanina, bivšeg načelnika za granice, strance i upravne poslove SRJ.",
+    title:
+  "Razgovori u Istoku 002 – Karlo Dulović i Milan Glamočanin",
+description:
+  "Karlo Dulović i Milan Glamočanin u podkastu „Razgovori u Istoku“ govore o obaveštajnoj operaciji 1987. godine u Švajcarskoj i dokumentima o Jugoslaviji.",
     image: "/static/images/razgovori-u-istoku-002.jpeg",
     publishedAt: "2026-10-21",
   },

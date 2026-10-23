@@ -654,6 +654,13 @@ export const articlesSeo: Record<string, ArticleSeoData> = {
     image: "/static/images/petak.jpg",
     publishedAt: "2026-04-10",
   },
+  "zaboravljena-cast-iz-1941": {
+    slug: "zaboravljena-cast-iz-1941",
+    title: "Mađarski premijer koji je životom branio datu reč",
+    description: "Priča o časti i datoj reči. Mađarski premijer Pal Teleki oduzeo je sebi život 3. aprila 1941. godine, suočen sa kršenjem Sporazuma o večnom prijateljstvu sa Kraljevinom Jugoslavijom.",
+    image: "/static/images/zaboravljena-cast-iz-1941.jpg",
+    publishedAt: "2026-10-23",
+  },
   "zbog-ljubavi-otisao-u-rusiju": {
     slug: "zbog-ljubavi-otisao-u-rusiju",
     title: "Zbog ljubavi u Rusiji: Milan Stojanović o životu, radu i srpsko-ruskim vezama",

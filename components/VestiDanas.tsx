@@ -14,6 +14,33 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/zaboravljena-cast-iz-1941',
+  slug: 'zaboravljena-cast-iz-1941',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 23.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 23.10.2026.'
+        : 'Vesti - 23.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ВЕНГЕРСКИЙ ПРЕМЬЕР, ЗАЩИТИВШИЙ ДАННОЕ СЛОВО ЦЕНОЙ ЖИЗНИ'
+      : script === 'cyr'
+        ? 'МАЂАРСКИ ПРЕМИЈЕР КОЈИ ЈЕ ЖИВОТОМ БРАНИО ДАТУ РЕЧ'
+        : 'MAĐARSKI PREMIJER KOJI JE ŽIVOTOM BRANIO DATU REČ',
+
+  excerpt:
+    language === 'ru'
+      ? 'История о чести, верности слову и жертве. Премьер-министр Венгрии Пал Телеки покончил с собой 3 апреля 1941 года, столкнувшись с решением своей страны нарушить Договор о вечной дружбе с Королевством Югославия.'
+      : script === 'cyr'
+        ? 'Прича о части, датој речи и жртви. Мађарски премијер Пал Телеки одузео је себи живот 3. априла 1941. године, суочен са одлуком своје земље да прекрши Споразум о вечном пријатељству са Краљевином Југославијом.'
+        : 'Priča o časti, datoj reči i žrtvi. Mađarski premijer Pal Teleki oduzeo je sebi život 3. aprila 1941. godine, suočen sa odlukom svoje zemlje da prekrši Sporazum o večnom prijateljstvu sa Kraljevinom Jugoslavijom.',
+
+  image: '/static/images/zaboravljena-cast-iz-1941.jpg',
+},
+{
   href: '/vesti/razgovori-u-istoku-gost-marija-jovovic',
   slug: 'razgovori-u-istoku-gost-marija-jovovic',
 

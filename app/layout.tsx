@@ -35,6 +35,12 @@ const SITE_TITLE =
 const SITE_DESCRIPTION =
   'Исток Инфо Пулт доноси вести, историјске приче, културне догађаје и садржаје о Србији, Русији и српско-руским односима.'
 
+const ORGANIZATION_ID =
+  `${SITE_URL}/#organization`
+
+const ORGANIZATION_LOGO =
+  `${SITE_URL}/static/images/logo.jpg`
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
@@ -78,6 +84,29 @@ export const metadata: Metadata = {
 }
 
 // =====================================
+// ORGANIZATION STRUCTURED DATA
+// =====================================
+
+const organizationStructuredData = {
+  '@context': 'https://schema.org',
+
+  '@type': 'Organization',
+
+  '@id': ORGANIZATION_ID,
+
+  name: SITE_NAME,
+
+  url: SITE_URL,
+
+  logo: {
+    '@type': 'ImageObject',
+    url: ORGANIZATION_LOGO,
+  },
+
+  description: SITE_DESCRIPTION,
+}
+
+// =====================================
 // ROOT LAYOUT
 // =====================================
 
@@ -93,8 +122,19 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="overflow-x-hidden bg-black text-white antialiased">
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              organizationStructuredData
+            ).replace(/</g, '\\u003c'),
+          }}
+        />
+
         <ThemeProviders>
           <LanguageProvider>
+
             {/* Pozadinska slika */}
             <div
               className="pointer-events-none fixed inset-0 -z-30 bg-cover bg-center bg-no-repeat"
@@ -112,6 +152,7 @@ export default function RootLayout({
 
             <SectionContainer>
               <div className="flex min-h-screen flex-col">
+
                 <Navbar />
 
                 <main className="mb-auto pt-16 sm:pt-20">
@@ -119,12 +160,15 @@ export default function RootLayout({
                 </main>
 
                 <Footer />
+
               </div>
             </SectionContainer>
 
             <Analytics />
+
           </LanguageProvider>
         </ThemeProviders>
+
       </body>
     </html>
   )

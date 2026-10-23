@@ -3,6 +3,21 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+  
+"istok-info-pult-i-srpsko-ruski-centar-majak-ozvanicili-saradnju": {
+  slug: "istok-info-pult-i-srpsko-ruski-centar-majak-ozvanicili-saradnju",
+
+  title:
+    "Istok Info Pult i Srpsko-ruski centar Majak ozvaničili saradnju",
+
+  description:
+    "Istok Info Pult i Srpsko-ruski centar Majak potpisali su protokol o saradnji u oblasti kulture, istorije i očuvanja srpsko-ruskog prijateljstva.",
+
+  image: "/static/images/sporazum-o-saradnji.jpg",
+
+  publishedAt: "2026-10-23",
+},
+
   "aleksa-filipovic-predavanje-u-tuli": {
     slug: "aleksa-filipovic-predavanje-u-tuli",
     title: "Dr Aleksa Filipović održao predavanje u Tuli: Spoljna politika Srbije između četiri stuba",

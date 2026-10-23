@@ -14,6 +14,35 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/istok-info-pult-i-srpsko-ruski-centar-majak-ozvanicili-saradnju',
+
+  slug: 'istok-info-pult-i-srpsko-ruski-centar-majak-ozvanicili-saradnju',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 23.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 23.10.2026.'
+        : 'Vesti - 23.10.2026.',
+
+  title:
+    language === 'ru'
+      ? '«ИСТОК ИНФО ПУЛТ» И СЕРБСКО-РУССКИЙ ЦЕНТР «МАЯК» ОФИЦИАЛЬНО ЗАКРЕПИЛИ СОТРУДНИЧЕСТВО'
+      : script === 'cyr'
+        ? 'ИСТОК ИНФО ПУЛТ И СРПСКО-РУСКИ ЦЕНТАР „МАЈАК“ ОЗВАНИЧИЛИ САРАДЊУ'
+        : 'ISTOK INFO PULT I SRPSKO-RUSKI CENTAR „MAJAK“ OZVANIČILI SARADNJU',
+
+  excerpt:
+    language === 'ru'
+      ? '«Исток Инфо Пулт» и Сербско-русский центр «Маяк» подписали протокол о сотрудничестве, открыв новые возможности для совместных культурных проектов, сохранения традиций и укрепления сербско-русской дружбы.'
+      : script === 'cyr'
+        ? 'Исток Инфо Пулт и Српско-руски центар „Мајак“ потписали су протокол о сарадњи, отварајући нове могућности за заједничке културне пројекте, очување традиције и јачање српско-руског пријатељства.'
+        : 'Istok Info Pult i Srpsko-ruski centar „Majak“ potpisali su protokol o saradnji, otvarajući nove mogućnosti za zajedničke kulturne projekte, očuvanje tradicije i jačanje srpsko-ruskog prijateljstva.',
+
+  image: '/static/images/sporazum-o-saradnji.jpg',
+},
+
+{
   href: '/vesti/zaboravljena-cast-iz-1941',
   slug: 'zaboravljena-cast-iz-1941',
 

@@ -13,7 +13,7 @@ export const articlesSeo: Record<string, ArticleSeoData> = {
   description:
     "Istok Info Pult i Srpsko-ruski centar Majak potpisali su protokol o saradnji u oblasti kulture, istorije i očuvanja srpsko-ruskog prijateljstva.",
 
-  image: "/static/images/sporazum-o-saradnji.jpg",
+  image: "/static/images/potpisan-protokol-o-saradnji.jpeg",
 
   publishedAt: "2026-10-23",
 },

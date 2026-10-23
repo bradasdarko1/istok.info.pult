@@ -121,7 +121,7 @@ export default function IstokInfoPultISrpskoRuskiCentarMajakOzvaniciliSaradnjuPa
           className="mb-8 overflow-hidden rounded-3xl border border-white/10"
         >
           <img
-            src="/static/images/sporazum-o-saradnji.jpg"
+            src="/static/images/potpisan-protokol-o-saradnji.jpeg"
             alt={content.title}
             className="h-auto w-full object-cover"
           />

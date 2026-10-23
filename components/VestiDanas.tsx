@@ -39,7 +39,7 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
         ? 'Исток Инфо Пулт и Српско-руски центар „Мајак“ потписали су протокол о сарадњи, отварајући нове могућности за заједничке културне пројекте, очување традиције и јачање српско-руског пријатељства.'
         : 'Istok Info Pult i Srpsko-ruski centar „Majak“ potpisali su protokol o saradnji, otvarajući nove mogućnosti za zajedničke kulturne projekte, očuvanje tradicije i jačanje srpsko-ruskog prijateljstva.',
 
-  image: '/static/images/sporazum-o-saradnji.jpg',
+  image: '/static/images/potpisan-protokol-o-saradnji.jpeg',
 },
 
 {

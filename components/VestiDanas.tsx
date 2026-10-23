@@ -2760,33 +2760,67 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
     },
   ]
 
+  // Na naslovnoj prikazujemo isključivo šest najnovijih objava.
+  // Arhiva /vesti ostaje kompletna i nepromenjena.
+  const prikazaneVesti = homepage ? danasnjeVesti.slice(0, 6) : danasnjeVesti
+
   return (
     <div className="relative mx-auto w-full max-w-7xl px-3 py-5 sm:px-6">
       <h1 className="mb-5 text-2xl font-bold sm:text-4xl">{t('todayNews')}</h1>
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-2 lg:max-w-4xl mx-auto">
-        {(homepage ? danasnjeVesti.slice(0, 8) : danasnjeVesti).map((vest) => (
-          <Link key={vest.href} href={vest.href}>
+        {prikazaneVesti.map((vest, index) => (
+          <Link
+            key={vest.href}
+            href={vest.href}
+            className={homepage && index === 0 ? 'col-span-2' : undefined}
+          >
             <div className="overflow-hidden rounded-xl border border-white/10 bg-black/30 backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <div className="h-[120px] overflow-hidden sm:h-[280px]">
+              <div
+                className={
+                  homepage && index === 0
+                    ? 'h-[210px] overflow-hidden sm:h-[400px]'
+                    : 'h-[120px] overflow-hidden sm:h-[280px]'
+                }
+              >
                 <div className="relative h-full w-full">
                   <Image
                     src={vest.image}
                     alt={vest.title}
                     fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 45vw, 420px"
+                    sizes={
+                      homepage && index === 0
+                        ? "(max-width: 1024px) 100vw, 800px"
+                        : "(max-width: 640px) 50vw, (max-width: 1024px) 45vw, 420px"
+                    }
                     className="object-cover"
                     quality={75}
+                    priority={homepage && index === 0}
                   />
                 </div>
               </div>
 
               <div className="p-2 sm:p-4">
+                {homepage && index === 0 && (
+                  <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-yellow-300">
+                    {language === 'ru'
+                      ? 'ГЛАВНАЯ НОВОСТЬ'
+                      : script === 'cyr'
+                        ? 'УДАРНА ВЕСТ'
+                        : 'UDARNA VEST'}
+                  </p>
+                )}
                 <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-yellow-400">
                   {vest.category}
                 </p>
 
-                <h2 className="text-xs font-bold leading-tight sm:text-lg">
+                <h2
+                  className={
+                    homepage && index === 0
+                      ? 'text-lg font-bold leading-tight sm:text-2xl'
+                      : 'text-xs font-bold leading-tight sm:text-lg'
+                  }
+                >
                   {vest.title}
                 </h2>
 

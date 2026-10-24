@@ -3,6 +3,23 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+ 
+
+'intervju-u-istoku-mirko-poledica': {
+  slug: 'intervju-u-istoku-mirko-poledica',
+
+  title:
+    'Mirko Poledica o stanju u srpskom fudbalu | Intervju u Istoku',
+
+  description:
+    'Mirko Poledica, predsednik Sindikata profesionalnih fudbalera „Nezavisnost“, govori o stanju u srpskom fudbalu, pravima igrača i problemima fudbalskog sistema.',
+
+  image: '/static/images/mirko-poledica.jpg',
+
+  publishedAt: '2026-10-24',
+
+  author: 'Istok Info Pult',
+},
   
 "istok-info-pult-i-srpsko-ruski-centar-majak-ozvanicili-saradnju": {
   slug: "istok-info-pult-i-srpsko-ruski-centar-majak-ozvanicili-saradnju",

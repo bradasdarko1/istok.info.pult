@@ -14,6 +14,33 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/intervju-u-istoku-mirko-poledica',
+  slug: 'intervju-u-istoku-mirko-poledica',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 24.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 24.10.2026.'
+        : 'Vesti - 24.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ИНТЕРВЬЮ В «ИСТОКЕ» | МИРКО ПОЛЕДИЦА — СОСТОЯНИЕ СЕРБСКОГО ФУТБОЛА'
+      : script === 'cyr'
+        ? 'ИНТЕРВЈУ У ИСТОКУ | МИРКО ПОЛЕДИЦА – СТАЊЕ У СРПСКОМ ФУДБАЛУ'
+        : 'INTERVJU U ISTOKU | MIRKO POLEDICA – STANJE U SRPSKOM FUDBALU',
+
+  excerpt:
+    language === 'ru'
+      ? 'Мирко Поледица, председатель Профсоюза профессиональных футболистов «Независимость», рассказывает о состоянии сербского футбола, правах игроков и проблемах футбольной системы.'
+      : script === 'cyr'
+        ? 'Мирко Поледица, председник Синдиката професионалних фудбалера „Независност“, говори о стању у српском фудбалу, правима играча и проблемима фудбалског система.'
+        : 'Mirko Poledica, predsednik Sindikata profesionalnih fudbalera „Nezavisnost“, govori o stanju u srpskom fudbalu, pravima igrača i problemima fudbalskog sistema.',
+
+  image: '/static/images/mirko-poledica.jpg',
+},
+{
   href: '/vesti/istok-info-pult-i-srpsko-ruski-centar-majak-ozvanicili-saradnju',
 
   slug: 'istok-info-pult-i-srpsko-ruski-centar-majak-ozvanicili-saradnju',

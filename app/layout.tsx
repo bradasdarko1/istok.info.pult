@@ -35,11 +35,15 @@ const SITE_TITLE =
 const SITE_DESCRIPTION =
   'Исток Инфо Пулт доноси вести, историјске приче, културне догађаје и садржаје о Србији, Русији и српско-руским односима.'
 
-const ORGANIZATION_ID =
-  `${SITE_URL}/#organization`
+const ORGANIZATION_ID = `${SITE_URL}/#organization`
+const WEBSITE_ID = `${SITE_URL}/#website`
 
 const ORGANIZATION_LOGO =
   `${SITE_URL}/static/images/logo.jpg`
+
+// Privremena slika za deljenje.
+// Kasnije možemo postaviti namensku 1200x630 OG sliku.
+const DEFAULT_SHARE_IMAGE = ORGANIZATION_LOGO
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -53,6 +57,9 @@ export const metadata: Metadata = {
 
   applicationName: SITE_NAME,
 
+  category: 'news',
+  publisher: SITE_NAME,
+
   icons: {
     icon: '/static/favicons/logo.PNG',
   },
@@ -64,6 +71,8 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
       'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
     },
   },
 
@@ -74,36 +83,66 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: DEFAULT_SHARE_IMAGE,
+        alt: SITE_NAME,
+      },
+    ],
   },
 
   twitter: {
     card: 'summary_large_image',
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    images: [DEFAULT_SHARE_IMAGE],
   },
 }
 
 // =====================================
-// ORGANIZATION STRUCTURED DATA
+// STRUCTURED DATA
+// ORGANIZATION + WEBSITE
 // =====================================
 
-const organizationStructuredData = {
+const structuredData = {
   '@context': 'https://schema.org',
 
-  '@type': 'Organization',
+  '@graph': [
+    {
+      '@type': 'Organization',
 
-  '@id': ORGANIZATION_ID,
+      '@id': ORGANIZATION_ID,
 
-  name: SITE_NAME,
+      name: SITE_NAME,
 
-  url: SITE_URL,
+      url: SITE_URL,
 
-  logo: {
-    '@type': 'ImageObject',
-    url: ORGANIZATION_LOGO,
-  },
+      description: SITE_DESCRIPTION,
 
-  description: SITE_DESCRIPTION,
+      logo: {
+        '@type': 'ImageObject',
+        url: ORGANIZATION_LOGO,
+      },
+    },
+
+    {
+      '@type': 'WebSite',
+
+      '@id': WEBSITE_ID,
+
+      name: SITE_NAME,
+
+      url: SITE_URL,
+
+      description: SITE_DESCRIPTION,
+
+      inLanguage: 'sr-RS',
+
+      publisher: {
+        '@id': ORGANIZATION_ID,
+      },
+    },
+  ],
 }
 
 // =====================================
@@ -123,11 +162,12 @@ export default function RootLayout({
     >
       <body className="overflow-x-hidden bg-black text-white antialiased">
 
+        {/* Globalni strukturirani podaci */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(
-              organizationStructuredData
+              structuredData
             ).replace(/</g, '\\u003c'),
           }}
         />

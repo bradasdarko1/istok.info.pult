@@ -20,21 +20,48 @@ export type ArticleSeoData = {
   authorUrl?: string
 }
 
+// =====================================
+// POMOĆNE FUNKCIJE
+// =====================================
+
+function getAbsoluteUrl(path: string): string {
+  return new URL(path, SITE_URL).toString()
+}
+
+function getArticleUrl(slug: string): string {
+  const safeSlug = slug
+    .split('/')
+    .filter(Boolean)
+    .map(encodeURIComponent)
+    .join('/')
+
+  return `${SITE_URL}/vesti/${safeSlug}`
+}
+
+// =====================================
+// ARTICLE SEO
+// =====================================
+
 export function createArticleSeo(article: ArticleSeoData) {
-  const url = `${SITE_URL}/vesti/${encodeURIComponent(
-    article.slug
-  )}`
+  const title = article.title.trim()
+  const description = article.description.trim()
+
+  const url = getArticleUrl(article.slug)
 
   const imageUrl = article.image
-    ? new URL(article.image, SITE_URL).toString()
+    ? getAbsoluteUrl(article.image)
     : undefined
 
+  // Autor članka, kada je poznat.
+  // U suprotnom koristimo organizaciju.
   const author = article.author
     ? {
         '@type': 'Person',
         name: article.author,
         ...(article.authorUrl
-          ? { url: article.authorUrl }
+          ? {
+              url: getAbsoluteUrl(article.authorUrl),
+            }
           : {}),
       }
     : {
@@ -44,10 +71,28 @@ export function createArticleSeo(article: ArticleSeoData) {
         url: SITE_URL,
       }
 
-  const metadata: Metadata = {
-    title: article.title,
+  // =====================================
+  // NEXT.JS METADATA
+  // =====================================
 
-    description: article.description,
+  const metadata: Metadata = {
+    title,
+    description,
+
+    authors: article.author
+      ? [
+          {
+            name: article.author,
+            ...(article.authorUrl
+              ? { url: getAbsoluteUrl(article.authorUrl) }
+              : {}),
+          },
+        ]
+      : [{ name: SITE_NAME }],
+
+    publisher: SITE_NAME,
+
+    category: 'news',
 
     alternates: {
       canonical: url,
@@ -56,10 +101,13 @@ export function createArticleSeo(article: ArticleSeoData) {
     robots: {
       index: true,
       follow: true,
+
       googleBot: {
         index: true,
         follow: true,
         'max-image-preview': 'large',
+        'max-snippet': -1,
+        'max-video-preview': -1,
       },
     },
 
@@ -67,24 +115,35 @@ export function createArticleSeo(article: ArticleSeoData) {
       type: 'article',
       locale: 'sr_RS',
       siteName: SITE_NAME,
+
       url,
-      title: article.title,
-      description: article.description,
+      title,
+      description,
 
       ...(article.publishedAt
-        ? { publishedTime: article.publishedAt }
+        ? {
+            publishedTime: article.publishedAt,
+          }
         : {}),
 
       ...(article.modifiedAt
-        ? { modifiedTime: article.modifiedAt }
+        ? {
+            modifiedTime: article.modifiedAt,
+          }
         : {}),
+
+      authors: [
+        article.authorUrl
+          ? getAbsoluteUrl(article.authorUrl)
+          : SITE_URL,
+      ],
 
       ...(imageUrl
         ? {
             images: [
               {
                 url: imageUrl,
-                alt: article.title,
+                alt: title,
               },
             ],
           }
@@ -96,23 +155,30 @@ export function createArticleSeo(article: ArticleSeoData) {
         ? 'summary_large_image'
         : 'summary',
 
-      title: article.title,
-      description: article.description,
+      title,
+      description,
 
       ...(imageUrl
-        ? { images: [imageUrl] }
+        ? {
+            images: [imageUrl],
+          }
         : {}),
     },
   }
 
+  // =====================================
+  // GOOGLE NEWS ARTICLE JSON-LD
+  // =====================================
+
   const structuredData = {
     '@context': 'https://schema.org',
+
     '@type': 'NewsArticle',
 
     '@id': `${url}#article`,
 
-    headline: article.title,
-    description: article.description,
+    headline: title,
+    description,
 
     url,
 
@@ -124,29 +190,40 @@ export function createArticleSeo(article: ArticleSeoData) {
     inLanguage: 'sr-RS',
 
     ...(imageUrl
-      ? { image: [imageUrl] }
+      ? {
+          image: [imageUrl],
+        }
       : {}),
 
     ...(article.publishedAt
-      ? { datePublished: article.publishedAt }
+      ? {
+          datePublished: article.publishedAt,
+        }
       : {}),
 
     ...(article.modifiedAt
-      ? { dateModified: article.modifiedAt }
+      ? {
+          dateModified: article.modifiedAt,
+        }
       : {}),
 
     author,
 
     publisher: {
       '@type': 'Organization',
+
       '@id': ORGANIZATION_ID,
+
       name: SITE_NAME,
       url: SITE_URL,
+
       logo: {
         '@type': 'ImageObject',
         url: PUBLISHER_LOGO,
       },
     },
+
+    isAccessibleForFree: true,
   }
 
   return {

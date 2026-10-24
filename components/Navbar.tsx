@@ -378,7 +378,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://www.youtube.com/@lokalitettv"
+              href="https://www.youtube.com/@istokinfopult"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"

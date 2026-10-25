@@ -5,6 +5,16 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
  
 
+'srbija-je-slobodna-studenska-lista-odnela-pobedu': {
+  slug: 'srbija-je-slobodna-studenska-lista-odnela-pobedu',
+  title:
+    'Studentska lista pobedila na izborima u Srbiji – Vučić priznao poraz',
+  description:
+    'Studentska lista osvojila je oko 52 odsto glasova prema prvim projekcijama CeSID-a. Aleksandar Vučić priznao izborni poraz na parlamentarnim izborima 2026.',
+  image: '/static/images/studentska-lista-odnela-pobedu.jpg',
+  publishedAt: '2026-10-25',
+},
+
 'intervju-u-istoku-mirko-poledica': {
   slug: 'intervju-u-istoku-mirko-poledica',
 

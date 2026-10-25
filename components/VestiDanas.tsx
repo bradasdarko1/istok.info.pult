@@ -14,6 +14,33 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/srbija-je-slobodna-studenska-lista-odnela-pobedu',
+  slug: 'srbija-je-slobodna-studenska-lista-odnela-pobedu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 25.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 25.10.2026.'
+        : 'Vesti - 25.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СТУДЕНЧЕСКИЙ СПИСОК ПОБЕДИЛ НА ВЫБОРАХ В СЕРБИИ — ВУЧИЧ ПРИЗНАЛ ПОРАЖЕНИЕ'
+      : script === 'cyr'
+        ? 'СТУДЕНТСКА ЛИСТА ПОБЕДИЛА НА ИЗБОРИМА У СРБИЈИ – ВУЧИЋ ПРИЗНАО ПОРАЗ'
+        : 'STUDENTSKA LISTA POBEDILA NA IZBORIMA U SRBIJI – VUČIĆ PRIZNAO PORAZ',
+
+  excerpt:
+    language === 'ru'
+      ? 'Студенческий список одержал победу на парламентских выборах в Сербии, получив около 52% голосов по первым прогнозам CeSID. Александар Вучич признал поражение.'
+      : script === 'cyr'
+        ? 'Студентска листа победила је на парламентарним изборима у Србији, освојивши око 52 одсто гласова према првим пројекцијама ЦеСИД-а. Александар Вучић признао је пораз.'
+        : 'Studentska lista pobedila je na parlamentarnim izborima u Srbiji, osvojivši oko 52 odsto glasova prema prvim projekcijama CeSID-a. Aleksandar Vučić priznao je poraz.',
+
+  image: '/static/images/studentska-lista-odnela-pobedu.jpg',
+},
+{
   href: '/vesti/intervju-u-istoku-mirko-poledica',
   slug: 'intervju-u-istoku-mirko-poledica',
 

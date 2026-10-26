@@ -3,6 +3,23 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+  
+'razgovori-u-istoku-003-marija-jovovic': {
+  slug: 'razgovori-u-istoku-003-marija-jovovic',
+
+  title:
+    'Marija Jovović o Blagoju Jovoviću, atentatu na Pavelića i životu u Argentini | Razgovori u Istoku 003',
+
+  description:
+    'Marija Jovović, ćerka Blagoja Jovovića, u trećoj epizodi podkasta Razgovori u Istoku govori o atentatu na Antu Pavelića, životu u Argentini, porodičnim tajnama i istorijskom nasleđu svog oca.',
+
+  image:
+    '/static/images/razgovori-u-istoku-003-marija-jovovic.jpg',
+
+  publishedAt: '2026-10-26',
+
+  author: 'Istok Info Pult',
+},
 
 'marija-jovovic-razgovori-u-istoku-price-koje-do-sada-niste-culi': {
   slug: 'marija-jovovic-razgovori-u-istoku-price-koje-do-sada-niste-culi',

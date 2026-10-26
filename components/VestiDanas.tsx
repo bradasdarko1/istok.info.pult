@@ -15,6 +15,41 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
 
 {
+  href: '/vesti/razgovori-u-istoku-003-marija-jovovic',
+  slug: 'razgovori-u-istoku-003-marija-jovovic',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 26.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 26.10.2026.'
+        : 'Vesti - 26.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РАЗГОВОРЫ В «ИСТОКЕ» | ЭПИЗОД 003 — МАРИЯ ЙОВОВИЧ'
+      : script === 'cyr'
+        ? 'РАЗГОВОРИ У ИСТОКУ | ЕПИЗОДА 003 — МАРИЈА ЈОВОВИЋ'
+        : 'RAZGOVORI U ISTOKU | EPIZODA 003 — MARIJA JOVOVIĆ',
+
+  excerpt:
+    language === 'ru'
+      ? 'Мария Йовович, дочь Благоя Йововича, рассказывает о жизни своего отца, покушении на Анте Павелича, семейной истории в Аргентине и наследии, которое десятилетиями оставалось малоизвестным широкой общественности.'
+      : script === 'cyr'
+        ? 'Марија Јововић, ћерка Благоја Јововића, открива мало познате детаље о животу свог оца, атентату на Анту Павелића, породичној историји у Аргентини и наслеђу које је оставило дубок траг.'
+        : 'Marija Jovović, ćerka Blagoja Jovovića, otkriva malo poznate detalje o životu svog oca, atentatu na Antu Pavelića, porodičnoj istoriji u Argentini i nasleđu koje je ostavilo dubok trag.',
+
+  image:
+    '/static/images/razgovori-u-istoku-003-marija-jovovic.jpg',
+
+  imageAlt:
+    language === 'ru'
+      ? 'Мария Йовович — Разговоры в Истоке, выпуск 003'
+      : script === 'cyr'
+        ? 'Марија Јововић — Разговори у Истоку, епизода 003'
+        : 'Marija Jovović — Razgovori u Istoku, epizoda 003',
+},
+{
   href: '/vesti/marija-jovovic-razgovori-u-istoku-price-koje-do-sada-niste-culi',
   slug: 'marija-jovovic-razgovori-u-istoku-price-koje-do-sada-niste-culi',
 

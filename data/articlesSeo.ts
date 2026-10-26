@@ -3,6 +3,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+
+'marija-jovovic-razgovori-u-istoku-price-koje-do-sada-niste-culi': {
+  slug: 'marija-jovovic-razgovori-u-istoku-price-koje-do-sada-niste-culi',
+
+  title:
+    'Marija Jovović u Razgovorima u Istoku – priče koje do sada niste čuli',
+
+  description:
+    'Marija Jovović, ćerka Blagoja Jovovića, otkriva do sada neispričane priče o svom ocu, porodičnom nasleđu i težini prezimena koje nosi. Premijera podkasta Razgovori u Istoku na YouTube kanalu Istok Info Pult.',
+
+  image: '/static/images/istina-o-blagoju-jovovicu.jpg',
+
+  publishedAt: '2026-10-26',
+
+  author: 'Istok Info Pult',
+},
  
 'novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur': {
   slug: 'novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur',

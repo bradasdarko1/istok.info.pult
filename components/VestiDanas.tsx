@@ -12,6 +12,35 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const { t, language, script } = useLanguage()
 
   const danasnjeVesti = [
+
+
+{
+  href: '/vesti/marija-jovovic-razgovori-u-istoku-price-koje-do-sada-niste-culi',
+  slug: 'marija-jovovic-razgovori-u-istoku-price-koje-do-sada-niste-culi',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 26.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 26.10.2026.'
+        : 'Vesti - 26.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'МАРИЯ ЙОВОВИЧ В «РАЗГОВОРАХ В ИСТОКЕ» — ИСТОРИИ, КОТОРЫЕ ВЫ ЕЩЁ НЕ СЛЫШАЛИ'
+      : script === 'cyr'
+        ? 'МАРИЈА ЈОВОВИЋ У „РАЗГОВОРИМА У ИСТОКУ“ – ПРИЧЕ КОЈЕ ДО САДА НИСТЕ ЧУЛИ'
+        : 'MARIJA JOVOVIĆ U „RAZGOVORIMA U ISTOKU“ – PRIČE KOJE DO SADA NISTE ČULI',
+
+  excerpt:
+    language === 'ru'
+      ? 'Сегодня в 17:00 на YouTube-канале «Исток Инфо Пулт» состоится премьера нового выпуска подкаста «Разговоры в Истоке». Мария Йовович, дочь Благоя Йововича, поделится ранее нерассказанными историями о своём отце и семейном наследии.'
+      : script === 'cyr'
+        ? 'Данас у 17 часова на YouTube каналу Исток Инфо Пулт премијерно нова епизода подкаста „Разговори у Истоку“. Марија Јововић открива до сада неиспричане приче о свом оцу, Благоју Јововићу.'
+        : 'Danas u 17 časova na YouTube kanalu Istok Info Pult premijerno nova epizoda podkasta „Razgovori u Istoku“. Marija Jovović otkriva do sada neispričane priče o svom ocu, Blagoju Jovoviću.',
+
+  image: '/static/images/istina-o-blagoju-jovovicu.jpg',
+},
 {
   href: '/vesti/novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur',
   slug: 'novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur',

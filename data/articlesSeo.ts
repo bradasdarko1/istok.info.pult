@@ -4,7 +4,21 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
  
+'novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur': {
+  slug: 'novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur',
 
+  title:
+    'Novi Sad je sinoć disao slobodu – ponovo će procvetati božur',
+
+  description:
+    'Novi Sad je na Trgu slobode proslavio pobedu Studentske liste uz pesmu, kolo i srpske zastave. Šesnaest minuta tišine posvećeno je žrtvama pada nadstrešnice.',
+
+  image: '/static/images/srbija-je-slobodna.jpg',
+
+  publishedAt: '2026-10-26',
+
+  author: 'Istok Info Pult',
+},
 'srbija-je-slobodna-studenska-lista-odnela-pobedu': {
   slug: 'srbija-je-slobodna-studenska-lista-odnela-pobedu',
   title:

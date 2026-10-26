@@ -12,7 +12,33 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const { t, language, script } = useLanguage()
 
   const danasnjeVesti = [
+{
+  href: '/vesti/novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur',
+  slug: 'novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur',
 
+  category:
+    language === 'ru'
+      ? 'Новости - 26.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 26.10.2026.'
+        : 'Vesti - 26.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НОВИ-САД ВЧЕРА ДЫШАЛ СВОБОДОЙ — И ВНОВЬ РАСЦВЕТЁТ ПИОН'
+      : script === 'cyr'
+        ? 'НОВИ САД ЈЕ СИНОЋ ДИСАО СЛОБОДУ – ПОНОВО ЋЕ ПРОЦВЕТАТИ БОЖУР'
+        : 'NOVI SAD JE SINOĆ DISAO SLOBODU – PONOVO ĆE PROCVETATI BOŽUR',
+
+  excerpt:
+    language === 'ru'
+      ? 'Площадь Свободы в Нови-Саде наполнилась песнями, сербскими флагами и радостью по случаю победы Студенческого списка. Шестнадцать минут молчания были посвящены памяти погибших при обрушении навеса железнодорожного вокзала.'
+      : script === 'cyr'
+        ? 'Трг слободе у Новом Саду био је испуњен песмом, српским заставама и радошћу поводом победе Студентске листе. Шеснаест минута тишине посвећено је жртвама пада надстрешнице.'
+        : 'Trg slobode u Novom Sadu bio je ispunjen pesmom, srpskim zastavama i radošću povodom pobede Studentske liste. Šesnaest minuta tišine posvećeno je žrtvama pada nadstrešnice.',
+
+  image: '/static/images/srbija-je-slobodna.jpg',
+},
 {
   href: '/vesti/srbija-je-slobodna-studenska-lista-odnela-pobedu',
   slug: 'srbija-je-slobodna-studenska-lista-odnela-pobedu',

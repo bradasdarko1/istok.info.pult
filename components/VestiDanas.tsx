@@ -27,20 +27,21 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
   title:
     language === 'ru'
-      ? 'МАРИЯ ЙОВОВИЧ В «РАЗГОВОРАХ В ИСТОКЕ» — ИСТОРИИ, КОТОРЫЕ ВЫ ЕЩЁ НЕ СЛЫШАЛИ'
+      ? 'МАРИЯ ЙОВОВИЧ В «РАЗГОВОРАХ В ИСТОКЕ» — НЕРАССКАЗАННЫЕ ИСТОРИИ'
       : script === 'cyr'
         ? 'МАРИЈА ЈОВОВИЋ У „РАЗГОВОРИМА У ИСТОКУ“ – ПРИЧЕ КОЈЕ ДО САДА НИСТЕ ЧУЛИ'
         : 'MARIJA JOVOVIĆ U „RAZGOVORIMA U ISTOKU“ – PRIČE KOJE DO SADA NISTE ČULI',
 
   excerpt:
     language === 'ru'
-      ? 'Сегодня в 17:00 на YouTube-канале «Исток Инфо Пулт» состоится премьера нового выпуска подкаста «Разговоры в Истоке». Мария Йовович, дочь Благоя Йововича, поделится ранее нерассказанными историями о своём отце и семейном наследии.'
+      ? 'Мария Йовович, дочь Благоя Йововича, делится ранее нерассказанными историями о своём отце, семейной истории и наследии в подкасте «Разговоры в Истоке».'
       : script === 'cyr'
-        ? 'Данас у 17 часова на YouTube каналу Исток Инфо Пулт премијерно нова епизода подкаста „Разговори у Истоку“. Марија Јововић открива до сада неиспричане приче о свом оцу, Благоју Јововићу.'
-        : 'Danas u 17 časova na YouTube kanalu Istok Info Pult premijerno nova epizoda podkasta „Razgovori u Istoku“. Marija Jovović otkriva do sada neispričane priče o svom ocu, Blagoju Jovoviću.',
+        ? 'Марија Јововић, ћерка Благоја Јововића, открива неиспричане приче о свом оцу, породичној историји и наслеђу у подкасту „Разговори у Истоку“.'
+        : 'Marija Jovović, ćerka Blagoja Jovovića, otkriva neispričane priče o svom ocu, porodičnoj istoriji i nasleđu u podkastu „Razgovori u Istoku“.',
 
   image: '/static/images/istina-o-blagoju-jovovicu.jpg',
 },
+    
 {
   href: '/vesti/novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur',
   slug: 'novi-sad-je-sinoc-disao-slobodu-ponovo-ce-procvetati-bozur',

@@ -8,12 +8,13 @@ export const articlesSeo: Record<string, ArticleSeoData> = {
   slug: 'marija-jovovic-razgovori-u-istoku-price-koje-do-sada-niste-culi',
 
   title:
-    'Marija Jovović u Razgovorima u Istoku – priče koje do sada niste čuli',
+    'Marija Jovović o Blagoju Jovoviću – neispričane priče | Istok Info Pult',
 
   description:
-    'Marija Jovović, ćerka Blagoja Jovovića, otkriva do sada neispričane priče o svom ocu, porodičnom nasleđu i težini prezimena koje nosi. Premijera podkasta Razgovori u Istoku na YouTube kanalu Istok Info Pult.',
+    'Marija Jovović, ćerka Blagoja Jovovića, u podkastu Razgovori u Istoku otkriva neispričane priče o svom ocu, porodičnoj istoriji i nasleđu koje nosi.',
 
-  image: '/static/images/istina-o-blagoju-jovovicu.jpg',
+  image:
+    '/static/images/istina-o-blagoju-jovovicu.jpg',
 
   publishedAt: '2026-10-26',
 

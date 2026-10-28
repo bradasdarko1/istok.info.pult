@@ -15,6 +15,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
 
 {
+  href: '/vesti/novak-djokovic-o-izborima-u-srbiji',
+  slug: 'novak-djokovic-o-izborima-u-srbiji',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 28.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 28.10.2026.'
+        : 'Vesti - 28.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НОВАК ДЖОКОВИЧ ПОСЛЕ ВЫБОРОВ В СЕРБИИ: «СТУДЕНТЫ ПРОБУДИЛИ В ЛЮДЯХ НАДЕЖДУ»'
+      : script === 'cyr'
+        ? 'НОВАК ЂОКОВИЋ НАКОН ИЗБОРА У СРБИЈИ: „СТУДЕНТИ СУ ПРОБУДИЛИ НАДУ У ЉУДИМА“'
+        : 'NOVAK ĐOKOVIĆ NAKON IZBORA U SRBIJI: „STUDENTI SU PROBUDILI NADU U LJUDIMA“',
+
+  excerpt:
+    language === 'ru'
+      ? 'Новак Джокович выразил удовлетворение победой студенческого списка на выборах в Сербии, отметив стойкость молодых людей и надежду на лучшее будущее страны.'
+      : script === 'cyr'
+        ? 'Новак Ђоковић изразио је задовољство победом Студентске листе на изборима у Србији, истичући истрајност младих и наду у бољу будућност земље.'
+        : 'Novak Đoković izrazio je zadovoljstvo pobedom Studentske liste na izborima u Srbiji, ističući istrajnost mladih i nadu u bolju budućnost zemlje.',
+
+  image: '/static/images/novak-djokovic.jpg',
+
+  date: '2026-10-28',
+},
+
+{
   href: '/vesti/razgovori-u-istoku-003-marija-jovovic',
   slug: 'razgovori-u-istoku-003-marija-jovovic',
 

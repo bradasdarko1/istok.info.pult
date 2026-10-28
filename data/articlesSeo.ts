@@ -3,6 +3,23 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+
+'novak-djokovic-o-izborima-u-srbiji': {
+  slug: 'novak-djokovic-o-izborima-u-srbiji',
+
+  title:
+    'Novak Đoković o izborima u Srbiji: Studenti su probudili nadu',
+
+  description:
+    'Novak Đoković komentarisao pobedu Studentske liste na izborima u Srbiji 25. oktobra 2026. godine. Pohvalio studente i izrazio nadu u bolju budućnost Srbije.',
+
+  image:
+    '/static/images/novak-djokovic.jpg',
+
+  publishedAt: '2026-10-28',
+
+  author: 'Istok Info Pult',
+},
   
 'razgovori-u-istoku-003-marija-jovovic': {
   slug: 'razgovori-u-istoku-003-marija-jovovic',

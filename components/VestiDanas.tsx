@@ -15,6 +15,34 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
 
 {
+  href: '/vesti/mica-zivojinovic-o-drazi-mihajlovicu',
+  slug: 'mica-zivojinovic-o-drazi-mihajlovicu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 29.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 29.10.2026.'
+        : 'Vesti - 29.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'МИЧА ЖИВОИНОВИЧ — ТАЙНЫ О ДРАЖЕ МИХАЙЛОВИЧЕ, О КОТОРЫХ ОБЩЕСТВЕННОСТЬ НЕ СЛЫШАЛА'
+      : script === 'cyr'
+        ? 'МИЋА ЖИВОЈИНОВИЋ — ТАЈНЕ О ДРАЖИ МИХАИЛОВИЋУ КОЈЕ ЈАВНОСТ ДО САДА НИЈЕ ЧУЛА'
+        : 'MIĆA ŽIVOJINOVIĆ — TAJNE O DRAŽI MIHAILOVIĆU KOJE JAVNOST DO SADA NIJE ČULA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Мича Живоинович в новом выпуске подкаста «Разговоры на Востоке» обещает раскрыть ранее не обнародованные сведения о генерале Драже Михайловиче. Какие тайны хранит история?'
+      : script === 'cyr'
+        ? 'Мића Живојиновић у новој епизоди подкаста „Разговори у Истоку“ најављује до сада јавно неизнета сазнања о генералу Дражи Михаиловићу. Које тајне крије историја?'
+        : 'Mića Živojinović u novoj epizodi podkasta „Razgovori u Istoku“ najavljuje do sada javno neizneta saznanja o generalu Draži Mihailoviću. Koje tajne krije istorija?',
+
+  image:
+    '/static/images/mica-zivojinovic-o-drazi-mihajlovicu.jpg',
+},
+{
   href: '/vesti/novak-djokovic-o-izborima-u-srbiji',
   slug: 'novak-djokovic-o-izborima-u-srbiji',
 

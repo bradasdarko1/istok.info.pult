@@ -4,6 +4,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
+'teska-sudbina-nikole-simica-nakon-crkvenog-postupka': {
+  slug: 'teska-sudbina-nikole-simica-nakon-crkvenog-postupka',
+
+  title:
+    'Od oltara do građevine u tuđini: Teška sudbina Nikole Simića | Istok Info Pult',
+
+  description:
+    'Nikola Simić, nekadašnji sveštenik Eparhije šumadijske, nakon crkvenog postupka ostao je bez svešteničkog čina. Njegova sudbina otvara pitanja slobode savesti, crkvene discipline i milosrđa.',
+
+  image:
+    '/static/images/nikola-simic.jpg',
+
+  publishedAt: '2026-10-31',
+
+  author: 'Istok Info Pult',
+},
 'mica-zivojinovic-o-drazi-mihajlovicu': {
   slug: 'mica-zivojinovic-o-drazi-mihajlovicu',
 

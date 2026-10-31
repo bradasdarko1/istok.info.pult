@@ -15,6 +15,33 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
 
 {
+  href: '/vesti/teska-sudbina-nikole-simica-nakon-crkvenog-postupka',
+  slug: 'teska-sudbina-nikole-simica-nakon-crkvenog-postupka',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 31.10.2026.'
+      : script === 'cyr'
+        ? 'Вести - 31.10.2026.'
+        : 'Vesti - 31.10.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ОТ АЛТАРЯ ДО СТРОЙКИ НА ЧУЖБИНЕ: ТЯЖЁЛАЯ СУДЬБА НИКОЛЫ СИМИЧА'
+      : script === 'cyr'
+        ? 'ОД ОЛТАРА ДО ГРАЂЕВИНЕ У ТУЂИНИ: ТЕШКА СУДБИНА НИКОЛЕ СИМИЋА'
+        : 'OD OLTARA DO GRAĐEVINE U TUĐINI: TEŠKA SUDBINA NIKOLE SIMIĆA',
+
+  excerpt:
+    language === 'ru'
+      ? 'После церковного разбирательства и лишения священного сана Никола Симич, согласно имеющимся сведениям, работает на стройке за границей, чтобы содержать супругу и троих детей. Его история поднимает вопросы о церковной дисциплине, свободе совести и милосердии.'
+      : script === 'cyr'
+        ? 'Након црквеног поступка и лишења свештеничког чина, Никола Симић, према доступним наводима, ради на грађевини у иностранству како би издржавао супругу и троје деце. Његова судбина отвара питања црквене дисциплине, слободе савести и милосрђа.'
+        : 'Nakon crkvenog postupka i lišenja svešteničkog čina, Nikola Simić, prema dostupnim navodima, radi na građevini u inostranstvu kako bi izdržavao suprugu i troje dece. Njegova sudbina otvara pitanja crkvene discipline, slobode savesti i milosrđa.',
+
+  image: '/static/images/nikola-simic.jpg',
+},
+{
   href: '/vesti/mica-zivojinovic-o-drazi-mihajlovicu',
   slug: 'mica-zivojinovic-o-drazi-mihajlovicu',
 

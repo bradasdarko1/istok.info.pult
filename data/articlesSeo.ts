@@ -4,6 +4,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
+'razgovori-u-istoku-004': {
+  slug: 'razgovori-u-istoku-004-mica-zivojinovic',
+
+  title:
+    'Mića Živojinović o Draži Mihailoviću, Staljinu i tajnama Drugog svetskog rata | Razgovori u Istoku 004',
+
+  description:
+    'Pukovnik prof. dr Mića Živojinović u četvrtoj epizodi Razgovora u Istoku govori o Draži Mihailoviću, prepisci sa Staljinom, Nikoli Kalabiću, britanskim službama, suđenju 1946. godine i istorijskim arhivima.',
+
+  image:
+    '/static/images/razgovori-u-istoku-004-mica-zivojinovic.jpg',
+
+  publishedAt: '2026-11-03T11:00:00+01:00',
+
+  author: 'Istok Info Pult',
+},
 'teska-sudbina-nikole-simica-nakon-crkvenog-postupka': {
   slug: 'teska-sudbina-nikole-simica-nakon-crkvenog-postupka',
 

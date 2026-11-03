@@ -15,6 +15,22 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
 
 {
+  title:
+    'RAZGOVORI U ISTOKU 004 – Mića Živojinović o Draži Mihailoviću',
+
+  href:
+    '/vesti/razgovori-u-istoku-004-mica-zivojinovic',
+
+  image:
+    '/static/images/razgovori-u-istoku-004-mica-zivojinovic.jpg',
+
+  date:
+    '03.11.2026.',
+
+  description:
+    'Pukovnik prof. dr Mića Živojinović o Draži Mihailoviću, sovjetskim arhivima, Nikoli Kalabiću, britanskim službama i suđenju 1946. godine.',
+},
+{
   href: '/vesti/teska-sudbina-nikole-simica-nakon-crkvenog-postupka',
   slug: 'teska-sudbina-nikole-simica-nakon-crkvenog-postupka',
 

@@ -16,6 +16,22 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
 {
   title:
+    'Mladi istraživači iz Srbije – otvoren međunarodni naučni konkurs u Rusiji',
+
+  href:
+    '/vesti/mladi-istrazivaci-iz-srbije-dobili-priliku-da-predstave-svoje-radove-u-rusiji',
+
+  image:
+    '/static/images/mladi-istrazivaci.jpg',
+
+  date:
+    '04.11.2026.',
+
+  description:
+    'Centar za geostrateške studije poziva mlade politikologe i istraživače iz Srbije da učestvuju na međunarodnom naučnom konkursu u Rusiji. Prijave traju od 10. novembra do 10. decembra 2026.',
+},
+{
+  title:
     'RAZGOVORI U ISTOKU 004 – Mića Živojinović o Draži Mihailoviću',
 
   href:

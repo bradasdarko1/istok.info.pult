@@ -4,6 +4,25 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
+'mladi-istrazivaci-iz-srbije-dobili-priliku-da-predstave-svoje-radove-u-rusiji': {
+  slug:
+    'mladi-istrazivaci-iz-srbije-dobili-priliku-da-predstave-svoje-radove-u-rusiji',
+
+  title:
+    'Mladi istraživači iz Srbije – međunarodni naučni konkurs u Rusiji 2026 | Istok Info Pult',
+
+  description:
+    'Otvoren međunarodni naučni konkurs za mlade politikologe i istraživače iz Srbije do 35 godina. Prijave od 10. novembra do 10. decembra 2026. godine. Saznajte uslove učešća.',
+
+  image:
+    '/static/images/mladi-istrazivaci.jpg',
+
+  publishedAt:
+    '2026-11-04T12:00:00+01:00',
+
+  author:
+    'Istok Info Pult',
+},
 'razgovori-u-istoku-004': {
   slug: 'razgovori-u-istoku-004-mica-zivojinovic',
 

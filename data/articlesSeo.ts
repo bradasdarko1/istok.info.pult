@@ -4,6 +4,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
+'istok-klub-stigao-u-novi-sad': {
+  slug: 'istok-klub-stigao-u-novi-sad',
+
+  title:
+    'Otvoren Istok klub u Novom Sadu – novo mesto za kafu i druženje',
+
+  description:
+    'U Novom Sadu, na adresi Maksima Gorkog 2a, otvoren je Istok klub – novo mesto za dobru kafu, prijatnu atmosferu, druženje i razgovore.',
+
+  image:
+    '/static/images/istok-klub-stigao-u-novi-sad.jpg',
+
+  publishedAt: '2026-11-05',
+
+  author: 'Istok Info Pult',
+},
 'mladi-istrazivaci-iz-srbije-dobili-priliku-da-predstave-svoje-radove-u-rusiji': {
   slug:
     'mladi-istrazivaci-iz-srbije-dobili-priliku-da-predstave-svoje-radove-u-rusiji',

@@ -12,40 +12,76 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const { t, language, script } = useLanguage()
 
   const danasnjeVesti = [
-
-
-{
-  title:
-    'Mladi istraživači iz Srbije – otvoren međunarodni naučni konkurs u Rusiji',
-
-  href:
-    '/vesti/mladi-istrazivaci-iz-srbije-dobili-priliku-da-predstave-svoje-radove-u-rusiji',
-
-  image:
-    '/static/images/mladi-istrazivaci.jpg',
-
-  date:
-    '04.11.2026.',
-
-  description:
-    'Centar za geostrateške studije poziva mlade politikologe i istraživače iz Srbije da učestvuju na međunarodnom naučnom konkursu u Rusiji. Prijave traju od 10. novembra do 10. decembra 2026.',
-},
-{
-  title:
-    'RAZGOVORI U ISTOKU 004 – Mića Živojinović o Draži Mihailoviću',
-
-  href:
-    '/vesti/razgovori-u-istoku-004-mica-zivojinovic',
-
-  image:
-    '/static/images/razgovori-u-istoku-004-mica-zivojinovic.jpg',
-
-  date:
-    '03.11.2026.',
-
-  description:
-    'Pukovnik prof. dr Mića Živojinović o Draži Mihailoviću, sovjetskim arhivima, Nikoli Kalabiću, britanskim službama i suđenju 1946. godine.',
-},
+    {
+      href: '/vesti/istok-klub-stigao-u-novi-sad',
+      slug: 'istok-klub-stigao-u-novi-sad',
+      category:
+        language === 'ru'
+          ? 'Новости - 05.11.2026.'
+          : script === 'cyr'
+            ? 'Вести - 05.11.2026.'
+            : 'Vesti - 05.11.2026.',
+      title:
+        language === 'ru'
+          ? 'В Нови-Саде открылось новое место для встреч — «Исток клуб»'
+          : script === 'cyr'
+            ? 'Нови Сад богатији за ново место сусрета – отворен „Исток клуб“'
+            : 'Novi Sad bogatiji za novo mesto susreta – otvoren „Istok klub“',
+      excerpt:
+        language === 'ru'
+          ? 'По адресу Максима Горког, 2а, в Нови-Саде открылся «Исток клуб» — новое место для хорошего кофе, приятной атмосферы и общения.'
+          : script === 'cyr'
+            ? 'На адреси Максима Горког 2а у Новом Саду отворен је „Исток клуб“, ново место за добру кафу, пријатну атмосферу и дружење.'
+            : 'Na adresi Maksima Gorkog 2a u Novom Sadu otvoren je „Istok klub“, novo mesto za dobru kafu, prijatnu atmosferu i druženje.',
+      image: '/static/images/istok-klub-stigao-u-novi-sad.jpg',
+      date: '2026-11-05',
+    },
+    {
+      href: '/vesti/mladi-istrazivaci-iz-srbije-dobili-priliku-da-predstave-svoje-radove-u-rusiji',
+      category:
+        language === 'ru'
+          ? 'Новости - 04.11.2026.'
+          : script === 'cyr'
+            ? 'Вести - 04.11.2026.'
+            : 'Vesti - 04.11.2026.',
+      title:
+        language === 'ru'
+          ? 'Молодые исследователи из Сербии — международный научный конкурс в России'
+          : script === 'cyr'
+            ? 'Млади истраживачи из Србије – отворен међународни научни конкурс у Русији'
+            : 'Mladi istraživači iz Srbije – otvoren međunarodni naučni konkurs u Rusiji',
+      excerpt:
+        language === 'ru'
+          ? 'Центр геостратегических исследований приглашает молодых политологов и исследователей из Сербии принять участие в международном научном конкурсе в России. Приём заявок — с 10 ноября по 10 декабря 2026 года.'
+          : script === 'cyr'
+            ? 'Центар за геостратешке студије позива младе политикологе и истраживаче из Србије да учествују на међународном научном конкурсу у Русији. Пријаве трају од 10. новембра до 10. децембра 2026.'
+            : 'Centar za geostrateške studije poziva mlade politikologe i istraživače iz Srbije da učestvuju na međunarodnom naučnom konkursu u Rusiji. Prijave traju od 10. novembra do 10. decembra 2026.',
+      image: '/static/images/mladi-istrazivaci.jpg',
+      date: '2026-11-04',
+    },
+    {
+      href: '/vesti/razgovori-u-istoku-004-mica-zivojinovic',
+      category:
+        language === 'ru'
+          ? 'Новости - 03.11.2026.'
+          : script === 'cyr'
+            ? 'Вести - 03.11.2026.'
+            : 'Vesti - 03.11.2026.',
+      title:
+        language === 'ru'
+          ? 'РАЗГОВОРЫ В ИСТОКЕ 004 – Мича Живоинович о Драже Михайловиче'
+          : script === 'cyr'
+            ? 'РАЗГОВОРИ У ИСТОКУ 004 – Мића Живојиновић о Дражи Михаиловићу'
+            : 'RAZGOVORI U ISTOKU 004 – Mića Živojinović o Draži Mihailoviću',
+      excerpt:
+        language === 'ru'
+          ? 'Полковник, профессор, доктор Мича Живоинович рассказывает о Драже Михайловиче, советских архивах, Николе Калабиче, британских спецслужбах и процессе 1946 года.'
+          : script === 'cyr'
+            ? 'Пуковник проф. др Мића Живојиновић о Дражи Михаиловићу, совјетским архивима, Николи Калабићу, британским службама и суђењу 1946. године.'
+            : 'Pukovnik prof. dr Mića Živojinović o Draži Mihailoviću, sovjetskim arhivima, Nikoli Kalabiću, britanskim službama i suđenju 1946. godine.',
+      image: '/static/images/razgovori-u-istoku-004-mica-zivojinovic.jpg',
+      date: '2026-11-03',
+    },
 {
   href: '/vesti/teska-sudbina-nikole-simica-nakon-crkvenog-postupka',
   slug: 'teska-sudbina-nikole-simica-nakon-crkvenog-postupka',

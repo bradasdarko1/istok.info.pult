@@ -12,6 +12,37 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const { t, language, script } = useLanguage()
 
   const danasnjeVesti = [
+    
+{
+  href: '/vesti/ruski-monah-koji-je-promenio-srpsku-istoriju',
+  slug: 'ruski-monah-koji-je-promenio-srpsku-istoriju',
+
+  category:
+    language === 'ru'
+      ? 'История - 07.11.2026.'
+      : script === 'cyr'
+        ? 'Историја - 07.11.2026.'
+        : 'Istorija - 07.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РУССКИЙ МОНАХ, ИЗМЕНИВШИЙ СЕРБСКУЮ ИСТОРИЮ — КАК НАЧИНАЛИСЬ СВЯЗИ ДВУХ НАРОДОВ'
+      : script === 'cyr'
+        ? 'РУСКИ МОНАХ КОЈИ ЈЕ ПРОМЕНИО СРПСКУ ИСТОРИЈУ — КАКО ЈЕ ПОЧЕЛА ВЕЗА ДВА НАРОДА'
+        : 'RUSKI MONAH KOJI JE PROMENIO SRPSKU ISTORIJU — KAKO JE POČELA VEZA DVA NARODA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Более восьми веков назад встреча юного Растко Неманича с афонским монахом стала началом его духовного пути. История святого Саввы и первых сербско-русских связей.'
+      : script === 'cyr'
+        ? 'Пре више од осам векова сусрет младог Растка Немањића са светогорским монахом означио је почетак његовог духовног пута. Прича о Светом Сави и првим српско-руским везама.'
+        : 'Pre više od osam vekova susret mladog Rastka Nemanjića sa svetogorskim monahom označio je početak njegovog duhovnog puta. Priča o Svetom Savi i prvim srpsko-ruskim vezama.',
+
+  image:
+    '/static/images/ruski-monah-koji-je-promenio-srpsku-istoriju.jpg',
+
+  date: '2026-11-07',
+},
     {
       href: '/vesti/istok-klub-stigao-u-novi-sad',
       slug: 'istok-klub-stigao-u-novi-sad',

@@ -4,6 +4,23 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
+
+'ruski-monah-koji-je-promenio-srpsku-istoriju': {
+  slug: 'ruski-monah-koji-je-promenio-srpsku-istoriju',
+
+  title:
+    'Ruski monah koji je promenio srpsku istoriju – Sveti Sava i početak srpsko-ruskih veza',
+
+  description:
+    'Kako je susret Rastka Nemanjića sa svetogorskim monahom uticao na njegov odlazak na Svetu Goru? Otkrijte početke duhovnih veza Srbije i Rusije.',
+
+  image:
+    '/static/images/ruski-monah-koji-je-promenio-srpsku-istoriju.jpg',
+
+  publishedAt: '2026-11-07',
+
+  author: 'Istok Info Pult',
+},
 'istok-klub-stigao-u-novi-sad': {
   slug: 'istok-klub-stigao-u-novi-sad',
 

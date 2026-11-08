@@ -12,7 +12,37 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const { t, language, script } = useLanguage()
 
   const danasnjeVesti = [
-    
+
+{
+  href: '/vesti/srbin-koji-je-sluzio-petru-velikom',
+  slug: 'srbin-koji-je-sluzio-petru-velikom',
+
+  category:
+    language === 'ru'
+      ? 'История - 08.11.2026.'
+      : script === 'cyr'
+        ? 'Историја - 08.11.2026.'
+        : 'Istorija - 08.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'СЕРБ НА СЛУЖБЕ ПЕТРА ВЕЛИКОГО — САВВА ВЛАДИСЛАВИЧ И ТАЙНЫ РУССКОЙ ДИПЛОМАТИИ'
+      : script === 'cyr'
+        ? 'СРБИН КОЈИ ЈЕ СЛУЖИО ПЕТРУ ВЕЛИКОМ — САВА ВЛАДИСЛАВИЋ И ТАЈНЕ РУСКЕ ДИПЛОМАТИЈЕ'
+        : 'SRBIN KOJI JE SLUŽIO PETRU VELIKOM — SAVA VLADISLAVIĆ I TAJNE RUSKE DIPLOMATIJE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Савва Владиславич-Рагузинский, серб из Герцеговины, стал доверенным дипломатом Петра Великого. В 1727 году он сыграл ключевую роль в заключении исторического договора между Россией и Китаем.'
+      : script === 'cyr'
+        ? 'Сава Владиславић Рагузински, Србин из Херцеговине, постао је поверљиви дипломата Петра Великог. Године 1727. одиграо је кључну улогу у склапању историјског споразума између Русије и Кине.'
+        : 'Sava Vladislavić Raguzinski, Srbin iz Hercegovine, postao je poverljivi diplomata Petra Velikog. Godine 1727. odigrao je ključnu ulogu u sklapanju istorijskog sporazuma između Rusije i Kine.',
+
+  image:
+    '/static/images/srbin-koji-je-sluzio-petru-velikom.jpg',
+
+  date: '2026-11-08',
+},    
 {
   href: '/vesti/ruski-monah-koji-je-promenio-srpsku-istoriju',
   slug: 'ruski-monah-koji-je-promenio-srpsku-istoriju',

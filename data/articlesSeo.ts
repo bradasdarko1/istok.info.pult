@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'srbin-koji-je-sluzio-petru-velikom': {
+  slug: 'srbin-koji-je-sluzio-petru-velikom',
+
+  title:
+    'Sava Vladislavić – Srbin koji je služio Petru Velikom i menjao granice Rusije',
+
+  description:
+    'Sava Vladislavić Raguzinski, Srbin iz Hercegovine, bio je diplomata Petra Velikog i ključni učesnik rusko-kineskog sporazuma iz 1727. godine. Otkrijte njegovu priču.',
+
+  image:
+    '/static/images/srbin-koji-je-sluzio-petru-velikom.jpg',
+
+  publishedAt: '2026-11-08',
+
+  author: 'Istok Info Pult',
+},
 'ruski-monah-koji-je-promenio-srpsku-istoriju': {
   slug: 'ruski-monah-koji-je-promenio-srpsku-istoriju',
 

@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'zaboravljena-srpska-zemlja-u-ruskom-carstvu': {
+  slug: 'zaboravljena-srpska-zemlja-u-ruskom-carstvu',
+
+  title:
+    'Nova Srbija i Slavenosrbija – zaboravljena srpska zemlja u Ruskom carstvu',
+
+  description:
+    'Kako su Srbi u XVIII veku osnovali Novu Srbiju i Slavenosrbiju u Ruskom carstvu? Otkrijte istoriju srpskih seoba, vojnih naselja i sudbinu njihovih potomaka.',
+
+  image:
+    '/static/images/zaboravljena-srpska-zemlja.jpg',
+
+  publishedAt: '2026-11-09',
+
+  author: 'Istok Info Pult',
+},
 'razgovori-u-istoku-005-dane-cankovic': {
   slug: 'razgovori-u-istoku-005-dane-cankovic',
 

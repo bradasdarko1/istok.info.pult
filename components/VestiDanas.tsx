@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/zaboravljena-srpska-zemlja-u-ruskom-carstvu',
+  slug: 'zaboravljena-srpska-zemlja-u-ruskom-carstvu',
+
+  category:
+    language === 'ru'
+      ? 'История - 09.11.2026.'
+      : script === 'cyr'
+        ? 'Историја - 09.11.2026.'
+        : 'Istorija - 09.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ЗАБЫТАЯ СЕРБСКАЯ ЗЕМЛЯ В РОССИЙСКОЙ ИМПЕРИИ — НОВАЯ СЕРБИЯ И СЛАВЯНОСЕРБИЯ'
+      : script === 'cyr'
+        ? 'ЗАБОРАВЉЕНА СРПСКА ЗЕМЉА У РУСКОМ ЦАРСТВУ — НОВА СРБИЈА И СЛАВЕНОСРБИЈА'
+        : 'ZABORAVLJENA SRPSKA ZEMLJA U RUSKOM CARSTVU — NOVA SRBIJA I SLAVENOSRBIJA',
+
+  excerpt:
+    language === 'ru'
+      ? 'В середине XVIII века сербские переселенцы основали Новую Сербию и Славяносербию на территории современной Украины. Как возникли эти военные поселения в Российской империи и что стало с потомками сербов?'
+      : script === 'cyr'
+        ? 'Средином XVIII века српски досељеници основали су Нову Србију и Славеносрбију на простору данашње Украјине. Како су настала ова војна насеља у Руском царству и шта се догодило са потомцима Срба?'
+        : 'Sredinom XVIII veka srpski doseljenici osnovali su Novu Srbiju i Slavenosrbiju na prostoru današnje Ukrajine. Kako su nastala ova vojna naselja u Ruskom carstvu i šta se dogodilo sa potomcima Srba?',
+
+  image:
+    '/static/images/zaboravljena-srpska-zemlja.jpg',
+
+  date: '2026-11-09',
+},
+{
   href: '/vesti/razgovori-u-istoku-005-dane-cankovic',
   slug: 'razgovori-u-istoku-005-dane-cankovic',
 

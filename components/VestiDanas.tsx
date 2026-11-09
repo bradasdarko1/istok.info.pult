@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/razgovori-u-istoku-005-dane-cankovic',
+  slug: 'razgovori-u-istoku-005-dane-cankovic',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 09.11.2026.'
+      : script === 'cyr'
+        ? 'Вести - 09.11.2026.'
+        : 'Vesti - 09.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ДАНЕ ЧАНКОВИЧ О РЕСПУБЛИКЕ СЕРБСКОЙ, СУВЕРЕНИТЕТЕ И СЕРБСКОМ ЕДИНСТВЕ — РАЗГОВОРЫ В ИСТОКЕ 005'
+      : script === 'cyr'
+        ? 'ДАНЕ ЧАНКОВИЋ О РЕПУБЛИЦИ СРПСКОЈ, СУВЕРЕНИТЕТУ И СРПСКОМ ЈЕДИНСТВУ — РАЗГОВОРИ У ИСТОКУ 005'
+        : 'DANE ČANKOVIĆ O REPUBLICI SRPSKOJ, SUVERENITETU I SRPSKOM JEDINSTVU — RAZGOVORI U ISTOKU 005',
+
+  excerpt:
+    language === 'ru'
+      ? 'В пятом выпуске программы «Разговоры в Истоке» Дане Чанкович рассказывает о борьбе за суверенитет Республики Сербской, Дейтонских соглашениях, отношениях Баня-Луки и Белграда, сербском единстве и противостоянии суверенизма и глобализма.'
+      : script === 'cyr'
+        ? 'У петој епизоди емисије „Разговори у Истоку“ Дане Чанковић говори о борби за суверенитет Републике Српске, Дејтонском споразуму, односима Бањалуке и Београда, српском јединству и сукобу суверенизма и глобализма.'
+        : 'U petoj epizodi emisije „Razgovori u Istoku“ Dane Čanković govori o borbi za suverenitet Republike Srpske, Dejtonskom sporazumu, odnosima Banjaluke i Beograda, srpskom jedinstvu i sukobu suverenizma i globalizma.',
+
+  image:
+    '/static/images/razgovori-u-istoku-005-dane-cankovic.jpg',
+
+  date: '2026-11-09',
+},
+{
   href: '/vesti/srbin-koji-je-sluzio-petru-velikom',
   slug: 'srbin-koji-je-sluzio-petru-velikom',
 

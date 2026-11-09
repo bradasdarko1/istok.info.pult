@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'razgovori-u-istoku-005-dane-cankovic': {
+  slug: 'razgovori-u-istoku-005-dane-cankovic',
+
+  title:
+    'Dane Čanković o Republici Srpskoj, suverenitetu i srpskom jedinstvu | Razgovori u Istoku 005',
+
+  description:
+    'Dane Čanković u petoj epizodi Razgovora u Istoku govori o Republici Srpskoj, Dejtonskom sporazumu, referendumu, odnosima Srbije i Srpske, suverenizmu i globalizmu.',
+
+  image:
+    '/static/images/razgovori-u-istoku-005-dane-cankovic.jpg',
+
+  publishedAt: '2026-11-09',
+
+  author: 'Istok Info Pult',
+},
 'srbin-koji-je-sluzio-petru-velikom': {
   slug: 'srbin-koji-je-sluzio-petru-velikom',
 

@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'knjige-koje-su-stizale-iz-rusije': {
+  slug: 'knjige-koje-su-stizale-iz-rusije',
+
+  title:
+    'Knjige koje su stizale iz Rusije – kako su ruski učitelji menjali srpsko školstvo | Istok Info Pult',
+
+  description:
+    'Kako su ruski učitelji Maksim Suvorov i Emanuil Kozačinski u XVIII veku menjali srpsko školstvo? Otkrijte istoriju Slavjanske škole, ruskih knjiga i razvoja srpske prosvete u Sremskim Karlovcima.',
+
+  image:
+    '/static/images/knjige-koje-su-iz-rusije.jpg',
+
+  publishedAt: '2026-11-11',
+
+  author: 'Istok Info Pult',
+},
 'kome-i-zasto-smeta-ruska-federacija-i-drzavljani-rusije-u-srbiji': {
   slug: 'kome-i-zasto-smeta-ruska-federacija-i-drzavljani-rusije-u-srbiji',
 

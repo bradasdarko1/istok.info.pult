@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/knjige-koje-su-stizale-iz-rusije',
+  slug: 'knjige-koje-su-stizale-iz-rusije',
+
+  category:
+    language === 'ru'
+      ? 'История - 11.11.2026.'
+      : script === 'cyr'
+        ? 'Историја - 11.11.2026.'
+        : 'Istorija - 11.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'КНИГИ, ПРИХОДИВШИЕ ИЗ РОССИИ — КАК РУССКИЕ УЧИТЕЛЯ МЕНЯЛИ СЕРБСКОЕ ОБРАЗОВАНИЕ'
+      : script === 'cyr'
+        ? 'КЊИГЕ КОЈЕ СУ СТИЗАЛЕ ИЗ РУСИЈЕ — КАКО СУ РУСКИ УЧИТЕЉИ МЕЊАЛИ СРПСКО ШКОЛСТВО'
+        : 'KNJIGE KOJE SU STIZALE IZ RUSIJE — KAKO SU RUSKI UČITELJI MENJALI SRPSKO ŠKOLSTVO',
+
+  excerpt:
+    language === 'ru'
+      ? 'В XVIII веке русские учителя и книги сыграли важную роль в развитии сербского образования. Максим Суворов и Эммануил Козачинский внесли значительный вклад в становление школ в Сремски-Карловци, помогая сербам сохранять веру, язык и культурную самобытность.'
+      : script === 'cyr'
+        ? 'У XVIII веку руски учитељи и књиге одиграли су важну улогу у развоју српског школства. Максим Суворов и Емануил Козачински допринели су оснивању и развоју школа у Сремским Карловцима, помажући Србима да сачувају веру, језик и културни идентитет.'
+        : 'U XVIII veku ruski učitelji i knjige odigrali su važnu ulogu u razvoju srpskog školstva. Maksim Suvorov i Emanuil Kozačinski doprineli su osnivanju i razvoju škola u Sremskim Karlovcima, pomažući Srbima da sačuvaju veru, jezik i kulturni identitet.',
+
+  image:
+    '/static/images/knjige-koje-su-iz-rusije.jpg',
+
+  date: '2026-11-11',
+},
+{
   href: '/vesti/kome-i-zasto-smeta-ruska-federacija-i-drzavljani-rusije-u-srbiji',
   slug: 'kome-i-zasto-smeta-ruska-federacija-i-drzavljani-rusije-u-srbiji',
 

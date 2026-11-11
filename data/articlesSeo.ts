@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'kome-i-zasto-smeta-ruska-federacija-i-drzavljani-rusije-u-srbiji': {
+  slug: 'kome-i-zasto-smeta-ruska-federacija-i-drzavljani-rusije-u-srbiji',
+
+  title:
+    'Kome i zašto smetaju Ruska Federacija i ruski državljani u Srbiji? | Istok Info Pult',
+
+  description:
+    'Kome i zašto smetaju Ruska Federacija i ruski državljani u Srbiji? Istok Info Pult otvara javnu debatu o srpsko-ruskim odnosima, geopolitici i iskustvima ruskih građana. Uključite se u diskusiju i ostavite komentar.',
+
+  image:
+    '/static/images/ruska-federacija.jpg',
+
+  publishedAt: '2026-11-11',
+
+  author: 'Istok Info Pult',
+},
 'dan-kada-je-sve-utihnulo-oruzje-a-srbija-ostala-na-nogama': {
   slug: 'dan-kada-je-utihnulo-oruzje-a-srbija-ostala-na-nogama',
 

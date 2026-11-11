@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/kome-i-zasto-smeta-ruska-federacija-i-drzavljani-rusije-u-srbiji',
+  slug: 'kome-i-zasto-smeta-ruska-federacija-i-drzavljani-rusije-u-srbiji',
+
+  category:
+    language === 'ru'
+      ? 'Общество - 11.11.2026.'
+      : script === 'cyr'
+        ? 'Друштво - 11.11.2026.'
+        : 'Društvo - 11.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'КОМУ И ПОЧЕМУ МЕШАЮТ РОССИЙСКАЯ ФЕДЕРАЦИЯ И ГРАЖДАНЕ РОССИИ В СЕРБИИ?'
+      : script === 'cyr'
+        ? 'КОМЕ И ЗАШТО СМЕТАЈУ РУСКА ФЕДЕРАЦИЈА И РУСКИ ДРЖАВЉАНИ У СРБИЈИ?'
+        : 'KOME I ZAŠTO SMETAJU RUSKA FEDERACIJA I RUSKI DRŽAVLJANI U SRBIJI?',
+
+  excerpt:
+    language === 'ru'
+      ? 'Кому и почему мешают Россия и российские граждане в Сербии? Связано ли это с политикой, геополитикой или предубеждениями? «Исток Инфо Пулт» открывает общественную дискуссию и приглашает читателей поделиться своим мнением и личным опытом в комментариях.'
+      : script === 'cyr'
+        ? 'Коме и зашто сметају Русија и руски држављани у Србији? Да ли је реч о политици, геополитици или предрасудама? Исток Инфо Пулт отвара јавну дебату и позива читаоце да изнесу своје ставове и искуства у коментарима.'
+        : 'Kome i zašto smetaju Rusija i ruski državljani u Srbiji? Da li je reč o politici, geopolitici ili predrasudama? Istok Info Pult otvara javnu debatu i poziva čitaoce da iznesu svoje stavove i iskustva u komentarima.',
+
+  image:
+    '/static/images/ruska-federacija.jpg',
+
+  date: '2026-11-11',
+},
+{
   href: '/vesti/dan-kada-je-utihnulo-oruzje-a-srbija-ostala-na-nogama',
   slug: 'dan-kada-je-utihnulo-oruzje-a-srbija-ostala-na-nogama',
 

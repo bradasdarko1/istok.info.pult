@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'dan-kada-je-sve-utihnulo-oruzje-a-srbija-ostala-na-nogama': {
+  slug: 'dan-kada-je-utihnulo-oruzje-a-srbija-ostala-na-nogama',
+
+  title:
+    '11. novembar – Dan primirja u Prvom svetskom ratu | Srbija 1918',
+
+  description:
+    'Dan primirja 11. novembra 1918. godine – sećanje na srpske junake, proboj Solunskog fronta, oslobođenje Srbije i Natalijinu ramondu, simbol pobede i stradanja.',
+
+  image:
+    '/static/images/11-novembar.jpg',
+
+  publishedAt: '2026-11-11',
+
+  author: 'Istok Info Pult',
+},
 'zaboravljena-srpska-zemlja-u-ruskom-carstvu': {
   slug: 'zaboravljena-srpska-zemlja-u-ruskom-carstvu',
 

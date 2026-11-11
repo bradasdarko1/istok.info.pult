@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/dan-kada-je-utihnulo-oruzje-a-srbija-ostala-na-nogama',
+  slug: 'dan-kada-je-utihnulo-oruzje-a-srbija-ostala-na-nogama',
+
+  category:
+    language === 'ru'
+      ? 'История - 11.11.2026.'
+      : script === 'cyr'
+        ? 'Истorија - 11.11.2026.'
+        : 'Istorija - 11.11.2026.',
+
+  title:
+    language === 'ru'
+      ? '11 НОЯБРЯ — ДЕНЬ, КОГДА ЗАМОЛЧАЛО ОРУЖИЕ, А СЕРБИЯ ВЫСТОЯЛА'
+      : script === 'cyr'
+        ? '11. НОВЕМБАР — ДАН КАДА ЈЕ УТИХНУЛО ОРУЖЈЕ, А СРБИЈА ОСТАЛА НА НОГАМА'
+        : '11. NOVEMBAR — DAN KADA JE UTIHNULO ORUŽJE, A SRBIJA OSTALA NA NOGAMA',
+
+  excerpt:
+    language === 'ru'
+      ? '11 ноября 1918 года вступило в силу перемирие, положившее конец боевым действиям на Западном фронте Первой мировой войны. Вспоминаем сербских героев, прорыв Салоникского фронта и освобождение Сербии, заплатившей огромную цену за свою свободу.'
+      : script === 'cyr'
+        ? '11. новембра 1918. године ступило је на снагу примирје којим су окончане борбе на Западном фронту Првог светског рата. Сећамо се српских јунака, пробоја Солунског фронта и ослобођења Србије, која је своју слободу платила огромном жртвом.'
+        : '11. novembra 1918. godine stupilo je na snagu primirje kojim su okončane borbe na Zapadnom frontu Prvog svetskog rata. Sećamo se srpskih junaka, proboja Solunskog fronta i oslobođenja Srbije, koja je svoju slobodu platila ogromnom žrtvom.',
+
+  image:
+    '/static/images/11-novembar.jpg',
+
+  date: '2026-11-11',
+},
+{
   href: '/vesti/zaboravljena-srpska-zemlja-u-ruskom-carstvu',
   slug: 'zaboravljena-srpska-zemlja-u-ruskom-carstvu',
 

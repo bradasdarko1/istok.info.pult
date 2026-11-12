@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/karadjordjev-poziv-ruskom-caru',
+  slug: 'karadjordjev-poziv-ruskom-caru',
+
+  category:
+    language === 'ru'
+      ? 'История - 12.11.2026.'
+      : script === 'cyr'
+        ? 'Историја - 12.11.2026.'
+        : 'Istorija - 12.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ОБРАЩЕНИЕ КАРАГЕОРГИЯ К РУССКОМУ ИМПЕРАТОРУ — СЕРБИЯ В ПОИСКАХ СОЮЗНИКА'
+      : script === 'cyr'
+        ? 'КАРАЂОРЂЕВ ПОЗИВ РУСКОМ ЦАРУ — СРБИЈА У ПОТРАЗИ ЗА САВЕЗНИКОМ'
+        : 'KARAĐORĐEV POZIV RUSKOM CARU — SRBIJA U POTRAZI ZA SAVEZNIKOM',
+
+  excerpt:
+    language === 'ru'
+      ? 'В 1804 году Карагеоргий обратился к России за поддержкой в борьбе против Османской империи. Сербские дипломатические миссии, российская военная помощь и совместные победы укрепили союз двух народов, однако Бухарестский мир 1812 года показал, насколько сложными могут быть политические интересы союзников.'
+      : script === 'cyr'
+        ? 'Године 1804. Карађорђе је затражио подршку Русије у борби против Османског царства. Српске дипломатске мисије, руска војна помоћ и заједничке победе учврстиле су савезништво два народа, али је Букурешки мир 1812. године показао сложеност политичких интереса савезника.'
+        : 'Godine 1804. Karađorđe je zatražio podršku Rusije u borbi protiv Osmanskog carstva. Srpske diplomatske misije, ruska vojna pomoć i zajedničke pobede učvrstile su savezništvo dva naroda, ali je Bukureški mir 1812. godine pokazao složenost političkih interesa saveznika.',
+
+  image:
+    '/static/images/karadjordjev-poziv-ruskom-caru.jpg',
+
+  date: '2026-11-12',
+},
+{
   href: '/vesti/knjige-koje-su-stizale-iz-rusije',
   slug: 'knjige-koje-su-stizale-iz-rusije',
 

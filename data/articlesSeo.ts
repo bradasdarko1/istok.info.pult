@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'karadjordjev-poziv-ruskom-caru': {
+  slug: 'karadjordjev-poziv-ruskom-caru',
+
+  title:
+    'Karađorđev poziv ruskom caru – Srbija u potrazi za saveznikom | Istok Info Pult',
+
+  description:
+    'Kako je Karađorđe tokom Prvog srpskog ustanka tražio pomoć ruskog cara Aleksandra I? Saznajte više o srpskim diplomatskim misijama, ruskoj vojnoj pomoći, bici kod Varvarina i Bukureškom miru 1812. godine.',
+
+  image:
+    '/static/images/karadjordjev-poziv-ruskom-caru.jpg',
+
+  publishedAt: '2026-11-12',
+
+  author: 'Istok Info Pult',
+},
 'knjige-koje-su-stizale-iz-rusije': {
   slug: 'knjige-koje-su-stizale-iz-rusije',
 

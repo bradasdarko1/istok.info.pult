@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'bukureski-mir': {
+  slug: 'bukureski-mir',
+
+  title:
+    'Bukureški mir 1812 – kada su sudbinu Srbije odlučivale velike sile | Istok Info Pult',
+
+  description:
+    'Kako je Bukureški mir iz 1812. uticao na Srbiju i Prvi srpski ustanak? Osmi član sporazuma, rusko-osmanski pregovori, Napoleonov pohod na Rusiju i slom ustanka 1813. godine.',
+
+  image:
+    '/static/images/bukureski-mir.jpg',
+
+  publishedAt: '2026-11-13',
+
+  author: 'Istok Info Pult',
+},
 'karadjordjev-poziv-ruskom-caru': {
   slug: 'karadjordjev-poziv-ruskom-caru',
 

@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/bukureski-mir',
+  slug: 'bukureski-mir',
+
+  category:
+    language === 'ru'
+      ? 'История - 13.11.2026.'
+      : script === 'cyr'
+        ? 'Историја - 13.11.2026.'
+        : 'Istorija - 13.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'БУХАРЕСТСКИЙ МИР — КОГДА СУДЬБУ СЕРБИИ РЕШАЛИ ВЕЛИКИЕ ДЕРЖАВЫ'
+      : script === 'cyr'
+        ? 'БУКУРЕШКИ МИР — КАДА СУ СУДБИНУ СРБИЈЕ ОДЛУЧИВАЛЕ ВЕЛИКЕ СИЛЕ'
+        : 'BUKUREŠKI MIR — KADA SU SUDBINU SRBIJE ODLUČIVALE VELIKE SILE',
+
+  excerpt:
+    language === 'ru'
+      ? 'В 1812 году Россия и Османская империя заключили Бухарестский мир, определивший судьбу Первого сербского восстания. Договор предусматривал амнистию и самоуправление для сербов, но также возвращение османских гарнизонов. Поход Наполеона на Россию лишил сербских повстанцев непосредственной военной поддержки главного союзника, а в 1813 году восстание потерпело поражение.'
+      : script === 'cyr'
+        ? 'Године 1812. Русија и Османско царство потписали су Букурешки мир, који је пресудно утицао на судбину Првог српског устанка. Споразум је предвиђао амнестију и самоуправу за Србе, али и повратак османских гарнизона. Наполеонов поход на Русију оставио је устанике без непосредне војне подршке главног савезника, а 1813. године уследио је слом устанка.'
+        : 'Godine 1812. Rusija i Osmansko carstvo potpisali su Bukureški mir, koji je presudno uticao na sudbinu Prvog srpskog ustanka. Sporazum je predviđao amnestiju i samoupravu za Srbe, ali i povratak osmanskih garnizona. Napoleonov pohod na Rusiju ostavio je ustanike bez neposredne vojne podrške glavnog saveznika, a 1813. godine usledio je slom ustanka.',
+
+  image:
+    '/static/images/bukureski-mir.jpg',
+
+  date: '2026-11-13',
+},
+{
   href: '/vesti/karadjordjev-poziv-ruskom-caru',
   slug: 'karadjordjev-poziv-ruskom-caru',
 

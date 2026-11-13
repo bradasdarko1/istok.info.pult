@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/duhovni-razgovori-sa-ocem-simeonom',
+  slug: 'duhovni-razgovori-sa-ocem-simeonom',
+
+  category:
+    language === 'ru'
+      ? 'Духовные беседы - 13.11.2026.'
+      : script === 'cyr'
+        ? 'Духовни разговори - 13.11.2026.'
+        : 'Duhovni razgovori - 13.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ДУХОВНАЯ БЕСЕДА С ОТЦОМ СИМЕОНОМ РУКУМИЙСКИМ — СЛОВА, КОТОРЫЕ ДОЛЖЕН УСЛЫШАТЬ КАЖДЫЙ ПРАВОСЛАВНЫЙ ХРИСТИАНИН'
+      : script === 'cyr'
+        ? 'ДУХОВНИ РАЗГОВОР СА ОЦЕМ СИМЕОНОМ РУКУМИЈСКИМ — РЕЧИ КОЈЕ СВАКИ ПРАВОСЛАВНИ ХРИШЋАНИН МОРА ДА ЧУЈЕ'
+        : 'DUHOVNI RAZGOVOR SA OCEM SIMEONOM RUKUMIJSKIM — REČI KOJE SVAKI PRAVOSLAVNI HRIŠĆANIN MORA DA ČUJE',
+
+  excerpt:
+    language === 'ru'
+      ? 'В первом выпуске нового цикла «Духовные беседы» Небойша Живоинович посещает монастырь Рукумия, где беседует с архимандритом отцом Симеоном. В ходе разговора обсуждаются православная вера, значение поста, подготовка к Святому Причащению, Благодатный огонь в Иерусалиме и духовная сила Честного Креста. Отец Симеон делится наставлениями о том, как сохранить душевный мир, семью и жить с Богом в современном мире.'
+      : script === 'cyr'
+        ? 'У првој епизоди новог серијала „Духовни разговори“, Небојша Живојиновић борави у манастиру Рукумија, где разговара са игуманом, архимандритом оцем Симеоном. Кроз искрен и дубок разговор, отац Симеон говори о православној вери, значају поста, припреми за Свето причешће, Благодатном огњу у Јерусалиму и духовној снази Часног Крста. Посебну пажњу посвећује очувању породице, духовног мира и животу у складу са Божјим заповестима.'
+        : 'U prvoj epizodi novog serijala „Duhovni razgovori“, Nebojša Živojinović boravi u manastiru Rukumija, gde razgovara sa igumanom, arhimandritom ocem Simeonom. Kroz iskren i dubok razgovor, otac Simeon govori o pravoslavnoj veri, značaju posta, pripremi za Sveto pričešće, Blagodatnom ognju u Jerusalimu i duhovnoj snazi Časnog Krsta. Posebnu pažnju posvećuje očuvanju porodice, duhovnog mira i životu u skladu sa Božjim zapovestima.',
+
+  image:
+    '/static/images/otac-simeon.jpg',
+
+  date: '2026-11-13',
+},
+{
   href: '/vesti/bukureski-mir',
   slug: 'bukureski-mir',
 

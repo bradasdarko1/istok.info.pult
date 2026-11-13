@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'duhovni-razgovori-sa-ocem-simeonom': {
+  slug: 'duhovni-razgovori-sa-ocem-simeonom',
+
+  title:
+    'Duhovni razgovor sa ocem Simeonom Rukumijskim – reči koje svaki pravoslavni hrišćanin mora da čuje | Duhovni razgovori 001',
+
+  description:
+    'Arhimandrit otac Simeon Rukumijski u prvoj epizodi serijala Duhovni razgovori govori o pravoslavnoj veri, postu, Svetom pričešću, Blagodatnom ognju, Časnom Krstu, porodici i duhovnom miru. Razgovor vodi Nebojša Živojinović.',
+
+  image:
+    '/static/images/otac-simeon.jpg',
+
+  publishedAt: '2026-11-13',
+
+  author: 'Istok Info Pult',
+},
 'bukureski-mir': {
   slug: 'bukureski-mir',
 

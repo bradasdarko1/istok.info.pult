@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'razgovori-u-istoku-007-mile-bosnic': {
+  slug: 'razgovori-u-istoku-007-mile-bosnic',
+
+  title:
+    'Mile Bosnić o genocidu nad Srbima u NDH, tajnim arhivama i istorijskoj istini | Razgovori u Istoku 007',
+
+  description:
+    'Mile Bosnić u sedmoj epizodi Razgovora u Istoku otkriva rezultate 40 godina istraživanja genocida nad Srbima u NDH, predstavlja arhivska dokumenta, fotografije i istorijska svedočanstva. Govori o stradanju srpskog naroda, istorijskom pamćenju i povezanosti događaja iz Drugog svetskog rata sa devedesetim godinama.',
+
+  image:
+    '/static/images/mile-bosnic.jpg',
+
+  publishedAt: '2026-11-16',
+
+  author: 'Istok Info Pult',
+},
 'duhovni-razgovori-sa-ocem-simeonom': {
   slug: 'duhovni-razgovori-sa-ocem-simeonom',
 

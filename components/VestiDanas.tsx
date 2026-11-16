@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/razgovori-u-istoku-007-mile-bosnic',
+  slug: 'razgovori-u-istoku-007-mile-bosnic',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 16.11.2026.'
+      : script === 'cyr'
+        ? 'Вести - 16.11.2026.'
+        : 'Vesti - 16.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'МИЛЕ БОСНИЧ О ГЕНОЦИДЕ СЕРБОВ В НГХ, СЕКРЕТНЫХ АРХИВАХ И ИСТОРИЧЕСКОЙ ПРАВДЕ — РАЗГОВОРЫ В ИСТОКЕ 007'
+      : script === 'cyr'
+        ? 'МИЛЕ БОСНИЋ О ГЕНОЦИДУ НАД СРБИМА У НДХ, ТАЈНИМ АРХИВАМА И ИСТОРИЈСКОЈ ИСТИНИ — РАЗГОВОРИ У ИСТОКУ 007'
+        : 'MILE BOSNIĆ O GENOCIDU NAD SRBIMA U NDH, TAJNIM ARHIVAMA I ISTORIJSKOJ ISTINI — RAZGOVORI U ISTOKU 007',
+
+  excerpt:
+    language === 'ru'
+      ? 'В седьмом выпуске программы «Разговоры в Истоке» гостем стал Миле Боснич — политолог, председатель Движения сербов Краины и бывший министр в Правительстве Республики Сербская Краина. После 40 лет исследований и подготовки фундаментального труда в десяти томах он представляет ранее неизвестные архивные документы, фотографии и свидетельства о геноциде сербского народа в Независимом государстве Хорватия (НГХ). В беседе обсуждаются масштабы преступлений, замалчивание исторических документов, связь событий Второй мировой войны с распадом Югославии в 1990-х годах, а также важность сохранения исторической памяти.'
+      : script === 'cyr'
+        ? 'У седмој епизоди емисије „Разговори у Истоку“ гост је Миле Боснић — политиколог, председник Покрета Срба Крајишника и некадашњи министар у Влади Републике Српске Крајине. Након 40 година истраживања и припреме капиталног дела у десет томова, представља до сада непозната архивска документа, фотографије и сведочанства о геноциду над српским народом у Независној Држави Хрватској (НДХ). У разговору се отварају питања размера злочина, прећуткивања историјских докумената, повезаности догађаја из Другог светског рата са распадом Југославије деведесетих година, као и значаја очувања историјског памћења.'
+        : 'U sedmoj epizodi emisije „Razgovori u Istoku“ gost je Mile Bosnić — politikolog, predsednik Pokreta Srba Krajišnika i nekadašnji ministar u Vladi Republike Srpske Krajine. Nakon 40 godina istraživanja i pripreme kapitalnog dela u deset tomova, predstavlja do sada nepoznata arhivska dokumenta, fotografije i svedočanstva o genocidu nad srpskim narodom u Nezavisnoj Državi Hrvatskoj (NDH). U razgovoru se otvaraju pitanja razmera zločina, prećutkivanja istorijskih dokumenata, povezanosti događaja iz Drugog svetskog rata sa raspadom Jugoslavije devedesetih godina, kao i značaja očuvanja istorijskog pamćenja.',
+
+  image:
+    '/static/images/mile-bosnic.jpg',
+
+  date: '2026-11-16',
+},
+{
   href: '/vesti/duhovni-razgovori-sa-ocem-simeonom',
   slug: 'duhovni-razgovori-sa-ocem-simeonom',
 

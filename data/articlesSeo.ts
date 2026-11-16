@@ -9,7 +9,7 @@ export const articlesSeo: Record<string, ArticleSeoData> = {
   slug: 'razgovori-u-istoku-007-mile-bosnic',
 
   title:
-    'Mile Bosnić o genocidu nad Srbima u NDH, tajnim arhivama i istorijskoj istini | Razgovori u Istoku 007',
+    'Mile Bosnić o genocidu nad Srbima u NDH, tajnim arhivama i istorijskoj istini | Razgovori u Istoku 006',
 
   description:
     'Mile Bosnić u sedmoj epizodi Razgovora u Istoku otkriva rezultate 40 godina istraživanja genocida nad Srbima u NDH, predstavlja arhivska dokumenta, fotografije i istorijska svedočanstva. Govori o stradanju srpskog naroda, istorijskom pamćenju i povezanosti događaja iz Drugog svetskog rata sa devedesetim godinama.',

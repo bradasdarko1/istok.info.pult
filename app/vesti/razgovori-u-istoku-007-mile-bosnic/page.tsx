@@ -61,7 +61,7 @@ const srLatin = {
   category: 'Vesti',
 
   title:
-    'RAZGOVORI U ISTOKU 007 — MILE BOSNIĆ: GENOCID NAD SRBIMA U NDH I ISTORIJSKA ISTINA',
+    'RAZGOVORI U ISTOKU 006 — MILE BOSNIĆ: GENOCID NAD SRBIMA U NDH I ISTORIJSKA ISTINA',
 
   date: 'Objavljeno: 16. novembar 2026.',
 
@@ -98,7 +98,7 @@ const srLatin = {
     'Pogledajte sedmu epizodu našeg podkasta',
 
   videoDescription:
-    'Mile Bosnić — Razgovori u Istoku | Epizoda 007',
+    'Mile Bosnić — Razgovori u Istoku | Epizoda 006',
 
   watchVideo: 'Pogledaj na YouTube-u',
 }
@@ -111,7 +111,7 @@ const ruText = {
   category: 'Новости',
 
   title:
-    'РАЗГОВОРЫ В «ИСТОКЕ» 007 — МИЛЕ БОСНИЧ: ГЕНОЦИД СЕРБОВ В НГХ И ИСТОРИЧЕСКАЯ ПРАВДА',
+    'РАЗГОВОРЫ В «ИСТОКЕ» 006 — МИЛЕ БОСНИЧ: ГЕНОЦИД СЕРБОВ В НГХ И ИСТОРИЧЕСКАЯ ПРАВДА',
 
   date: 'Опубликовано: 16 ноября 2026 г.',
 
@@ -148,7 +148,7 @@ const ruText = {
     'Смотрите седьмой выпуск нашего подкаста',
 
   videoDescription:
-    'Миле Боснич — Разговоры в Истоке | Эпизод 007',
+    'Миле Боснич — Разговоры в Истоке | Эпизод 006',
 
   watchVideo: 'Смотреть на YouTube',
 }

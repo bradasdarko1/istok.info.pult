@@ -26,10 +26,10 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
   title:
     language === 'ru'
-      ? 'МИЛЕ БОСНИЧ О ГЕНОЦИДЕ СЕРБОВ В НГХ, СЕКРЕТНЫХ АРХИВАХ И ИСТОРИЧЕСКОЙ ПРАВДЕ — РАЗГОВОРЫ В ИСТОКЕ 007'
+      ? 'МИЛЕ БОСНИЧ О ГЕНОЦИДЕ СЕРБОВ В НГХ, СЕКРЕТНЫХ АРХИВАХ И ИСТОРИЧЕСКОЙ ПРАВДЕ — РАЗГОВОРЫ В ИСТОКЕ 006'
       : script === 'cyr'
-        ? 'МИЛЕ БОСНИЋ О ГЕНОЦИДУ НАД СРБИМА У НДХ, ТАЈНИМ АРХИВАМА И ИСТОРИЈСКОЈ ИСТИНИ — РАЗГОВОРИ У ИСТОКУ 007'
-        : 'MILE BOSNIĆ O GENOCIDU NAD SRBIMA U NDH, TAJNIM ARHIVAMA I ISTORIJSKOJ ISTINI — RAZGOVORI U ISTOKU 007',
+        ? 'МИЛЕ БОСНИЋ О ГЕНОЦИДУ НАД СРБИМА У НДХ, ТАЈНИМ АРХИВАМА И ИСТОРИЈСКОЈ ИСТИНИ — РАЗГОВОРИ У ИСТОКУ 006'
+        : 'MILE BOSNIĆ O GENOCIDU NAD SRBIMA U NDH, TAJNIM ARHIVAMA I ISTORIJSKOJ ISTINI — RAZGOVORI U ISTOKU 006',
 
   excerpt:
     language === 'ru'

@@ -169,7 +169,7 @@ const YOUTUBE_EMBED_URL =
 // GLAVNA STRANICA
 // ==========================================
 
-export default function RazgovoriUIstoku007MileBosnicPage() {
+export default function RazgovoriUIstoku006MileBosnicPage() {
   const { language, script } = useLanguage()
 
   const content =
@@ -346,10 +346,10 @@ export default function RazgovoriUIstoku007MileBosnicPage() {
             src="/static/images/mile-bosnic.jpg"
             alt={
               language === 'ru'
-                ? 'Миле Боснич — Разговоры в Истоке, выпуск 007'
+                ? 'Миле Боснич — Разговоры в Истоке, выпуск 006'
                 : script === 'cyr'
-                  ? 'Миле Боснић — Разговори у Истоку, епизода 007'
-                  : 'Mile Bosnić — Razgovori u Istoku, epizoda 007'
+                  ? 'Миле Боснић — Разговори у Истоку, епизода 006'
+                  : 'Mile Bosnić — Razgovori u Istoku, epizoda 006'
             }
             className="h-auto w-full object-cover"
             loading="eager"
@@ -520,7 +520,7 @@ export default function RazgovoriUIstoku007MileBosnicPage() {
           ================================== */}
 
           <CommentsSection
-            postSlug="razgovori-u-istoku-007-mile-bosnic"
+            postSlug="razgovori-u-istoku-006-mile-bosnic"
           />
 
         </motion.div>

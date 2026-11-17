@@ -4,7 +4,7 @@ import { createArticleSeo } from '@/lib/articleSeo'
 
 const SITE_URL = 'https://www.istokinfopult.rs'
 
-const SLUG = 'razgovori-u-istoku-007-mile-bosnic'
+const SLUG = 'razgovori-u-istoku-006-mile-bosnic'
 
 const ARTICLE_URL = `${SITE_URL}/vesti/${SLUG}`
 
@@ -29,7 +29,7 @@ const article = {
   slug: SLUG,
 
   title:
-    'Mile Bosnić o genocidu nad Srbima u NDH, tajnim arhivama i istorijskoj istini | Razgovori u Istoku 007',
+    'Mile Bosnić o genocidu nad Srbima u NDH, tajnim arhivama i istorijskoj istini | Razgovori u Istoku 006',
 
   description:
     'Mile Bosnić u sedmoj epizodi Razgovora u Istoku predstavlja rezultate 40 godina istraživanja genocida nad Srbima u NDH, arhivska dokumenta, fotografije i istorijska svedočanstva.',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     'Mile Bosnić genocid',
     'Mile Bosnić istraživanje',
     'Razgovori u Istoku',
-    'Razgovori u Istoku 007',
+    'Razgovori u Istoku 006',
     'Razgovori u Istoku Mile Bosnić',
     'Istok Info Pult',
     'genocid nad Srbima u NDH',
@@ -130,7 +130,7 @@ export const metadata: Metadata = {
         width: 1600,
         height: 900,
         alt:
-          'Mile Bosnić – Razgovori u Istoku, epizoda 007',
+          'Mile Bosnić – Razgovori u Istoku, epizoda 006',
       },
     ],
   },
@@ -243,7 +243,7 @@ const newsArticleJsonLd = {
 
   keywords: [
     'Mile Bosnić',
-    'Razgovori u Istoku 007',
+    'Razgovori u Istoku 006',
     'Genocid nad Srbima u NDH',
     'Nezavisna Država Hrvatska',
     'Drugi svetski rat',
@@ -279,7 +279,7 @@ const videoJsonLd = {
   '@id': `${ARTICLE_URL}#video`,
 
   name:
-    'Mile Bosnić – Genocid nad Srbima u NDH, arhivska dokumenta i istorijska istina | Razgovori u Istoku 007',
+    'Mile Bosnić – Genocid nad Srbima u NDH, arhivska dokumenta i istorijska istina | Razgovori u Istoku 006',
 
   description: article.description,
 

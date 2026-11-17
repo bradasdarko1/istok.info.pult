@@ -14,8 +14,38 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
-  href: '/vesti/razgovori-u-istoku-007-mile-bosnic',
-  slug: 'razgovori-u-istoku-007-mile-bosnic',
+  href: '/vesti/ruski-oficir-koji-je-poginuo-za-srbiju',
+  slug: 'ruski-oficir-koji-je-poginuo-za-srbiju',
+
+  category:
+    language === 'ru'
+      ? 'История - 17.11.2026.'
+      : script === 'cyr'
+        ? 'Историја - 17.11.2026.'
+        : 'Istorija - 17.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РУССКИЙ ОФИЦЕР, ПОГИБШИЙ ЗА СЕРБИЮ — НИКОЛАЙ РАЕВСКИЙ'
+      : script === 'cyr'
+        ? 'РУСКИ ОФИЦИР КОЈИ ЈЕ ПОГИНУО ЗА СРБИЈУ — НИКОЛАЈ РАЈЕВСКИ'
+        : 'RUSKI OFICIR KOJI JE POGINUO ZA SRBIJU — NIKOLAJ RAJEVSKI',
+
+  excerpt:
+    language === 'ru'
+      ? 'В 1876 году тысячи русских добровольцев отправились в Сербию, чтобы помочь сербскому народу в борьбе против Османской империи. Среди них был полковник Николай Николаевич Раевский, погибший 1 сентября в сражении у села Горни-Адровац. На месте его гибели в 1903 году была возведена мемориальная церковь Святой Троицы. Судьбу Раевского также связывают с образом графа Вронского из романа Льва Толстого «Анна Каренина». Его история стала символом исторических связей и дружбы сербского и русского народов.'
+      : script === 'cyr'
+        ? 'Године 1876. хиљаде руских добровољаца дошле су у Србију како би помогле српском народу у борби против Османског царства. Међу њима био је пуковник Николај Николајевич Рајевски, који је 1. септембра погинуо у бици код Горњег Адровца. На месту његове погибије 1903. године подигнута је спомен-црква Свете Тројице. Судбина Рајевског повезује се и са ликом грофа Вронског из романа Лава Толстоја „Ана Карењина“. Његова прича остала је симбол историјских веза и пријатељства српског и руског народа.'
+        : 'Godine 1876. hiljade ruskih dobrovoljaca došle su u Srbiju kako bi pomogle srpskom narodu u borbi protiv Osmanskog carstva. Među njima bio je pukovnik Nikolaj Nikolajevič Rajevski, koji je 1. septembra poginuo u bici kod Gornjeg Adrovca. Na mestu njegove pogibije 1903. godine podignuta je spomen-crkva Svete Trojice. Sudbina Rajevskog povezuje se i sa likom grofa Vronskog iz romana Lava Tolstoja „Ana Karenjina“. Njegova priča ostala je simbol istorijskih veza i prijateljstva srpskog i ruskog naroda.',
+
+  image:
+    '/static/images/ruski-oficir.jpg',
+
+  date: '2026-11-17',
+},
+{
+  href: '/vesti/razgovori-u-istoku-006-mile-bosnic',
+  slug: 'razgovori-u-istoku-006-mile-bosnic',
 
   category:
     language === 'ru'

@@ -5,8 +5,24 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
-'razgovori-u-istoku-007-mile-bosnic': {
-  slug: 'razgovori-u-istoku-007-mile-bosnic',
+'ruski-oficir-koji-je-poginuo-za-srbiju': {
+  slug: 'ruski-oficir-koji-je-poginuo-za-srbiju',
+
+  title:
+    'Ruski oficir koji je poginuo za Srbiju – Nikolaj Rajevski 1876 | Srbija i Rusija kroz istoriju',
+
+  description:
+    'Priča o Nikolaju Rajevskom, ruskom pukovniku koji je 1876. poginuo kod Gornjeg Adrovca boreći se za Srbiju. Saznajte o ruskim dobrovoljcima u Prvom srpsko-turskom ratu, spomen-crkvi Svete Trojice i povezanosti Rajevskog sa likom Vronskog iz Tolstojevog romana Ana Karenjina.',
+
+  image:
+    '/static/images/ruski-oficir.jpg',
+
+  publishedAt: '2026-11-17',
+
+  author: 'Istok Info Pult',
+},
+'razgovori-u-istoku-006-mile-bosnic': {
+  slug: 'razgovori-u-istoku-006-mile-bosnic',
 
   title:
     'Mile Bosnić o genocidu nad Srbima u NDH, tajnim arhivama i istorijskoj istini | Razgovori u Istoku 006',

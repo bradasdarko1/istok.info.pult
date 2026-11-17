@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'istorija-uz-kafu-knjige-blagoja-jovovica': {
+  slug: 'istorija-uz-kafu-knjige-blagoja-jovovica',
+
+  title:
+    'Istorija uz kafu – Tri knjige o Blagoju Jovoviću u Istok Klubu u Novom Sadu | Istok Info Pult',
+
+  description:
+    'U Istok Klubu u Novom Sadu, na adresi Maksima Gorkog 2a, posetioci mogu besplatno da pročitaju sva tri izdanja knjiga Marije Jovović o Blagoju Jovoviću. Uživajte u kafi, upoznajte istoriju srpske emigracije i saznajte više o životu čoveka koji je 1957. godine izvršio atentat na Antu Pavelića u Argentini.',
+
+  image:
+    '/static/images/knjige-blagoja-jovovica.jpg',
+
+  publishedAt: '2026-11-17',
+
+  author: 'Istok Info Pult',
+},
 'peticija-za-osudu-genocida-nad-srbima-u-ndh': {
   slug: 'peticija-za-osudu-genocida-nad-srbima-u-ndh',
 

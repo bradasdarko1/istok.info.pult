@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/istorija-uz-kafu-knjige-blagoja-jovovica',
+  slug: 'istorija-uz-kafu-knjige-blagoja-jovovica',
+
+  category:
+    language === 'ru'
+      ? 'Культура - 17.11.2026.'
+      : script === 'cyr'
+        ? 'Култура - 17.11.2026.'
+        : 'Kultura - 17.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ИСТОРИЯ ЗА ЧАШКОЙ КОФЕ — ВСЕ ТРИ ИЗДАНИЯ КНИГИ О БЛАГОЕ ЙОВОВИЧЕ ДОСТУПНЫ В «ИСТОК КЛУБЕ»'
+      : script === 'cyr'
+        ? 'ИСТОРИЈА УЗ КАФУ — СВА ТРИ ИЗДАЊА КЊИГЕ О БЛАГОЈУ ЈОВОВИЋУ ДОСТУПНА У ИСТОК КЛУБУ'
+        : 'ISTORIJA UZ KAFU — SVA TRI IZDANJA KNJIGE O BLAGOJU JOVOVIĆU DOSTUPNA U ISTOK KLUBU',
+
+  excerpt:
+    language === 'ru'
+      ? 'В самом сердце Нови-Сада, в «Исток Клубе» по адресу Максима Горького, 2а, посетители могут бесплатно прочитать за чашкой кофе все три издания книг Марии Йовович о Благое Йововиче. Эти книги рассказывают о жизни сербского эмигранта, который в 1957 году в Аргентине совершил покушение на Анте Павелича, главу Независимого государства Хорватия. «Исток Клуб» приглашает всех желающих познакомиться с историей сербского народа, сохранить историческую память и провести время в приятной атмосфере за чашкой любимого кофе.'
+      : script === 'cyr'
+        ? 'У самом срцу Новог Сада, у Исток Клубу на адреси Максима Горког 2а, посетиоци могу потпуно бесплатно да прочитају сва три издања књига Марије Јововић о Благоју Јововићу, уз шољицу омиљене кафе. Књиге доносе причу о животу српског емигранта који је 1957. године у Аргентини извршио атентат на Анту Павелића, поглавника Независне Државе Хрватске. Исток Клуб позива све заинтересоване да у пријатној атмосфери упознају историју српског народа и допринесу очувању културе сећања.'
+        : 'U samom srcu Novog Sada, u Istok Klubu na adresi Maksima Gorkog 2a, posetioci mogu potpuno besplatno da pročitaju sva tri izdanja knjiga Marije Jovović o Blagoju Jovoviću, uz šoljicu omiljene kafe. Knjige donose priču o životu srpskog emigranta koji je 1957. godine u Argentini izvršio atentat na Antu Pavelića, poglavnika Nezavisne Države Hrvatske. Istok Klub poziva sve zainteresovane da u prijatnoj atmosferi upoznaju istoriju srpskog naroda i doprinesu očuvanju kulture sećanja.',
+
+  image:
+    '/static/images/knjige-blagoja-jovovica.jpg',
+
+  date: '2026-11-17',
+},
+{
   href: '/vesti/peticija-za-osudu-genocida-nad-srbima-u-ndh',
   slug: 'peticija-za-osudu-genocida-nad-srbima-u-ndh',
 

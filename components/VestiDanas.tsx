@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/peticija-za-osudu-genocida-nad-srbima-u-ndh',
+  slug: 'peticija-za-osudu-genocida-nad-srbima-u-ndh',
+
+  category:
+    language === 'ru'
+      ? 'Общество - 17.11.2026.'
+      : script === 'cyr'
+        ? 'Друштво - 17.11.2026.'
+        : 'Društvo - 17.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'НАЧАТ СБОР ПОДПИСЕЙ ЗА ПРИНЯТИЕ ДЕКЛАРАЦИИ ОБ ОСУЖДЕНИИ ГЕНОЦИДА СЕРБОВ В НГХ'
+      : script === 'cyr'
+        ? 'ПОКРЕНУТА ПЕТИЦИЈА ЗА УСВАЈАЊЕ ДЕКЛАРАЦИЈЕ О ОСУДИ ГЕНОЦИДА НАД СРБИМА У НДХ'
+        : 'POKRENUTA PETICIJA ZA USVAJANJE DEKLARACIJE O OSUDI GENOCIDA NAD SRBIMA U NDH',
+
+  excerpt:
+    language === 'ru'
+      ? 'Движение сербов Краины («Покрет Срба Крајишника») начало сбор подписей в поддержку инициативы по принятию Народной скупщиной Республики Сербии декларации об осуждении геноцида сербов в Независимом государстве Хорватия (НГХ) в период с 1941 по 1945 год. Цель инициативы — почтить память жертв и сохранить историческую память о страданиях сербского народа. Граждане, желающие поддержать петицию, могут подписать её в «ИСТОК КЛУБЕ» (ISTOK KLUB) в Нови-Саде по адресу: улица Максима Горького, 2а.'
+      : script === 'cyr'
+        ? 'Покрет Срба Крајишника покренуо је петицију подршке иницијативи да Народна скупштина Републике Србије усвоји декларацију о осуди геноцида над Србима у Независној Држави Хрватској (НДХ) у периоду од 1941. до 1945. године. Циљ иницијативе је одавање поштовања жртвама и очување сећања на страдање српског народа. Грађани који желе да подрже петицију могу је потписати у ИСТОК КЛУБУ у Новом Саду, на адреси Максима Горког 2а.'
+        : 'Pokret Srba Krajišnika pokrenuo je peticiju podrške inicijativi da Narodna skupština Republike Srbije usvoji deklaraciju o osudi genocida nad Srbima u Nezavisnoj Državi Hrvatskoj (NDH) u periodu od 1941. do 1945. godine. Cilj inicijative je odavanje poštovanja žrtvama i očuvanje sećanja na stradanje srpskog naroda. Građani koji žele da podrže peticiju mogu je potpisati u ISTOK KLUBU u Novom Sadu, na adresi Maksima Gorkog 2a.',
+
+  image:
+    '/static/images/peticija-za-genocid.jpg',
+
+  date: '2026-11-17',
+},
+{
   href: '/vesti/ruski-oficir-koji-je-poginuo-za-srbiju',
   slug: 'ruski-oficir-koji-je-poginuo-za-srbiju',
 

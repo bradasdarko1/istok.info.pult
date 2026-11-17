@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'peticija-za-osudu-genocida-nad-srbima-u-ndh': {
+  slug: 'peticija-za-osudu-genocida-nad-srbima-u-ndh',
+
+  title:
+    'Peticija za osudu genocida nad Srbima u NDH – Potpisivanje u Novom Sadu | Istok Info Pult',
+
+  description:
+    'Pokret Srba Krajišnika pokrenuo je peticiju kojom se traži da Narodna skupština Republike Srbije usvoji deklaraciju o osudi genocida nad Srbima u NDH od 1941. do 1945. godine. Građani mogu potpisati peticiju u Istok Klubu, na adresi Maksima Gorkog 2a u Novom Sadu.',
+
+  image:
+    '/static/images/peticija-za-genocid.jpg',
+
+  publishedAt: '2026-11-17',
+
+  author: 'Istok Info Pult',
+},
 'ruski-oficir-koji-je-poginuo-za-srbiju': {
   slug: 'ruski-oficir-koji-je-poginuo-za-srbiju',
 

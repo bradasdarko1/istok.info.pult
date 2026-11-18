@@ -3,6 +3,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije': {
+  slug: 'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
+
+  title:
+    'Ruska ambasada: razgovori o gasu posle formiranja nove vlasti | Istok Info Pult',
+
+  description:
+    'Ambasada Rusije: o isporukama gasa Srbiji konkretno posle formiranja nove vlasti. Aranžman ističe 31. decembra, a Studentska lista traži dugoročni ugovor.',
+
+  image:
+    '/static/images/ruska-ambasada-o-gasu-i-novoj-vlasti-srbije.jpg',
+
+  publishedAt: '2026-11-18',
+
+  author: 'Istok Info Pult',
+},
 
 
 'od-san-stefana-do-berlina': {

@@ -14,6 +14,37 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
+  slug: 'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 18.11.2026.'
+      : script === 'cyr'
+        ? 'Вести - 18.11.2026.'
+        : 'Vesti - 18.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПОСОЛЬСТВО РОССИИ: КОНКРЕТНЫЕ ПЕРЕГОВОРЫ О ГАЗЕ — ПОСЛЕ ФОРМИРОВАНИЯ НОВОЙ ВЛАСТИ'
+      : script === 'cyr'
+        ? 'РУСКА АМБАСАДА: КОНКРЕТНИ РАЗГОВОРИ О ГАСУ ПОСЛЕ ФОРМИРАЊА НОВЕ ВЛАСТИ'
+        : 'RUSKA AMBASADA: KONKRETNI RAZGOVORI O GASU POSLE FORMIRANJA NOVE VLASTI',
+
+  excerpt:
+    language === 'ru'
+      ? 'Посольство России в Белграде заявило, что конкретные вопросы сотрудничества, включая поставки газа, будут обсуждаться после формирования новых органов власти Сербии. 12 ноября посол Александр Боцан-Харченко встретился с представителями «Студенческого списка» Деяном Шошкичем и Миодрагом Крмаром. Действующее газовое соглашение истекает 31 декабря, а «Студенческий список» добивается долгосрочного контракта вместо трёхмесячных продлений.'
+      : script === 'cyr'
+        ? 'Амбасада Русије у Београду саопштила је да ће се о конкретним питањима сарадње, укључујући испоруке руског гаса, разговарати после формирања нових органа власти у Србији. Амбасадор Александар Боцан-Харченко састао се 12. новембра са представницима Студентске листе Дејаном Шошкићем и Миодрагом Крмаром. Важећи гасни аранжман истиче 31. децембра, а Студентска листа тражи дугорочни уговор уместо тромесечних продужења.'
+        : 'Ambasada Rusije u Beogradu saopštila je da će se o konkretnim pitanjima saradnje, uključujući isporuke ruskog gasa, razgovarati posle formiranja novih organa vlasti u Srbiji. Ambasador Aleksandar Bocan-Harčenko sastao se 12. novembra sa predstavnicima Studentske liste Dejanom Šoškićem i Miodragom Krmarom. Važeći gasni aranžman ističe 31. decembra, a Studentska lista traži dugoročni ugovor umesto tromesečnih produženja.',
+
+  image:
+    '/static/images/ruska-ambasada-o-gasu-i-novoj-vlasti-srbije.jpg',
+
+  date: '2026-11-18',
+},
+
+{
   href: '/vesti/od-san-stefana-do-berlina',
   slug: 'od-san-stefana-do-berlina',
 

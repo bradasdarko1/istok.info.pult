@@ -24,6 +24,7 @@ Glavni zadatak: priprema novih vesti i njihovo predlaganje kroz GitHub Pull Requ
 | `components/VestiDanas.tsx` | lista vesti (naslovna prikazuje prvih 6, prvi unos je istaknut) | samo dodavanje unosa na početak niza |
 | `public/static/images/` | naslovne slike | samo odobrena slika |
 | `app/vesti/layout.tsx`, `lib/articleSeo.ts`, ostale `components/*`, `app/layout.tsx`, `app/sitemap.ts`, `next.config.js`, `package.json`, `yarn.lock`, `.github/`, `.husky/` | globalno | **ne, bez posebnog odobrenja** |
+| `.claude/skills/istok-ai-redakcija/SKILL.md` | postupak pripreme vesti (skill) | **ne, bez posebnog odobrenja** |
 
 ---
 
@@ -34,7 +35,7 @@ Glavni zadatak: priprema novih vesti i njihovo predlaganje kroz GitHub Pull Requ
 3. **Kao šablon koristi postojeće članke.** Referentni članak je `app/vesti/od-san-stefana-do-berlina/`.
 4. **Za svaku vest pripremi unos u `data/articlesSeo.ts` i `components/VestiDanas.tsx`.**
 5. **Kategorija mora biti ista** u `page.tsx`, `VestiDanas.tsx` i SEO strukturiranim podacima (JSON-LD `articleSection`). Koriste se samo postojeće kategorije (tabela u 7.4).
-6. **Naslovna slika:** dodaje se samo stvarna slika koju je urednik dostavio ili izričito odobrio. Slike se ne generišu, ne preuzimaju sa interneta bez odobrenja i ne koristi se placeholder. **Bez odobrene slike sme se pripremiti nacrt članka i kod, ali se ne kreira Pull Request** dok slika ne bude odobrena.
+6. **Naslovna slika:** dodaje se samo slika koju je urednik dostavio i izričito odobrio. AI slike urednik generiše ručno u ChatGPT-u, na osnovu promptova koje priprema Claude (16:9 za sajt, 9:16 za društvene mreže). Claude ne povezuje servise za generisanje slika (nema OpenAI API integracije), ne dodaje API ključeve i ne instalira biblioteke za slike. AI slika se u alt tekstu na sva tri jezika označava kao AI ilustracija. Slika 16:9 ide u `public/static/images/`, a slika 9:16 ostaje van repozitorijuma. Slike se ne preuzimaju sa interneta bez odobrenja i ne koristi se placeholder. **Bez odobrene slike 16:9 sme se pripremiti nacrt članka i kod, ali se ne kreira Pull Request** dok slika ne bude odobrena.
 7. **Ne izmišljaj izvore, izjave, citate, imena, brojke, datume ni činjenice.** Nepotvrđene tvrdnje se ne predstavljaju kao potvrđene (odeljak 3).
 8. **Vesti iz ISTOK MONITOR-a:** samostalno istraži originalni izvor i druge dostupne pouzdane izvore. Ne oslanjaj se samo na dostavljeni sažetak (odeljak 3).
 9. **Ne menjaj stare vesti, globalne komponente ni konfiguraciju bez posebnog odobrenja.** Uočene greške samo prijavi.
@@ -128,6 +129,8 @@ git merge-base --is-ancestor origin/main HEAD && echo "zasnovana na najnovijem o
 
 **Ako bilo koji uslov nije ispunjen, postupak se zaustavlja i problem se prijavljuje uredniku.** Postojeće grane se ne resetuju, izmene se ne brišu i ne koristi se force push (bez `git checkout -B`, `git reset --hard`, `git push --force`, `git clean` ni brisanja grana).
 
+**Jedan Claude Code cloud zadatak = jedna vest = jedna grana = jedan PR.** Za svaku novu vest otvara se novi cloud zadatak sa novom granom. Dodeljena grana `claude/...` koja već nosi commit-e jedne vesti (npr. otvoren PR) ne koristi se za drugu vest.
+
 U izveštaju i opisu PR-a navodi se koja je grana korišćena i zašto.
 
 ### 4.3 Pravila
@@ -145,11 +148,11 @@ yarn install --immutable
 ```
 
 ```bash
-yarn tsc --noEmit
+yarn build
 ```
 
 ```bash
-yarn build
+yarn tsc --noEmit
 ```
 
 Pravila:
@@ -163,6 +166,11 @@ Pravila:
 - Ako provera padne i na čistom `origin/main`, greška je postojeća. Prijavljuje se odvojeno i ne ispravlja u PR-u vesti.
 - Posle provera `git status` mora pokazati samo fajlove vesti. `.next/`, `.contentlayer/` i `node_modules/` se ne commit-uju.
 - **Husky / lint-staged:** pri commit-u se pokreću `eslint --fix` i `prettier --write`. Posle commit-a proveri `git show --stat HEAD`. Ako je hook preformatirao nepovezane delove `articlesSeo.ts` ili `VestiDanas.tsx`, prijavi to pre push-a.
+- U cloud klonu Husky hook nije aktivan (`core.hooksPath` nije podešen); to se navodi u PR-u.
+- **Next.js build mora da prođe.** Ako `yarn build` padne, postupak se zaustavlja.
+- `yarn tsc --noEmit` se prijavljuje **posle** `yarn build` (pre build-a nedostaje `contentlayer/generated`).
+- **Greška TS2742 u `eslint.config.mjs`** sme da se označi kao postojeći problem samo ako je u istoj sesiji potvrđena na neizmenjenom `origin/main` (postupak u skill-u `istok-ai-redakcija`, odeljak 7). Svaka druga `tsc` greška zaustavlja postupak.
+- Build ponovo generiše `app/tag-data.json` i pravi `tsconfig.tsbuildinfo`. To nisu fajlovi vesti: `app/tag-data.json` se vraća sa `git restore app/tag-data.json`, `tsconfig.tsbuildinfo` se briše, i to se prijavljuje. Isto važi za svaku drugu usputnu promenu nastalu tokom provera.
 
 ---
 
@@ -386,3 +394,9 @@ git push -u origin <grana-vesti>
 - izmišljanje sadržaja, izvora, izjava i datuma, i predstavljanje nepotvrđenih tvrdnji kao potvrđenih
 - `--no-verify`, `@ts-ignore` i gašenje provera
 - brisanje ili premeštanje postojećih fajlova (npr. `app/vesti.zip`)
+
+---
+
+## 11. Skill „istok-ai-redakcija“
+
+Postupak od izbora vesti do PR-a opisan je u `.claude/skills/istok-ai-redakcija/SKILL.md`. Izbor vesti od strane urednika je odobrenje za istraživanje, nacrt i lokalne izmene na radnoj grani; **Odobrenje 1 i Odobrenje 2 ostaju obavezni.** Kategorije i urednička pravila iz ovog dokumenta se ne menjaju. Kod sukoba pravila važi CLAUDE.md.

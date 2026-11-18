@@ -5,6 +5,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
 
+'od-san-stefana-do-berlina': {
+  slug: 'od-san-stefana-do-berlina',
+
+  title:
+    'Od San Stefana do Berlina – Rusija, Srbija i granice Balkana 1878. godine | Istok Info Pult',
+
+  description:
+    'Kako su Rusko-osmanski rat 1877–1878, Sanstefanski mir i Berlinski kongres promenili granice Balkana? Saznajte kako je Srbija stekla međunarodno priznatu nezavisnost, zašto su se interesi Srbije i Rusije razlikovali i kakvu su ulogu velike evropske sile imale u oblikovanju političke karte Balkana.',
+
+  image:
+    '/static/images/od-san-stefana-do-berlina.jpg',
+
+  publishedAt: '2026-11-18',
+
+  author: 'Istok Info Pult',
+},
 'istorija-uz-kafu-knjige-blagoja-jovovica': {
   slug: 'istorija-uz-kafu-knjige-blagoja-jovovica',
 

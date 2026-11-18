@@ -14,6 +14,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/od-san-stefana-do-berlina',
+  slug: 'od-san-stefana-do-berlina',
+
+  category:
+    language === 'ru'
+      ? 'История - 18.11.2026.'
+      : script === 'cyr'
+        ? 'Историја - 18.11.2026.'
+        : 'Istorija - 18.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ОТ САН-СТЕФАНО ДО БЕРЛИНА — РОССИЯ, СЕРБИЯ И ГРАНИЦЫ БАЛКАН'
+      : script === 'cyr'
+        ? 'ОД САН СТЕФАНА ДО БЕРЛИНА — РУСИЈА, СРБИЈА И ГРАНИЦЕ БАЛКАНА'
+        : 'OD SAN STEFANA DO BERLINA — RUSIJA, SRBIJA I GRANICE BALKANA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Русско-турецкая война 1877–1878 годов, Сан-Стефанский мир и Берлинский конгресс навсегда изменили политическую карту Балкан. Несмотря на военные победы и исторические связи с Россией, Сербия столкнулась с расхождением государственных интересов двух стран. Сан-Стефанский договор предусматривал создание Великой Болгарии, включая некоторые территории, освобождённые сербской армией. Однако решения Берлинского конгресса 1878 года принесли Сербии международное признание независимости и территориальное расширение. Эти события показали, что судьба балканских народов зависела не только от их борьбы за свободу, но и от стратегических интересов великих европейских держав.'
+      : script === 'cyr'
+        ? 'Руско-османски рат 1877–1878. године, Санстефански мир и Берлински конгрес трајно су променили политичку карту Балкана. Упркос ратним победама и историјским везама са Русијом, Србија се суочила са разликама у државним интересима две земље. Санстефански мир предвиђао је стварање велике Бугарске, која би обухватила и поједине територије ослобођене од стране српске војске. Међутим, одлуке Берлинског конгреса 1878. године донеле су Србији међународно признату независност и територијално проширење. Ови догађаји показали су да судбину балканских народа нису одређивале само њихове борбе за слободу, већ и интереси великих европских сила.'
+        : 'Rusko-osmanski rat 1877–1878. godine, Sanstefanski mir i Berlinski kongres trajno su promenili političku kartu Balkana. Uprkos ratnim pobedama i istorijskim vezama sa Rusijom, Srbija se suočila sa razlikama u državnim interesima dve zemlje. Sanstefanski mir predviđao je stvaranje velike Bugarske, koja bi obuhvatila i pojedine teritorije oslobođene od strane srpske vojske. Međutim, odluke Berlinskog kongresa 1878. godine donele su Srbiji međunarodno priznatu nezavisnost i teritorijalno proširenje. Ovi događaji pokazali su da sudbinu balkanskih naroda nisu određivale samo njihove borbe za slobodu, već i interesi velikih evropskih sila.',
+
+  image:
+    '/static/images/od-san-stefana-do-berlina.jpg',
+
+  date: '2026-11-18',
+},
+{
   href: '/vesti/istorija-uz-kafu-knjige-blagoja-jovovica',
   slug: 'istorija-uz-kafu-knjige-blagoja-jovovica',
 

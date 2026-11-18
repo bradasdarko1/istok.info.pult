@@ -61,13 +61,11 @@ const srLatin = {
   highlight2: 'Važeći gasni aranžman ističe 31. decembra, a Studentska lista traži dugoročni ugovor umesto tromesečnih produženja.',
 
   imageAlt: 'AI ilustracija: gasovod i industrijsko postrojenje sa zastavama Srbije i Rusije',
-  imageCaption: 'Ilustracija: AI',
 }
 
-// Oznaka „AI“ ostaje latinicom i u ćiriličnoj verziji, zato se ova dva polja ne izvode automatski.
+// Oznaka „AI“ ostaje latinicom i u ćiriličnoj verziji, zato se alt tekst ne izvodi automatski.
 const srCyrillicImage = {
   imageAlt: 'AI илустрација: гасовод и индустријско постројење са заставама Србије и Русије',
-  imageCaption: 'Илустрација: AI',
 }
 
 const ruText = {
@@ -89,7 +87,6 @@ const ruText = {
   highlight2: 'Действующее газовое соглашение истекает 31 декабря, а «Студенческий список» добивается долгосрочного контракта вместо трёхмесячных продлений.',
 
   imageAlt: 'ИИ-иллюстрация: газопровод и промышленный объект с флагами Сербии и России',
-  imageCaption: 'Иллюстрация: ИИ',
 }
 
 export default function RuskaAmbasadaOGasuINovojVlastiSrbijePage() {
@@ -108,7 +105,6 @@ export default function RuskaAmbasadaOGasuINovojVlastiSrbijePage() {
             highlight1: latinToCyrillic(srLatin.highlight1),
             highlight2: latinToCyrillic(srLatin.highlight2),
             imageAlt: srCyrillicImage.imageAlt,
-            imageCaption: srCyrillicImage.imageCaption,
           }
         : srLatin
 
@@ -152,10 +148,6 @@ export default function RuskaAmbasadaOGasuINovojVlastiSrbijePage() {
               className="h-auto w-full object-cover"
             />
           </div>
-
-          <figcaption className="mt-2 text-right text-xs text-white/50 md:text-sm">
-            {content.imageCaption}
-          </figcaption>
         </motion.figure>
 
         <motion.div

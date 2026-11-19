@@ -14,6 +14,37 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+  href: '/vesti/putin-i-tramp-razgovarali-u-senzenu',
+  slug: 'putin-i-tramp-razgovarali-u-senzenu',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 19.11.2026.'
+      : script === 'cyr'
+        ? 'Вести - 19.11.2026.'
+        : 'Vesti - 19.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПУТИН И ТРАМП ПРОВЕЛИ ПЕРЕГОВОРЫ В ШЭНЬЧЖЭНЕ ПЕРЕД ТРЕХСТОРОННИМ САММИТОМ С СИ ЦЗИНЬПИНОМ'
+      : script === 'cyr'
+        ? 'ПУТИН И ТРАМП РАЗГОВАРАЛИ У ШЕНЖЕНУ ПРЕД ТРИЛАТЕРАЛНИ САМИТ СА СИ ЂИНПИНГОМ'
+        : 'PUTIN I TRAMP RAZGOVARALI U ŠENŽENU PRED TRILATERALNI SAMIT SA SI ĐINPINGOM',
+
+  excerpt:
+    language === 'ru'
+      ? 'Президенты России и США встретились на полях саммита АТЭС в Шэньчжэне. В Кремле назвали беседу подготовительной перед первой трехсторонней встречей лидеров России, США и Китая.'
+      : script === 'cyr'
+        ? 'Председници Русије и САД састали су се на маргинама самита АПЕК-а у Шенжену. У Кремљу кажу да је разговор био припремни, пред први трилатерални сусрет лидера Русије, САД и Кине.'
+        : 'Predsednici Rusije i SAD sastali su se na marginama samita APEK-a u Šenženu. U Kremlju kažu da je razgovor bio pripremni, pred prvi trilateralni susret lidera Rusije, SAD i Kine.',
+
+  image:
+    '/static/images/putin-i-tramp-razgovarali-u-senzenu.jpg',
+
+  date: '2026-11-19',
+},
+
+{
   href: '/vesti/ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
   slug: 'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
 

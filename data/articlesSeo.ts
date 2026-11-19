@@ -3,6 +3,24 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+'putin-i-tramp-razgovarali-u-senzenu': {
+  slug: 'putin-i-tramp-razgovarali-u-senzenu',
+
+  title:
+    'Putin i Tramp razgovarali u Šenženu pred samit sa Si Đinpingom | Istok Info Pult',
+
+  description:
+    'Vladimir Putin i Donald Tramp razgovarali su 19. novembra u Šenženu na marginama samita APEK-a. Kremlj: susret je bio pripremni, pred trilateralni samit sa Si Đinpingom.',
+
+  image:
+    '/static/images/putin-i-tramp-razgovarali-u-senzenu.jpg',
+
+  publishedAt: '2026-11-19',
+
+  author: 'Istok Info Pult',
+},
+
+
 'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije': {
   slug: 'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
 

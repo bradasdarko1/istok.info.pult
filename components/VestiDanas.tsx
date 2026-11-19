@@ -14,6 +14,7 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const danasnjeVesti = [
 
 {
+
   href: '/vesti/ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
   slug: 'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
 
@@ -43,7 +44,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
   date: '2026-11-18',
 },
+{
+  href: '/vesti/dragana-trifkovic-rusofobija-pod-maskom-patriotizma',
+  slug: 'dragana-trifkovic-rusofobija-pod-maskom-patriotizma',
 
+  category:
+    language === 'ru'
+      ? 'Общество - 19.11.2026.'
+      : script === 'cyr'
+        ? 'Друштво - 19.11.2026.'
+        : 'Društvo - 19.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ДРАГАНА ТРИФКОВИЧ: РУСОФОБИЯ ПОД МАСКОЙ ПАТРИОТИЗМА — КТО ПЫТАЕТСЯ НАСТРОИТЬ СЕРБОВ ПРОТИВ РОССИИ?'
+      : script === 'cyr'
+        ? 'ДРАГАНА ТРИФКОВИЋ: РУСОФОБИЈА ПОД МАСКОМ ПАТРИОТИЗМА — КО ПОКУШАВА ДА ОКРЕНЕ СРБЕ ПРОТИВ РУСИЈЕ?'
+        : 'DRAGANA TRIFKOVIĆ: RUSOFOBIJA POD MASKOM PATRIOTIZMA — KO POKUŠAVA DA OKRENE SRBE PROTIV RUSIJE?',
+
+  excerpt:
+    language === 'ru'
+      ? 'После того как «Исток Инфо Пулт» открыл общественную дискуссию об отношении к Российской Федерации и российским гражданам в Сербии, свою позицию представила Драгана Трифкович, генеральный директор Центра геостратегических исследований. В своём анализе она рассматривает антироссийские нарративы, иностранное финансирование исследований российского влияния и роль СМИ в формировании общественного мнения. Особое внимание уделяется тому, как критика России может преподноситься под видом сербского патриотизма, где проходит граница между политической критикой и русофобией и каким образом информационные кампании способны влиять на внешнеполитический курс Сербии. Материал продолжает дискуссию, начатую редакцией «Исток Инфо Пулт», и поднимает важные вопросы национального суверенитета, прозрачности финансирования и независимости общественного мнения.'
+      : script === 'cyr'
+        ? 'Након што је Исток Инфо Пулт покренуо јавну дебату о односу према Руској Федерацији и руским држављанима у Србији, своје мишљење изнела је Драгана Трифковић, генерална директорка Центра за геостратешке студије. У својој анализи она разматра антируске наративе, страно финансирање истраживања руског утицаја и улогу медија у обликовању јавног мњења. Посебну пажњу посвећује питању како се критика Русије може представљати као српски патриотизам, где престаје политичка критика, а почиње русофобија и на који начин информационе кампање могу утицати на спољнополитички правац Србије. Текст наставља дебату коју је покренуо Исток Инфо Пулт и отвара важна питања националног суверенитета, транспарентности финансирања и независности јавног мњења.'
+        : 'Nakon što je Istok Info Pult pokrenuo javnu debatu o odnosu prema Ruskoj Federaciji i ruskim državljanima u Srbiji, svoje mišljenje iznela je Dragana Trifković, generalna direktorka Centra za geostrateške studije. U svojoj analizi ona razmatra antiruske narative, strano finansiranje istraživanja ruskog uticaja i ulogu medija u oblikovanju javnog mnjenja. Posebnu pažnju posvećuje pitanju kako se kritika Rusije može predstavljati kao srpski patriotizam, gde prestaje politička kritika, a počinje rusofobija i na koji način informacione kampanje mogu uticati na spoljnopolitički pravac Srbije. Tekst nastavlja debatu koju je pokrenuo Istok Info Pult i otvara važna pitanja nacionalnog suvereniteta, transparentnosti finansiranja i nezavisnosti javnog mnjenja.',
+
+  image:
+    '/static/images/dragana-trifkovic-rusofobija-pod-maskom-patriotizma.jpg',
+
+  date: '2026-11-19',
+},
 {
   href: '/vesti/od-san-stefana-do-berlina',
   slug: 'od-san-stefana-do-berlina',

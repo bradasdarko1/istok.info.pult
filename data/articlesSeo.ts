@@ -21,6 +21,22 @@ export const articlesSeo: Record<string, ArticleSeoData> = {
 },
 
 
+'dragana-trifkovic-rusofobija-pod-maskom-patriotizma': {
+  slug: 'dragana-trifkovic-rusofobija-pod-maskom-patriotizma',
+
+  title:
+    'Dragana Trifković: Rusofobija pod maskom patriotizma – Ko pokušava da okrene Srbe protiv Rusije? | Istok Info Pult',
+
+  description:
+    'Dragana Trifković, generalna direktorka Centra za geostrateške studije, analizira antiruske narative u Srbiji, strano finansiranje istraživanja ruskog uticaja, ulogu medija i pitanje srpskog suvereniteta. Pročitajte njeno mišljenje u nastavku debate koju je pokrenuo Istok Info Pult.',
+
+  image:
+    '/static/images/dragana-trifkovic-rusofobija-pod-maskom-patriotizma.jpg',
+
+  publishedAt: '2026-11-19',
+
+  author: 'Istok Info Pult',
+},
 'od-san-stefana-do-berlina': {
   slug: 'od-san-stefana-do-berlina',
 

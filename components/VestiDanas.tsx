@@ -43,6 +43,37 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   date: '2026-11-24',
 },
 {
+  href: '/vesti/zaharova-srbija-ne-uvodi-sankcije-rusiji',
+  slug: 'zaharova-srbija-ne-uvodi-sankcije-rusiji',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 20.11.2026.'
+      : script === 'cyr'
+        ? 'Вести - 20.11.2026.'
+        : 'Vesti - 20.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ЗАХАРОВА: СЕРБИЯ НЕ ХОЧЕТ ПРЕДАВАТЬ СТРАНУ, КОТОРАЯ ВСЕГДА ОТСТАИВАЛА ЕЁ ИНТЕРЕСЫ'
+      : script === 'cyr'
+        ? 'ЗАХАРОВА: СРБИЈА НЕ ЖЕЛИ ДА ИЗДА ЗЕМЉУ КОЈА СЕ УВЕК ЗАЛАГАЛА ЗА ЊЕНЕ ИНТЕРЕСЕ'
+        : 'ZAHAROVA: SRBIJA NE ŽELI DA IZDA ZEMLJU KOJA SE UVEK ZALAGALA ZA NJENE INTERESE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Официальный представитель МИД России Мария Захарова заявила, что ЕС пытается вбить клин между Россией и Сербией и принудить Белград к антироссийскому курсу. По её словам, Сербия не вводит санкции против России, потому что не хочет предавать страну, которая всегда отстаивала сербские интересы.'
+      : script === 'cyr'
+        ? 'Портпаролка руског МСП-а Марија Захарова оценила је да ЕУ покушава да „забије клин“ између Русије и Србије и да Београд примора на антируски курс. Према њеним речима, Србија не уводи санкције Русији јер не жели да изда земљу која се увек залагала за српске интересе.'
+        : 'Portparolka ruskog MSP-a Marija Zaharova ocenila je da EU pokušava da „zabije klin“ između Rusije i Srbije i da Beograd primora na antiruski kurs. Prema njenim rečima, Srbija ne uvodi sankcije Rusiji jer ne želi da izda zemlju koja se uvek zalagala za srpske interese.',
+
+  image:
+    '/static/images/zaharova-srbija-ne-uvodi-sankcije-rusiji.jpg',
+
+  date: '2026-11-20',
+},
+
+{
 
   href: '/vesti/ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
   slug: 'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',

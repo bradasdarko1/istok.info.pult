@@ -4,6 +4,7 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
 
+
 'upokojio-se-mitropolit-backi-irinej': {
   slug: 'upokojio-se-mitropolit-backi-irinej',
 
@@ -20,7 +21,25 @@ export const articlesSeo: Record<string, ArticleSeoData> = {
 
   author: 'Istok Info Pult',
 },
-  'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije': {
+
+'zaharova-srbija-ne-uvodi-sankcije-rusiji': {
+  slug: 'zaharova-srbija-ne-uvodi-sankcije-rusiji',
+
+  title:
+    'Zaharova: EU pokušava da natera Srbiju na antiruski kurs | Istok Info Pult',
+
+  description:
+    'Marija Zaharova tvrdi da EU pokušava da „zabije klin“ između Rusije i Srbije. Prema njenim rečima, Srbija ne uvodi sankcije jer ne želi da izda zemlju koja se uvek zalagala za srpske interese.',
+
+  image:
+    '/static/images/zaharova-srbija-ne-uvodi-sankcije-rusiji.jpg',
+
+  publishedAt: '2026-11-20',
+
+  author: 'Istok Info Pult',
+},
+
+'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije': {
   slug: 'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
 
   title:

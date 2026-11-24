@@ -12,7 +12,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
   const { t, language, script } = useLanguage()
 
   const danasnjeVesti = [
+{
+  href: '/vesti/upokojio-se-mitropolit-backi-irinej',
+  slug: 'upokojio-se-mitropolit-backi-irinej',
 
+  category:
+    language === 'ru'
+      ? 'Новости - 24.11.2026.'
+      : script === 'cyr'
+        ? 'Вести - 24.11.2026.'
+        : 'Vesti - 24.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПОЧИЛ О ГОСПОДЕ МИТРОПОЛИТ БАЧСКИЙ ИРИНЕЙ — СЕРБСКАЯ ПРАВОСЛАВНАЯ ЦЕРКОВЬ ПОТЕРЯЛА ВЫДАЮЩЕГОСЯ АРХИПАСТЫРЯ'
+      : script === 'cyr'
+        ? 'УПОКОЈИО СЕ МИТРОПОЛИТ БАЧКИ ИРИНЕЈ — СРПСКА ПРАВОСЛАВНА ЦРКВА ОСТАЛА БЕЗ ИСТАКНУТОГ АРХИЈЕРЕЈА'
+        : 'UPOKOJIO SE MITROPOLIT BAČKI IRINEJ — SRPSKA PRAVOSLAVNA CRKVA OSTALA BEZ ISTAKNUTOG ARHIJEREJA',
+
+  excerpt:
+    language === 'ru'
+      ? 'Архиепископ Новисадский и Митрополит Бачский Ириней (Булович) почил о Господе 24 ноября 2026 года, в день памяти святого короля Стефана Дечанского. Более трёх с половиной десятилетий он возглавлял Бачскую епархию, оставив глубокий след в духовной, богословской и церковной жизни сербского народа. Вечная память!'
+      : script === 'cyr'
+        ? 'Архиепископ новосадски и митрополит бачки Иринеј (Буловић) упокојио се у Господу 24. новембра 2026. године, на празник Светог краља Стефана Дечанског. Више од три и по деценије налазио се на челу Епархије бачке, оставивши дубок траг у духовном, богословском и црквеном животу српског народа. Вечан му спомен!'
+        : 'Arhiepiskop novosadski i mitropolit bački Irinej (Bulović) upokojio se u Gospodu 24. novembra 2026. godine, na praznik Svetog kralja Stefana Dečanskog. Više od tri i po decenije nalazio se na čelu Eparhije bačke, ostavivši dubok trag u duhovnom, bogoslovskom i crkvenom životu srpskog naroda. Večan mu spomen!',
+
+  image:
+    '/static/images/mitropolit-backi-irinej.jpg',
+
+  date: '2026-11-24',
+},
 {
   href: '/vesti/zaharova-srbija-ne-uvodi-sankcije-rusiji',
   slug: 'zaharova-srbija-ne-uvodi-sankcije-rusiji',

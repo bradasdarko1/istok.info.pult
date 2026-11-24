@@ -3,7 +3,24 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
-'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije': {
+
+'upokojio-se-mitropolit-backi-irinej': {
+  slug: 'upokojio-se-mitropolit-backi-irinej',
+
+  title:
+    'Upokojio se mitropolit bački Irinej – Srpska pravoslavna crkva ostala bez istaknutog arhijereja | Istok Info Pult',
+
+  description:
+    'Mitropolit bački Irinej Bulović upokojio se 24. novembra 2026. godine. Srpska pravoslavna crkva ostala je bez jednog od svojih istaknutih arhijereja.',
+
+  image:
+    '/static/images/mitropolit-backi-irinej.jpg',
+
+  publishedAt: '2026-11-24',
+
+  author: 'Istok Info Pult',
+},
+  'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije': {
   slug: 'ruska-ambasada-o-gasu-i-novoj-vlasti-srbije',
 
   title:

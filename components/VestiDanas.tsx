@@ -13,6 +13,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
   const danasnjeVesti = [
 {
+  href: '/vesti/razgovori-u-istoku-006-mile-bosnic-drugi-deo',
+  slug: 'razgovori-u-istoku-006-mile-bosnic-drugi-deo',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 25.11.2026.'
+      : script === 'cyr'
+        ? 'Вести - 25.11.2026.'
+        : 'Vesti - 25.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'РАЗГОВОРЫ В «ИСТОКЕ» 006 — МИЛЕ БОСНИЧ: МАСШТАБЫ ГЕНОЦИДА СЕРБОВ В НГХ И КУЛЬТУРА ПАМЯТИ (ВТОРАЯ ЧАСТЬ)'
+      : script === 'cyr'
+        ? 'РАЗГОВОРИ У ИСТОКУ 006 — МИЛЕ БОСНИЋ: РАЗМЕРЕ ГЕНОЦИДА НАД СРБИМА У НДХ И КУЛТУРА СЕЋАЊА (ДРУГИ ДЕО)'
+        : 'RAZGOVORI U ISTOKU 006 — MILE BOSNIĆ: RAZMERE GENOCIDA NAD SRBIMA U NDH I KULTURA SEĆANJA (DRUGI DEO)',
+
+  excerpt:
+    language === 'ru'
+      ? 'Вышла вторая часть беседы с Миле Босничем в рамках серии передач «Разговоры в Истоке». В новом выпуске обсуждаются масштабы геноцида сербов на всей территории НГХ, проблемы установления числа жертв, деятельность послевоенных комиссий, влияние политики «братства и единства», а также значение сохранения исторической правды и культуры памяти для будущих поколений.'
+      : script === 'cyr'
+        ? 'Објављен је други део разговора са Милетом Боснићем у оквиру серијала „Разговори у Истоку“. У наставку емисије говоримо о размерама геноцида над Србима широм НДХ, проблемима утврђивања броја жртава, раду послератних комисија, утицају политике „братства и јединства“, као и значају очувања историјске истине и културе сећања за будуће генерације.'
+        : 'Objavljen je drugi deo razgovora sa Miletom Bosnićem u okviru serijala „Razgovori u Istoku“. U nastavku emisije govorimo o razmerama genocida nad Srbima širom NDH, problemima utvrđivanja broja žrtava, radu posleratnih komisija, uticaju politike „bratstva i jedinstva“, kao i značaju očuvanja istorijske istine i kulture sećanja za buduće generacije.',
+
+  image:
+    '/static/images/mile-bosnic-drugi-deo.jpg',
+
+  date: '2026-11-25',
+},
+    {
   href: '/vesti/upokojio-se-mitropolit-backi-irinej',
   slug: 'upokojio-se-mitropolit-backi-irinej',
 

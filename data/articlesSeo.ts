@@ -3,8 +3,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+'razgovori-u-istoku-006-mile-bosnic-drugi-deo': {
+  slug: 'razgovori-u-istoku-006-mile-bosnic-drugi-deo',
 
+  title:
+    'Mile Bosnić: Razmere genocida nad Srbima u NDH i kultura sećanja | Razgovori u Istoku 006 – drugi deo',
 
+  description:
+    'U drugom delu razgovora sa Miletom Bosnićem govorimo o razmerama genocida nad Srbima u NDH, broju žrtava, Jasenovcu, posleratnim komisijama i kulturi sećanja.',
+
+  image:
+    '/static/images/mile-bosnic-drugi-deo.jpg',
+
+  publishedAt: '2026-11-25',
+
+  author: 'Istok Info Pult',
+},
 'upokojio-se-mitropolit-backi-irinej': {
   slug: 'upokojio-se-mitropolit-backi-irinej',
 

@@ -3,6 +3,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+'radnik-vojvodina-najava-surdulica': {
+  slug: 'radnik-vojvodina-najava-surdulica',
+
+  title:
+    'Radnik – Vojvodina u Surdulici: najava 17. kola Superlige | Istok Info Pult',
+
+  description:
+    'Vojvodina, druga na tabeli sa 35 bodova, u subotu 28. novembra od 14 časova gostuje Radniku na Gradskom stadionu u Surdulici u 17. kolu Superlige Srbije.',
+
+  image:
+    '/static/images/radnik-vojvodina-najava-surdulica.jpg',
+
+  publishedAt: '2026-11-27',
+
+  author: 'Istok Info Pult',
+},
 'sahrana-mitropolita-backog-irineja': {
   slug: 'sahrana-mitropolita-backog-irineja',
 

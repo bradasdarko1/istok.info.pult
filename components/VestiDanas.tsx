@@ -13,6 +13,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
   const danasnjeVesti = [
 {
+  href: '/vesti/radnik-vojvodina-najava-surdulica',
+  slug: 'radnik-vojvodina-najava-surdulica',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 27.11.2026.'
+      : script === 'cyr'
+        ? 'Вести - 27.11.2026.'
+        : 'Vesti - 27.11.2026.',
+
+  title:
+    language === 'ru'
+      ? '«Войводина» в гостях у «Радника» в Сурдулице: «Нас ждёт настоящее испытание»'
+      : script === 'cyr'
+        ? 'Војводина гостује Раднику у Сурдулици: „Прави тест је пред нама“'
+        : 'Vojvodina gostuje Radniku u Surdulici: „Pravi test je pred nama“',
+
+  excerpt:
+    language === 'ru'
+      ? 'Вторая команда Суперлиги Сербии в субботу в 14:00 сыграет на поле «Радника», который в этом сезоне дома не проигрывал.'
+      : script === 'cyr'
+        ? 'Друга екипа Суперлиге Србије у суботу од 14 часова игра на терену Радника, који ове сезоне код куће није поражен.'
+        : 'Druga ekipa Superlige Srbije u subotu od 14 časova igra na terenu Radnika, koji ove sezone kod kuće nije poražen.',
+
+  image:
+    '/static/images/radnik-vojvodina-najava-surdulica.jpg',
+
+  date: '2026-11-27',
+},
+{
   href: '/vesti/sahrana-mitropolita-backog-irineja',
   slug: 'sahrana-mitropolita-backog-irineja',
 

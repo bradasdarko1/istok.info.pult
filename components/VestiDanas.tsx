@@ -13,6 +13,36 @@ export default function VestiDanas({ homepage = false }: VestiDanasProps) {
 
   const danasnjeVesti = [
 {
+  href: '/vesti/sahrana-mitropolita-backog-irineja',
+  slug: 'sahrana-mitropolita-backog-irineja',
+
+  category:
+    language === 'ru'
+      ? 'Новости - 27.11.2026.'
+      : script === 'cyr'
+        ? 'Вести - 27.11.2026.'
+        : 'Vesti - 27.11.2026.',
+
+  title:
+    language === 'ru'
+      ? 'ПОГРЕБЕНИЕ МИТРОПОЛИТА БАЧСКОГО ИРИНЕЯ В НОВИ-САДЕ — ОТПЕВАНИЕ СОВЕРШАЕТ ПАТРИАРХ ПОРФИРИЙ'
+      : script === 'cyr'
+        ? 'САХРАНА МИТРОПОЛИТА БАЧКОГ ИРИНЕЈА У НОВОМ САДУ — ОПЕЛО СЛУЖИ ПАТРИЈАРХ ПОРФИРИЈЕ'
+        : 'SAHRANA MITROPOLITA BAČKOG IRINEJA U NOVOM SADU — OPELO SLUŽI PATRIJARH PORFIRIJE',
+
+  excerpt:
+    language === 'ru'
+      ? 'Архиепископ Нови-Садский и митрополит Бачский Ириней будет сегодня погребён в крипте кафедрального собора святого великомученика Георгия в Нови-Саде. Заупокойная литургия совершается в 9 часов, отпевание — в 12 часов в Алмашском храме, при сослужении архиереев Сербской и братских Православных Церквей.'
+      : script === 'cyr'
+        ? 'Архиепископ новосадски и митрополит бачки Иринеј биће данас сахрањен у крипти Саборног храма Светог великомученика Георгија у Новом Саду. Заупокојна литургија служи се у 9, а опело у 12 часова у Алмашком храму, уз саслужење архијереја Српске и сестринских православних цркава.'
+        : 'Arhiepiskop novosadski i mitropolit bački Irinej biće danas sahranjen u kripti Sabornog hrama Svetog velikomučenika Georgija u Novom Sadu. Zaupokojna liturgija služi se u 9, a opelo u 12 časova u Almaškom hramu, uz sasluženje arhijereja Srpske i sestrinskih pravoslavnih crkava.',
+
+  image:
+    '/static/images/mitropolit-backi-irinej-sahrana.jpg',
+
+  date: '2026-11-27',
+},
+{
   href: '/vesti/razgovori-u-istoku-006-mile-bosnic-drugi-deo',
   slug: 'razgovori-u-istoku-006-mile-bosnic-drugi-deo',
 

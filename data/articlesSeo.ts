@@ -3,6 +3,22 @@ import type { ArticleSeoData } from '@/lib/articleSeo'
 // Datum objavljivanja se navodi samo ako je potvrđen iz fajla članka.
 // Proveri AUDIT.csv pre objavljivanja.
 export const articlesSeo: Record<string, ArticleSeoData> = {
+'sahrana-mitropolita-backog-irineja': {
+  slug: 'sahrana-mitropolita-backog-irineja',
+
+  title:
+    'Novi Sad: sahrana mitropolita Irineja, opelo služi patrijarh Porfirije | Istok Info Pult',
+
+  description:
+    'Mitropolit bački Irinej biće sahranjen 27. novembra 2026. u kripti Sabornog hrama u Novom Sadu. Liturgija je u 9, a opelo u 12 časova u Almaškom hramu.',
+
+  image:
+    '/static/images/mitropolit-backi-irinej-sahrana.jpg',
+
+  publishedAt: '2026-11-27',
+
+  author: 'Istok Info Pult',
+},
 'razgovori-u-istoku-006-mile-bosnic-drugi-deo': {
   slug: 'razgovori-u-istoku-006-mile-bosnic-drugi-deo',
 
